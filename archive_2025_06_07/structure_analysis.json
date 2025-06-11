@@ -1,0 +1,1672 @@
+{
+  "root": "C:\\Users\\grayg\\Desktop\\hedge_intel",
+  "generated": "2025-06-05T08:27:58.800937",
+  "user": "thorrobber22",
+  "summary": {
+    "total_directories": 33,
+    "total_files": 117,
+    "file_types": {
+      ".py": 74,
+      ".txt": 4,
+      ".json": 13,
+      ".csv": 0,
+      ".html": 15,
+      ".md": 1,
+      "other": 10
+    },
+    "total_size": 20813189,
+    "python_files": 74,
+    "data_files": 17
+  },
+  "directories": {
+    "": {
+      "file_count": 46,
+      "subdir_count": 18,
+      "files": [
+        ".env",
+        ".gitignore",
+        "admin.py",
+        "admin_panel.py",
+        "analyze_project_structure.ps1",
+        "analyze_structure.py",
+        "APP STRUCTURE.txt",
+        "app.py",
+        "auth.py",
+        "build_complete_system.py",
+        "build_final_production_system.py",
+        "build_final_production_system_fixed.py",
+        "build_production_complete.py",
+        "clear_queue.py",
+        "code_analysis_report.json",
+        "complete_fix.py",
+        "complete_fix_and_redesign.py",
+        "debug_downloads.py",
+        "docker-compose.yml",
+        "Dockerfile",
+        "document_pipeline.py",
+        "fix_downloads.py",
+        "fix_fix.py",
+        "fix_s1_downloads.py",
+        "import os.py",
+        "launch.py",
+        "project_scanner.ps1",
+        "project_scan_2025-05-29_104034.txt",
+        "push_to_git.py",
+        "README.md",
+        "rebuild_clean.py",
+        "requirements.txt",
+        "run.py",
+        "run_admin.py",
+        "run_app.py",
+        "scan_code.py",
+        "setup.py",
+        "setup_hedge_intel.py",
+        "setup_hedge_intel.sh",
+        "show_structure.py",
+        "structure_analysis.json",
+        "structure_tree.txt",
+        "test_production.py",
+        "test_s1_fix.py",
+        "test_simple.py",
+        "update_to_production.py"
+      ]
+    },
+    ".streamlit": {
+      "file_count": 2,
+      "subdir_count": 0,
+      "files": [
+        "admin_config.toml",
+        "config.toml"
+      ]
+    },
+    "admin": {
+      "file_count": 1,
+      "subdir_count": 0,
+      "files": [
+        "__init__.py"
+      ]
+    },
+    "api": {
+      "file_count": 3,
+      "subdir_count": 0,
+      "files": [
+        "main.py",
+        "routes.py",
+        "__init__.py"
+      ]
+    },
+    "background": {
+      "file_count": 5,
+      "subdir_count": 0,
+      "files": [
+        "scheduler.py",
+        "scheduler_backup.py",
+        "scheduler_backup_20250604_104601.py",
+        "scheduler_backup_20250604_104836.py",
+        "__init__.py"
+      ]
+    },
+    "core": {
+      "file_count": 3,
+      "subdir_count": 0,
+      "files": [
+        "chat_engine.py",
+        "orchestrator.py",
+        "__init__.py"
+      ]
+    },
+    "data": {
+      "file_count": 3,
+      "subdir_count": 8,
+      "files": [
+        "ipo_data.json",
+        "tickers.json",
+        "__init__.py"
+      ]
+    },
+    "data\\cache": {
+      "file_count": 7,
+      "subdir_count": 0,
+      "files": [
+        "download_status.json",
+        "edgar_filings.json",
+        "ipo_cache.json",
+        "ipo_calendar.json",
+        "ipo_data_sample.json",
+        "lockup_calendar.json",
+        "__init__.py"
+      ]
+    },
+    "data\\documents": {
+      "file_count": 8,
+      "subdir_count": 0,
+      "files": [
+        "CRCL_S-1_20250604_104906.html",
+        "CRCL_S-1_20250604_121718.html",
+        "HLEO_S-1_20250604_104915.html",
+        "HLEO_S-1_20250604_121726.html",
+        "OMDA_S-1_20250604_104921.html",
+        "OMDA_S-1_20250604_121732.html",
+        "TEST_1A - La Rosa Holdings Corp_S1.html",
+        "__init__.py"
+      ]
+    },
+    "data\\exports": {
+      "file_count": 0,
+      "subdir_count": 0,
+      "files": []
+    },
+    "data\\logs": {
+      "file_count": 8,
+      "subdir_count": 0,
+      "files": [
+        "index_page_20250604_104851.html",
+        "index_page_20250604_104906.html",
+        "index_page_20250604_104915.html",
+        "index_page_20250604_104921.html",
+        "index_page_20250604_121717.html",
+        "index_page_20250604_121726.html",
+        "index_page_20250604_121732.html",
+        "iposcoop_latest.html"
+      ]
+    },
+    "data\\processed": {
+      "file_count": 4,
+      "subdir_count": 0,
+      "files": [
+        "CRCL_s1.json",
+        "HLEO_s1.json",
+        "OMDA_s1.json",
+        "__init__.py"
+      ]
+    },
+    "data\\sec_documents": {
+      "file_count": 0,
+      "subdir_count": 0,
+      "files": []
+    },
+    "data\\vectors": {
+      "file_count": 0,
+      "subdir_count": 0,
+      "files": []
+    },
+    "data\\vector_db": {
+      "file_count": 0,
+      "subdir_count": 0,
+      "files": []
+    },
+    "docs": {
+      "file_count": 0,
+      "subdir_count": 3,
+      "files": []
+    },
+    "docs\\metadata": {
+      "file_count": 0,
+      "subdir_count": 0,
+      "files": []
+    },
+    "docs\\parsed": {
+      "file_count": 0,
+      "subdir_count": 0,
+      "files": []
+    },
+    "docs\\raw": {
+      "file_count": 0,
+      "subdir_count": 1,
+      "files": []
+    },
+    "docs\\raw\\sedar": {
+      "file_count": 0,
+      "subdir_count": 0,
+      "files": []
+    },
+    "fetchers": {
+      "file_count": 1,
+      "subdir_count": 0,
+      "files": [
+        "__init__.py"
+      ]
+    },
+    "ipo_dashboard": {
+      "file_count": 2,
+      "subdir_count": 0,
+      "files": [
+        "ipo_data_manager.py",
+        "__init__.py"
+      ]
+    },
+    "logs": {
+      "file_count": 0,
+      "subdir_count": 0,
+      "files": []
+    },
+    "monitors": {
+      "file_count": 4,
+      "subdir_count": 0,
+      "files": [
+        "ai_narrator.py",
+        "queue_monitor.py",
+        "system_monitor.py",
+        "__init__.py"
+      ]
+    },
+    "processors": {
+      "file_count": 1,
+      "subdir_count": 0,
+      "files": [
+        "__init__.py"
+      ]
+    },
+    "scrapers": {
+      "file_count": 4,
+      "subdir_count": 0,
+      "files": [
+        "edgar_monitor.py",
+        "ipo_scraper.py",
+        "ipo_scraper_fixed.py",
+        "__init__.py"
+      ]
+    },
+    "static": {
+      "file_count": 1,
+      "subdir_count": 1,
+      "files": [
+        "__init__.py"
+      ]
+    },
+    "static\\css": {
+      "file_count": 1,
+      "subdir_count": 0,
+      "files": [
+        "apple_design.css"
+      ]
+    },
+    "storage": {
+      "file_count": 1,
+      "subdir_count": 0,
+      "files": [
+        "__init__.py"
+      ]
+    },
+    "tools": {
+      "file_count": 4,
+      "subdir_count": 0,
+      "files": [
+        "calendar_tool.py",
+        "document_tool.py",
+        "lockup_tool.py",
+        "__init__.py"
+      ]
+    },
+    "ui": {
+      "file_count": 2,
+      "subdir_count": 1,
+      "files": [
+        "styles.py",
+        "__init__.py"
+      ]
+    },
+    "ui\\components": {
+      "file_count": 4,
+      "subdir_count": 0,
+      "files": [
+        "chat_interface.py",
+        "context_panel.py",
+        "data_cards.py",
+        "__init__.py"
+      ]
+    },
+    "views": {
+      "file_count": 2,
+      "subdir_count": 0,
+      "files": [
+        "components.py",
+        "__init__.py"
+      ]
+    }
+  },
+  "files": {
+    ".env": {
+      "size": 1463,
+      "modified": "2025-06-03T22:54:11.699728",
+      "lines": 49,
+      "md5": "ddd8f42f"
+    },
+    ".gitignore": {
+      "size": 325,
+      "modified": "2025-06-03T20:20:44.381384",
+      "lines": 37,
+      "md5": "5a691ae1"
+    },
+    "admin.py": {
+      "size": 6056,
+      "modified": "2025-06-04T18:19:17.760232",
+      "lines": 190,
+      "md5": "cd3d8868"
+    },
+    "admin_panel.py": {
+      "size": 5976,
+      "modified": "2025-06-03T23:52:11.120604",
+      "lines": 191,
+      "md5": "e63e9956"
+    },
+    "analyze_project_structure.ps1": {
+      "size": 8688,
+      "modified": "2025-05-28T16:53:45.889094",
+      "lines": 323,
+      "md5": "e48da65e"
+    },
+    "analyze_structure.py": {
+      "size": 9570,
+      "modified": "2025-06-05T08:27:48.015424",
+      "lines": 273,
+      "md5": "7849253e"
+    },
+    "APP STRUCTURE.txt": {
+      "size": 1104495,
+      "modified": "2025-06-03T20:23:00.243755",
+      "lines": 16204,
+      "md5": "fc7ecd3d"
+    },
+    "app.py": {
+      "size": 2994,
+      "modified": "2025-06-04T18:19:17.756230",
+      "lines": 105,
+      "md5": "63c52b81"
+    },
+    "auth.py": {
+      "size": 430,
+      "modified": "2025-06-03T07:46:05.379443",
+      "lines": 16,
+      "md5": "711e4f3f"
+    },
+    "build_complete_system.py": {
+      "size": 72118,
+      "modified": "2025-06-03T23:51:03.830738",
+      "lines": 2258,
+      "md5": "963afeea"
+    },
+    "build_final_production_system.py": {
+      "size": 13058,
+      "modified": "2025-06-04T08:13:40.739498",
+      "lines": 524,
+      "md5": "dc1326ae"
+    },
+    "build_final_production_system_fixed.py": {
+      "size": 108302,
+      "modified": "2025-06-04T08:10:09.410986",
+      "lines": 3051,
+      "md5": "b302dd01"
+    },
+    "build_production_complete.py": {
+      "size": 108625,
+      "modified": "2025-06-03T22:45:23.386571",
+      "lines": 3142,
+      "md5": "abc69894"
+    },
+    "clear_queue.py": {
+      "size": 623,
+      "modified": "2025-06-04T10:22:28.211318",
+      "lines": 20,
+      "md5": "0ddfde81"
+    },
+    "code_analysis_report.json": {
+      "size": 29347,
+      "modified": "2025-06-04T08:21:35.200806",
+      "lines": 1306,
+      "md5": "258cade7"
+    },
+    "complete_fix.py": {
+      "size": 24316,
+      "modified": "2025-06-02T18:23:14.316475",
+      "lines": 676,
+      "md5": "9e08a345"
+    },
+    "complete_fix_and_redesign.py": {
+      "size": 26472,
+      "modified": "2025-06-03T06:52:05.129127",
+      "lines": 771,
+      "md5": "35a10d8e"
+    },
+    "debug_downloads.py": {
+      "size": 4269,
+      "modified": "2025-06-04T10:19:14.299879",
+      "lines": 126,
+      "md5": "0733ed63"
+    },
+    "docker-compose.yml": {
+      "size": 0,
+      "modified": "2025-05-28T15:57:46.301463",
+      "lines": 1,
+      "md5": "d41d8cd9"
+    },
+    "Dockerfile": {
+      "size": 0,
+      "modified": "2025-05-28T15:57:46.301463",
+      "lines": 1,
+      "md5": "d41d8cd9"
+    },
+    "document_pipeline.py": {
+      "size": 10296,
+      "modified": "2025-06-03T07:57:06.044768",
+      "lines": 263,
+      "md5": "311cbdd7"
+    },
+    "fix_downloads.py": {
+      "size": 10920,
+      "modified": "2025-06-04T10:22:18.833703",
+      "lines": 278,
+      "md5": "c2da4f3b"
+    },
+    "fix_fix.py": {
+      "size": 41429,
+      "modified": "2025-06-04T18:19:12.253123",
+      "lines": 1319,
+      "md5": "13a881dc"
+    },
+    "fix_s1_downloads.py": {
+      "size": 40923,
+      "modified": "2025-06-04T18:13:17.821579",
+      "lines": 1292,
+      "md5": "d823c2a0"
+    },
+    "import os.py": {
+      "size": 2490,
+      "modified": "2025-05-28T15:54:55.075517",
+      "lines": 87,
+      "md5": "bde78ed8"
+    },
+    "launch.py": {
+      "size": 215,
+      "modified": "2025-06-03T06:52:22.223031",
+      "lines": 9,
+      "md5": "57b62ac6"
+    },
+    "project_scanner.ps1": {
+      "size": 8920,
+      "modified": "2025-05-29T10:40:31.693424",
+      "lines": 230,
+      "md5": "ce0b292a"
+    },
+    "project_scan_2025-05-29_104034.txt": {
+      "size": 2239666,
+      "modified": "2025-06-03T20:23:00.261606",
+      "lines": 24306,
+      "md5": "7498120c"
+    },
+    "push_to_git.py": {
+      "size": 2005,
+      "modified": "2025-06-03T20:20:35.390062",
+      "lines": 91,
+      "md5": "e667f2d2"
+    },
+    "README.md": {
+      "size": 752,
+      "modified": "2025-06-03T23:52:11.127419",
+      "lines": 29,
+      "md5": "122ef23b"
+    },
+    "rebuild_clean.py": {
+      "size": 25252,
+      "modified": "2025-06-03T07:45:05.414192",
+      "lines": 712,
+      "md5": "5bebfe64"
+    },
+    "requirements.txt": {
+      "size": 235,
+      "modified": "2025-06-04T18:19:17.760232",
+      "lines": 13,
+      "md5": "a2aa7e1c"
+    },
+    "run.py": {
+      "size": 1496,
+      "modified": "2025-06-04T18:19:17.761233",
+      "lines": 56,
+      "md5": "246e5cde"
+    },
+    "run_admin.py": {
+      "size": 350,
+      "modified": "2025-06-03T23:52:11.127419",
+      "lines": 18,
+      "md5": "9b421c9c"
+    },
+    "run_app.py": {
+      "size": 306,
+      "modified": "2025-06-02T22:33:36.857537",
+      "lines": 12,
+      "md5": "56efa73d"
+    },
+    "scan_code.py": {
+      "size": 11545,
+      "modified": "2025-06-04T08:21:31.904537",
+      "lines": 315,
+      "md5": "d23af2f6"
+    },
+    "setup.py": {
+      "size": 636,
+      "modified": "2025-05-28T16:57:04.994745",
+      "lines": 24,
+      "md5": "b211d385"
+    },
+    "setup_hedge_intel.py": {
+      "size": 44725,
+      "modified": "2025-06-03T20:06:09.072644",
+      "lines": 1387,
+      "md5": "92b9151f"
+    },
+    "setup_hedge_intel.sh": {
+      "size": 42159,
+      "modified": "2025-06-03T19:59:04.331836",
+      "lines": 1357,
+      "md5": "2a07e450"
+    },
+    "show_structure.py": {
+      "size": 11545,
+      "modified": "2025-06-04T08:21:00.572816",
+      "lines": 315,
+      "md5": "d23af2f6"
+    },
+    "structure_analysis.json": {
+      "size": 41442,
+      "modified": "2025-06-04T18:30:36.220058",
+      "lines": 1646,
+      "md5": "40b0bc57"
+    },
+    "structure_tree.txt": {
+      "size": 0,
+      "modified": "2025-06-04T18:30:36.222064",
+      "lines": 1,
+      "md5": "d41d8cd9"
+    },
+    "test_production.py": {
+      "size": 16073,
+      "modified": "2025-06-04T08:39:03.972923",
+      "lines": 429,
+      "md5": "be06b8dc"
+    },
+    "test_s1_fix.py": {
+      "size": 668,
+      "modified": "2025-06-04T10:48:36.505959",
+      "lines": 21,
+      "md5": "9ddca513"
+    },
+    "test_simple.py": {
+      "size": 990,
+      "modified": "2025-06-04T10:19:14.314296",
+      "lines": 37,
+      "md5": "ccb96887"
+    },
+    "update_to_production.py": {
+      "size": 23535,
+      "modified": "2025-06-02T17:50:59.067774",
+      "lines": 660,
+      "md5": "a4605077"
+    },
+    ".streamlit\\admin_config.toml": {
+      "size": 216,
+      "modified": "2025-06-03T23:52:11.117776",
+      "lines": 14,
+      "md5": "ab3cce5d"
+    },
+    ".streamlit\\config.toml": {
+      "size": 217,
+      "modified": "2025-06-03T23:52:11.117776",
+      "lines": 14,
+      "md5": "0bd31b17"
+    },
+    "admin\\__init__.py": {
+      "size": 40,
+      "modified": "2025-06-03T23:52:11.116627",
+      "lines": 1,
+      "md5": "7bddc4e9"
+    },
+    "api\\main.py": {
+      "size": 2427,
+      "modified": "2025-05-28T17:00:25.514228",
+      "lines": 94,
+      "md5": "367ffcd2"
+    },
+    "api\\routes.py": {
+      "size": 534,
+      "modified": "2025-05-28T17:00:38.825658",
+      "lines": 23,
+      "md5": "6739c7c3"
+    },
+    "api\\__init__.py": {
+      "size": 0,
+      "modified": "2025-06-02T18:23:27.246802",
+      "lines": 1,
+      "md5": "d41d8cd9"
+    },
+    "background\\scheduler.py": {
+      "size": 1840,
+      "modified": "2025-06-04T18:19:17.759233",
+      "lines": 60,
+      "md5": "f0d6afb4"
+    },
+    "background\\scheduler_backup.py": {
+      "size": 45567,
+      "modified": "2025-06-04T10:19:14.303409",
+      "lines": 990,
+      "md5": "3d04e2cc"
+    },
+    "background\\scheduler_backup_20250604_104601.py": {
+      "size": 45567,
+      "modified": "2025-06-04T10:46:01.544073",
+      "lines": 990,
+      "md5": "3d04e2cc"
+    },
+    "background\\scheduler_backup_20250604_104836.py": {
+      "size": 50124,
+      "modified": "2025-06-04T10:48:36.493451",
+      "lines": 1068,
+      "md5": "5c53fbfb"
+    },
+    "background\\__init__.py": {
+      "size": 45,
+      "modified": "2025-06-04T18:19:17.754199",
+      "lines": 1,
+      "md5": "3cd88c62"
+    },
+    "core\\chat_engine.py": {
+      "size": 6044,
+      "modified": "2025-06-04T18:19:17.758232",
+      "lines": 165,
+      "md5": "732a3cc1"
+    },
+    "core\\orchestrator.py": {
+      "size": 1389,
+      "modified": "2025-06-03T23:52:11.120604",
+      "lines": 46,
+      "md5": "73292073"
+    },
+    "core\\__init__.py": {
+      "size": 39,
+      "modified": "2025-06-04T18:19:17.754199",
+      "lines": 1,
+      "md5": "a83ea652"
+    },
+    "data\\ipo_data.json": {
+      "size": 1226,
+      "modified": "2025-06-02T08:46:02.878235",
+      "lines": 44,
+      "md5": "f81967db"
+    },
+    "data\\tickers.json": {
+      "size": 2,
+      "modified": "2025-05-28T15:57:46.299330",
+      "lines": 1,
+      "md5": "99914b93"
+    },
+    "data\\__init__.py": {
+      "size": 0,
+      "modified": "2025-06-04T18:19:17.755394",
+      "lines": 1,
+      "md5": "d41d8cd9"
+    },
+    "data\\cache\\download_status.json": {
+      "size": 80,
+      "modified": "2025-06-04T12:17:48.409050",
+      "lines": 5,
+      "md5": "8c44166c"
+    },
+    "data\\cache\\edgar_filings.json": {
+      "size": 7396,
+      "modified": "2025-06-04T18:06:10.965454",
+      "lines": 187,
+      "md5": "f27e98e1"
+    },
+    "data\\cache\\ipo_cache.json": {
+      "size": 130680,
+      "modified": "2025-06-03T06:55:48.698994",
+      "lines": 4091,
+      "md5": "34da4172"
+    },
+    "data\\cache\\ipo_calendar.json": {
+      "size": 3590,
+      "modified": "2025-06-04T18:21:24.832793",
+      "lines": 119,
+      "md5": "bf5f5cf3"
+    },
+    "data\\cache\\ipo_data_sample.json": {
+      "size": 1545,
+      "modified": "2025-06-02T22:32:02.885626",
+      "lines": 51,
+      "md5": "1764f41b"
+    },
+    "data\\cache\\lockup_calendar.json": {
+      "size": 1129,
+      "modified": "2025-06-04T17:55:33.153757",
+      "lines": 40,
+      "md5": "dc67a7ed"
+    },
+    "data\\cache\\__init__.py": {
+      "size": 0,
+      "modified": "2025-06-04T18:19:17.755394",
+      "lines": 1,
+      "md5": "d41d8cd9"
+    },
+    "data\\documents\\CRCL_S-1_20250604_104906.html": {
+      "size": 3905227,
+      "modified": "2025-06-04T10:49:07.123574",
+      "lines": 53407,
+      "md5": "2cf33a5f"
+    },
+    "data\\documents\\CRCL_S-1_20250604_121718.html": {
+      "size": 3905227,
+      "modified": "2025-06-04T12:17:18.421358",
+      "lines": 53407,
+      "md5": "2cf33a5f"
+    },
+    "data\\documents\\HLEO_S-1_20250604_104915.html": {
+      "size": 29340,
+      "modified": "2025-06-04T10:49:15.417198",
+      "lines": 313,
+      "md5": "1a622276"
+    },
+    "data\\documents\\HLEO_S-1_20250604_121726.html": {
+      "size": 29340,
+      "modified": "2025-06-04T12:17:26.530515",
+      "lines": 313,
+      "md5": "1a622276"
+    },
+    "data\\documents\\OMDA_S-1_20250604_104921.html": {
+      "size": 3824060,
+      "modified": "2025-06-04T10:49:21.554227",
+      "lines": 44854,
+      "md5": "1578f019"
+    },
+    "data\\documents\\OMDA_S-1_20250604_121732.html": {
+      "size": 3824060,
+      "modified": "2025-06-04T12:17:32.684532",
+      "lines": 44854,
+      "md5": "1578f019"
+    },
+    "data\\documents\\TEST_1A - La Rosa Holdings Corp_S1.html": {
+      "size": 706879,
+      "modified": "2025-06-04T10:22:28.186829",
+      "lines": 6343,
+      "md5": "5fc669e2"
+    },
+    "data\\documents\\__init__.py": {
+      "size": 0,
+      "modified": "2025-06-04T18:19:17.754199",
+      "lines": 1,
+      "md5": "d41d8cd9"
+    },
+    "data\\logs\\index_page_20250604_104851.html": {
+      "size": 10219,
+      "modified": "2025-06-04T10:48:51.667545",
+      "lines": 220,
+      "md5": "283888d6"
+    },
+    "data\\logs\\index_page_20250604_104906.html": {
+      "size": 10219,
+      "modified": "2025-06-04T10:49:06.722743",
+      "lines": 220,
+      "md5": "283888d6"
+    },
+    "data\\logs\\index_page_20250604_104915.html": {
+      "size": 10080,
+      "modified": "2025-06-04T10:49:15.046045",
+      "lines": 206,
+      "md5": "3a23b5f2"
+    },
+    "data\\logs\\index_page_20250604_104921.html": {
+      "size": 10215,
+      "modified": "2025-06-04T10:49:21.123517",
+      "lines": 216,
+      "md5": "c4f35705"
+    },
+    "data\\logs\\index_page_20250604_121717.html": {
+      "size": 10219,
+      "modified": "2025-06-04T12:17:17.781638",
+      "lines": 220,
+      "md5": "283888d6"
+    },
+    "data\\logs\\index_page_20250604_121726.html": {
+      "size": 10080,
+      "modified": "2025-06-04T12:17:26.173548",
+      "lines": 206,
+      "md5": "3a23b5f2"
+    },
+    "data\\logs\\index_page_20250604_121732.html": {
+      "size": 10215,
+      "modified": "2025-06-04T12:17:32.161262",
+      "lines": 216,
+      "md5": "c4f35705"
+    },
+    "data\\logs\\iposcoop_latest.html": {
+      "size": 36523,
+      "modified": "2025-06-04T17:55:36.478796",
+      "lines": 576,
+      "md5": "fa8df29f"
+    },
+    "data\\processed\\CRCL_s1.json": {
+      "size": 2745,
+      "modified": "2025-06-04T12:17:20.588462",
+      "lines": 21,
+      "md5": "07e970ed"
+    },
+    "data\\processed\\HLEO_s1.json": {
+      "size": 2158,
+      "modified": "2025-06-04T12:17:26.587042",
+      "lines": 19,
+      "md5": "30bcc1b8"
+    },
+    "data\\processed\\OMDA_s1.json": {
+      "size": 2285,
+      "modified": "2025-06-04T12:17:37.133836",
+      "lines": 19,
+      "md5": "9d6dde5a"
+    },
+    "data\\processed\\__init__.py": {
+      "size": 0,
+      "modified": "2025-06-04T18:19:17.755394",
+      "lines": 1,
+      "md5": "d41d8cd9"
+    },
+    "fetchers\\__init__.py": {
+      "size": 43,
+      "modified": "2025-06-03T23:52:11.113855",
+      "lines": 1,
+      "md5": "268e543c"
+    },
+    "ipo_dashboard\\ipo_data_manager.py": {
+      "size": 8398,
+      "modified": "2025-05-30T17:35:30.355043",
+      "lines": 236,
+      "md5": "f73d1e44"
+    },
+    "ipo_dashboard\\__init__.py": {
+      "size": 0,
+      "modified": "2025-05-28T15:57:46.296149",
+      "lines": 1,
+      "md5": "d41d8cd9"
+    },
+    "monitors\\ai_narrator.py": {
+      "size": 2149,
+      "modified": "2025-06-03T23:52:11.124495",
+      "lines": 53,
+      "md5": "d13c069d"
+    },
+    "monitors\\queue_monitor.py": {
+      "size": 1498,
+      "modified": "2025-06-03T23:52:11.124495",
+      "lines": 49,
+      "md5": "51f23f63"
+    },
+    "monitors\\system_monitor.py": {
+      "size": 3423,
+      "modified": "2025-06-03T23:52:11.122608",
+      "lines": 100,
+      "md5": "8436fe7e"
+    },
+    "monitors\\__init__.py": {
+      "size": 43,
+      "modified": "2025-06-03T23:52:11.116627",
+      "lines": 1,
+      "md5": "4667e8bd"
+    },
+    "processors\\__init__.py": {
+      "size": 45,
+      "modified": "2025-06-03T23:52:11.115344",
+      "lines": 1,
+      "md5": "0d2a4223"
+    },
+    "scrapers\\edgar_monitor.py": {
+      "size": 4479,
+      "modified": "2025-06-04T08:27:35.914389",
+      "lines": 110,
+      "md5": "de01bc24"
+    },
+    "scrapers\\ipo_scraper.py": {
+      "size": 8206,
+      "modified": "2025-06-03T23:52:11.122608",
+      "lines": 211,
+      "md5": "947a9e9e"
+    },
+    "scrapers\\ipo_scraper_fixed.py": {
+      "size": 2186,
+      "modified": "2025-06-04T18:19:17.759233",
+      "lines": 68,
+      "md5": "33edaa34"
+    },
+    "scrapers\\__init__.py": {
+      "size": 43,
+      "modified": "2025-06-04T18:19:17.754199",
+      "lines": 1,
+      "md5": "a4636302"
+    },
+    "static\\__init__.py": {
+      "size": 0,
+      "modified": "2025-06-04T18:19:17.755394",
+      "lines": 1,
+      "md5": "d41d8cd9"
+    },
+    "static\\css\\apple_design.css": {
+      "size": 5783,
+      "modified": "2025-06-03T23:52:11.117776",
+      "lines": 282,
+      "md5": "096a02af"
+    },
+    "storage\\__init__.py": {
+      "size": 42,
+      "modified": "2025-06-03T23:52:11.115344",
+      "lines": 1,
+      "md5": "2378c9ae"
+    },
+    "tools\\calendar_tool.py": {
+      "size": 1316,
+      "modified": "2025-06-03T23:52:11.124495",
+      "lines": 46,
+      "md5": "d3cb7fda"
+    },
+    "tools\\document_tool.py": {
+      "size": 1697,
+      "modified": "2025-06-03T23:52:11.124495",
+      "lines": 57,
+      "md5": "dca0a5e4"
+    },
+    "tools\\lockup_tool.py": {
+      "size": 1344,
+      "modified": "2025-06-03T23:52:11.126343",
+      "lines": 46,
+      "md5": "00160e79"
+    },
+    "tools\\__init__.py": {
+      "size": 40,
+      "modified": "2025-06-03T23:52:11.113855",
+      "lines": 1,
+      "md5": "31d6eaab"
+    },
+    "ui\\styles.py": {
+      "size": 1834,
+      "modified": "2025-06-04T18:19:17.758232",
+      "lines": 83,
+      "md5": "60a95e5a"
+    },
+    "ui\\__init__.py": {
+      "size": 0,
+      "modified": "2025-06-04T18:19:17.754199",
+      "lines": 1,
+      "md5": "d41d8cd9"
+    },
+    "ui\\components\\chat_interface.py": {
+      "size": 3190,
+      "modified": "2025-06-04T18:19:17.756230",
+      "lines": 95,
+      "md5": "4ae788c1"
+    },
+    "ui\\components\\context_panel.py": {
+      "size": 3720,
+      "modified": "2025-06-04T18:19:17.757233",
+      "lines": 106,
+      "md5": "d5af7f04"
+    },
+    "ui\\components\\data_cards.py": {
+      "size": 6736,
+      "modified": "2025-06-04T18:19:17.757233",
+      "lines": 185,
+      "md5": "f76a7717"
+    },
+    "ui\\components\\__init__.py": {
+      "size": 0,
+      "modified": "2025-06-04T18:19:17.754199",
+      "lines": 1,
+      "md5": "d41d8cd9"
+    },
+    "views\\components.py": {
+      "size": 12446,
+      "modified": "2025-06-03T23:52:11.122608",
+      "lines": 340,
+      "md5": "6a7fac76"
+    },
+    "views\\__init__.py": {
+      "size": 40,
+      "modified": "2025-06-03T23:52:11.115344",
+      "lines": 1,
+      "md5": "ec2f4480"
+    }
+  },
+  "python_files": {
+    "admin.py": {
+      "size": 6056,
+      "modified": "2025-06-04T18:19:17.760232",
+      "lines": 190,
+      "md5": "cd3d8868",
+      "imports": []
+    },
+    "admin_panel.py": {
+      "size": 5976,
+      "modified": "2025-06-03T23:52:11.120604",
+      "lines": 191,
+      "md5": "e63e9956",
+      "imports": []
+    },
+    "analyze_structure.py": {
+      "size": 9570,
+      "modified": "2025-06-05T08:27:48.015424",
+      "lines": 273,
+      "md5": "7849253e",
+      "imports": []
+    },
+    "app.py": {
+      "size": 2994,
+      "modified": "2025-06-04T18:19:17.756230",
+      "lines": 105,
+      "md5": "63c52b81",
+      "imports": []
+    },
+    "auth.py": {
+      "size": 430,
+      "modified": "2025-06-03T07:46:05.379443",
+      "lines": 16,
+      "md5": "711e4f3f",
+      "imports": []
+    },
+    "build_complete_system.py": {
+      "size": 72118,
+      "modified": "2025-06-03T23:51:03.830738",
+      "lines": 2258,
+      "md5": "963afeea",
+      "imports": []
+    },
+    "build_final_production_system.py": {
+      "size": 13058,
+      "modified": "2025-06-04T08:13:40.739498",
+      "lines": 524,
+      "md5": "dc1326ae",
+      "imports": []
+    },
+    "build_final_production_system_fixed.py": {
+      "size": 108302,
+      "modified": "2025-06-04T08:10:09.410986",
+      "lines": 3051,
+      "md5": "b302dd01",
+      "imports": []
+    },
+    "build_production_complete.py": {
+      "size": 108625,
+      "modified": "2025-06-03T22:45:23.386571",
+      "lines": 3142,
+      "md5": "abc69894",
+      "imports": []
+    },
+    "clear_queue.py": {
+      "size": 623,
+      "modified": "2025-06-04T10:22:28.211318",
+      "lines": 20,
+      "md5": "0ddfde81",
+      "imports": []
+    },
+    "complete_fix.py": {
+      "size": 24316,
+      "modified": "2025-06-02T18:23:14.316475",
+      "lines": 676,
+      "md5": "9e08a345",
+      "imports": [
+        "import os",
+        "from pathlib import Path"
+      ]
+    },
+    "complete_fix_and_redesign.py": {
+      "size": 26472,
+      "modified": "2025-06-03T06:52:05.129127",
+      "lines": 771,
+      "md5": "35a10d8e",
+      "imports": [
+        "import os"
+      ]
+    },
+    "debug_downloads.py": {
+      "size": 4269,
+      "modified": "2025-06-04T10:19:14.299879",
+      "lines": 126,
+      "md5": "0733ed63",
+      "imports": []
+    },
+    "document_pipeline.py": {
+      "size": 10296,
+      "modified": "2025-06-03T07:57:06.044768",
+      "lines": 263,
+      "md5": "311cbdd7",
+      "imports": []
+    },
+    "fix_downloads.py": {
+      "size": 10920,
+      "modified": "2025-06-04T10:22:18.833703",
+      "lines": 278,
+      "md5": "c2da4f3b",
+      "imports": []
+    },
+    "fix_fix.py": {
+      "size": 41429,
+      "modified": "2025-06-04T18:19:12.253123",
+      "lines": 1319,
+      "md5": "13a881dc",
+      "imports": []
+    },
+    "fix_s1_downloads.py": {
+      "size": 40923,
+      "modified": "2025-06-04T18:13:17.821579",
+      "lines": 1292,
+      "md5": "d823c2a0",
+      "imports": []
+    },
+    "import os.py": {
+      "size": 2490,
+      "modified": "2025-05-28T15:54:55.075517",
+      "lines": 87,
+      "md5": "bde78ed8",
+      "imports": [
+        "import os"
+      ]
+    },
+    "launch.py": {
+      "size": 215,
+      "modified": "2025-06-03T06:52:22.223031",
+      "lines": 9,
+      "md5": "57b62ac6",
+      "imports": [
+        "import subprocess",
+        "import sys"
+      ]
+    },
+    "push_to_git.py": {
+      "size": 2005,
+      "modified": "2025-06-03T20:20:35.390062",
+      "lines": 91,
+      "md5": "e667f2d2",
+      "imports": []
+    },
+    "rebuild_clean.py": {
+      "size": 25252,
+      "modified": "2025-06-03T07:45:05.414192",
+      "lines": 712,
+      "md5": "5bebfe64",
+      "imports": []
+    },
+    "run.py": {
+      "size": 1496,
+      "modified": "2025-06-04T18:19:17.761233",
+      "lines": 56,
+      "md5": "246e5cde",
+      "imports": []
+    },
+    "run_admin.py": {
+      "size": 350,
+      "modified": "2025-06-03T23:52:11.127419",
+      "lines": 18,
+      "md5": "9b421c9c",
+      "imports": []
+    },
+    "run_app.py": {
+      "size": 306,
+      "modified": "2025-06-02T22:33:36.857537",
+      "lines": 12,
+      "md5": "56efa73d",
+      "imports": [
+        "import streamlit.cli as stcli",
+        "import sys",
+        "import os"
+      ]
+    },
+    "scan_code.py": {
+      "size": 11545,
+      "modified": "2025-06-04T08:21:31.904537",
+      "lines": 315,
+      "md5": "d23af2f6",
+      "imports": []
+    },
+    "setup.py": {
+      "size": 636,
+      "modified": "2025-05-28T16:57:04.994745",
+      "lines": 24,
+      "md5": "b211d385",
+      "imports": [
+        "from setuptools import setup, find_packages"
+      ]
+    },
+    "setup_hedge_intel.py": {
+      "size": 44725,
+      "modified": "2025-06-03T20:06:09.072644",
+      "lines": 1387,
+      "md5": "92b9151f",
+      "imports": []
+    },
+    "show_structure.py": {
+      "size": 11545,
+      "modified": "2025-06-04T08:21:00.572816",
+      "lines": 315,
+      "md5": "d23af2f6",
+      "imports": []
+    },
+    "test_production.py": {
+      "size": 16073,
+      "modified": "2025-06-04T08:39:03.972923",
+      "lines": 429,
+      "md5": "be06b8dc",
+      "imports": []
+    },
+    "test_s1_fix.py": {
+      "size": 668,
+      "modified": "2025-06-04T10:48:36.505959",
+      "lines": 21,
+      "md5": "9ddca513",
+      "imports": []
+    },
+    "test_simple.py": {
+      "size": 990,
+      "modified": "2025-06-04T10:19:14.314296",
+      "lines": 37,
+      "md5": "ccb96887",
+      "imports": []
+    },
+    "update_to_production.py": {
+      "size": 23535,
+      "modified": "2025-06-02T17:50:59.067774",
+      "lines": 660,
+      "md5": "a4605077",
+      "imports": []
+    },
+    "admin\\__init__.py": {
+      "size": 40,
+      "modified": "2025-06-03T23:52:11.116627",
+      "lines": 1,
+      "md5": "7bddc4e9",
+      "imports": []
+    },
+    "api\\main.py": {
+      "size": 2427,
+      "modified": "2025-05-28T17:00:25.514228",
+      "lines": 94,
+      "md5": "367ffcd2",
+      "imports": []
+    },
+    "api\\routes.py": {
+      "size": 534,
+      "modified": "2025-05-28T17:00:38.825658",
+      "lines": 23,
+      "md5": "6739c7c3",
+      "imports": []
+    },
+    "api\\__init__.py": {
+      "size": 0,
+      "modified": "2025-06-02T18:23:27.246802",
+      "lines": 1,
+      "md5": "d41d8cd9",
+      "imports": []
+    },
+    "background\\scheduler.py": {
+      "size": 1840,
+      "modified": "2025-06-04T18:19:17.759233",
+      "lines": 60,
+      "md5": "f0d6afb4",
+      "imports": []
+    },
+    "background\\scheduler_backup.py": {
+      "size": 45567,
+      "modified": "2025-06-04T10:19:14.303409",
+      "lines": 990,
+      "md5": "3d04e2cc",
+      "imports": []
+    },
+    "background\\scheduler_backup_20250604_104601.py": {
+      "size": 45567,
+      "modified": "2025-06-04T10:46:01.544073",
+      "lines": 990,
+      "md5": "3d04e2cc",
+      "imports": []
+    },
+    "background\\scheduler_backup_20250604_104836.py": {
+      "size": 50124,
+      "modified": "2025-06-04T10:48:36.493451",
+      "lines": 1068,
+      "md5": "5c53fbfb",
+      "imports": []
+    },
+    "background\\__init__.py": {
+      "size": 45,
+      "modified": "2025-06-04T18:19:17.754199",
+      "lines": 1,
+      "md5": "3cd88c62",
+      "imports": []
+    },
+    "core\\chat_engine.py": {
+      "size": 6044,
+      "modified": "2025-06-04T18:19:17.758232",
+      "lines": 165,
+      "md5": "732a3cc1",
+      "imports": []
+    },
+    "core\\orchestrator.py": {
+      "size": 1389,
+      "modified": "2025-06-03T23:52:11.120604",
+      "lines": 46,
+      "md5": "73292073",
+      "imports": []
+    },
+    "core\\__init__.py": {
+      "size": 39,
+      "modified": "2025-06-04T18:19:17.754199",
+      "lines": 1,
+      "md5": "a83ea652",
+      "imports": []
+    },
+    "data\\__init__.py": {
+      "size": 0,
+      "modified": "2025-06-04T18:19:17.755394",
+      "lines": 1,
+      "md5": "d41d8cd9",
+      "imports": []
+    },
+    "data\\cache\\__init__.py": {
+      "size": 0,
+      "modified": "2025-06-04T18:19:17.755394",
+      "lines": 1,
+      "md5": "d41d8cd9",
+      "imports": []
+    },
+    "data\\documents\\__init__.py": {
+      "size": 0,
+      "modified": "2025-06-04T18:19:17.754199",
+      "lines": 1,
+      "md5": "d41d8cd9",
+      "imports": []
+    },
+    "data\\processed\\__init__.py": {
+      "size": 0,
+      "modified": "2025-06-04T18:19:17.755394",
+      "lines": 1,
+      "md5": "d41d8cd9",
+      "imports": []
+    },
+    "fetchers\\__init__.py": {
+      "size": 43,
+      "modified": "2025-06-03T23:52:11.113855",
+      "lines": 1,
+      "md5": "268e543c",
+      "imports": []
+    },
+    "ipo_dashboard\\ipo_data_manager.py": {
+      "size": 8398,
+      "modified": "2025-05-30T17:35:30.355043",
+      "lines": 236,
+      "md5": "f73d1e44",
+      "imports": []
+    },
+    "ipo_dashboard\\__init__.py": {
+      "size": 0,
+      "modified": "2025-05-28T15:57:46.296149",
+      "lines": 1,
+      "md5": "d41d8cd9",
+      "imports": []
+    },
+    "monitors\\ai_narrator.py": {
+      "size": 2149,
+      "modified": "2025-06-03T23:52:11.124495",
+      "lines": 53,
+      "md5": "d13c069d",
+      "imports": []
+    },
+    "monitors\\queue_monitor.py": {
+      "size": 1498,
+      "modified": "2025-06-03T23:52:11.124495",
+      "lines": 49,
+      "md5": "51f23f63",
+      "imports": []
+    },
+    "monitors\\system_monitor.py": {
+      "size": 3423,
+      "modified": "2025-06-03T23:52:11.122608",
+      "lines": 100,
+      "md5": "8436fe7e",
+      "imports": []
+    },
+    "monitors\\__init__.py": {
+      "size": 43,
+      "modified": "2025-06-03T23:52:11.116627",
+      "lines": 1,
+      "md5": "4667e8bd",
+      "imports": []
+    },
+    "processors\\__init__.py": {
+      "size": 45,
+      "modified": "2025-06-03T23:52:11.115344",
+      "lines": 1,
+      "md5": "0d2a4223",
+      "imports": []
+    },
+    "scrapers\\edgar_monitor.py": {
+      "size": 4479,
+      "modified": "2025-06-04T08:27:35.914389",
+      "lines": 110,
+      "md5": "de01bc24",
+      "imports": []
+    },
+    "scrapers\\ipo_scraper.py": {
+      "size": 8206,
+      "modified": "2025-06-03T23:52:11.122608",
+      "lines": 211,
+      "md5": "947a9e9e",
+      "imports": []
+    },
+    "scrapers\\ipo_scraper_fixed.py": {
+      "size": 2186,
+      "modified": "2025-06-04T18:19:17.759233",
+      "lines": 68,
+      "md5": "33edaa34",
+      "imports": []
+    },
+    "scrapers\\__init__.py": {
+      "size": 43,
+      "modified": "2025-06-04T18:19:17.754199",
+      "lines": 1,
+      "md5": "a4636302",
+      "imports": []
+    },
+    "static\\__init__.py": {
+      "size": 0,
+      "modified": "2025-06-04T18:19:17.755394",
+      "lines": 1,
+      "md5": "d41d8cd9",
+      "imports": []
+    },
+    "storage\\__init__.py": {
+      "size": 42,
+      "modified": "2025-06-03T23:52:11.115344",
+      "lines": 1,
+      "md5": "2378c9ae",
+      "imports": []
+    },
+    "tools\\calendar_tool.py": {
+      "size": 1316,
+      "modified": "2025-06-03T23:52:11.124495",
+      "lines": 46,
+      "md5": "d3cb7fda",
+      "imports": []
+    },
+    "tools\\document_tool.py": {
+      "size": 1697,
+      "modified": "2025-06-03T23:52:11.124495",
+      "lines": 57,
+      "md5": "dca0a5e4",
+      "imports": []
+    },
+    "tools\\lockup_tool.py": {
+      "size": 1344,
+      "modified": "2025-06-03T23:52:11.126343",
+      "lines": 46,
+      "md5": "00160e79",
+      "imports": []
+    },
+    "tools\\__init__.py": {
+      "size": 40,
+      "modified": "2025-06-03T23:52:11.113855",
+      "lines": 1,
+      "md5": "31d6eaab",
+      "imports": []
+    },
+    "ui\\styles.py": {
+      "size": 1834,
+      "modified": "2025-06-04T18:19:17.758232",
+      "lines": 83,
+      "md5": "60a95e5a",
+      "imports": []
+    },
+    "ui\\__init__.py": {
+      "size": 0,
+      "modified": "2025-06-04T18:19:17.754199",
+      "lines": 1,
+      "md5": "d41d8cd9",
+      "imports": []
+    },
+    "ui\\components\\chat_interface.py": {
+      "size": 3190,
+      "modified": "2025-06-04T18:19:17.756230",
+      "lines": 95,
+      "md5": "4ae788c1",
+      "imports": []
+    },
+    "ui\\components\\context_panel.py": {
+      "size": 3720,
+      "modified": "2025-06-04T18:19:17.757233",
+      "lines": 106,
+      "md5": "d5af7f04",
+      "imports": []
+    },
+    "ui\\components\\data_cards.py": {
+      "size": 6736,
+      "modified": "2025-06-04T18:19:17.757233",
+      "lines": 185,
+      "md5": "f76a7717",
+      "imports": []
+    },
+    "ui\\components\\__init__.py": {
+      "size": 0,
+      "modified": "2025-06-04T18:19:17.754199",
+      "lines": 1,
+      "md5": "d41d8cd9",
+      "imports": []
+    },
+    "views\\components.py": {
+      "size": 12446,
+      "modified": "2025-06-03T23:52:11.122608",
+      "lines": 340,
+      "md5": "6a7fac76",
+      "imports": []
+    },
+    "views\\__init__.py": {
+      "size": 40,
+      "modified": "2025-06-03T23:52:11.115344",
+      "lines": 1,
+      "md5": "ec2f4480",
+      "imports": []
+    }
+  },
+  "data_files": {
+    "APP STRUCTURE.txt": {
+      "size": 1104495,
+      "modified": "2025-06-03T20:23:00.243755",
+      "lines": 16204,
+      "md5": "fc7ecd3d"
+    },
+    "code_analysis_report.json": {
+      "size": 29347,
+      "modified": "2025-06-04T08:21:35.200806",
+      "lines": 1306,
+      "md5": "258cade7"
+    },
+    "project_scan_2025-05-29_104034.txt": {
+      "size": 2239666,
+      "modified": "2025-06-03T20:23:00.261606",
+      "lines": 24306,
+      "md5": "7498120c"
+    },
+    "requirements.txt": {
+      "size": 235,
+      "modified": "2025-06-04T18:19:17.760232",
+      "lines": 13,
+      "md5": "a2aa7e1c"
+    },
+    "structure_analysis.json": {
+      "size": 41442,
+      "modified": "2025-06-04T18:30:36.220058",
+      "lines": 1646,
+      "md5": "40b0bc57"
+    },
+    "structure_tree.txt": {
+      "size": 0,
+      "modified": "2025-06-04T18:30:36.222064",
+      "lines": 1,
+      "md5": "d41d8cd9"
+    },
+    "data\\ipo_data.json": {
+      "size": 1226,
+      "modified": "2025-06-02T08:46:02.878235",
+      "lines": 44,
+      "md5": "f81967db"
+    },
+    "data\\tickers.json": {
+      "size": 2,
+      "modified": "2025-05-28T15:57:46.299330",
+      "lines": 1,
+      "md5": "99914b93"
+    },
+    "data\\cache\\download_status.json": {
+      "size": 80,
+      "modified": "2025-06-04T12:17:48.409050",
+      "lines": 5,
+      "md5": "8c44166c"
+    },
+    "data\\cache\\edgar_filings.json": {
+      "size": 7396,
+      "modified": "2025-06-04T18:06:10.965454",
+      "lines": 187,
+      "md5": "f27e98e1"
+    },
+    "data\\cache\\ipo_cache.json": {
+      "size": 130680,
+      "modified": "2025-06-03T06:55:48.698994",
+      "lines": 4091,
+      "md5": "34da4172"
+    },
+    "data\\cache\\ipo_calendar.json": {
+      "size": 3590,
+      "modified": "2025-06-04T18:21:24.832793",
+      "lines": 119,
+      "md5": "bf5f5cf3"
+    },
+    "data\\cache\\ipo_data_sample.json": {
+      "size": 1545,
+      "modified": "2025-06-02T22:32:02.885626",
+      "lines": 51,
+      "md5": "1764f41b"
+    },
+    "data\\cache\\lockup_calendar.json": {
+      "size": 1129,
+      "modified": "2025-06-04T17:55:33.153757",
+      "lines": 40,
+      "md5": "dc67a7ed"
+    },
+    "data\\processed\\CRCL_s1.json": {
+      "size": 2745,
+      "modified": "2025-06-04T12:17:20.588462",
+      "lines": 21,
+      "md5": "07e970ed"
+    },
+    "data\\processed\\HLEO_s1.json": {
+      "size": 2158,
+      "modified": "2025-06-04T12:17:26.587042",
+      "lines": 19,
+      "md5": "30bcc1b8"
+    },
+    "data\\processed\\OMDA_s1.json": {
+      "size": 2285,
+      "modified": "2025-06-04T12:17:37.133836",
+      "lines": 19,
+      "md5": "9d6dde5a"
+    }
+  }
+}

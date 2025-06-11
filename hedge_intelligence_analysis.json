@@ -1,0 +1,1991 @@
+{
+  "components": {
+    "chat": {
+      "path": "components\\chat.py",
+      "imports": [
+        [
+          "streamlit",
+          "st"
+        ],
+        [
+          "datetime",
+          "datetime"
+        ],
+        [
+          "services.ai_service",
+          "AIService"
+        ],
+        [
+          "services.chat_service",
+          "ChatService"
+        ],
+        [
+          "services.document_service",
+          "DocumentService"
+        ],
+        [
+          "services.report_service",
+          "ReportService"
+        ]
+      ],
+      "classes": [],
+      "functions": [
+        {
+          "name": "render_chat",
+          "params": "",
+          "return_type": null,
+          "docstring": "Render chat interface"
+        },
+        {
+          "name": "show_sources",
+          "params": "sources",
+          "return_type": null,
+          "docstring": "Display source documents"
+        },
+        {
+          "name": "generate_report",
+          "params": "session_data, report_service",
+          "return_type": null,
+          "docstring": "Generate and download report"
+        }
+      ],
+      "session_states": [
+        "current_chat_id",
+        "chat_context",
+        "get"
+      ],
+      "streamlit_components": [
+        {
+          "name": "title",
+          "count": 1
+        },
+        {
+          "name": "subheader",
+          "count": 1
+        },
+        {
+          "name": "markdown",
+          "count": 7
+        },
+        {
+          "name": "button",
+          "count": 5
+        },
+        {
+          "name": "text_area",
+          "count": 1
+        },
+        {
+          "name": "columns",
+          "count": 1
+        },
+        {
+          "name": "expander",
+          "count": 1
+        },
+        {
+          "name": "warning",
+          "count": 1
+        },
+        {
+          "name": "error",
+          "count": 2
+        },
+        {
+          "name": "success",
+          "count": 1
+        },
+        {
+          "name": "spinner",
+          "count": 2
+        }
+      ],
+      "error_handling": []
+    },
+    "dashboard": {
+      "path": "components\\dashboard.py",
+      "imports": [
+        [
+          "streamlit",
+          "st"
+        ],
+        [
+          "pathlib",
+          "Path"
+        ]
+      ],
+      "classes": [],
+      "functions": [
+        {
+          "name": "render_dashboard",
+          "params": "",
+          "return_type": null,
+          "docstring": "Render simplified analyst dashboard"
+        }
+      ],
+      "session_states": [],
+      "streamlit_components": [
+        {
+          "name": "header",
+          "count": 1
+        },
+        {
+          "name": "warning",
+          "count": 1
+        }
+      ],
+      "error_handling": []
+    },
+    "data_extractor": {
+      "path": "components\\data_extractor.py",
+      "imports": [
+        [
+          "re",
+          "re"
+        ],
+        [
+          "typing",
+          "Dict"
+        ],
+        [
+          "typing",
+          "List"
+        ]
+      ],
+      "classes": [
+        {
+          "name": "DataExtractor",
+          "parent": null,
+          "methods": [
+            "__init__",
+            "extract_with_citations",
+            "validate_and_format"
+          ]
+        }
+      ],
+      "functions": [],
+      "session_states": [],
+      "streamlit_components": [],
+      "error_handling": []
+    },
+    "document_explorer": {
+      "path": "components\\document_explorer.py",
+      "imports": [
+        [
+          "streamlit",
+          "st"
+        ],
+        [
+          "json",
+          "json"
+        ],
+        [
+          "pathlib",
+          "Path"
+        ]
+      ],
+      "classes": [
+        {
+          "name": "DocumentExplorer",
+          "parent": null,
+          "methods": [
+            "__init__",
+            "render_sidebar",
+            "get_companies_with_counts",
+            "render_company_docs"
+          ]
+        }
+      ],
+      "functions": [],
+      "session_states": [
+        "selected_doc"
+      ],
+      "streamlit_components": [
+        {
+          "name": "markdown",
+          "count": 1
+        },
+        {
+          "name": "caption",
+          "count": 1
+        },
+        {
+          "name": "button",
+          "count": 1
+        }
+      ],
+      "error_handling": []
+    },
+    "document_viewer": {
+      "path": "components\\document_viewer.py",
+      "imports": [
+        [
+          "streamlit",
+          "st"
+        ],
+        [
+          "pathlib",
+          "Path"
+        ]
+      ],
+      "classes": [],
+      "functions": [
+        {
+          "name": "render_document_viewer",
+          "params": "company, filename",
+          "return_type": null,
+          "docstring": "Render document viewer"
+        }
+      ],
+      "session_states": [],
+      "streamlit_components": [
+        {
+          "name": "header",
+          "count": 1
+        },
+        {
+          "name": "markdown",
+          "count": 1
+        },
+        {
+          "name": "button",
+          "count": 2
+        },
+        {
+          "name": "columns",
+          "count": 1
+        },
+        {
+          "name": "expander",
+          "count": 1
+        },
+        {
+          "name": "info",
+          "count": 1
+        },
+        {
+          "name": "error",
+          "count": 1
+        }
+      ],
+      "error_handling": []
+    },
+    "ipo_tracker": {
+      "path": "components\\ipo_tracker.py",
+      "imports": [
+        [
+          "streamlit",
+          "st"
+        ],
+        [
+          "json",
+          "json"
+        ],
+        [
+          "pandas",
+          "pd"
+        ],
+        [
+          "pathlib",
+          "Path"
+        ]
+      ],
+      "classes": [
+        {
+          "name": "IPOTracker",
+          "parent": null,
+          "methods": [
+            "__init__",
+            "render_ipo_tracker"
+          ]
+        }
+      ],
+      "functions": [],
+      "session_states": [],
+      "streamlit_components": [
+        {
+          "name": "subheader",
+          "count": 1
+        },
+        {
+          "name": "caption",
+          "count": 1
+        },
+        {
+          "name": "info",
+          "count": 1
+        },
+        {
+          "name": "dataframe",
+          "count": 2
+        }
+      ],
+      "error_handling": []
+    },
+    "ipo_tracker_enhanced": {
+      "path": "components\\ipo_tracker_enhanced.py",
+      "imports": [
+        [
+          "streamlit",
+          "st"
+        ],
+        [
+          "pandas",
+          "pd"
+        ],
+        [
+          "json",
+          "json"
+        ],
+        [
+          "datetime",
+          "datetime"
+        ],
+        [
+          "pathlib",
+          "Path"
+        ]
+      ],
+      "classes": [
+        {
+          "name": "IPOTrackerEnhanced",
+          "parent": null,
+          "methods": [
+            "__init__",
+            "render_ipo_dashboard",
+            "load_ipo_data"
+          ]
+        }
+      ],
+      "functions": [],
+      "session_states": [],
+      "streamlit_components": [
+        {
+          "name": "subheader",
+          "count": 1
+        },
+        {
+          "name": "markdown",
+          "count": 2
+        },
+        {
+          "name": "info",
+          "count": 1
+        },
+        {
+          "name": "dataframe",
+          "count": 1
+        }
+      ],
+      "error_handling": []
+    },
+    "persistent_chat": {
+      "path": "components\\persistent_chat.py",
+      "imports": [
+        [
+          "streamlit",
+          "st"
+        ],
+        [
+          "services.ai_service",
+          "AIService"
+        ],
+        [
+          "services.document_service",
+          "DocumentService"
+        ]
+      ],
+      "classes": [
+        {
+          "name": "PersistentChat",
+          "parent": null,
+          "methods": [
+            "__init__",
+            "render_chat_bar",
+            "process_query"
+          ]
+        }
+      ],
+      "functions": [],
+      "session_states": [
+        "selected_doc",
+        "get",
+        "chat_history"
+      ],
+      "streamlit_components": [
+        {
+          "name": "markdown",
+          "count": 1
+        },
+        {
+          "name": "caption",
+          "count": 1
+        },
+        {
+          "name": "button",
+          "count": 1
+        },
+        {
+          "name": "text_input",
+          "count": 1
+        },
+        {
+          "name": "columns",
+          "count": 1
+        },
+        {
+          "name": "empty",
+          "count": 1
+        },
+        {
+          "name": "spinner",
+          "count": 1
+        }
+      ],
+      "error_handling": [
+        {
+          "exception_type": "Exception",
+          "variable": null,
+          "has_else": false,
+          "has_finally": false
+        }
+      ]
+    },
+    "tickers": {
+      "path": "components\\tickers.py",
+      "imports": [
+        [
+          "streamlit",
+          "st"
+        ],
+        [
+          "pandas",
+          "pd"
+        ],
+        [
+          "pathlib",
+          "Path"
+        ],
+        [
+          "datetime",
+          "datetime"
+        ],
+        [
+          "services.document_service",
+          "DocumentService"
+        ],
+        [
+          "scrapers.sec.sec_compliant_scraper",
+          "SECCompliantScraper"
+        ]
+      ],
+      "classes": [],
+      "functions": [
+        {
+          "name": "render_tickers",
+          "params": "",
+          "return_type": null,
+          "docstring": "Render available tickers"
+        },
+        {
+          "name": "show_company_documents",
+          "params": "company: str, doc_service: DocumentService",
+          "return_type": null,
+          "docstring": "Show documents for a company"
+        },
+        {
+          "name": "request_new_ticker",
+          "params": "ticker: str",
+          "return_type": null,
+          "docstring": "Request data for new ticker"
+        },
+        {
+          "name": "get_data_size",
+          "params": "",
+          "return_type": null,
+          "docstring": "Calculate total data size"
+        }
+      ],
+      "session_states": [
+        "current_page",
+        "viewing_document",
+        "watchlist",
+        "viewing_company",
+        "chat_context"
+      ],
+      "streamlit_components": [
+        {
+          "name": "title",
+          "count": 1
+        },
+        {
+          "name": "subheader",
+          "count": 1
+        },
+        {
+          "name": "text",
+          "count": 2
+        },
+        {
+          "name": "markdown",
+          "count": 5
+        },
+        {
+          "name": "caption",
+          "count": 1
+        },
+        {
+          "name": "button",
+          "count": 6
+        },
+        {
+          "name": "text_input",
+          "count": 2
+        },
+        {
+          "name": "columns",
+          "count": 5
+        },
+        {
+          "name": "expander",
+          "count": 1
+        },
+        {
+          "name": "info",
+          "count": 3
+        },
+        {
+          "name": "error",
+          "count": 2
+        },
+        {
+          "name": "success",
+          "count": 2
+        },
+        {
+          "name": "spinner",
+          "count": 1
+        },
+        {
+          "name": "balloons",
+          "count": 1
+        },
+        {
+          "name": "dataframe",
+          "count": 1
+        },
+        {
+          "name": "metric",
+          "count": 3
+        }
+      ],
+      "error_handling": [
+        {
+          "exception_type": "Exception",
+          "variable": "e",
+          "has_else": true,
+          "has_finally": false
+        }
+      ]
+    },
+    "watchlist": {
+      "path": "components\\watchlist.py",
+      "imports": [
+        [
+          "streamlit",
+          "st"
+        ],
+        [
+          "pandas",
+          "pd"
+        ],
+        [
+          "json",
+          "json"
+        ],
+        [
+          "datetime",
+          "datetime"
+        ],
+        [
+          "datetime",
+          "timedelta"
+        ],
+        [
+          "services.document_service",
+          "DocumentService"
+        ],
+        [
+          "services.ai_service",
+          "AIService"
+        ],
+        [
+          "pathlib",
+          "Path"
+        ]
+      ],
+      "classes": [],
+      "functions": [
+        {
+          "name": "render_watchlist",
+          "params": "",
+          "return_type": null,
+          "docstring": "Render watchlist"
+        },
+        {
+          "name": "get_company_metrics",
+          "params": "company: str, doc_service: DocumentService, ai_service: AIService",
+          "return_type": "dict",
+          "docstring": "Get key metrics for a company"
+        },
+        {
+          "name": "get_lockup_info",
+          "params": "company: str, ai_service: AIService",
+          "return_type": "dict",
+          "docstring": "Get lock-up information for company"
+        },
+        {
+          "name": "show_company_analysis",
+          "params": "company: str, ai_service: AIService",
+          "return_type": null,
+          "docstring": "Show detailed company analysis"
+        },
+        {
+          "name": "set_alert",
+          "params": "company: str",
+          "return_type": null,
+          "docstring": "Set alert for company"
+        },
+        {
+          "name": "export_watchlist",
+          "params": "data: list, format: str",
+          "return_type": null,
+          "docstring": "Export watchlist data"
+        }
+      ],
+      "session_states": [
+        "current_page",
+        "chat_context",
+        "watchlist"
+      ],
+      "streamlit_components": [
+        {
+          "name": "title",
+          "count": 1
+        },
+        {
+          "name": "subheader",
+          "count": 1
+        },
+        {
+          "name": "markdown",
+          "count": 5
+        },
+        {
+          "name": "button",
+          "count": 6
+        },
+        {
+          "name": "selectbox",
+          "count": 2
+        },
+        {
+          "name": "multiselect",
+          "count": 1
+        },
+        {
+          "name": "slider",
+          "count": 1
+        },
+        {
+          "name": "radio",
+          "count": 1
+        },
+        {
+          "name": "number_input",
+          "count": 1
+        },
+        {
+          "name": "form",
+          "count": 1
+        },
+        {
+          "name": "form_submit_button",
+          "count": 1
+        },
+        {
+          "name": "columns",
+          "count": 2
+        },
+        {
+          "name": "expander",
+          "count": 1
+        },
+        {
+          "name": "info",
+          "count": 4
+        },
+        {
+          "name": "success",
+          "count": 1
+        },
+        {
+          "name": "dataframe",
+          "count": 1
+        }
+      ],
+      "error_handling": [
+        {
+          "exception_type": "Exception",
+          "variable": null,
+          "has_else": false,
+          "has_finally": false
+        }
+      ]
+    },
+    "main": {
+      "path": "hedge_intelligence.py",
+      "imports": [
+        [
+          "streamlit",
+          "st"
+        ],
+        [
+          "json",
+          "json"
+        ],
+        [
+          "pathlib",
+          "Path"
+        ],
+        [
+          "components.document_explorer",
+          "DocumentExplorer"
+        ],
+        [
+          "components.persistent_chat",
+          "PersistentChat"
+        ],
+        [
+          "components.ipo_tracker_enhanced",
+          "IPOTrackerEnhanced"
+        ],
+        [
+          "components.data_extractor",
+          "DataExtractor"
+        ],
+        [
+          "services.document_service",
+          "DocumentService"
+        ],
+        [
+          "services.ai_service",
+          "AIService"
+        ]
+      ],
+      "classes": [],
+      "functions": [
+        {
+          "name": "apply_cream_theme",
+          "params": "",
+          "return_type": null,
+          "docstring": "Apply Apple-style cream theme"
+        },
+        {
+          "name": "render_document_viewer",
+          "params": "",
+          "return_type": null,
+          "docstring": "Render document viewer"
+        },
+        {
+          "name": "render_analyst_dashboard",
+          "params": "",
+          "return_type": null,
+          "docstring": "Render simplified analyst dashboard"
+        },
+        {
+          "name": "display_chat_history",
+          "params": "",
+          "return_type": null,
+          "docstring": "Display chat history in main area"
+        },
+        {
+          "name": "render_ipo_tracker",
+          "params": "",
+          "return_type": null,
+          "docstring": "IPO Tracker page"
+        },
+        {
+          "name": "render_search",
+          "params": "",
+          "return_type": null,
+          "docstring": "Search across all documents"
+        },
+        {
+          "name": "render_watchlist",
+          "params": "",
+          "return_type": null,
+          "docstring": "Watchlist management"
+        },
+        {
+          "name": "render_company_management",
+          "params": "",
+          "return_type": null,
+          "docstring": "Company request management"
+        },
+        {
+          "name": "main",
+          "params": "",
+          "return_type": null,
+          "docstring": ""
+        }
+      ],
+      "session_states": [
+        "show_company_request",
+        "get",
+        "chat_history",
+        "watchlist",
+        "selected_doc",
+        "main_navigation', 'Dashboard"
+      ],
+      "streamlit_components": [
+        {
+          "name": "title",
+          "count": 5
+        },
+        {
+          "name": "header",
+          "count": 2
+        },
+        {
+          "name": "subheader",
+          "count": 2
+        },
+        {
+          "name": "markdown",
+          "count": 9
+        },
+        {
+          "name": "caption",
+          "count": 2
+        },
+        {
+          "name": "button",
+          "count": 4
+        },
+        {
+          "name": "text_input",
+          "count": 6
+        },
+        {
+          "name": "text_area",
+          "count": 2
+        },
+        {
+          "name": "selectbox",
+          "count": 1
+        },
+        {
+          "name": "radio",
+          "count": 1
+        },
+        {
+          "name": "form",
+          "count": 2
+        },
+        {
+          "name": "form_submit_button",
+          "count": 2
+        },
+        {
+          "name": "columns",
+          "count": 4
+        },
+        {
+          "name": "container",
+          "count": 1
+        },
+        {
+          "name": "expander",
+          "count": 1
+        },
+        {
+          "name": "info",
+          "count": 5
+        },
+        {
+          "name": "error",
+          "count": 1
+        },
+        {
+          "name": "success",
+          "count": 2
+        },
+        {
+          "name": "spinner",
+          "count": 1
+        },
+        {
+          "name": "metric",
+          "count": 4
+        },
+        {
+          "name": "write",
+          "count": 2
+        }
+      ],
+      "error_handling": [
+        {
+          "exception_type": "Exception",
+          "variable": "e",
+          "has_else": false,
+          "has_finally": false
+        }
+      ]
+    },
+    "service_ai_service": {
+      "path": "services\\ai_service.py",
+      "imports": [
+        [
+          "os",
+          "os"
+        ],
+        [
+          "sys",
+          "sys"
+        ],
+        [
+          "typing",
+          "List"
+        ],
+        [
+          "typing",
+          "Dict"
+        ],
+        [
+          "typing",
+          "Tuple"
+        ],
+        [
+          "pathlib",
+          "Path"
+        ]
+      ],
+      "classes": [
+        {
+          "name": "AIService",
+          "parent": null,
+          "methods": [
+            "__init__",
+            "get_ai_response",
+            "search_documents",
+            "get_multi_doc_response",
+            "_calculate_confidence"
+          ]
+        }
+      ],
+      "functions": [],
+      "session_states": [],
+      "streamlit_components": [],
+      "error_handling": [
+        {
+          "exception_type": "ImportError",
+          "variable": null,
+          "has_else": false,
+          "has_finally": false
+        },
+        {
+          "exception_type": "Exception",
+          "variable": null,
+          "has_else": false,
+          "has_finally": false
+        },
+        {
+          "exception_type": "Exception",
+          "variable": "e",
+          "has_else": false,
+          "has_finally": false
+        },
+        {
+          "exception_type": "Exception",
+          "variable": "e",
+          "has_else": false,
+          "has_finally": false
+        }
+      ]
+    },
+    "service_ai_service_backup": {
+      "path": "services\\ai_service_backup.py",
+      "imports": [
+        [
+          "os",
+          "os"
+        ],
+        [
+          "openai",
+          "openai"
+        ],
+        [
+          "google.generativeai",
+          "genai"
+        ],
+        [
+          "chromadb",
+          "chromadb"
+        ],
+        [
+          "re",
+          "re"
+        ],
+        [
+          "typing",
+          "Dict"
+        ],
+        [
+          "typing",
+          "List"
+        ],
+        [
+          "typing",
+          "Tuple"
+        ],
+        [
+          "typing",
+          "Optional"
+        ],
+        [
+          "chromadb.utils",
+          "embedding_functions"
+        ]
+      ],
+      "classes": [
+        {
+          "name": "AIService",
+          "parent": null,
+          "methods": [
+            "__init__",
+            "search_documents",
+            "get_ai_response",
+            "_calculate_confidence"
+          ]
+        }
+      ],
+      "functions": [],
+      "session_states": [],
+      "streamlit_components": [],
+      "error_handling": [
+        {
+          "exception_type": "Exception",
+          "variable": "e",
+          "has_else": false,
+          "has_finally": false
+        },
+        {
+          "exception_type": "Exception",
+          "variable": "e",
+          "has_else": false,
+          "has_finally": false
+        },
+        {
+          "exception_type": "Exception",
+          "variable": "e",
+          "has_else": true,
+          "has_finally": false
+        }
+      ]
+    },
+    "service_ai_service_before_chat_engine": {
+      "path": "services\\ai_service_before_chat_engine.py",
+      "imports": [
+        [
+          "os",
+          "os"
+        ],
+        [
+          "typing",
+          "List"
+        ],
+        [
+          "typing",
+          "Dict"
+        ],
+        [
+          "typing",
+          "Tuple"
+        ],
+        [
+          "openai",
+          "OpenAI"
+        ]
+      ],
+      "classes": [
+        {
+          "name": "AIService",
+          "parent": null,
+          "methods": [
+            "__init__",
+            "get_ai_response",
+            "search_documents",
+            "_calculate_confidence"
+          ]
+        }
+      ],
+      "functions": [],
+      "session_states": [],
+      "streamlit_components": [],
+      "error_handling": [
+        {
+          "exception_type": "Exception",
+          "variable": "e",
+          "has_else": false,
+          "has_finally": false
+        }
+      ]
+    },
+    "service_ai_service_broken": {
+      "path": "services\\ai_service_broken.py",
+      "imports": [
+        [
+          "os",
+          "os"
+        ],
+        [
+          "google.generativeai",
+          "genai"
+        ],
+        [
+          "chromadb",
+          "chromadb"
+        ],
+        [
+          "re",
+          "re"
+        ],
+        [
+          "openai",
+          "OpenAI"
+        ],
+        [
+          "typing",
+          "Dict"
+        ],
+        [
+          "typing",
+          "List"
+        ],
+        [
+          "typing",
+          "Tuple"
+        ],
+        [
+          "typing",
+          "Optional"
+        ],
+        [
+          "chromadb.utils",
+          "embedding_functions"
+        ]
+      ],
+      "classes": [
+        {
+          "name": "AIService",
+          "parent": null,
+          "methods": [
+            "__init__",
+            "search_documents",
+            "get_ai_response",
+            "_calculate_confidence"
+          ]
+        }
+      ],
+      "functions": [],
+      "session_states": [],
+      "streamlit_components": [],
+      "error_handling": [
+        {
+          "exception_type": "Exception",
+          "variable": "e",
+          "has_else": false,
+          "has_finally": false
+        },
+        {
+          "exception_type": "Exception",
+          "variable": "e",
+          "has_else": false,
+          "has_finally": false
+        },
+        {
+          "exception_type": "Exception",
+          "variable": "e",
+          "has_else": true,
+          "has_finally": false
+        }
+      ]
+    },
+    "service_ai_service_pre_openai_fix": {
+      "path": "services\\ai_service_pre_openai_fix.py",
+      "imports": [
+        [
+          "os",
+          "os"
+        ],
+        [
+          "openai",
+          "openai"
+        ],
+        [
+          "google.generativeai",
+          "genai"
+        ],
+        [
+          "chromadb",
+          "chromadb"
+        ],
+        [
+          "re",
+          "re"
+        ],
+        [
+          "typing",
+          "Dict"
+        ],
+        [
+          "typing",
+          "List"
+        ],
+        [
+          "typing",
+          "Tuple"
+        ],
+        [
+          "typing",
+          "Optional"
+        ],
+        [
+          "chromadb.utils",
+          "embedding_functions"
+        ]
+      ],
+      "classes": [
+        {
+          "name": "AIService",
+          "parent": null,
+          "methods": [
+            "__init__",
+            "search_documents",
+            "get_ai_response",
+            "_calculate_confidence"
+          ]
+        }
+      ],
+      "functions": [],
+      "session_states": [],
+      "streamlit_components": [],
+      "error_handling": [
+        {
+          "exception_type": "Exception",
+          "variable": "e",
+          "has_else": false,
+          "has_finally": false
+        },
+        {
+          "exception_type": "Exception",
+          "variable": "e",
+          "has_else": false,
+          "has_finally": false
+        },
+        {
+          "exception_type": "Exception",
+          "variable": "e",
+          "has_else": true,
+          "has_finally": false
+        }
+      ]
+    },
+    "service_ai_service_wrapper": {
+      "path": "services\\ai_service_wrapper.py",
+      "imports": [
+        [
+          "services.ai_service",
+          "AIService"
+        ]
+      ],
+      "classes": [
+        {
+          "name": "AIServiceWrapper",
+          "parent": null,
+          "methods": [
+            "__init__",
+            "get_ai_response",
+            "__getattr__"
+          ]
+        }
+      ],
+      "functions": [],
+      "session_states": [],
+      "streamlit_components": [],
+      "error_handling": []
+    },
+    "service_chat_service": {
+      "path": "services\\chat_service.py",
+      "imports": [
+        [
+          "json",
+          "json"
+        ],
+        [
+          "datetime",
+          "datetime"
+        ],
+        [
+          "typing",
+          "Dict"
+        ],
+        [
+          "typing",
+          "List"
+        ],
+        [
+          "typing",
+          "Optional"
+        ],
+        [
+          "pathlib",
+          "Path"
+        ]
+      ],
+      "classes": [
+        {
+          "name": "ChatService",
+          "parent": null,
+          "methods": [
+            "__init__",
+            "_load_sessions",
+            "_save_sessions",
+            "create_session",
+            "add_message",
+            "get_session",
+            "get_recent_sessions",
+            "delete_session",
+            "search_sessions"
+          ]
+        }
+      ],
+      "functions": [],
+      "session_states": [],
+      "streamlit_components": [],
+      "error_handling": [
+        {
+          "exception_type": "Exception",
+          "variable": null,
+          "has_else": false,
+          "has_finally": false
+        },
+        {
+          "exception_type": "Exception",
+          "variable": "e",
+          "has_else": false,
+          "has_finally": false
+        }
+      ]
+    },
+    "service_document_service": {
+      "path": "services\\document_service.py",
+      "imports": [
+        [
+          "os",
+          "os"
+        ],
+        [
+          "pathlib",
+          "Path"
+        ],
+        [
+          "typing",
+          "List"
+        ],
+        [
+          "typing",
+          "Dict"
+        ],
+        [
+          "typing",
+          "Optional"
+        ]
+      ],
+      "classes": [
+        {
+          "name": "DocumentService",
+          "parent": null,
+          "methods": [
+            "__init__",
+            "get_companies",
+            "get_company_documents",
+            "get_document_content",
+            "search_documents"
+          ]
+        }
+      ],
+      "functions": [],
+      "session_states": [],
+      "streamlit_components": [],
+      "error_handling": [
+        {
+          "exception_type": "Exception",
+          "variable": "e",
+          "has_else": false,
+          "has_finally": false
+        }
+      ]
+    },
+    "service_report_service": {
+      "path": "services\\report_service.py",
+      "imports": [
+        [
+          "json",
+          "json"
+        ],
+        [
+          "io",
+          "io"
+        ],
+        [
+          "datetime",
+          "datetime"
+        ],
+        [
+          "typing",
+          "Dict"
+        ],
+        [
+          "typing",
+          "List"
+        ],
+        [
+          "pathlib",
+          "Path"
+        ],
+        [
+          "reportlab.lib.pagesizes",
+          "letter"
+        ],
+        [
+          "reportlab.platypus",
+          "SimpleDocTemplate"
+        ],
+        [
+          "reportlab.platypus",
+          "Paragraph"
+        ],
+        [
+          "reportlab.platypus",
+          "Spacer"
+        ],
+        [
+          "reportlab.lib.styles",
+          "getSampleStyleSheet"
+        ],
+        [
+          "reportlab.lib.styles",
+          "ParagraphStyle"
+        ],
+        [
+          "reportlab.lib.units",
+          "inch"
+        ]
+      ],
+      "classes": [
+        {
+          "name": "ReportService",
+          "parent": null,
+          "methods": [
+            "__init__",
+            "_setup_custom_styles",
+            "generate_chat_report",
+            "generate_company_report",
+            "generate_excel_data"
+          ]
+        }
+      ],
+      "functions": [],
+      "session_states": [],
+      "streamlit_components": [],
+      "error_handling": []
+    },
+    "service_sec_scraper": {
+      "path": "services\\sec_scraper.py",
+      "imports": [
+        [
+          "requests",
+          "requests"
+        ],
+        [
+          "pathlib",
+          "Path"
+        ]
+      ],
+      "classes": [
+        {
+          "name": "SECScraper",
+          "parent": null,
+          "methods": [
+            "__init__",
+            "get_company_filings",
+            "download_filing"
+          ]
+        }
+      ],
+      "functions": [],
+      "session_states": [],
+      "streamlit_components": [],
+      "error_handling": []
+    },
+    "service_watchlist_service": {
+      "path": "services\\watchlist_service.py",
+      "imports": [
+        [
+          "json",
+          "json"
+        ],
+        [
+          "pathlib",
+          "Path"
+        ]
+      ],
+      "classes": [
+        {
+          "name": "WatchlistService",
+          "parent": null,
+          "methods": [
+            "__init__",
+            "get_watchlist",
+            "add_to_watchlist"
+          ]
+        }
+      ],
+      "functions": [],
+      "session_states": [],
+      "streamlit_components": [],
+      "error_handling": []
+    }
+  },
+  "session_states": [
+    "current_page",
+    "get",
+    "viewing_document",
+    "show_company_request",
+    "chat_history",
+    "watchlist",
+    "main_navigation', 'Dashboard",
+    "selected_doc",
+    "viewing_company",
+    "current_chat_id",
+    "chat_context"
+  ],
+  "data_structures": {
+    "admin_logs": {
+      "type": "list",
+      "size": 1,
+      "structure": [
+        {
+          "timestamp": "str",
+          "admin_user": "str",
+          "action": "str",
+          "ticker": "str",
+          "cik": "NoneType"
+        }
+      ]
+    },
+    "chat_sessions": {
+      "type": "dict",
+      "size": 1,
+      "structure": {
+        "thorrobber22": {
+          "current_session": [
+            {
+              "timestamp": "...",
+              "document": "...",
+              "query": "...",
+              "response": "...",
+              "context": "..."
+            }
+          ],
+          "created": "str"
+        }
+      }
+    },
+    "cik_mappings": {
+      "type": "dict",
+      "size": 19,
+      "structure": {
+        "AAPL:Apple Inc.": {
+          "cik": "str",
+          "name": "str",
+          "ticker": "str",
+          "confidence": "int"
+        },
+        "MSFT:Microsoft Corporation": {
+          "cik": "str",
+          "name": "str",
+          "ticker": "str",
+          "confidence": "int"
+        },
+        "RDDT:Reddit Inc": {
+          "cik": "str",
+          "name": "str",
+          "ticker": "str",
+          "confidence": "int"
+        },
+        "TEST:Test Company Inc": {
+          "cik": "str",
+          "name": "str",
+          "ticker": "str",
+          "confidence": "int"
+        },
+        "CRCL:Circle Internet Corp.": {
+          "cik": "str",
+          "name": "str",
+          "ticker": "str",
+          "confidence": "int"
+        }
+      }
+    },
+    "company_cik_map": {
+      "type": "dict",
+      "size": 3,
+      "structure": {
+        "CRCL": {
+          "cik": "str",
+          "name": "str",
+          "exchange": "str"
+        },
+        "FMFC": {
+          "cik": "str",
+          "name": "str",
+          "exchange": "str"
+        },
+        "RDDT": {
+          "cik": "str",
+          "name": "str",
+          "exchange": "str"
+        }
+      }
+    },
+    "company_requests": {
+      "type": "list",
+      "size": 3,
+      "structure": [
+        {
+          "request_id": "str",
+          "user": "str",
+          "timestamp": "str",
+          "company_name": "str",
+          "ticker": "str"
+        }
+      ]
+    },
+    "download_log": {
+      "type": "list",
+      "size": 1,
+      "structure": [
+        {
+          "filename": "str",
+          "generated_at": "str",
+          "user": "str",
+          "content": "str",
+          "pages": "int"
+        }
+      ]
+    },
+    "ipo_data": {
+      "type": "dict",
+      "size": 2,
+      "structure": {
+        "ipos": [
+          {
+            "company": "str",
+            "ticker": "str",
+            "price_range": "str",
+            "shares": "str",
+            "expected_date": "str"
+          }
+        ],
+        "last_updated": "str"
+      }
+    },
+    "pipeline_data": {
+      "type": "dict",
+      "size": 6,
+      "structure": {
+        "all": "list",
+        "pending": "list",
+        "downloading": "list",
+        "completed": [
+          {
+            "ticker": "str",
+            "name": "str",
+            "completed_date": "str"
+          }
+        ],
+        "failed": "list"
+      }
+    },
+    "production_test_results": {
+      "type": "dict",
+      "size": 5,
+      "structure": {
+        "timestamp": "str",
+        "user": "str",
+        "admin": "str",
+        "summary": {
+          "total": "int",
+          "passed": "int",
+          "failed": "int",
+          "warnings": "int"
+        },
+        "details": [
+          {
+            "test": "str",
+            "status": "str",
+            "details": "str"
+          }
+        ]
+      }
+    },
+    "production_test_v2_results": {
+      "type": "dict",
+      "size": 4,
+      "structure": {
+        "timestamp": "str",
+        "summary": {
+          "total": "int",
+          "passed": "int",
+          "failed": "int",
+          "warnings": "int",
+          "info": "int"
+        },
+        "critical_failures": "list",
+        "details": [
+          {
+            "test": "str",
+            "status": "str",
+            "details": "str",
+            "timestamp": "str"
+          }
+        ]
+      }
+    },
+    "test_sessions": {
+      "type": "list",
+      "size": 1,
+      "structure": [
+        {
+          "user_id": "str",
+          "login_time": "str",
+          "ip_address": "str",
+          "user_agent": "str",
+          "session_id": "str"
+        }
+      ]
+    },
+    "tickers": {
+      "type": "dict",
+      "size": 0,
+      "structure": {}
+    },
+    "user_settings": {
+      "type": "dict",
+      "size": 11,
+      "structure": {
+        "notifications_enabled": "bool",
+        "email_notifications": "bool",
+        "email_address": "str",
+        "alert_types": [
+          "str"
+        ],
+        "theme": "str"
+      }
+    },
+    "watchlists": {
+      "type": "dict",
+      "size": 1,
+      "structure": {
+        "test_analyst_001": [
+          {
+            "ticker": "str",
+            "added_date": "str",
+            "notes": "str",
+            "alert_enabled": "bool"
+          }
+        ]
+      }
+    }
+  },
+  "imports": {
+    "chat": [
+      "streamlit",
+      "datetime",
+      "services.ai_service",
+      "services.chat_service",
+      "services.document_service",
+      "services.report_service"
+    ],
+    "dashboard": [
+      "streamlit",
+      "pathlib"
+    ],
+    "data_extractor": [
+      "re",
+      "typing",
+      "typing"
+    ],
+    "document_explorer": [
+      "streamlit",
+      "json",
+      "pathlib"
+    ],
+    "document_viewer": [
+      "streamlit",
+      "pathlib"
+    ],
+    "ipo_tracker": [
+      "streamlit",
+      "json",
+      "pandas",
+      "pathlib"
+    ],
+    "ipo_tracker_enhanced": [
+      "streamlit",
+      "pandas",
+      "json",
+      "datetime",
+      "pathlib"
+    ],
+    "persistent_chat": [
+      "streamlit",
+      "services.ai_service",
+      "services.document_service"
+    ],
+    "tickers": [
+      "streamlit",
+      "pandas",
+      "pathlib",
+      "datetime",
+      "services.document_service",
+      "scrapers.sec.sec_compliant_scraper"
+    ],
+    "watchlist": [
+      "streamlit",
+      "pandas",
+      "json",
+      "datetime",
+      "datetime",
+      "services.document_service",
+      "services.ai_service",
+      "pathlib"
+    ],
+    "main": [
+      "streamlit",
+      "json",
+      "pathlib",
+      "components.document_explorer",
+      "components.persistent_chat",
+      "components.ipo_tracker_enhanced",
+      "components.data_extractor",
+      "services.document_service",
+      "services.ai_service"
+    ],
+    "service_ai_service": [
+      "os",
+      "sys",
+      "typing",
+      "typing",
+      "typing",
+      "pathlib"
+    ],
+    "service_ai_service_backup": [
+      "os",
+      "openai",
+      "google.generativeai",
+      "chromadb",
+      "re",
+      "typing",
+      "typing",
+      "typing",
+      "typing",
+      "chromadb.utils"
+    ],
+    "service_ai_service_before_chat_engine": [
+      "os",
+      "typing",
+      "typing",
+      "typing",
+      "openai"
+    ],
+    "service_ai_service_broken": [
+      "os",
+      "google.generativeai",
+      "chromadb",
+      "re",
+      "openai",
+      "typing",
+      "typing",
+      "typing",
+      "typing",
+      "chromadb.utils"
+    ],
+    "service_ai_service_pre_openai_fix": [
+      "os",
+      "openai",
+      "google.generativeai",
+      "chromadb",
+      "re",
+      "typing",
+      "typing",
+      "typing",
+      "typing",
+      "chromadb.utils"
+    ],
+    "service_ai_service_wrapper": [
+      "services.ai_service"
+    ],
+    "service_chat_service": [
+      "json",
+      "datetime",
+      "typing",
+      "typing",
+      "typing",
+      "pathlib"
+    ],
+    "service_document_service": [
+      "os",
+      "pathlib",
+      "typing",
+      "typing",
+      "typing"
+    ],
+    "service_report_service": [
+      "json",
+      "io",
+      "datetime",
+      "typing",
+      "typing",
+      "pathlib",
+      "reportlab.lib.pagesizes",
+      "reportlab.platypus",
+      "reportlab.platypus",
+      "reportlab.platypus",
+      "reportlab.lib.styles",
+      "reportlab.lib.styles",
+      "reportlab.lib.units"
+    ],
+    "service_sec_scraper": [
+      "requests",
+      "pathlib"
+    ],
+    "service_watchlist_service": [
+      "json",
+      "pathlib"
+    ]
+  }
+}

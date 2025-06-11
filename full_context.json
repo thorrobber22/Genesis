@@ -1,0 +1,4577 @@
+{
+  "timestamp": "2025-06-08T20:32:25.802356",
+  "user": "thorrobber22",
+  "project": "Hedge Intelligence",
+  "description": "SEC Document Analysis Platform with AI",
+  "file_structure": {
+    "type": "directory",
+    "children": {
+      "admin": {
+        "type": "directory",
+        "children": {
+          "__init__.py": {
+            "type": "file",
+            "size": 40,
+            "extension": ".py"
+          },
+          "admin.py": {
+            "type": "file",
+            "size": 13638,
+            "extension": ".py"
+          },
+          "admin_panel.py": {
+            "type": "file",
+            "size": 5976,
+            "extension": ".py"
+          }
+        }
+      },
+      "admin_final_browser.py": {
+        "type": "file",
+        "size": 20710,
+        "extension": ".py"
+      },
+      "api": {
+        "type": "directory",
+        "children": {
+          "__init__.py": {
+            "type": "file",
+            "size": 0,
+            "extension": ".py"
+          },
+          "routes.py": {
+            "type": "file",
+            "size": 534,
+            "extension": ".py"
+          }
+        }
+      },
+      "apply_refactor.py": {
+        "type": "file",
+        "size": 27250,
+        "extension": ".py"
+      },
+      "archive_2025_06_07": {
+        "type": "directory",
+        "children": {
+          "action_plan.txt": {
+            "type": "file",
+            "size": 2507,
+            "extension": ".txt"
+          },
+          "add_file_browser.py": {
+            "type": "file",
+            "size": 7144,
+            "extension": ".py"
+          },
+          "admin.py": {
+            "type": "file",
+            "size": 19225,
+            "extension": ".py"
+          },
+          "admin_backup.py": {
+            "type": "file",
+            "size": 17413,
+            "extension": ".py"
+          },
+          "admin_enhanced.py": {
+            "type": "file",
+            "size": 14209,
+            "extension": ".py"
+          },
+          "admin_final.py": {
+            "type": "file",
+            "size": 11154,
+            "extension": ".py"
+          },
+          "admin_fixed.py": {
+            "type": "file",
+            "size": 8056,
+            "extension": ".py"
+          },
+          "admin_integration_guide.py": {
+            "type": "file",
+            "size": 319,
+            "extension": ".py"
+          },
+          "admin_professional.py": {
+            "type": "file",
+            "size": 17877,
+            "extension": ".py"
+          },
+          "admin_progress.py": {
+            "type": "file",
+            "size": 14508,
+            "extension": ".py"
+          },
+          "admin_real_data.py": {
+            "type": "file",
+            "size": 16601,
+            "extension": ".py"
+          },
+          "admin_sec.py": {
+            "type": "file",
+            "size": 9822,
+            "extension": ".py"
+          },
+          "admin_simple.py": {
+            "type": "file",
+            "size": 8119,
+            "extension": ".py"
+          },
+          "admin_streamlined.py": {
+            "type": "file",
+            "size": 14884,
+            "extension": ".py"
+          },
+          "admin_test.py": {
+            "type": "file",
+            "size": 12718,
+            "extension": ".py"
+          },
+          "admin_test_final.py": {
+            "type": "file",
+            "size": 14731,
+            "extension": ".py"
+          },
+          "admin_test_fixed.py": {
+            "type": "file",
+            "size": 14467,
+            "extension": ".py"
+          },
+          "ADMIN_UPDATE_GUIDE.txt": {
+            "type": "file",
+            "size": 1582,
+            "extension": ".txt"
+          },
+          "api": {
+            "type": "directory",
+            "children": {
+              "main.py": {
+                "type": "file",
+                "size": 2427,
+                "extension": ".py"
+              }
+            }
+          },
+          "app.py": {
+            "type": "file",
+            "size": 2994,
+            "extension": ".py"
+          },
+          "apply_admin_updates.py": {
+            "type": "file",
+            "size": 3246,
+            "extension": ".py"
+          },
+          "auth.py": {
+            "type": "file",
+            "size": 430,
+            "extension": ".py"
+          },
+          "check_api_keys.py": {
+            "type": "file",
+            "size": 2082,
+            "extension": ".py"
+          },
+          "check_api_keys_fixed.py": {
+            "type": "file",
+            "size": 2109,
+            "extension": ".py"
+          },
+          "check_chat_engine.py": {
+            "type": "file",
+            "size": 1570,
+            "extension": ".py"
+          },
+          "check_chromadb_cache.py": {
+            "type": "file",
+            "size": 1179,
+            "extension": ".py"
+          },
+          "check_existing_scrapers.py": {
+            "type": "file",
+            "size": 2352,
+            "extension": ".py"
+          },
+          "check_structure.py": {
+            "type": "file",
+            "size": 481,
+            "extension": ".py"
+          },
+          "cleanup_and_restructure.py": {
+            "type": "file",
+            "size": 11856,
+            "extension": ".py"
+          },
+          "cleanup_summary.json": {
+            "type": "file",
+            "size": 714,
+            "extension": ".json"
+          },
+          "config.py": {
+            "type": "file",
+            "size": 1528,
+            "extension": ".py"
+          },
+          "create_admin_enhanced.py": {
+            "type": "file",
+            "size": 14556,
+            "extension": ".py"
+          },
+          "create_admin_final.py": {
+            "type": "file",
+            "size": 11512,
+            "extension": ".py"
+          },
+          "create_admin_sec.py": {
+            "type": "file",
+            "size": 5616,
+            "extension": ".py"
+          },
+          "create_admin_with_progress.py": {
+            "type": "file",
+            "size": 15026,
+            "extension": ".py"
+          },
+          "create_document_processor.py": {
+            "type": "file",
+            "size": 9395,
+            "extension": ".py"
+          },
+          "create_document_viewer.py": {
+            "type": "file",
+            "size": 4192,
+            "extension": ".py"
+          },
+          "create_fixed_scraper.py": {
+            "type": "file",
+            "size": 8474,
+            "extension": ".py"
+          },
+          "create_professional_admin.py": {
+            "type": "file",
+            "size": 18583,
+            "extension": ".py"
+          },
+          "create_project_audit.py": {
+            "type": "file",
+            "size": 9318,
+            "extension": ".py"
+          },
+          "create_real_data_admin.py": {
+            "type": "file",
+            "size": 17263,
+            "extension": ".py"
+          },
+          "create_report_generator.py": {
+            "type": "file",
+            "size": 8762,
+            "extension": ".py"
+          },
+          "create_search_interface.py": {
+            "type": "file",
+            "size": 5807,
+            "extension": ".py"
+          },
+          "create_sec_compliant_scraper.py": {
+            "type": "file",
+            "size": 14684,
+            "extension": ".py"
+          },
+          "create_sec_scraper.py": {
+            "type": "file",
+            "size": 21481,
+            "extension": ".py"
+          },
+          "create_simple_admin.py": {
+            "type": "file",
+            "size": 8468,
+            "extension": ".py"
+          },
+          "create_simple_audit.py": {
+            "type": "file",
+            "size": 6208,
+            "extension": ".py"
+          },
+          "create_simple_audit.txt": {
+            "type": "file",
+            "size": 6208,
+            "extension": ".txt"
+          },
+          "create_streamlined_admin.py": {
+            "type": "file",
+            "size": 14250,
+            "extension": ".py"
+          },
+          "create_test_script.py": {
+            "type": "file",
+            "size": 905,
+            "extension": ".py"
+          },
+          "create_user_interface.py": {
+            "type": "file",
+            "size": 9901,
+            "extension": ".py"
+          },
+          "create_vector_store_fixed.py": {
+            "type": "file",
+            "size": 17151,
+            "extension": ".py"
+          },
+          "create_working_scraper.py": {
+            "type": "file",
+            "size": 14423,
+            "extension": ".py"
+          },
+          "debug_admin_login.py": {
+            "type": "file",
+            "size": 2285,
+            "extension": ".py"
+          },
+          "debug_download_issue.py": {
+            "type": "file",
+            "size": 7237,
+            "extension": ".py"
+          },
+          "debug_env.py": {
+            "type": "file",
+            "size": 2019,
+            "extension": ".py"
+          },
+          "debug_env_loading.py": {
+            "type": "file",
+            "size": 1976,
+            "extension": ".py"
+          },
+          "debug_key_facts.py": {
+            "type": "file",
+            "size": 3228,
+            "extension": ".py"
+          },
+          "debug_process_result.py": {
+            "type": "file",
+            "size": 1318,
+            "extension": ".py"
+          },
+          "deep_analysis_results.json": {
+            "type": "file",
+            "size": 389699,
+            "extension": ".json"
+          },
+          "deep_code_analyzer.py": {
+            "type": "file",
+            "size": 16171,
+            "extension": ".py"
+          },
+          "diagnose_download_issue.py": {
+            "type": "file",
+            "size": 8079,
+            "extension": ".py"
+          },
+          "document_processor_test.py": {
+            "type": "file",
+            "size": 8067,
+            "extension": ".py"
+          },
+          "document_viewer.py": {
+            "type": "file",
+            "size": 3920,
+            "extension": ".py"
+          },
+          "enhanced_sec_scraper.py": {
+            "type": "file",
+            "size": 13219,
+            "extension": ".py"
+          },
+          "final_fix_imports.py": {
+            "type": "file",
+            "size": 9331,
+            "extension": ".py"
+          },
+          "fix_admin_encoding.py": {
+            "type": "file",
+            "size": 9172,
+            "extension": ".py"
+          },
+          "fix_admin_indent.py": {
+            "type": "file",
+            "size": 2193,
+            "extension": ".py"
+          },
+          "fix_admin_login.py": {
+            "type": "file",
+            "size": 5184,
+            "extension": ".py"
+          },
+          "fix_admin_professional.py": {
+            "type": "file",
+            "size": 2299,
+            "extension": ".py"
+          },
+          "fix_admin_structure.py": {
+            "type": "file",
+            "size": 2300,
+            "extension": ".py"
+          },
+          "fix_admin_with_working_scraper.py": {
+            "type": "file",
+            "size": 8825,
+            "extension": ".py"
+          },
+          "fix_all_issues.py": {
+            "type": "file",
+            "size": 7120,
+            "extension": ".py"
+          },
+          "fix_api_key_names.py": {
+            "type": "file",
+            "size": 1491,
+            "extension": ".py"
+          },
+          "fix_create_admin_sec.py": {
+            "type": "file",
+            "size": 10278,
+            "extension": ".py"
+          },
+          "fix_create_report_generator.py": {
+            "type": "file",
+            "size": 8790,
+            "extension": ".py"
+          },
+          "fix_document_processor.py": {
+            "type": "file",
+            "size": 11070,
+            "extension": ".py"
+          },
+          "fix_document_processor_integration.py": {
+            "type": "file",
+            "size": 4819,
+            "extension": ".py"
+          },
+          "fix_document_validation.py": {
+            "type": "file",
+            "size": 1342,
+            "extension": ".py"
+          },
+          "fix_enhanced_scraper.py": {
+            "type": "file",
+            "size": 10577,
+            "extension": ".py"
+          },
+          "fix_ipo_categorization.py": {
+            "type": "file",
+            "size": 8017,
+            "extension": ".py"
+          },
+          "fix_pipeline_complete.py": {
+            "type": "file",
+            "size": 8674,
+            "extension": ".py"
+          },
+          "fix_pipeline_imports.py": {
+            "type": "file",
+            "size": 2729,
+            "extension": ".py"
+          },
+          "fix_pipeline_integration.py": {
+            "type": "file",
+            "size": 3522,
+            "extension": ".py"
+          },
+          "fix_process_and_index.py": {
+            "type": "file",
+            "size": 4753,
+            "extension": ".py"
+          },
+          "fix_process_and_index_v2.py": {
+            "type": "file",
+            "size": 4714,
+            "extension": ".py"
+          },
+          "fix_process_and_index_v3.py": {
+            "type": "file",
+            "size": 7627,
+            "extension": ".py"
+          },
+          "fix_scrape_ipos_error.py": {
+            "type": "file",
+            "size": 4535,
+            "extension": ".py"
+          },
+          "fix_scrape_ipos_indent.py": {
+            "type": "file",
+            "size": 3350,
+            "extension": ".py"
+          },
+          "fix_syntax_errors.py": {
+            "type": "file",
+            "size": 9901,
+            "extension": ".py"
+          },
+          "fix_ticker_extraction.py": {
+            "type": "file",
+            "size": 16888,
+            "extension": ".py"
+          },
+          "fix_vector_store_env_loading.py": {
+            "type": "file",
+            "size": 1000,
+            "extension": ".py"
+          },
+          "fix_vector_store_imports.py": {
+            "type": "file",
+            "size": 2959,
+            "extension": ".py"
+          },
+          "fix_vector_store_where_clause.py": {
+            "type": "file",
+            "size": 1297,
+            "extension": ".py"
+          },
+          "glimpse_file.py": {
+            "type": "file",
+            "size": 3247,
+            "extension": ".py"
+          },
+          "hedge_intelligence_ui.py": {
+            "type": "file",
+            "size": 8528,
+            "extension": ".py"
+          },
+          "install_chromadb.py": {
+            "type": "file",
+            "size": 420,
+            "extension": ".py"
+          },
+          "move_admin.py": {
+            "type": "file",
+            "size": 935,
+            "extension": ".py"
+          },
+          "pipeline_test.log": {
+            "type": "file",
+            "size": 1949,
+            "extension": ".log"
+          },
+          "process_and_index.py": {
+            "type": "file",
+            "size": 7306,
+            "extension": ".py"
+          },
+          "project_audit.json": {
+            "type": "file",
+            "size": 164850,
+            "extension": ".json"
+          },
+          "project_audit_summary.txt": {
+            "type": "file",
+            "size": 0,
+            "extension": ".txt"
+          },
+          "project_status_check.py": {
+            "type": "file",
+            "size": 8829,
+            "extension": ".py"
+          },
+          "project_summary.txt": {
+            "type": "file",
+            "size": 540,
+            "extension": ".txt"
+          },
+          "python create_simple_audit.py": {
+            "type": "file",
+            "size": 6208,
+            "extension": ".py"
+          },
+          "python fix_syntax_errors.py": {
+            "type": "file",
+            "size": 9901,
+            "extension": ".py"
+          },
+          "quick_fix_admin_streamlined.py": {
+            "type": "file",
+            "size": 2652,
+            "extension": ".py"
+          },
+          "run.py": {
+            "type": "file",
+            "size": 1496,
+            "extension": ".py"
+          },
+          "run_admin.py": {
+            "type": "file",
+            "size": 350,
+            "extension": ".py"
+          },
+          "run_app.py": {
+            "type": "file",
+            "size": 306,
+            "extension": ".py"
+          },
+          "search_interface.py": {
+            "type": "file",
+            "size": 5243,
+            "extension": ".py"
+          },
+          "setup.py": {
+            "type": "file",
+            "size": 636,
+            "extension": ".py"
+          },
+          "structure_analysis.json": {
+            "type": "file",
+            "size": 42125,
+            "extension": ".json"
+          },
+          "test_admin_pipeline.py": {
+            "type": "file",
+            "size": 6387,
+            "extension": ".py"
+          },
+          "test_direct_download.py": {
+            "type": "file",
+            "size": 749,
+            "extension": ".py"
+          },
+          "test_existing_scrapers.py": {
+            "type": "file",
+            "size": 3970,
+            "extension": ".py"
+          },
+          "test_openai_direct.py": {
+            "type": "file",
+            "size": 0,
+            "extension": ".py"
+          },
+          "test_openai_simple.py": {
+            "type": "file",
+            "size": 613,
+            "extension": ".py"
+          },
+          "test_phase3_complete.py": {
+            "type": "file",
+            "size": 5168,
+            "extension": ".py"
+          },
+          "test_phase3_complete_fixed.py": {
+            "type": "file",
+            "size": 5784,
+            "extension": ".py"
+          },
+          "test_sec_pipeline.py": {
+            "type": "file",
+            "size": 1191,
+            "extension": ".py"
+          },
+          "test_sec_system.py": {
+            "type": "file",
+            "size": 9877,
+            "extension": ".py"
+          },
+          "test_simple.py": {
+            "type": "file",
+            "size": 1337,
+            "extension": ".py"
+          },
+          "test_vector_store_minimal.py": {
+            "type": "file",
+            "size": 1026,
+            "extension": ".py"
+          },
+          "test_working_scraper.py": {
+            "type": "file",
+            "size": 1116,
+            "extension": ".py"
+          },
+          "update_admin.py": {
+            "type": "file",
+            "size": 18041,
+            "extension": ".py"
+          },
+          "update_admin_clean.py": {
+            "type": "file",
+            "size": 1910,
+            "extension": ".py"
+          },
+          "update_admin_integration.py": {
+            "type": "file",
+            "size": 916,
+            "extension": ".py"
+          },
+          "update_admin_to_use_existing.py": {
+            "type": "file",
+            "size": 3737,
+            "extension": ".py"
+          },
+          "update_chat_engine_safe.py": {
+            "type": "file",
+            "size": 5003,
+            "extension": ".py"
+          },
+          "update_pipeline_enhanced.py": {
+            "type": "file",
+            "size": 1479,
+            "extension": ".py"
+          },
+          "update_processor_vector.py": {
+            "type": "file",
+            "size": 974,
+            "extension": ".py"
+          },
+          "update_requirements_chromadb.py": {
+            "type": "file",
+            "size": 788,
+            "extension": ".py"
+          },
+          "update_to_working_scraper.py": {
+            "type": "file",
+            "size": 1155,
+            "extension": ".py"
+          },
+          "vector_store_test.py": {
+            "type": "file",
+            "size": 9199,
+            "extension": ".py"
+          },
+          "view_admin_auth.py": {
+            "type": "file",
+            "size": 1021,
+            "extension": ".py"
+          },
+          "view_admin_streamlined_structure.py": {
+            "type": "file",
+            "size": 1258,
+            "extension": ".py"
+          },
+          "view_admin_structure.py": {
+            "type": "file",
+            "size": 934,
+            "extension": ".py"
+          },
+          "view_file_structure.py": {
+            "type": "file",
+            "size": 2533,
+            "extension": ".py"
+          }
+        }
+      },
+      "background": {
+        "type": "directory",
+        "children": {
+          "__init__.py": {
+            "type": "file",
+            "size": 45,
+            "extension": ".py"
+          },
+          "scheduler.py": {
+            "type": "file",
+            "size": 1840,
+            "extension": ".py"
+          }
+        }
+      },
+      "backup_20250607": {
+        "type": "directory",
+        "children": {
+          "components": {
+            "type": "directory",
+            "children": {
+              "chat.py": {
+                "type": "file",
+                "size": 7265,
+                "extension": ".py"
+              },
+              "dashboard.py": {
+                "type": "file",
+                "size": 521,
+                "extension": ".py"
+              }
+            }
+          },
+          "hedge_intelligence.py": {
+            "type": "file",
+            "size": 7674,
+            "extension": ".py"
+          },
+          "services": {
+            "type": "directory",
+            "children": {
+              "ai_service.py": {
+                "type": "file",
+                "size": 5920,
+                "extension": ".py"
+              }
+            }
+          }
+        }
+      },
+      "check_services.py": {
+        "type": "file",
+        "size": 1803,
+        "extension": ".py"
+      },
+      "clean_fix.py": {
+        "type": "file",
+        "size": 3244,
+        "extension": ".py"
+      },
+      "components": {
+        "type": "directory",
+        "children": {
+          "__init__.py": {
+            "type": "file",
+            "size": 28,
+            "extension": ".py"
+          },
+          "chat.py": {
+            "type": "file",
+            "size": 7265,
+            "extension": ".py"
+          },
+          "dashboard.py": {
+            "type": "file",
+            "size": 521,
+            "extension": ".py"
+          },
+          "data_extractor.py": {
+            "type": "file",
+            "size": 2458,
+            "extension": ".py"
+          },
+          "document_explorer.py": {
+            "type": "file",
+            "size": 2827,
+            "extension": ".py"
+          },
+          "document_viewer.py": {
+            "type": "file",
+            "size": 1229,
+            "extension": ".py"
+          },
+          "ipo_tracker.py": {
+            "type": "file",
+            "size": 1168,
+            "extension": ".py"
+          },
+          "ipo_tracker_enhanced.py": {
+            "type": "file",
+            "size": 2496,
+            "extension": ".py"
+          },
+          "persistent_chat.py": {
+            "type": "file",
+            "size": 3098,
+            "extension": ".py"
+          },
+          "tickers.py": {
+            "type": "file",
+            "size": 6757,
+            "extension": ".py"
+          },
+          "watchlist.py": {
+            "type": "file",
+            "size": 7636,
+            "extension": ".py"
+          }
+        }
+      },
+      "core": {
+        "type": "directory",
+        "children": {
+          "__init__.py": {
+            "type": "file",
+            "size": 39,
+            "extension": ".py"
+          },
+          "chat_engine.py": {
+            "type": "file",
+            "size": 9032,
+            "extension": ".py"
+          },
+          "chat_engine_backup.py": {
+            "type": "file",
+            "size": 6044,
+            "extension": ".py"
+          },
+          "document_processor.py": {
+            "type": "file",
+            "size": 24165,
+            "extension": ".py"
+          },
+          "orchestrator.py": {
+            "type": "file",
+            "size": 1389,
+            "extension": ".py"
+          },
+          "report_generator.py": {
+            "type": "file",
+            "size": 8386,
+            "extension": ".py"
+          },
+          "vector_store.py": {
+            "type": "file",
+            "size": 16602,
+            "extension": ".py"
+          },
+          "vector_store_backup.py": {
+            "type": "file",
+            "size": 16456,
+            "extension": ".py"
+          }
+        }
+      },
+      "create_hedge_intelligence.py": {
+        "type": "file",
+        "size": 74139,
+        "extension": ".py"
+      },
+      "data": {
+        "type": "directory",
+        "children": {
+          "__init__.py": {
+            "type": "file",
+            "size": 0,
+            "extension": ".py"
+          },
+          "admin_logs.json": {
+            "type": "file",
+            "size": 198,
+            "extension": ".json"
+          },
+          "cache": {
+            "type": "directory",
+            "children": {
+              "__init__.py": {
+                "type": "file",
+                "size": 0,
+                "extension": ".py"
+              },
+              "download_status.json": {
+                "type": "file",
+                "size": 80,
+                "extension": ".json"
+              },
+              "edgar_filings.json": {
+                "type": "file",
+                "size": 7396,
+                "extension": ".json"
+              },
+              "ipo_cache.json": {
+                "type": "file",
+                "size": 130680,
+                "extension": ".json"
+              },
+              "ipo_calendar.json": {
+                "type": "file",
+                "size": 3590,
+                "extension": ".json"
+              },
+              "ipo_calendar.json.bak": {
+                "type": "file",
+                "size": 3590,
+                "extension": ".bak"
+              },
+              "ipo_data_sample.json": {
+                "type": "file",
+                "size": 1545,
+                "extension": ".json"
+              },
+              "lockup_calendar.json": {
+                "type": "file",
+                "size": 1129,
+                "extension": ".json"
+              },
+              "lockup_calendar.json.bak": {
+                "type": "file",
+                "size": 1129,
+                "extension": ".bak"
+              }
+            }
+          },
+          "chat_history": {
+            "type": "directory",
+            "children": {}
+          },
+          "chat_sessions.json": {
+            "type": "file",
+            "size": 2098,
+            "extension": ".json"
+          },
+          "chroma_db": {
+            "type": "directory",
+            "children": {
+              "chroma.sqlite3": {
+                "type": "file",
+                "size": 163840,
+                "extension": ".sqlite3"
+              }
+            }
+          },
+          "cik_mappings.json": {
+            "type": "file",
+            "size": 2860,
+            "extension": ".json"
+          },
+          "company_cik_map.json": {
+            "type": "file",
+            "size": 319,
+            "extension": ".json"
+          },
+          "company_requests": {
+            "type": "directory",
+            "children": {}
+          },
+          "company_requests.json": {
+            "type": "file",
+            "size": 498,
+            "extension": ".json"
+          },
+          "documents": {
+            "type": "directory",
+            "children": {
+              "__init__.py": {
+                "type": "file",
+                "size": 0,
+                "extension": ".py"
+              },
+              "ALEH_424B4 real.pdf": {
+                "type": "file",
+                "size": 17339313,
+                "extension": ".pdf"
+              },
+              "ALEH_424B4.pdf": {
+                "type": "file",
+                "size": 106954752,
+                "extension": ".pdf"
+              },
+              "ALEH_CRCL_S-1.pdf": {
+                "type": "file",
+                "size": 125594495,
+                "extension": ".pdf"
+              },
+              "APPL_HELIO_S-1.pdf_20250605_095134": {
+                "type": "file",
+                "size": 0,
+                "extension": ".pdf_20250605_095134"
+              },
+              "CRCL_424B4 real.pdf": {
+                "type": "file",
+                "size": 17339313,
+                "extension": ".pdf"
+              },
+              "CRCL_CRCL_S-1.pdf": {
+                "type": "file",
+                "size": 125594495,
+                "extension": ".pdf"
+              },
+              "CRCL_S-1.pdf": {
+                "type": "file",
+                "size": 125594495,
+                "extension": ".pdf"
+              },
+              "CRCL_S-1_20250604_104906.html": {
+                "type": "file",
+                "size": 3905227,
+                "extension": ".html"
+              },
+              "CRCL_S-1_20250604_121718.html": {
+                "type": "file",
+                "size": 3905227,
+                "extension": ".html"
+              },
+              "HLEO_S-1_20250604_104915.html": {
+                "type": "file",
+                "size": 29340,
+                "extension": ".html"
+              },
+              "HLEO_S-1_20250604_121726.html": {
+                "type": "file",
+                "size": 29340,
+                "extension": ".html"
+              },
+              "OMDA_S-1_20250604_104921.html": {
+                "type": "file",
+                "size": 3824060,
+                "extension": ".html"
+              },
+              "OMDA_S-1_20250604_121732.html": {
+                "type": "file",
+                "size": 3824060,
+                "extension": ".html"
+              },
+              "TEST_1A - La Rosa Holdings Corp_S1.html": {
+                "type": "file",
+                "size": 706879,
+                "extension": ".html"
+              }
+            }
+          },
+          "download_log.json": {
+            "type": "file",
+            "size": 201,
+            "extension": ".json"
+          },
+          "ipo_data.json": {
+            "type": "file",
+            "size": 1226,
+            "extension": ".json"
+          },
+          "ipo_pipeline": {
+            "type": "directory",
+            "children": {
+              "active.json": {
+                "type": "file",
+                "size": 7960,
+                "extension": ".json"
+              },
+              "completed.json": {
+                "type": "file",
+                "size": 2,
+                "extension": ".json"
+              },
+              "pending.json": {
+                "type": "file",
+                "size": 2,
+                "extension": ".json"
+              }
+            }
+          },
+          "logs": {
+            "type": "directory",
+            "children": {
+              "index_page_20250604_104851.html": {
+                "type": "file",
+                "size": 10219,
+                "extension": ".html"
+              },
+              "index_page_20250604_104906.html": {
+                "type": "file",
+                "size": 10219,
+                "extension": ".html"
+              },
+              "index_page_20250604_104915.html": {
+                "type": "file",
+                "size": 10080,
+                "extension": ".html"
+              },
+              "index_page_20250604_104921.html": {
+                "type": "file",
+                "size": 10215,
+                "extension": ".html"
+              },
+              "index_page_20250604_121717.html": {
+                "type": "file",
+                "size": 10219,
+                "extension": ".html"
+              },
+              "index_page_20250604_121726.html": {
+                "type": "file",
+                "size": 10080,
+                "extension": ".html"
+              },
+              "index_page_20250604_121732.html": {
+                "type": "file",
+                "size": 10215,
+                "extension": ".html"
+              },
+              "iposcoop_latest.html": {
+                "type": "file",
+                "size": 36523,
+                "extension": ".html"
+              }
+            }
+          },
+          "pipeline_data.json": {
+            "type": "file",
+            "size": 378,
+            "extension": ".json"
+          },
+          "processed": {
+            "type": "directory",
+            "children": {
+              "__init__.py": {
+                "type": "file",
+                "size": 0,
+                "extension": ".py"
+              },
+              "ALEH_424B4_20250606_101629.json": {
+                "type": "file",
+                "size": 610,
+                "extension": ".json"
+              },
+              "ALEH_424B4_20250606_101634.json": {
+                "type": "file",
+                "size": 607,
+                "extension": ".json"
+              },
+              "ALEH_S-1_20250606_101627.json": {
+                "type": "file",
+                "size": 1568,
+                "extension": ".json"
+              },
+              "CRCL_424B4_20250606_101520.json": {
+                "type": "file",
+                "size": 610,
+                "extension": ".json"
+              },
+              "CRCL_S-1_20250606_074701.json": {
+                "type": "file",
+                "size": 20878,
+                "extension": ".json"
+              },
+              "CRCL_S-1_20250606_074832.json": {
+                "type": "file",
+                "size": 20965,
+                "extension": ".json"
+              },
+              "CRCL_S-1_20250606_075151.json": {
+                "type": "file",
+                "size": 20878,
+                "extension": ".json"
+              },
+              "CRCL_S-1_20250606_082037.json": {
+                "type": "file",
+                "size": 1556,
+                "extension": ".json"
+              },
+              "CRCL_S-1_20250606_101517.json": {
+                "type": "file",
+                "size": 1568,
+                "extension": ".json"
+              },
+              "CRCL_s1.json": {
+                "type": "file",
+                "size": 2745,
+                "extension": ".json"
+              },
+              "HLEO_s1.json": {
+                "type": "file",
+                "size": 2158,
+                "extension": ".json"
+              },
+              "OMDA_s1.json": {
+                "type": "file",
+                "size": 2285,
+                "extension": ".json"
+              }
+            }
+          },
+          "production_test_results.json": {
+            "type": "file",
+            "size": 1575,
+            "extension": ".json"
+          },
+          "production_test_v2_results.json": {
+            "type": "file",
+            "size": 8066,
+            "extension": ".json"
+          },
+          "sec_documents": {
+            "type": "directory",
+            "children": {
+              "CRCL": {
+                "type": "directory",
+                "children": {
+                  "3_2025-06-04_0.html": {},
+                  "3_2025-06-04_1.xml": {},
+                  "3_2025-06-04_companysearch.html": {},
+                  "3_2025-06-04_complete.txt": {},
+                  "3_2025-06-04_dp229583_3-horowitz.xml": {},
+                  "3_2025-06-04_dp229584_3-broderick.xml": {},
+                  "3_2025-06-04_dp229585_3-ostling.xml": {},
+                  "3_2025-06-04_dp229587_3-tarbert.xml": {},
+                  "3_2025-06-04_dp229588_3-allaire.xml": {},
+                  "3_2025-06-04_dp229589_3-foxgeen.xml": {},
+                  "3_2025-06-04_dp229590_3-burns.xml": {},
+                  "3_2025-06-04_dp229591_3-chandhok.xml": {},
+                  "3_2025-06-04_dp229592_3-date.xml": {},
+                  "3_2025-06-04_dp229593_3-neville.xml": {},
+                  "3_2025-06-04_dp229594_3-schulz.xml": {},
+                  "3_2025-06-04_form3.xml": {},
+                  "3_2025-06-04_ownership.xml": {},
+                  "3_2025_06_04_0000929638-25-002169.txt": {},
+                  "3_2025_06_04_0000950103-25-007016.txt": {},
+                  "3_2025_06_04_0000950103-25-007017.txt": {},
+                  "3_2025_06_04_0000950103-25-007018.txt": {},
+                  "3_2025_06_04_0000950103-25-007019.txt": {},
+                  "3_2025_06_04_0000950103-25-007020.txt": {},
+                  "3_2025_06_04_0000950103-25-007021.txt": {},
+                  "3_2025_06_04_0000950103-25-007022.txt": {},
+                  "3_2025_06_04_0000950103-25-007023.txt": {},
+                  "3_2025_06_04_0000950103-25-007024.txt": {},
+                  "3_2025_06_04_0000950103-25-007025.txt": {},
+                  "3_2025_06_04_0000950103-25-007026.txt": {},
+                  "3_2025_06_04_0000950170-25-081894.txt": {},
+                  "3_2025_06_04_0000950170-25-081896.txt": {},
+                  "3_2025_06_04_dp229583_3-horowitz.xml": {},
+                  "3_2025_06_04_dp229583_ex24.htm": {},
+                  "3_2025_06_04_dp229584_3-broderick.xml": {},
+                  "3_2025_06_04_dp229584_ex24.htm": {},
+                  "3_2025_06_04_dp229585_3-ostling.xml": {},
+                  "3_2025_06_04_dp229585_ex24.htm": {},
+                  "3_2025_06_04_dp229587_3-tarbert.xml": {},
+                  "3_2025_06_04_dp229587_ex24.htm": {},
+                  "3_2025_06_04_dp229588_3-allaire.xml": {},
+                  "3_2025_06_04_dp229588_ex24.htm": {},
+                  "3_2025_06_04_dp229589_3-foxgeen.xml": {},
+                  "3_2025_06_04_dp229589_ex24.htm": {},
+                  "3_2025_06_04_dp229590_3-burns.xml": {},
+                  "3_2025_06_04_dp229590_ex24.htm": {},
+                  "3_2025_06_04_dp229591_3-chandhok.xml": {},
+                  "3_2025_06_04_dp229591_ex24.htm": {},
+                  "3_2025_06_04_dp229592_3-date.xml": {},
+                  "3_2025_06_04_dp229592_ex24.htm": {},
+                  "3_2025_06_04_dp229593_3-neville.xml": {},
+                  "3_2025_06_04_dp229593_ex24.htm": {},
+                  "3_2025_06_04_dp229594_3-schulz.xml": {},
+                  "3_2025_06_04_dp229594_ex24.htm": {},
+                  "3_2025_06_04_form3.xml": {},
+                  "3_2025_06_04_ownership.xml": {},
+                  "3_A_2025-06-05_0.html": {},
+                  "3_A_2025-06-05_1.xml": {},
+                  "3_A_2025-06-05_companysearch.html": {},
+                  "3_A_2025-06-05_complete.txt": {},
+                  "3_A_2025-06-05_ownership.xml": {},
+                  "3_A_2025_06_05_0000950170-25-082022.txt": {},
+                  "3_A_2025_06_05_ownership.xml": {},
+                  "424B4_2025-06-05_0.htm": {},
+                  "424B4_2025-06-05_0001193125-25-135795.txt": {},
+                  "424B4_2025-06-05_1.jpg": {},
+                  "424B4_2025-06-05_2.jpg": {},
+                  "424B4_2025-06-05_3.jpg": {},
+                  "424B4_2025-06-05_4.jpg": {},
+                  "424B4_2025-06-05_5.jpg": {},
+                  "424B4_2025-06-05_6.jpg": {},
+                  "424B4_2025-06-05_7.jpg": {},
+                  "424B4_2025-06-05_8.jpg": {},
+                  "424B4_2025-06-05_companysearch.html": {},
+                  "424B4_2025-06-05_complete.txt": {},
+                  "424B4_2025-06-05_d737521d424b4.htm": {},
+                  "424B4_2025_06_05_0001193125-25-135795.txt": {},
+                  "424B4_2025_06_05_d737521d424b4.htm": {},
+                  "425_2021-08-09_0.htm": {},
+                  "425_2021-08-09_complete.txt": {},
+                  "425_2021-08-10_0.htm": {},
+                  "425_2021-08-10_complete.txt": {},
+                  "425_2021-08-23_0.htm": {},
+                  "425_2021-08-23_complete.txt": {},
+                  "425_2021-10-21_0.htm": {},
+                  "425_2021-10-21_1.jpg": {},
+                  "425_2021-10-21_complete.txt": {},
+                  "425_2021_08_09_0001104659-21-102122.txt": {},
+                  "425_2021_08_09_tm2123712d3_425.htm": {},
+                  "425_2021_08_10_0001104659-21-102322.txt": {},
+                  "425_2021_08_10_tm2123712d4_425.htm": {},
+                  "425_2021_08_23_0001104659-21-108632.txt": {},
+                  "425_2021_08_23_0001104659-21-108633.txt": {},
+                  "425_2021_08_23_tm2125702d1_425.htm": {},
+                  "425_2021_08_23_tm2125702d2_425.htm": {},
+                  "425_2021_10_21_0001104659-21-128323.txt": {},
+                  "425_2021_10_21_tm2124445d5_425.htm": {},
+                  "425_2022-02-17_0.htm": {},
+                  "425_2022-02-17_1.htm": {},
+                  "425_2022-02-17_10.jpg": {},
+                  "425_2022-02-17_11.jpg": {},
+                  "425_2022-02-17_12.jpg": {},
+                  "425_2022-02-17_13.jpg": {},
+                  "425_2022-02-17_14.jpg": {},
+                  "425_2022-02-17_2.htm": {},
+                  "425_2022-02-17_3.htm": {},
+                  "425_2022-02-17_4.htm": {},
+                  "425_2022-02-17_5.htm": {},
+                  "425_2022-02-17_6.htm": {},
+                  "425_2022-02-17_7.htm": {},
+                  "425_2022-02-17_8.jpg": {},
+                  "425_2022-02-17_9.jpg": {},
+                  "425_2022-02-17_complete.txt": {},
+                  "425_2022-04-12_0.htm": {},
+                  "425_2022-04-12_1.jpg": {},
+                  "425_2022-04-12_complete.txt": {},
+                  "425_2022-06-03_0.htm": {},
+                  "425_2022-06-03_complete.txt": {},
+                  "425_2022-06-07_0.htm": {},
+                  "425_2022-06-07_complete.txt": {},
+                  "425_2022_02_17_0001213900-22-008149.txt": {},
+                  "425_2022_02_17_ea155842-8k425_concord.htm": {},
+                  "425_2022_02_17_ea155842ex10-1_concord.htm": {},
+                  "425_2022_02_17_ea155842ex10-2_concord.htm": {},
+                  "425_2022_02_17_ea155842ex10-3_concord.htm": {},
+                  "425_2022_02_17_ea155842ex2-1_concord.htm": {},
+                  "425_2022_02_17_ea155842ex99-1_concord.htm": {},
+                  "425_2022_02_17_ea155842ex99-2_concord.htm": {},
+                  "425_2022_02_17_ea155842ex99-3_concord.htm": {},
+                  "425_2022_04_12_0001104659-22-044857.txt": {},
+                  "425_2022_04_12_tm2124445d11_425.htm": {},
+                  "425_2022_06_03_0001104659-22-068177.txt": {},
+                  "425_2022_06_03_tm2217643d1_425.htm": {},
+                  "425_2022_06_07_0001104659-22-068962.txt": {},
+                  "425_2022_06_07_tm2217643d2_425.htm": {},
+                  "8-A12B_2025-05-27_0.htm": {},
+                  "8-A12B_2025-05-27_complete.txt": {},
+                  "8-K_2025-06-06_0.htm": {},
+                  "8-K_2025-06-06_1.htm": {},
+                  "8-K_2025-06-06_2.htm": {},
+                  "8-K_2025-06-06_companysearch.html": {},
+                  "8-K_2025-06-06_complete.txt": {},
+                  "8-K_2025-06-06_dp229888_8k.htm": {},
+                  "8-K_2025-06-06_dp229888_ex0301.htm": {},
+                  "8_A12B_2025_05_27_0000950103-25-006419.txt": {},
+                  "8_A12B_2025_05_27_dp228205_8a12b.htm": {},
+                  "8_K_2025_06_06_0000950103-25-007107.txt": {},
+                  "8_K_2025_06_06_crcl-20250606_lab.xml": {},
+                  "8_K_2025_06_06_crcl-20250606_pre.xml": {},
+                  "8_K_2025_06_06_dp229888_8k.htm": {},
+                  "8_K_2025_06_06_dp229888_8k_htm.xml": {},
+                  "8_K_2025_06_06_dp229888_ex0301.htm": {},
+                  "8_K_2025_06_06_dp229888_ex0302.htm": {},
+                  "CERT_2025-05-27_0.pdf": {},
+                  "CERT_2025-05-27_complete.txt": {},
+                  "CERT_2025_05_27_0000876661-25-000381.txt": {},
+                  "CERT_2025_05_27_CRCL052725.pdf": {},
+                  "DRS_2023-12-13_0.htm": {},
+                  "DRS_2023-12-13_1.jpg": {},
+                  "DRS_2023-12-13_2.jpg": {},
+                  "DRS_2023-12-13_3.jpg": {},
+                  "DRS_2023-12-13_4.jpg": {},
+                  "DRS_2023-12-13_5.jpg": {},
+                  "DRS_2023-12-13_complete.txt": {},
+                  "DRS_2023_12_13_0000950123-23-011178.txt": {},
+                  "DRS_2023_12_13_filename1.htm": {},
+                  "DRS_A_2024-04-12_0.htm": {},
+                  "DRS_A_2024-04-12_1.jpg": {},
+                  "DRS_A_2024-04-12_2.jpg": {},
+                  "DRS_A_2024-04-12_3.jpg": {},
+                  "DRS_A_2024-04-12_4.jpg": {},
+                  "DRS_A_2024-04-12_5.jpg": {},
+                  "DRS_A_2024-04-12_complete.txt": {},
+                  "DRS_A_2024-08-06_0.htm": {},
+                  "DRS_A_2024-08-06_1.jpg": {},
+                  "DRS_A_2024-08-06_2.jpg": {},
+                  "DRS_A_2024-08-06_3.jpg": {},
+                  "DRS_A_2024-08-06_4.jpg": {},
+                  "DRS_A_2024-08-06_complete.txt": {},
+                  "DRS_A_2024-12-03_0.htm": {},
+                  "DRS_A_2024-12-03_1.jpg": {},
+                  "DRS_A_2024-12-03_2.jpg": {},
+                  "DRS_A_2024-12-03_complete.txt": {},
+                  "DRS_A_2024_04_12_0000950123-24-003285.txt": {},
+                  "DRS_A_2024_04_12_filename1.htm": {},
+                  "DRS_A_2024_08_06_0000950123-24-007245.txt": {},
+                  "DRS_A_2024_08_06_filename1.htm": {},
+                  "DRS_A_2024_12_03_0000950123-24-012158.txt": {},
+                  "DRS_A_2024_12_03_filename1.htm": {},
+                  "DRS_A_2025-02-13_0.htm": {},
+                  "DRS_A_2025-02-13_1.htm": {},
+                  "DRS_A_2025-02-13_10.htm": {},
+                  "DRS_A_2025-02-13_11.htm": {},
+                  "DRS_A_2025-02-13_12.htm": {},
+                  "DRS_A_2025-02-13_13.jpg": {},
+                  "DRS_A_2025-02-13_14.jpg": {},
+                  "DRS_A_2025-02-13_15.jpg": {},
+                  "DRS_A_2025-02-13_16.jpg": {},
+                  "DRS_A_2025-02-13_17.jpg": {},
+                  "DRS_A_2025-02-13_18.jpg": {},
+                  "DRS_A_2025-02-13_19.jpg": {},
+                  "DRS_A_2025-02-13_2.htm": {},
+                  "DRS_A_2025-02-13_3.htm": {},
+                  "DRS_A_2025-02-13_4.htm": {},
+                  "DRS_A_2025-02-13_5.htm": {},
+                  "DRS_A_2025-02-13_6.htm": {},
+                  "DRS_A_2025-02-13_7.htm": {},
+                  "DRS_A_2025-02-13_8.htm": {},
+                  "DRS_A_2025-02-13_9.htm": {},
+                  "DRS_A_2025-02-13_complete.txt": {},
+                  "DRS_A_2025_02_13_0000950123-25-001965.txt": {},
+                  "DRS_A_2025_02_13_filename1.htm": {},
+                  "DRS_A_2025_02_13_filename10.htm": {},
+                  "DRS_A_2025_02_13_filename11.htm": {},
+                  "DRS_A_2025_02_13_filename12.htm": {},
+                  "DRS_A_2025_02_13_filename13.htm": {},
+                  "DRS_A_2025_02_13_filename2.htm": {},
+                  "DRS_A_2025_02_13_filename3.htm": {},
+                  "DRS_A_2025_02_13_filename4.htm": {},
+                  "DRS_A_2025_02_13_filename5.htm": {},
+                  "DRS_A_2025_02_13_filename6.htm": {},
+                  "DRS_A_2025_02_13_filename7.htm": {},
+                  "DRS_A_2025_02_13_filename8.htm": {},
+                  "DRS_A_2025_02_13_filename9.htm": {},
+                  "EFFECT_2025-06-04_0.html": {},
+                  "EFFECT_2025-06-04_1.xml": {},
+                  "EFFECT_2025-06-04_companysearch.html": {},
+                  "EFFECT_2025-06-04_complete.txt": {},
+                  "EFFECT_2025-06-04_primary_doc.xml": {},
+                  "EFFECT_2025_06_04_9999999995-25-001830.txt": {},
+                  "EFFECT_2025_06_04_primary_doc.xml": {},
+                  "metadata.json": {},
+                  "RW_2022-12-05_0.htm": {},
+                  "RW_2022-12-05_complete.txt": {},
+                  "RW_2022_12_05_0001104659-22-124570.txt": {},
+                  "RW_2022_12_05_tm2124445d25_rw.htm": {},
+                  "S-1_2025-04-01_0.htm": {},
+                  "S-1_2025-04-01_1.htm": {},
+                  "S-1_2025-04-01_10.htm": {},
+                  "S-1_2025-04-01_11.htm": {},
+                  "S-1_2025-04-01_12.htm": {},
+                  "S-1_2025-04-01_13.htm": {},
+                  "S-1_2025-04-01_14.htm": {},
+                  "S-1_2025-04-01_15.htm": {},
+                  "S-1_2025-04-01_16.htm": {},
+                  "S-1_2025-04-01_17.htm": {},
+                  "S-1_2025-04-01_18.htm": {},
+                  "S-1_2025-04-01_19.htm": {},
+                  "S-1_2025-04-01_2.htm": {},
+                  "S-1_2025-04-01_20.htm": {},
+                  "S-1_2025-04-01_21.htm": {},
+                  "S-1_2025-04-01_22.htm": {},
+                  "S-1_2025-04-01_23.jpg": {},
+                  "S-1_2025-04-01_24.jpg": {},
+                  "S-1_2025-04-01_25.jpg": {},
+                  "S-1_2025-04-01_26.jpg": {},
+                  "S-1_2025-04-01_27.jpg": {},
+                  "S-1_2025-04-01_28.jpg": {},
+                  "S-1_2025-04-01_29.jpg": {},
+                  "S-1_2025-04-01_3.htm": {},
+                  "S-1_2025-04-01_30.jpg": {},
+                  "S-1_2025-04-01_31.jpg": {},
+                  "S-1_2025-04-01_32.jpg": {},
+                  "S-1_2025-04-01_33.jpg": {},
+                  "S-1_2025-04-01_34.jpg": {},
+                  "S-1_2025-04-01_35.jpg": {},
+                  "S-1_2025-04-01_4.htm": {},
+                  "S-1_2025-04-01_5.htm": {},
+                  "S-1_2025-04-01_6.htm": {},
+                  "S-1_2025-04-01_7.htm": {},
+                  "S-1_2025-04-01_8.htm": {},
+                  "S-1_2025-04-01_9.htm": {},
+                  "S-1_2025-04-01_complete.txt": {},
+                  "S-1_A_2025-04-18_0.htm": {},
+                  "S-1_A_2025-04-18_1.htm": {},
+                  "S-1_A_2025-04-18_10.jpg": {},
+                  "S-1_A_2025-04-18_11.jpg": {},
+                  "S-1_A_2025-04-18_2.htm": {},
+                  "S-1_A_2025-04-18_3.htm": {},
+                  "S-1_A_2025-04-18_4.jpg": {},
+                  "S-1_A_2025-04-18_5.jpg": {},
+                  "S-1_A_2025-04-18_6.jpg": {},
+                  "S-1_A_2025-04-18_7.jpg": {},
+                  "S-1_A_2025-04-18_8.jpg": {},
+                  "S-1_A_2025-04-18_9.jpg": {},
+                  "S-1_A_2025-04-18_complete.txt": {},
+                  "S-1_A_2025-05-16_0.htm": {},
+                  "S-1_A_2025-05-16_1.htm": {},
+                  "S-1_A_2025-05-16_10.jpg": {},
+                  "S-1_A_2025-05-16_11.jpg": {},
+                  "S-1_A_2025-05-16_12.jpg": {},
+                  "S-1_A_2025-05-16_13.jpg": {},
+                  "S-1_A_2025-05-16_14.jpg": {},
+                  "S-1_A_2025-05-16_15.jpg": {},
+                  "S-1_A_2025-05-16_2.htm": {},
+                  "S-1_A_2025-05-16_3.htm": {},
+                  "S-1_A_2025-05-16_4.htm": {},
+                  "S-1_A_2025-05-16_5.htm": {},
+                  "S-1_A_2025-05-16_6.htm": {},
+                  "S-1_A_2025-05-16_7.htm": {},
+                  "S-1_A_2025-05-16_8.jpg": {},
+                  "S-1_A_2025-05-16_9.jpg": {},
+                  "S-1_A_2025-05-16_complete.txt": {},
+                  "S-1_A_2025-05-27_0.htm": {},
+                  "S-1_A_2025-05-27_1.htm": {},
+                  "S-1_A_2025-05-27_10.jpg": {},
+                  "S-1_A_2025-05-27_11.jpg": {},
+                  "S-1_A_2025-05-27_12.jpg": {},
+                  "S-1_A_2025-05-27_13.jpg": {},
+                  "S-1_A_2025-05-27_2.htm": {},
+                  "S-1_A_2025-05-27_3.htm": {},
+                  "S-1_A_2025-05-27_4.htm": {},
+                  "S-1_A_2025-05-27_5.htm": {},
+                  "S-1_A_2025-05-27_6.jpg": {},
+                  "S-1_A_2025-05-27_7.jpg": {},
+                  "S-1_A_2025-05-27_8.jpg": {},
+                  "S-1_A_2025-05-27_9.jpg": {},
+                  "S-1_A_2025-05-27_complete.txt": {},
+                  "S-1_A_2025-06-02_0.htm": {},
+                  "S-1_A_2025-06-02_1.htm": {},
+                  "S-1_A_2025-06-02_10.jpg": {},
+                  "S-1_A_2025-06-02_11.jpg": {},
+                  "S-1_A_2025-06-02_12.jpg": {},
+                  "S-1_A_2025-06-02_2.htm": {},
+                  "S-1_A_2025-06-02_3.htm": {},
+                  "S-1_A_2025-06-02_4.htm": {},
+                  "S-1_A_2025-06-02_5.jpg": {},
+                  "S-1_A_2025-06-02_6.jpg": {},
+                  "S-1_A_2025-06-02_7.jpg": {},
+                  "S-1_A_2025-06-02_8.jpg": {},
+                  "S-1_A_2025-06-02_9.jpg": {},
+                  "S-1_A_2025-06-02_complete.txt": {},
+                  "S-1MEF_2025-06-04_0.htm": {},
+                  "S-1MEF_2025-06-04_1.htm": {},
+                  "S-1MEF_2025-06-04_2.htm": {},
+                  "S-1MEF_2025-06-04_3.htm": {},
+                  "S-1MEF_2025-06-04_4.htm": {},
+                  "S-1MEF_2025-06-04_companysearch.html": {},
+                  "S-1MEF_2025-06-04_complete.txt": {},
+                  "S-1MEF_2025-06-04_dp229827_ex0501.htm": {},
+                  "S-1MEF_2025-06-04_dp229827_s1mef.htm": {},
+                  "S-4_2021-08-06_0.htm": {},
+                  "S-4_2021-08-06_1.htm": {},
+                  "S-4_2021-08-06_10.jpg": {},
+                  "S-4_2021-08-06_11.jpg": {},
+                  "S-4_2021-08-06_12.jpg": {},
+                  "S-4_2021-08-06_2.htm": {},
+                  "S-4_2021-08-06_3.htm": {},
+                  "S-4_2021-08-06_4.htm": {},
+                  "S-4_2021-08-06_5.htm": {},
+                  "S-4_2021-08-06_6.htm": {},
+                  "S-4_2021-08-06_7.htm": {},
+                  "S-4_2021-08-06_8.htm": {},
+                  "S-4_2021-08-06_9.htm": {},
+                  "S-4_2021-08-06_complete.txt": {},
+                  "S-4_A_2021-10-04_0.htm": {},
+                  "S-4_A_2021-10-04_1.htm": {},
+                  "S-4_A_2021-10-04_2.htm": {},
+                  "S-4_A_2021-10-04_3.htm": {},
+                  "S-4_A_2021-10-04_4.jpg": {},
+                  "S-4_A_2021-10-04_5.jpg": {},
+                  "S-4_A_2021-10-04_6.jpg": {},
+                  "S-4_A_2021-10-04_7.jpg": {},
+                  "S-4_A_2021-10-04_8.jpg": {},
+                  "S-4_A_2021-10-04_9.jpg": {},
+                  "S-4_A_2021-10-04_complete.txt": {},
+                  "S-4_A_2021-12-23_0.htm": {},
+                  "S-4_A_2021-12-23_1.htm": {},
+                  "S-4_A_2021-12-23_2.htm": {},
+                  "S-4_A_2021-12-23_3.htm": {},
+                  "S-4_A_2021-12-23_4.jpg": {},
+                  "S-4_A_2021-12-23_5.jpg": {},
+                  "S-4_A_2021-12-23_6.jpg": {},
+                  "S-4_A_2021-12-23_7.jpg": {},
+                  "S-4_A_2021-12-23_8.jpg": {},
+                  "S-4_A_2021-12-23_9.jpg": {},
+                  "S-4_A_2021-12-23_complete.txt": {},
+                  "S-4_A_2022-05-06_0.htm": {},
+                  "S-4_A_2022-05-06_1.htm": {},
+                  "S-4_A_2022-05-06_10.jpg": {},
+                  "S-4_A_2022-05-06_11.jpg": {},
+                  "S-4_A_2022-05-06_12.jpg": {},
+                  "S-4_A_2022-05-06_2.htm": {},
+                  "S-4_A_2022-05-06_3.htm": {},
+                  "S-4_A_2022-05-06_4.htm": {},
+                  "S-4_A_2022-05-06_5.htm": {},
+                  "S-4_A_2022-05-06_6.htm": {},
+                  "S-4_A_2022-05-06_7.jpg": {},
+                  "S-4_A_2022-05-06_8.jpg": {},
+                  "S-4_A_2022-05-06_9.jpg": {},
+                  "S-4_A_2022-05-06_complete.txt": {},
+                  "S-4_A_2022-07-11_0.htm": {},
+                  "S-4_A_2022-07-11_1.htm": {},
+                  "S-4_A_2022-07-11_10.jpg": {},
+                  "S-4_A_2022-07-11_2.htm": {},
+                  "S-4_A_2022-07-11_3.htm": {},
+                  "S-4_A_2022-07-11_4.jpg": {},
+                  "S-4_A_2022-07-11_5.jpg": {},
+                  "S-4_A_2022-07-11_6.jpg": {},
+                  "S-4_A_2022-07-11_7.jpg": {},
+                  "S-4_A_2022-07-11_8.jpg": {},
+                  "S-4_A_2022-07-11_9.jpg": {},
+                  "S-4_A_2022-07-11_complete.txt": {},
+                  "S-4_A_2022-08-31_0.htm": {},
+                  "S-4_A_2022-08-31_1.htm": {},
+                  "S-4_A_2022-08-31_10.jpg": {},
+                  "S-4_A_2022-08-31_11.jpg": {},
+                  "S-4_A_2022-08-31_12.jpg": {},
+                  "S-4_A_2022-08-31_2.htm": {},
+                  "S-4_A_2022-08-31_3.htm": {},
+                  "S-4_A_2022-08-31_4.htm": {},
+                  "S-4_A_2022-08-31_5.jpg": {},
+                  "S-4_A_2022-08-31_6.jpg": {},
+                  "S-4_A_2022-08-31_7.jpg": {},
+                  "S-4_A_2022-08-31_8.jpg": {},
+                  "S-4_A_2022-08-31_9.jpg": {},
+                  "S-4_A_2022-08-31_complete.txt": {},
+                  "S-4_A_2022-10-20_0.htm": {},
+                  "S-4_A_2022-10-20_1.htm": {},
+                  "S-4_A_2022-10-20_10.htm": {},
+                  "S-4_A_2022-10-20_11.htm": {},
+                  "S-4_A_2022-10-20_12.htm": {},
+                  "S-4_A_2022-10-20_13.jpg": {},
+                  "S-4_A_2022-10-20_14.jpg": {},
+                  "S-4_A_2022-10-20_15.jpg": {},
+                  "S-4_A_2022-10-20_16.jpg": {},
+                  "S-4_A_2022-10-20_17.jpg": {},
+                  "S-4_A_2022-10-20_18.jpg": {},
+                  "S-4_A_2022-10-20_19.jpg": {},
+                  "S-4_A_2022-10-20_2.htm": {},
+                  "S-4_A_2022-10-20_20.jpg": {},
+                  "S-4_A_2022-10-20_21.jpg": {},
+                  "S-4_A_2022-10-20_22.jpg": {},
+                  "S-4_A_2022-10-20_3.htm": {},
+                  "S-4_A_2022-10-20_4.htm": {},
+                  "S-4_A_2022-10-20_5.htm": {},
+                  "S-4_A_2022-10-20_6.htm": {},
+                  "S-4_A_2022-10-20_7.htm": {},
+                  "S-4_A_2022-10-20_8.htm": {},
+                  "S-4_A_2022-10-20_9.htm": {},
+                  "S-4_A_2022-10-20_complete.txt": {},
+                  "S-4_A_2022-11-14_0.htm": {},
+                  "S-4_A_2022-11-14_1.htm": {},
+                  "S-4_A_2022-11-14_10.jpg": {},
+                  "S-4_A_2022-11-14_2.htm": {},
+                  "S-4_A_2022-11-14_3.htm": {},
+                  "S-4_A_2022-11-14_4.jpg": {},
+                  "S-4_A_2022-11-14_5.jpg": {},
+                  "S-4_A_2022-11-14_6.jpg": {},
+                  "S-4_A_2022-11-14_7.jpg": {},
+                  "S-4_A_2022-11-14_8.jpg": {},
+                  "S-4_A_2022-11-14_9.jpg": {},
+                  "S-4_A_2022-11-14_complete.txt": {},
+                  "S-8_2025-06-04_0.htm": {},
+                  "S-8_2025-06-04_1.htm": {},
+                  "S-8_2025-06-04_2.htm": {},
+                  "S-8_2025-06-04_3.htm": {},
+                  "S-8_2025-06-04_4.htm": {},
+                  "S-8_2025-06-04_5.jpg": {},
+                  "S-8_2025-06-04_companysearch.html": {},
+                  "S-8_2025-06-04_complete.txt": {},
+                  "S-8_2025-06-04_dp229528_ex0501.htm": {},
+                  "S-8_2025-06-04_dp229528_s8.htm": {},
+                  "S_1_2025_04_01_0001193125-25-070481.txt": {},
+                  "S_1_2025_04_01_d737521dex101.htm": {},
+                  "S_1_2025_04_01_d737521dex1010.htm": {},
+                  "S_1_2025_04_01_d737521dex1011.htm": {},
+                  "S_1_2025_04_01_d737521dex1012.htm": {},
+                  "S_1_2025_04_01_d737521dex1013.htm": {},
+                  "S_1_2025_04_01_d737521dex1014.htm": {},
+                  "S_1_2025_04_01_d737521dex1015.htm": {},
+                  "S_1_2025_04_01_d737521dex102.htm": {},
+                  "S_1_2025_04_01_d737521dex103.htm": {},
+                  "S_1_2025_04_01_d737521dex104.htm": {},
+                  "S_1_2025_04_01_d737521dex105.htm": {},
+                  "S_1_2025_04_01_d737521dex106.htm": {},
+                  "S_1_2025_04_01_d737521dex107.htm": {},
+                  "S_1_2025_04_01_d737521dex108.htm": {},
+                  "S_1_2025_04_01_d737521dex109.htm": {},
+                  "S_1_2025_04_01_d737521dex161.htm": {},
+                  "S_1_2025_04_01_d737521dex211.htm": {},
+                  "S_1_2025_04_01_d737521dex231.htm": {},
+                  "S_1_2025_04_01_d737521dex232.htm": {},
+                  "S_1_2025_04_01_d737521dex31.htm": {},
+                  "S_1_2025_04_01_d737521dex32.htm": {},
+                  "S_1_2025_04_01_d737521dexfilingfees.htm": {},
+                  "S_1_2025_04_01_d737521ds1.htm": {},
+                  "S_1_A_2025_04_18_0001193125-25-084832.txt": {},
+                  "S_1_A_2025_04_18_d737521dex11.htm": {},
+                  "S_1_A_2025_04_18_d737521dex231.htm": {},
+                  "S_1_A_2025_04_18_d737521dex232.htm": {},
+                  "S_1_A_2025_04_18_d737521ds1a.htm": {},
+                  "S_1_A_2025_05_16_0001193125-25-121234.txt": {},
+                  "S_1_A_2025_05_16_d737521dex1016.htm": {},
+                  "S_1_A_2025_05_16_d737521dex1017.htm": {},
+                  "S_1_A_2025_05_16_d737521dex1018.htm": {},
+                  "S_1_A_2025_05_16_d737521dex1019.htm": {},
+                  "S_1_A_2025_05_16_d737521dex1020.htm": {},
+                  "S_1_A_2025_05_16_d737521dex231.htm": {},
+                  "S_1_A_2025_05_16_d737521dex232.htm": {},
+                  "S_1_A_2025_05_16_d737521ds1a.htm": {},
+                  "S_1_A_2025_05_27_0001193125-25-126208.txt": {},
+                  "S_1_A_2025_05_27_d737521dex1010.htm": {},
+                  "S_1_A_2025_05_27_d737521dex231.htm": {},
+                  "S_1_A_2025_05_27_d737521dex232.htm": {},
+                  "S_1_A_2025_05_27_d737521dex51.htm": {},
+                  "S_1_A_2025_05_27_d737521dexfilingfees.htm": {},
+                  "S_1_A_2025_05_27_d737521ds1a.htm": {},
+                  "S_1_A_2025_06_02_0001193125-25-132755.txt": {},
+                  "S_1_A_2025_06_02_d737521dex231.htm": {},
+                  "S_1_A_2025_06_02_d737521dex232.htm": {},
+                  "S_1_A_2025_06_02_d737521dex51.htm": {},
+                  "S_1_A_2025_06_02_d737521dexfilingfees.htm": {},
+                  "S_1_A_2025_06_02_d737521ds1a.htm": {},
+                  "S_1MEF_2025_06_04_0000950103-25-007009.txt": {},
+                  "S_1MEF_2025_06_04_dp229827_ex0501.htm": {},
+                  "S_1MEF_2025_06_04_dp229827_ex2301.htm": {},
+                  "S_1MEF_2025_06_04_dp229827_ex2302.htm": {},
+                  "S_1MEF_2025_06_04_dp229827_exfilingfees.htm": {},
+                  "S_1MEF_2025_06_04_dp229827_s1mef.htm": {},
+                  "S_4_2021_08_06_0001104659-21-101498.txt": {},
+                  "S_4_2021_08_06_tm2123712-1_s4.htm": {},
+                  "S_4_2021_08_06_tm2123712d2_ex10-1.htm": {},
+                  "S_4_2021_08_06_tm2123712d2_ex10-2.htm": {},
+                  "S_4_2021_08_06_tm2123712d2_ex23-1.htm": {},
+                  "S_4_2021_08_06_tm2123712d2_ex23-2.htm": {},
+                  "S_4_2021_08_06_tm2123712d2_ex23-4.htm": {},
+                  "S_4_2021_08_06_tm2123712d2_ex3-3.htm": {},
+                  "S_4_2021_08_06_tm2123712d2_ex3-4.htm": {},
+                  "S_4_2021_08_06_tm2123712d2_ex4-3.htm": {},
+                  "S_4_2021_08_06_tm2123712d2_ex99-1.htm": {},
+                  "S_4_A_2021_10_04_0001104659-21-122565.txt": {},
+                  "S_4_A_2021_10_04_tm2124445-1_s4a.htm": {},
+                  "S_4_A_2021_10_04_tm2124445d3_ex23-1.htm": {},
+                  "S_4_A_2021_10_04_tm2124445d3_ex23-2.htm": {},
+                  "S_4_A_2021_10_04_tm2124445d3_ex23-4.htm": {},
+                  "S_4_A_2021_12_23_0001104659-21-153174.txt": {},
+                  "S_4_A_2021_12_23_tm2124445-4_s4a.htm": {},
+                  "S_4_A_2021_12_23_tm2124445d6_ex23-1.htm": {},
+                  "S_4_A_2021_12_23_tm2124445d6_ex23-2.htm": {},
+                  "S_4_A_2021_12_23_tm2124445d6_ex23-4.htm": {},
+                  "S_4_A_2022_05_06_0001104659-22-056979.txt": {},
+                  "S_4_A_2022_05_06_tm2124445-8_s4a.htm": {},
+                  "S_4_A_2022_05_06_tm2124445d9_ex-filingfees.htm": {},
+                  "S_4_A_2022_05_06_tm2124445d9_ex10-1.htm": {},
+                  "S_4_A_2022_05_06_tm2124445d9_ex10-2.htm": {},
+                  "S_4_A_2022_05_06_tm2124445d9_ex23-1.htm": {},
+                  "S_4_A_2022_05_06_tm2124445d9_ex23-2.htm": {},
+                  "S_4_A_2022_05_06_tm2124445d9_ex23-4.htm": {},
+                  "S_4_A_2022_07_11_0001104659-22-078873.txt": {},
+                  "S_4_A_2022_07_11_tm2124445-12_s4a.htm": {},
+                  "S_4_A_2022_07_11_tm2124445d13_ex23-1.htm": {},
+                  "S_4_A_2022_07_11_tm2124445d13_ex23-2.htm": {},
+                  "S_4_A_2022_07_11_tm2124445d13_ex23-4.htm": {},
+                  "S_4_A_2022_08_31_0001104659-22-096202.txt": {},
+                  "S_4_A_2022_08_31_tm2124445-15_s4a.htm": {},
+                  "S_4_A_2022_08_31_tm2124445d17_ex23-1.htm": {},
+                  "S_4_A_2022_08_31_tm2124445d17_ex23-2.htm": {},
+                  "S_4_A_2022_08_31_tm2124445d17_ex23-4.htm": {},
+                  "S_4_A_2022_08_31_tm2124445d17_ex8-1.htm": {},
+                  "S_4_A_2022_10_20_0001104659-22-110332.txt": {},
+                  "S_4_A_2022_10_20_tm2124445-18_s4a.htm": {},
+                  "S_4_A_2022_10_20_tm2124445d20_ex23-1.htm": {},
+                  "S_4_A_2022_10_20_tm2124445d20_ex23-2.htm": {},
+                  "S_4_A_2022_10_20_tm2124445d20_ex23-4.htm": {},
+                  "S_4_A_2022_10_20_tm2124445d20_ex4-1.htm": {},
+                  "S_4_A_2022_10_20_tm2124445d20_ex5-2.htm": {},
+                  "S_4_A_2022_10_20_tm2124445d20_ex99-2.htm": {},
+                  "S_4_A_2022_10_20_tm2124445d20_ex99-3.htm": {},
+                  "S_4_A_2022_10_20_tm2124445d20_ex99-4.htm": {},
+                  "S_4_A_2022_10_20_tm2124445d20_ex99-5.htm": {},
+                  "S_4_A_2022_10_20_tm2124445d20_ex99-6.htm": {},
+                  "S_4_A_2022_10_20_tm2124445d20_ex99-7.htm": {},
+                  "S_4_A_2022_10_20_tm2124445d20_ex99-8.htm": {},
+                  "S_4_A_2022_11_14_0001104659-22-118597.txt": {},
+                  "S_4_A_2022_11_14_tm2124445-21_s4a.htm": {},
+                  "S_4_A_2022_11_14_tm2124445d23_ex23-1.htm": {},
+                  "S_4_A_2022_11_14_tm2124445d23_ex23-2.htm": {},
+                  "S_4_A_2022_11_14_tm2124445d23_ex23-4.htm": {},
+                  "S_8_2025_06_04_0000950103-25-007013.txt": {},
+                  "S_8_2025_06_04_dp229528_ex0501.htm": {},
+                  "S_8_2025_06_04_dp229528_ex2301.htm": {},
+                  "S_8_2025_06_04_dp229528_ex2302.htm": {},
+                  "S_8_2025_06_04_dp229528_exfilingfees.htm": {},
+                  "S_8_2025_06_04_dp229528_s8.htm": {}
+                }
+              },
+              "DLHZ": {
+                "type": "directory",
+                "children": {
+                  "DRS_2022-11-21_0001575872-22-001159.txt": {},
+                  "DRS_2022-11-21_companysearch.html": {},
+                  "DRS_2022-11-21_filename1.htm": {},
+                  "DRS_A_2023-06-30_0001575872-23-001090.txt": {},
+                  "DRS_A_2023-06-30_companysearch.html": {},
+                  "DRS_A_2023-06-30_filename1.htm": {},
+                  "DRS_A_2023-12-28_0001213900-23-099231.txt": {},
+                  "DRS_A_2023-12-28_companysearch.html": {},
+                  "DRS_A_2023-12-28_filename1.htm": {},
+                  "DRS_A_2024-06-17_0001213900-24-053091.txt": {},
+                  "DRS_A_2024-06-17_companysearch.html": {},
+                  "DRS_A_2024-06-17_filename1.htm": {},
+                  "DRS_A_2024-12-27_0001213900-24-113124.txt": {},
+                  "DRS_A_2024-12-27_companysearch.html": {},
+                  "DRS_A_2024-12-27_filename1.htm": {},
+                  "F-1_2025-02-25_companysearch.html": {},
+                  "F-1_2025-02-25_ea0204792-05.htm": {},
+                  "F-1_2025-02-25_ea020479205ex3-1_dalu.htm": {},
+                  "F-1_A_2025-04-15_companysearch.html": {},
+                  "F-1_A_2025-04-15_ea0237784-f1a1_dalu.htm": {},
+                  "F-1_A_2025-04-15_ea023778401ex4-1_dalu.htm": {},
+                  "F-1_A_2025-04-25_companysearch.html": {},
+                  "F-1_A_2025-04-25_ea0204792-f1a2_daluinter.htm": {},
+                  "F-1_A_2025-04-25_ea020479207ex1-1_daluinter.htm": {},
+                  "F-1_A_2025-04-29_companysearch.html": {},
+                  "F-1_A_2025-04-29_ea0239888-f1a3_daluinter.htm": {},
+                  "F-1_A_2025-04-29_ea023988801ex5-1_daluinter.htm": {},
+                  "F-1_A_2025-05-13_companysearch.html": {},
+                  "F-1_A_2025-05-13_ea0241887-f1a4_daluinter.htm": {},
+                  "F-1_A_2025-05-13_ea024188701ex23-1_daluinter.htm": {},
+                  "FWP_2025-04-29_0001213900-25-036318.txt": {},
+                  "FWP_2025-04-29_companysearch.html": {},
+                  "FWP_2025-04-29_ea0239586-fwp_dalu.htm": {},
+                  "metadata.json": {}
+                }
+              },
+              "FGO": {
+                "type": "directory",
+                "children": {
+                  "DRS_2023-12-28_0001213900-23-099144.txt": {},
+                  "DRS_2023-12-28_companysearch.html": {},
+                  "DRS_2023-12-28_filename1.htm": {},
+                  "DRS_A_2024-02-15_0001213900-24-014474.txt": {},
+                  "DRS_A_2024-02-15_companysearch.html": {},
+                  "DRS_A_2024-02-15_filename1.htm": {},
+                  "DRS_A_2024-03-26_0001213900-24-025624.txt": {},
+                  "DRS_A_2024-03-26_companysearch.html": {},
+                  "DRS_A_2024-03-26_filename1.htm": {},
+                  "DRS_A_2024-05-28_0001213900-24-047090.txt": {},
+                  "DRS_A_2024-05-28_companysearch.html": {},
+                  "DRS_A_2024-05-28_filename1.htm": {},
+                  "DRS_A_2024-06-27_0001213900-24-056662.txt": {},
+                  "DRS_A_2024-06-27_companysearch.html": {},
+                  "DRS_A_2024-06-27_filename1.htm": {},
+                  "DRS_A_2024-07-11_companysearch.html": {},
+                  "DRS_A_2024-07-11_filename1.htm": {},
+                  "DRS_A_2024-07-11_filename2.htm": {},
+                  "DRS_A_2024-10-02_0001213900-24-084730.txt": {},
+                  "DRS_A_2024-10-02_companysearch.html": {},
+                  "DRS_A_2024-10-02_filename1.htm": {},
+                  "DRS_A_2024-11-01_0001213900-24-093004.txt": {},
+                  "DRS_A_2024-11-01_companysearch.html": {},
+                  "DRS_A_2024-11-01_filename1.htm": {},
+                  "F-1_2024-11-18_companysearch.html": {},
+                  "F-1_2024-11-18_ea0201827-13.htm": {},
+                  "F-1_2024-11-18_ea020182713ex3-1_fghold.htm": {},
+                  "F-1_A_2024-12-06_companysearch.html": {},
+                  "F-1_A_2024-12-06_ea0201827-14.htm": {},
+                  "F-1_A_2024-12-06_ea020182714ex23-1_fgholding.htm": {},
+                  "F-1_A_2025-01-14_companysearch.html": {},
+                  "F-1_A_2025-01-14_ea0201827-16.htm": {},
+                  "F-1_A_2025-01-14_ea020182716ex23-1_fgholding.htm": {},
+                  "F-1_A_2025-02-05_companysearch.html": {},
+                  "F-1_A_2025-02-05_ea0201827-18.htm": {},
+                  "F-1_A_2025-02-05_ea020182718ex23-1_fgholding.htm": {},
+                  "F-1_A_2025-03-11_companysearch.html": {},
+                  "F-1_A_2025-03-11_ea0201827-20.htm": {},
+                  "F-1_A_2025-03-11_ea020182720ex15-1_fgholding.htm": {},
+                  "F-1_A_2025-04-23_companysearch.html": {},
+                  "F-1_A_2025-04-23_ea0201827-21.htm": {},
+                  "F-1_A_2025-04-23_ea020182721ex15-1_fgholding.htm": {},
+                  "FWP_2025-05-08_0001213900-25-040791.txt": {},
+                  "FWP_2025-05-08_companysearch.html": {},
+                  "FWP_2025-05-08_ea0241208-fwp_fghold.htm": {},
+                  "metadata.json": {}
+                }
+              },
+              "FMFC": {
+                "type": "directory",
+                "children": {
+                  "DRS_2024-06-28_0.htm": {},
+                  "DRS_2024-06-28_0001213900-24-056950.txt": {},
+                  "DRS_2024-06-28_1.jpg": {},
+                  "DRS_2024-06-28_2.jpg": {},
+                  "DRS_2024-06-28_3.jpg": {},
+                  "DRS_2024-06-28_4.jpg": {},
+                  "DRS_2024-06-28_5.jpg": {},
+                  "DRS_2024-06-28_6.jpg": {},
+                  "DRS_2024-06-28_7.jpg": {},
+                  "DRS_2024-06-28_8.jpg": {},
+                  "DRS_2024-06-28_9.jpg": {},
+                  "DRS_2024-06-28_companysearch.html": {},
+                  "DRS_2024-06-28_complete.txt": {},
+                  "DRS_2024-06-28_filename1.htm": {},
+                  "DRS_A_2024-08-05_0.htm": {},
+                  "DRS_A_2024-08-05_0001213900-24-065061.txt": {},
+                  "DRS_A_2024-08-05_1.jpg": {},
+                  "DRS_A_2024-08-05_2.jpg": {},
+                  "DRS_A_2024-08-05_3.jpg": {},
+                  "DRS_A_2024-08-05_4.jpg": {},
+                  "DRS_A_2024-08-05_5.jpg": {},
+                  "DRS_A_2024-08-05_6.jpg": {},
+                  "DRS_A_2024-08-05_7.jpg": {},
+                  "DRS_A_2024-08-05_8.jpg": {},
+                  "DRS_A_2024-08-05_9.jpg": {},
+                  "DRS_A_2024-08-05_companysearch.html": {},
+                  "DRS_A_2024-08-05_complete.txt": {},
+                  "DRS_A_2024-08-05_filename1.htm": {},
+                  "DRS_A_2024-08-20_0.htm": {},
+                  "DRS_A_2024-08-20_0001213900-24-070966.txt": {},
+                  "DRS_A_2024-08-20_1.jpg": {},
+                  "DRS_A_2024-08-20_2.jpg": {},
+                  "DRS_A_2024-08-20_3.jpg": {},
+                  "DRS_A_2024-08-20_4.jpg": {},
+                  "DRS_A_2024-08-20_5.jpg": {},
+                  "DRS_A_2024-08-20_6.jpg": {},
+                  "DRS_A_2024-08-20_7.jpg": {},
+                  "DRS_A_2024-08-20_8.jpg": {},
+                  "DRS_A_2024-08-20_9.jpg": {},
+                  "DRS_A_2024-08-20_companysearch.html": {},
+                  "DRS_A_2024-08-20_complete.txt": {},
+                  "DRS_A_2024-08-20_filename1.htm": {},
+                  "DRS_A_2024-10-02_0.htm": {},
+                  "DRS_A_2024-10-02_0001213900-24-084609.txt": {},
+                  "DRS_A_2024-10-02_1.jpg": {},
+                  "DRS_A_2024-10-02_10.jpg": {},
+                  "DRS_A_2024-10-02_2.jpg": {},
+                  "DRS_A_2024-10-02_3.jpg": {},
+                  "DRS_A_2024-10-02_4.jpg": {},
+                  "DRS_A_2024-10-02_5.jpg": {},
+                  "DRS_A_2024-10-02_6.jpg": {},
+                  "DRS_A_2024-10-02_7.jpg": {},
+                  "DRS_A_2024-10-02_8.jpg": {},
+                  "DRS_A_2024-10-02_9.jpg": {},
+                  "DRS_A_2024-10-02_companysearch.html": {},
+                  "DRS_A_2024-10-02_complete.txt": {},
+                  "DRS_A_2024-10-02_filename1.htm": {},
+                  "DRS_A_2024-10-10_0.htm": {},
+                  "DRS_A_2024-10-10_0001213900-24-086772.txt": {},
+                  "DRS_A_2024-10-10_1.jpg": {},
+                  "DRS_A_2024-10-10_10.jpg": {},
+                  "DRS_A_2024-10-10_2.jpg": {},
+                  "DRS_A_2024-10-10_3.jpg": {},
+                  "DRS_A_2024-10-10_4.jpg": {},
+                  "DRS_A_2024-10-10_5.jpg": {},
+                  "DRS_A_2024-10-10_6.jpg": {},
+                  "DRS_A_2024-10-10_7.jpg": {},
+                  "DRS_A_2024-10-10_8.jpg": {},
+                  "DRS_A_2024-10-10_9.jpg": {},
+                  "DRS_A_2024-10-10_companysearch.html": {},
+                  "DRS_A_2024-10-10_complete.txt": {},
+                  "DRS_A_2024-10-10_filename1.htm": {},
+                  "F-1_2024-10-23_0.htm": {},
+                  "F-1_2024-10-23_1.htm": {},
+                  "F-1_2024-10-23_10.htm": {},
+                  "F-1_2024-10-23_100.jpg": {},
+                  "F-1_2024-10-23_101.jpg": {},
+                  "F-1_2024-10-23_102.jpg": {},
+                  "F-1_2024-10-23_103.jpg": {},
+                  "F-1_2024-10-23_104.jpg": {},
+                  "F-1_2024-10-23_105.jpg": {},
+                  "F-1_2024-10-23_106.jpg": {},
+                  "F-1_2024-10-23_107.jpg": {},
+                  "F-1_2024-10-23_108.jpg": {},
+                  "F-1_2024-10-23_109.jpg": {},
+                  "F-1_2024-10-23_11.htm": {},
+                  "F-1_2024-10-23_110.jpg": {},
+                  "F-1_2024-10-23_111.jpg": {},
+                  "F-1_2024-10-23_112.jpg": {},
+                  "F-1_2024-10-23_113.jpg": {},
+                  "F-1_2024-10-23_114.jpg": {},
+                  "F-1_2024-10-23_115.jpg": {},
+                  "F-1_2024-10-23_116.jpg": {},
+                  "F-1_2024-10-23_117.jpg": {},
+                  "F-1_2024-10-23_118.jpg": {},
+                  "F-1_2024-10-23_119.jpg": {},
+                  "F-1_2024-10-23_12.htm": {},
+                  "F-1_2024-10-23_120.jpg": {},
+                  "F-1_2024-10-23_121.jpg": {},
+                  "F-1_2024-10-23_13.htm": {},
+                  "F-1_2024-10-23_14.htm": {},
+                  "F-1_2024-10-23_15.htm": {},
+                  "F-1_2024-10-23_16.htm": {},
+                  "F-1_2024-10-23_17.htm": {},
+                  "F-1_2024-10-23_18.htm": {},
+                  "F-1_2024-10-23_19.htm": {},
+                  "F-1_2024-10-23_2.htm": {},
+                  "F-1_2024-10-23_20.htm": {},
+                  "F-1_2024-10-23_21.htm": {},
+                  "F-1_2024-10-23_22.htm": {},
+                  "F-1_2024-10-23_23.htm": {},
+                  "F-1_2024-10-23_24.htm": {},
+                  "F-1_2024-10-23_25.jpg": {},
+                  "F-1_2024-10-23_26.jpg": {},
+                  "F-1_2024-10-23_27.jpg": {},
+                  "F-1_2024-10-23_28.jpg": {},
+                  "F-1_2024-10-23_29.jpg": {},
+                  "F-1_2024-10-23_3.htm": {},
+                  "F-1_2024-10-23_30.jpg": {},
+                  "F-1_2024-10-23_31.jpg": {},
+                  "F-1_2024-10-23_32.jpg": {},
+                  "F-1_2024-10-23_33.jpg": {},
+                  "F-1_2024-10-23_34.jpg": {},
+                  "F-1_2024-10-23_35.jpg": {},
+                  "F-1_2024-10-23_36.jpg": {},
+                  "F-1_2024-10-23_37.jpg": {},
+                  "F-1_2024-10-23_38.jpg": {},
+                  "F-1_2024-10-23_39.jpg": {},
+                  "F-1_2024-10-23_4.htm": {},
+                  "F-1_2024-10-23_40.jpg": {},
+                  "F-1_2024-10-23_41.jpg": {},
+                  "F-1_2024-10-23_42.jpg": {},
+                  "F-1_2024-10-23_43.jpg": {},
+                  "F-1_2024-10-23_44.jpg": {},
+                  "F-1_2024-10-23_45.jpg": {},
+                  "F-1_2024-10-23_46.jpg": {},
+                  "F-1_2024-10-23_47.jpg": {},
+                  "F-1_2024-10-23_48.jpg": {},
+                  "F-1_2024-10-23_49.jpg": {},
+                  "F-1_2024-10-23_5.htm": {},
+                  "F-1_2024-10-23_50.jpg": {},
+                  "F-1_2024-10-23_51.jpg": {},
+                  "F-1_2024-10-23_52.jpg": {},
+                  "F-1_2024-10-23_53.jpg": {},
+                  "F-1_2024-10-23_54.jpg": {},
+                  "F-1_2024-10-23_55.jpg": {},
+                  "F-1_2024-10-23_56.jpg": {},
+                  "F-1_2024-10-23_57.jpg": {},
+                  "F-1_2024-10-23_58.jpg": {},
+                  "F-1_2024-10-23_59.jpg": {},
+                  "F-1_2024-10-23_6.htm": {},
+                  "F-1_2024-10-23_60.jpg": {},
+                  "F-1_2024-10-23_61.jpg": {},
+                  "F-1_2024-10-23_62.jpg": {},
+                  "F-1_2024-10-23_63.jpg": {},
+                  "F-1_2024-10-23_64.jpg": {},
+                  "F-1_2024-10-23_65.jpg": {},
+                  "F-1_2024-10-23_66.jpg": {},
+                  "F-1_2024-10-23_67.jpg": {},
+                  "F-1_2024-10-23_68.jpg": {},
+                  "F-1_2024-10-23_69.jpg": {},
+                  "F-1_2024-10-23_7.htm": {},
+                  "F-1_2024-10-23_70.jpg": {},
+                  "F-1_2024-10-23_71.jpg": {},
+                  "F-1_2024-10-23_72.jpg": {},
+                  "F-1_2024-10-23_73.jpg": {},
+                  "F-1_2024-10-23_74.jpg": {},
+                  "F-1_2024-10-23_75.jpg": {},
+                  "F-1_2024-10-23_76.jpg": {},
+                  "F-1_2024-10-23_77.jpg": {},
+                  "F-1_2024-10-23_78.jpg": {},
+                  "F-1_2024-10-23_79.jpg": {},
+                  "F-1_2024-10-23_8.htm": {},
+                  "F-1_2024-10-23_80.jpg": {},
+                  "F-1_2024-10-23_81.jpg": {},
+                  "F-1_2024-10-23_82.jpg": {},
+                  "F-1_2024-10-23_83.jpg": {},
+                  "F-1_2024-10-23_84.jpg": {},
+                  "F-1_2024-10-23_85.jpg": {},
+                  "F-1_2024-10-23_86.jpg": {},
+                  "F-1_2024-10-23_87.jpg": {},
+                  "F-1_2024-10-23_88.jpg": {},
+                  "F-1_2024-10-23_89.jpg": {},
+                  "F-1_2024-10-23_9.htm": {},
+                  "F-1_2024-10-23_90.jpg": {},
+                  "F-1_2024-10-23_91.jpg": {},
+                  "F-1_2024-10-23_92.jpg": {},
+                  "F-1_2024-10-23_93.jpg": {},
+                  "F-1_2024-10-23_94.jpg": {},
+                  "F-1_2024-10-23_95.jpg": {},
+                  "F-1_2024-10-23_96.jpg": {},
+                  "F-1_2024-10-23_97.jpg": {},
+                  "F-1_2024-10-23_98.jpg": {},
+                  "F-1_2024-10-23_99.jpg": {},
+                  "F-1_2024-10-23_companysearch.html": {},
+                  "F-1_2024-10-23_complete.txt": {},
+                  "F-1_2024-10-23_ea0205535-09.htm": {},
+                  "F-1_2024-10-23_ea020553509ex2-1_kandalm.htm": {},
+                  "F-1_A_2024-12-13_0.htm": {},
+                  "F-1_A_2024-12-13_1.htm": {},
+                  "F-1_A_2024-12-13_10.jpg": {},
+                  "F-1_A_2024-12-13_11.jpg": {},
+                  "F-1_A_2024-12-13_12.jpg": {},
+                  "F-1_A_2024-12-13_13.jpg": {},
+                  "F-1_A_2024-12-13_14.jpg": {},
+                  "F-1_A_2024-12-13_15.jpg": {},
+                  "F-1_A_2024-12-13_2.htm": {},
+                  "F-1_A_2024-12-13_3.jpg": {},
+                  "F-1_A_2024-12-13_4.jpg": {},
+                  "F-1_A_2024-12-13_5.jpg": {},
+                  "F-1_A_2024-12-13_6.jpg": {},
+                  "F-1_A_2024-12-13_7.jpg": {},
+                  "F-1_A_2024-12-13_8.jpg": {},
+                  "F-1_A_2024-12-13_9.jpg": {},
+                  "F-1_A_2024-12-13_companysearch.html": {},
+                  "F-1_A_2024-12-13_complete.txt": {},
+                  "F-1_A_2024-12-13_ea0205535-12.htm": {},
+                  "F-1_A_2024-12-13_ea020553512ex5-1_kandal.htm": {},
+                  "F-1_A_2025-01-16_0.htm": {},
+                  "F-1_A_2025-01-16_1.htm": {},
+                  "F-1_A_2025-01-16_10.jpg": {},
+                  "F-1_A_2025-01-16_11.jpg": {},
+                  "F-1_A_2025-01-16_12.jpg": {},
+                  "F-1_A_2025-01-16_13.jpg": {},
+                  "F-1_A_2025-01-16_14.jpg": {},
+                  "F-1_A_2025-01-16_15.jpg": {},
+                  "F-1_A_2025-01-16_2.htm": {},
+                  "F-1_A_2025-01-16_3.jpg": {},
+                  "F-1_A_2025-01-16_4.jpg": {},
+                  "F-1_A_2025-01-16_5.jpg": {},
+                  "F-1_A_2025-01-16_6.jpg": {},
+                  "F-1_A_2025-01-16_7.jpg": {},
+                  "F-1_A_2025-01-16_8.jpg": {},
+                  "F-1_A_2025-01-16_9.jpg": {},
+                  "F-1_A_2025-01-16_companysearch.html": {},
+                  "F-1_A_2025-01-16_complete.txt": {},
+                  "F-1_A_2025-01-16_ea0205535-13.htm": {},
+                  "F-1_A_2025-01-16_ea020553513ex1-1_kandal.htm": {},
+                  "F-1_A_2025-02-18_0.htm": {},
+                  "F-1_A_2025-02-18_1.htm": {},
+                  "F-1_A_2025-02-18_10.jpg": {},
+                  "F-1_A_2025-02-18_11.jpg": {},
+                  "F-1_A_2025-02-18_12.jpg": {},
+                  "F-1_A_2025-02-18_13.jpg": {},
+                  "F-1_A_2025-02-18_14.jpg": {},
+                  "F-1_A_2025-02-18_15.jpg": {},
+                  "F-1_A_2025-02-18_16.jpg": {},
+                  "F-1_A_2025-02-18_17.jpg": {},
+                  "F-1_A_2025-02-18_18.jpg": {},
+                  "F-1_A_2025-02-18_19.jpg": {},
+                  "F-1_A_2025-02-18_2.htm": {},
+                  "F-1_A_2025-02-18_3.htm": {},
+                  "F-1_A_2025-02-18_4.htm": {},
+                  "F-1_A_2025-02-18_5.jpg": {},
+                  "F-1_A_2025-02-18_6.jpg": {},
+                  "F-1_A_2025-02-18_7.jpg": {},
+                  "F-1_A_2025-02-18_8.jpg": {},
+                  "F-1_A_2025-02-18_9.jpg": {},
+                  "F-1_A_2025-02-18_companysearch.html": {},
+                  "F-1_A_2025-02-18_complete.txt": {},
+                  "F-1_A_2025-02-18_ea0205535-14.htm": {},
+                  "F-1_A_2025-02-18_ea020553514ex1-1_kandal.htm": {},
+                  "F-1_A_2025-05-30_0.htm": {},
+                  "F-1_A_2025-05-30_1.htm": {},
+                  "F-1_A_2025-05-30_2.htm": {},
+                  "F-1_A_2025-05-30_3.jpg": {},
+                  "F-1_A_2025-05-30_4.jpg": {},
+                  "F-1_A_2025-05-30_companysearch.html": {},
+                  "F-1_A_2025-05-30_complete.txt": {},
+                  "F-1_A_2025-05-30_ea0205535-16.htm": {},
+                  "F-1_A_2025-05-30_ea020553516ex23-1_kandal.htm": {},
+                  "F-1_A_2025-06-06_0.htm": {},
+                  "F-1_A_2025-06-06_1.htm": {},
+                  "F-1_A_2025-06-06_10.jpg": {},
+                  "F-1_A_2025-06-06_100.jpg": {},
+                  "F-1_A_2025-06-06_101.jpg": {},
+                  "F-1_A_2025-06-06_102.jpg": {},
+                  "F-1_A_2025-06-06_103.jpg": {},
+                  "F-1_A_2025-06-06_104.jpg": {},
+                  "F-1_A_2025-06-06_105.jpg": {},
+                  "F-1_A_2025-06-06_106.jpg": {},
+                  "F-1_A_2025-06-06_107.jpg": {},
+                  "F-1_A_2025-06-06_108.jpg": {},
+                  "F-1_A_2025-06-06_109.jpg": {},
+                  "F-1_A_2025-06-06_11.jpg": {},
+                  "F-1_A_2025-06-06_110.jpg": {},
+                  "F-1_A_2025-06-06_111.jpg": {},
+                  "F-1_A_2025-06-06_112.jpg": {},
+                  "F-1_A_2025-06-06_113.jpg": {},
+                  "F-1_A_2025-06-06_114.jpg": {},
+                  "F-1_A_2025-06-06_115.jpg": {},
+                  "F-1_A_2025-06-06_116.jpg": {},
+                  "F-1_A_2025-06-06_117.jpg": {},
+                  "F-1_A_2025-06-06_118.jpg": {},
+                  "F-1_A_2025-06-06_119.jpg": {},
+                  "F-1_A_2025-06-06_12.jpg": {},
+                  "F-1_A_2025-06-06_120.jpg": {},
+                  "F-1_A_2025-06-06_121.jpg": {},
+                  "F-1_A_2025-06-06_122.jpg": {},
+                  "F-1_A_2025-06-06_123.jpg": {},
+                  "F-1_A_2025-06-06_124.jpg": {},
+                  "F-1_A_2025-06-06_125.jpg": {},
+                  "F-1_A_2025-06-06_126.jpg": {},
+                  "F-1_A_2025-06-06_127.jpg": {},
+                  "F-1_A_2025-06-06_128.jpg": {},
+                  "F-1_A_2025-06-06_129.jpg": {},
+                  "F-1_A_2025-06-06_13.jpg": {},
+                  "F-1_A_2025-06-06_130.jpg": {},
+                  "F-1_A_2025-06-06_131.jpg": {},
+                  "F-1_A_2025-06-06_132.jpg": {},
+                  "F-1_A_2025-06-06_133.jpg": {},
+                  "F-1_A_2025-06-06_134.jpg": {},
+                  "F-1_A_2025-06-06_135.jpg": {},
+                  "F-1_A_2025-06-06_14.jpg": {},
+                  "F-1_A_2025-06-06_15.jpg": {},
+                  "F-1_A_2025-06-06_16.jpg": {},
+                  "F-1_A_2025-06-06_17.jpg": {},
+                  "F-1_A_2025-06-06_18.jpg": {},
+                  "F-1_A_2025-06-06_19.jpg": {},
+                  "F-1_A_2025-06-06_2.htm": {},
+                  "F-1_A_2025-06-06_20.jpg": {},
+                  "F-1_A_2025-06-06_21.jpg": {},
+                  "F-1_A_2025-06-06_22.jpg": {},
+                  "F-1_A_2025-06-06_23.jpg": {},
+                  "F-1_A_2025-06-06_24.jpg": {},
+                  "F-1_A_2025-06-06_25.jpg": {},
+                  "F-1_A_2025-06-06_26.jpg": {},
+                  "F-1_A_2025-06-06_27.jpg": {},
+                  "F-1_A_2025-06-06_28.jpg": {},
+                  "F-1_A_2025-06-06_29.jpg": {},
+                  "F-1_A_2025-06-06_3.htm": {},
+                  "F-1_A_2025-06-06_30.jpg": {},
+                  "F-1_A_2025-06-06_31.jpg": {},
+                  "F-1_A_2025-06-06_32.jpg": {},
+                  "F-1_A_2025-06-06_33.jpg": {},
+                  "F-1_A_2025-06-06_34.jpg": {},
+                  "F-1_A_2025-06-06_35.jpg": {},
+                  "F-1_A_2025-06-06_36.jpg": {},
+                  "F-1_A_2025-06-06_37.jpg": {},
+                  "F-1_A_2025-06-06_38.jpg": {},
+                  "F-1_A_2025-06-06_39.jpg": {},
+                  "F-1_A_2025-06-06_4.htm": {},
+                  "F-1_A_2025-06-06_40.jpg": {},
+                  "F-1_A_2025-06-06_41.jpg": {},
+                  "F-1_A_2025-06-06_42.jpg": {},
+                  "F-1_A_2025-06-06_43.jpg": {},
+                  "F-1_A_2025-06-06_44.jpg": {},
+                  "F-1_A_2025-06-06_45.jpg": {},
+                  "F-1_A_2025-06-06_46.jpg": {},
+                  "F-1_A_2025-06-06_47.jpg": {},
+                  "F-1_A_2025-06-06_48.jpg": {},
+                  "F-1_A_2025-06-06_49.jpg": {},
+                  "F-1_A_2025-06-06_5.htm": {},
+                  "F-1_A_2025-06-06_50.jpg": {},
+                  "F-1_A_2025-06-06_51.jpg": {},
+                  "F-1_A_2025-06-06_52.jpg": {},
+                  "F-1_A_2025-06-06_53.jpg": {},
+                  "F-1_A_2025-06-06_54.jpg": {},
+                  "F-1_A_2025-06-06_55.jpg": {},
+                  "F-1_A_2025-06-06_56.jpg": {},
+                  "F-1_A_2025-06-06_57.jpg": {},
+                  "F-1_A_2025-06-06_58.jpg": {},
+                  "F-1_A_2025-06-06_59.jpg": {},
+                  "F-1_A_2025-06-06_6.jpg": {},
+                  "F-1_A_2025-06-06_60.jpg": {},
+                  "F-1_A_2025-06-06_61.jpg": {},
+                  "F-1_A_2025-06-06_62.jpg": {},
+                  "F-1_A_2025-06-06_63.jpg": {},
+                  "F-1_A_2025-06-06_64.jpg": {},
+                  "F-1_A_2025-06-06_65.jpg": {},
+                  "F-1_A_2025-06-06_66.jpg": {},
+                  "F-1_A_2025-06-06_67.jpg": {},
+                  "F-1_A_2025-06-06_68.jpg": {},
+                  "F-1_A_2025-06-06_69.jpg": {},
+                  "F-1_A_2025-06-06_7.jpg": {},
+                  "F-1_A_2025-06-06_70.jpg": {},
+                  "F-1_A_2025-06-06_71.jpg": {},
+                  "F-1_A_2025-06-06_72.jpg": {},
+                  "F-1_A_2025-06-06_73.jpg": {},
+                  "F-1_A_2025-06-06_74.jpg": {},
+                  "F-1_A_2025-06-06_75.jpg": {},
+                  "F-1_A_2025-06-06_76.jpg": {},
+                  "F-1_A_2025-06-06_77.jpg": {},
+                  "F-1_A_2025-06-06_78.jpg": {},
+                  "F-1_A_2025-06-06_79.jpg": {},
+                  "F-1_A_2025-06-06_8.jpg": {},
+                  "F-1_A_2025-06-06_80.jpg": {},
+                  "F-1_A_2025-06-06_81.jpg": {},
+                  "F-1_A_2025-06-06_82.jpg": {},
+                  "F-1_A_2025-06-06_83.jpg": {},
+                  "F-1_A_2025-06-06_84.jpg": {},
+                  "F-1_A_2025-06-06_85.jpg": {},
+                  "F-1_A_2025-06-06_86.jpg": {},
+                  "F-1_A_2025-06-06_87.jpg": {},
+                  "F-1_A_2025-06-06_88.jpg": {},
+                  "F-1_A_2025-06-06_89.jpg": {},
+                  "F-1_A_2025-06-06_9.jpg": {},
+                  "F-1_A_2025-06-06_90.jpg": {},
+                  "F-1_A_2025-06-06_91.jpg": {},
+                  "F-1_A_2025-06-06_92.jpg": {},
+                  "F-1_A_2025-06-06_93.jpg": {},
+                  "F-1_A_2025-06-06_94.jpg": {},
+                  "F-1_A_2025-06-06_95.jpg": {},
+                  "F-1_A_2025-06-06_96.jpg": {},
+                  "F-1_A_2025-06-06_97.jpg": {},
+                  "F-1_A_2025-06-06_98.jpg": {},
+                  "F-1_A_2025-06-06_99.jpg": {},
+                  "F-1_A_2025-06-06_companysearch.html": {},
+                  "F-1_A_2025-06-06_complete.txt": {},
+                  "F-1_A_2025-06-06_ea0205535-17.htm": {},
+                  "F-1_A_2025-06-06_ea020553517ex10-8_kandal.htm": {},
+                  "FWP_2025-02-20_0.htm": {},
+                  "FWP_2025-02-20_0001213900-25-015513.txt": {},
+                  "FWP_2025-02-20_1.jpg": {},
+                  "FWP_2025-02-20_10.jpg": {},
+                  "FWP_2025-02-20_11.jpg": {},
+                  "FWP_2025-02-20_12.jpg": {},
+                  "FWP_2025-02-20_13.jpg": {},
+                  "FWP_2025-02-20_14.jpg": {},
+                  "FWP_2025-02-20_15.jpg": {},
+                  "FWP_2025-02-20_16.jpg": {},
+                  "FWP_2025-02-20_17.jpg": {},
+                  "FWP_2025-02-20_18.jpg": {},
+                  "FWP_2025-02-20_19.jpg": {},
+                  "FWP_2025-02-20_2.jpg": {},
+                  "FWP_2025-02-20_20.jpg": {},
+                  "FWP_2025-02-20_21.jpg": {},
+                  "FWP_2025-02-20_22.jpg": {},
+                  "FWP_2025-02-20_23.jpg": {},
+                  "FWP_2025-02-20_3.jpg": {},
+                  "FWP_2025-02-20_4.jpg": {},
+                  "FWP_2025-02-20_5.jpg": {},
+                  "FWP_2025-02-20_6.jpg": {},
+                  "FWP_2025-02-20_7.jpg": {},
+                  "FWP_2025-02-20_8.jpg": {},
+                  "FWP_2025-02-20_9.jpg": {},
+                  "FWP_2025-02-20_companysearch.html": {},
+                  "FWP_2025-02-20_complete.txt": {},
+                  "FWP_2025-02-20_ea0231650-fwp_kandal.htm": {},
+                  "metadata.json": {}
+                }
+              },
+              "HELIO S-1.pdf": {
+                "type": "file",
+                "size": 74500525,
+                "extension": ".pdf"
+              },
+              "MSFT": {
+                "type": "directory",
+                "children": {}
+              },
+              "RDDT": {
+                "type": "directory",
+                "children": {
+                  "10_Q_2025_05_02_0001713445-25-000102.txt": {},
+                  "10_Q_2025_05_02_exhibit311302q125.htm": {},
+                  "10_Q_2025_05_02_exhibit312302q125.htm": {},
+                  "10_Q_2025_05_02_exhibit321906q125.htm": {},
+                  "10_Q_2025_05_02_rddt-20250331.htm": {},
+                  "10_Q_2025_05_02_rddt-20250331_cal.xml": {},
+                  "10_Q_2025_05_02_rddt-20250331_def.xml": {},
+                  "10_Q_2025_05_02_rddt-20250331_htm.xml": {},
+                  "10_Q_2025_05_02_rddt-20250331_lab.xml": {},
+                  "10_Q_2025_05_02_rddt-20250331_pre.xml": {},
+                  "144_2025_03_17_0001950047-25-001940.txt": {},
+                  "144_2025_03_17_primary_doc.xml": {},
+                  "144_2025_04_24_0001950047-25-002547.txt": {},
+                  "144_2025_04_24_primary_doc.xml": {},
+                  "144_2025_05_15_0001950047-25-003068.txt": {},
+                  "144_2025_05_15_primary_doc.xml": {},
+                  "144_2025_05_22_0001950047-25-003357.txt": {},
+                  "144_2025_05_22_0001950047-25-003366.txt": {},
+                  "144_2025_05_22_primary_doc.xml": {},
+                  "4_2025_03_14_0001713445-25-000051.txt": {},
+                  "4_2025_03_14_wk-form4_1741996927.xml": {},
+                  "4_2025_03_17_0001713445-25-000053.txt": {},
+                  "4_2025_03_17_wk-form4_1742256924.xml": {},
+                  "4_2025_03_18_0001713445-25-000055.txt": {},
+                  "4_2025_03_18_wk-form4_1742346159.xml": {},
+                  "4_2025_03_19_0001713445-25-000057.txt": {},
+                  "4_2025_03_19_wk-form4_1742428598.xml": {},
+                  "4_2025_03_26_0001713445-25-000059.txt": {},
+                  "4_2025_03_26_0001713445-25-000061.txt": {},
+                  "4_2025_03_26_wk-form4_1743032239.xml": {},
+                  "4_2025_03_26_wk-form4_1743032304.xml": {},
+                  "4_2025_03_28_0001713445-25-000063.txt": {},
+                  "4_2025_03_28_wk-form4_1743206256.xml": {},
+                  "4_2025_04_02_0001713445-25-000066.txt": {},
+                  "4_2025_04_02_wk-form4_1743638606.xml": {},
+                  "4_2025_04_08_0001713445-25-000073.txt": {},
+                  "4_2025_04_08_0001713445-25-000074.txt": {},
+                  "4_2025_04_08_0001713445-25-000075.txt": {},
+                  "4_2025_04_08_0001713445-25-000076.txt": {},
+                  "4_2025_04_08_0001713445-25-000077.txt": {},
+                  "4_2025_04_08_0001713445-25-000078.txt": {},
+                  "4_2025_04_08_wk-form4_1744159252.xml": {},
+                  "4_2025_04_08_wk-form4_1744159288.xml": {},
+                  "4_2025_04_08_wk-form4_1744159350.xml": {},
+                  "4_2025_04_08_wk-form4_1744159387.xml": {},
+                  "4_2025_04_08_wk-form4_1744159426.xml": {},
+                  "4_2025_04_08_wk-form4_1744159494.xml": {},
+                  "4_2025_04_17_0001713445-25-000080.txt": {},
+                  "4_2025_04_17_wk-form4_1744934738.xml": {},
+                  "4_2025_04_18_0001713445-25-000082.txt": {},
+                  "4_2025_04_18_wk-form4_1745020923.xml": {},
+                  "4_2025_04_24_0001713445-25-000086.txt": {},
+                  "4_2025_04_24_wk-form4_1745540332.xml": {},
+                  "4_2025_05_08_0001713445-25-000106.txt": {},
+                  "4_2025_05_08_wk-form4_1746750421.xml": {},
+                  "4_2025_05_19_0001713445-25-000121.txt": {},
+                  "4_2025_05_19_wk-form4_1747700671.xml": {},
+                  "4_2025_05_20_0001713445-25-000128.txt": {},
+                  "4_2025_05_20_wk-form4_1747786126.xml": {},
+                  "4_2025_05_22_0001713445-25-000130.txt": {},
+                  "4_2025_05_22_0001713445-25-000132.txt": {},
+                  "4_2025_05_22_0001713445-25-000134.txt": {},
+                  "4_2025_05_22_0001713445-25-000136.txt": {},
+                  "4_2025_05_22_0001713445-25-000138.txt": {},
+                  "4_2025_05_22_wk-form4_1747957876.xml": {},
+                  "4_2025_05_22_wk-form4_1747958054.xml": {},
+                  "4_2025_05_22_wk-form4_1747958236.xml": {},
+                  "4_2025_05_22_wk-form4_1747958293.xml": {},
+                  "4_2025_05_22_wk-form4_1747958441.xml": {},
+                  "4_2025_06_03_0001713445-25-000140.txt": {},
+                  "4_2025_06_03_wk-form4_1748995784.xml": {},
+                  "8_K_2025_05_01_0001713445-25-000100.txt": {},
+                  "8_K_2025_05_01_earningspressreleaseq125.htm": {},
+                  "8_K_2025_05_01_exhibit992q125.htm": {},
+                  "8_K_2025_05_01_rddt-20250501.htm": {},
+                  "8_K_2025_05_01_rddt-20250501_htm.xml": {},
+                  "8_K_2025_05_01_rddt-20250501_lab.xml": {},
+                  "8_K_2025_05_01_rddt-20250501_pre.xml": {},
+                  "ARS_2025_04_28_0001713445-25-000096.txt": {},
+                  "ARS_2025_04_28_redditannualreport2024.pdf": {},
+                  "DEF_14A_2025_04_28_0001713445-25-000092.txt": {},
+                  "DEF_14A_2025_04_28_rddt-20250428.htm": {},
+                  "DEF_14A_2025_04_28_rddt-20250428_htm.xml": {},
+                  "DEFA14A_2025_04_28_0001713445-25-000094.txt": {},
+                  "DEFA14A_2025_04_28_rddt-defa14a2025additional.htm": {},
+                  "SCHEDULE_13G_A_2025_05_15_0000919574-25-003170.txt": {},
+                  "SCHEDULE_13G_A_2025_05_15_d11605608_ex99-a.htm": {},
+                  "SCHEDULE_13G_A_2025_05_15_d11605608_ex99-b.htm": {},
+                  "SCHEDULE_13G_A_2025_05_15_primary_doc.xml": {}
+                }
+              },
+              "VNTG": {
+                "type": "directory",
+                "children": {
+                  "DRS_2024-06-25_0001493152-24-025107.txt": {},
+                  "DRS_2024-06-25_companysearch.html": {},
+                  "DRS_2024-06-25_filename1.htm": {},
+                  "DRS_A_2024-08-29_0001493152-24-034320.txt": {},
+                  "DRS_A_2024-08-29_companysearch.html": {},
+                  "DRS_A_2024-08-29_filename1.htm": {},
+                  "F-1_2024-10-09_companysearch.html": {},
+                  "F-1_2024-10-09_ex1-1.htm": {},
+                  "F-1_2024-10-09_formf-1.htm": {},
+                  "F-1_A_2024-11-20_companysearch.html": {},
+                  "F-1_A_2024-11-20_ex4-1.htm": {},
+                  "F-1_A_2024-11-20_formf-1a.htm": {},
+                  "F-1_A_2024-12-19_companysearch.html": {},
+                  "F-1_A_2024-12-19_ex23-1.htm": {},
+                  "F-1_A_2024-12-19_formf-1a.htm": {},
+                  "F-1_A_2025-01-10_companysearch.html": {},
+                  "F-1_A_2025-01-10_ex10-1.htm": {},
+                  "F-1_A_2025-01-10_formf-1a.htm": {},
+                  "F-1_A_2025-01-24_companysearch.html": {},
+                  "F-1_A_2025-01-24_ex23-1.htm": {},
+                  "F-1_A_2025-01-24_formf-1a.htm": {},
+                  "F-1_A_2025-02-28_companysearch.html": {},
+                  "F-1_A_2025-02-28_ex23-1.htm": {},
+                  "F-1_A_2025-02-28_formf-1a.htm": {},
+                  "F-1_A_2025-03-19_companysearch.html": {},
+                  "F-1_A_2025-03-19_ex1-1.htm": {},
+                  "F-1_A_2025-03-19_formf-1a.htm": {},
+                  "F-1_A_2025-04-17_companysearch.html": {},
+                  "F-1_A_2025-04-17_ex5-1.htm": {},
+                  "F-1_A_2025-04-17_formf-1a.htm": {},
+                  "F-1_A_2025-05-21_companysearch.html": {},
+                  "F-1_A_2025-05-21_ex23-1.htm": {},
+                  "F-1_A_2025-05-21_formf-1a.htm": {},
+                  "FWP_2024-11-26_0001493152-24-047689.txt": {},
+                  "FWP_2024-11-26_companysearch.html": {},
+                  "FWP_2024-11-26_formfwp.htm": {},
+                  "FWP_2025-01-17_0001493152-25-002837.txt": {},
+                  "FWP_2025-01-17_companysearch.html": {},
+                  "FWP_2025-01-17_formfwp.htm": {},
+                  "metadata.json": {}
+                }
+              },
+              "VOYG": {
+                "type": "directory",
+                "children": {
+                  "D_2020-02-14_companysearch.html": {},
+                  "D_2020-02-14_primary_doc.xml": {},
+                  "D_2020-05-28_companysearch.html": {},
+                  "D_2020-05-28_primary_doc.xml": {},
+                  "D_2021-03-04_companysearch.html": {},
+                  "D_2021-03-04_primary_doc.xml": {},
+                  "D_2021-07-09_companysearch.html": {},
+                  "D_2021-07-09_primary_doc.xml": {},
+                  "D_2021-10-12_companysearch.html": {},
+                  "D_2021-10-12_primary_doc.xml": {},
+                  "D_A_2022-09-26_companysearch.html": {},
+                  "D_A_2022-09-26_primary_doc.xml": {},
+                  "D_A_2023-01-27_companysearch.html": {},
+                  "D_A_2023-01-27_primary_doc.xml": {},
+                  "DRS_2025-01-21_0001628279-25-000007.txt": {},
+                  "DRS_2025-01-21_companysearch.html": {},
+                  "DRS_2025-01-21_filename1.htm": {},
+                  "DRS_A_2025-03-20_0001628279-25-000133.txt": {},
+                  "DRS_A_2025-03-20_companysearch.html": {},
+                  "DRS_A_2025-03-20_filename1.htm": {},
+                  "DRS_A_2025-04-23_0001628279-25-000234.txt": {},
+                  "DRS_A_2025-04-23_companysearch.html": {},
+                  "DRS_A_2025-04-23_filename1.htm": {},
+                  "metadata.json": {},
+                  "S-1_2025-05-16_companysearch.html": {},
+                  "S-1_2025-05-16_exhibit107-sx1.htm": {},
+                  "S-1_2025-05-16_voyager-sx1.htm": {},
+                  "S-1_A_2025-06-02_companysearch.html": {},
+                  "S-1_A_2025-06-02_exhibit107-sx1a1.htm": {},
+                  "S-1_A_2025-06-02_voyager-sx1a.htm": {},
+                  "S-1_A_2025-06-05_companysearch.html": {},
+                  "S-1_A_2025-06-05_exhibit32-sx1a2.htm": {},
+                  "S-1_A_2025-06-05_voyager-sx1a2.htm": {}
+                }
+              }
+            }
+          },
+          "test_downloads": {
+            "type": "directory",
+            "children": {
+              "MSFT": {
+                "type": "directory",
+                "children": {}
+              }
+            }
+          },
+          "test_sessions.json": {
+            "type": "file",
+            "size": 220,
+            "extension": ".json"
+          },
+          "tickers.json": {
+            "type": "file",
+            "size": 2,
+            "extension": ".json"
+          },
+          "user_settings.json": {
+            "type": "file",
+            "size": 368,
+            "extension": ".json"
+          },
+          "vector_db": {
+            "type": "directory",
+            "children": {
+              "125baead-9cf8-4eb5-80ce-a3f992e1f20d": {
+                "type": "directory",
+                "children": {
+                  "data_level0.bin": {},
+                  "header.bin": {},
+                  "length.bin": {},
+                  "link_lists.bin": {}
+                }
+              },
+              "chroma.sqlite3": {
+                "type": "file",
+                "size": 655360,
+                "extension": ".sqlite3"
+              }
+            }
+          },
+          "vectors": {
+            "type": "directory",
+            "children": {
+              "__init__.py": {
+                "type": "file",
+                "size": 0,
+                "extension": ".py"
+              }
+            }
+          },
+          "watchlists": {
+            "type": "directory",
+            "children": {}
+          },
+          "watchlists.json": {
+            "type": "file",
+            "size": 198,
+            "extension": ".json"
+          }
+        }
+      },
+      "docker-compose.yml": {
+        "type": "file",
+        "size": 0,
+        "extension": ".yml"
+      },
+      "Dockerfile": {
+        "type": "file",
+        "size": 0,
+        "extension": ""
+      },
+      "docs": {
+        "type": "directory",
+        "children": {
+          "raw": {
+            "type": "directory",
+            "children": {}
+          }
+        }
+      },
+      "fetchers": {
+        "type": "directory",
+        "children": {
+          "__init__.py": {
+            "type": "file",
+            "size": 43,
+            "extension": ".py"
+          }
+        }
+      },
+      "fix_class_name.py": {
+        "type": "file",
+        "size": 2005,
+        "extension": ".py"
+      },
+      "fix_core_methods.py": {
+        "type": "file",
+        "size": 1460,
+        "extension": ".py"
+      },
+      "fix_dependencies.py": {
+        "type": "file",
+        "size": 1067,
+        "extension": ".py"
+      },
+      "fix_imports.py": {
+        "type": "file",
+        "size": 2026,
+        "extension": ".py"
+      },
+      "fix_imports_safe.py": {
+        "type": "file",
+        "size": 709,
+        "extension": ".py"
+      },
+      "fix_missing_settings.py": {
+        "type": "file",
+        "size": 3825,
+        "extension": ".py"
+      },
+      "fix_production_test.py": {
+        "type": "file",
+        "size": 2134,
+        "extension": ".py"
+      },
+      "fix_remaining_issues.py": {
+        "type": "file",
+        "size": 3244,
+        "extension": ".py"
+      },
+      "generate_full_context.py": {
+        "type": "file",
+        "size": 11339,
+        "extension": ".py"
+      },
+      "hedge_intel_backup_20250605_091707": {
+        "type": "directory",
+        "children": {
+          "data": {
+            "type": "directory",
+            "children": {
+              "cache": {
+                "type": "directory",
+                "children": {
+                  "ipo_calendar.json": {},
+                  "lockup_calendar.json": {}
+                }
+              },
+              "documents": {
+                "type": "directory",
+                "children": {
+                  "CRCL_S-1_20250604_104906.html": {},
+                  "CRCL_S-1_20250604_121718.html": {},
+                  "HLEO_S-1_20250604_104915.html": {},
+                  "HLEO_S-1_20250604_121726.html": {},
+                  "OMDA_S-1_20250604_104921.html": {},
+                  "OMDA_S-1_20250604_121732.html": {},
+                  "TEST_1A - La Rosa Holdings Corp_S1.html": {}
+                }
+              },
+              "processed": {
+                "type": "directory",
+                "children": {
+                  "CRCL_s1.json": {},
+                  "HLEO_s1.json": {},
+                  "OMDA_s1.json": {}
+                }
+              }
+            }
+          },
+          "requirements.txt": {
+            "type": "file",
+            "size": 235,
+            "extension": ".txt"
+          }
+        }
+      },
+      "hedge_intelligence.py": {
+        "type": "file",
+        "size": 7674,
+        "extension": ".py"
+      },
+      "hedge_intelligence.py.backup": {
+        "type": "file",
+        "size": 7674,
+        "extension": ".backup"
+      },
+      "hedge_intelligence_standalone.py": {
+        "type": "file",
+        "size": 11036,
+        "extension": ".py"
+      },
+      "inspect_before_refactor.py": {
+        "type": "file",
+        "size": 8298,
+        "extension": ".py"
+      },
+      "ipo_dashboard": {
+        "type": "directory",
+        "children": {
+          "__init__.py": {
+            "type": "file",
+            "size": 0,
+            "extension": ".py"
+          },
+          "ipo_data_manager.py": {
+            "type": "file",
+            "size": 8398,
+            "extension": ".py"
+          }
+        }
+      },
+      "logs": {
+        "type": "directory",
+        "children": {
+          "cleanup_summary.json": {
+            "type": "file",
+            "size": 160,
+            "extension": ".json"
+          }
+        }
+      },
+      "monitors": {
+        "type": "directory",
+        "children": {
+          "__init__.py": {
+            "type": "file",
+            "size": 43,
+            "extension": ".py"
+          },
+          "ai_narrator.py": {
+            "type": "file",
+            "size": 2149,
+            "extension": ".py"
+          },
+          "queue_monitor.py": {
+            "type": "file",
+            "size": 1498,
+            "extension": ".py"
+          },
+          "system_monitor.py": {
+            "type": "file",
+            "size": 3423,
+            "extension": ".py"
+          }
+        }
+      },
+      "processors": {
+        "type": "directory",
+        "children": {
+          "__init__.py": {
+            "type": "file",
+            "size": 45,
+            "extension": ".py"
+          },
+          "document_processor.py": {
+            "type": "file",
+            "size": 8992,
+            "extension": ".py"
+          }
+        }
+      },
+      "production_test.py": {
+        "type": "file",
+        "size": 23381,
+        "extension": ".py"
+      },
+      "production_test_v2.py": {
+        "type": "file",
+        "size": 21872,
+        "extension": ".py"
+      },
+      "quick_fix_all.py": {
+        "type": "file",
+        "size": 5908,
+        "extension": ".py"
+      },
+      "README.md": {
+        "type": "file",
+        "size": 752,
+        "extension": ".md"
+      },
+      "refactor_inspection_report.txt": {
+        "type": "file",
+        "size": 152,
+        "extension": ".txt"
+      },
+      "requirements.txt": {
+        "type": "file",
+        "size": 466,
+        "extension": ".txt"
+      },
+      "scrapers": {
+        "type": "directory",
+        "children": {
+          "__init__.py": {
+            "type": "file",
+            "size": 43,
+            "extension": ".py"
+          },
+          "cik_resolver.py": {
+            "type": "file",
+            "size": 732,
+            "extension": ".py"
+          },
+          "edgar_monitor.py": {
+            "type": "file",
+            "size": 4479,
+            "extension": ".py"
+          },
+          "ipo_scraper.py": {
+            "type": "file",
+            "size": 8206,
+            "extension": ".py"
+          },
+          "ipo_scraper_fixed.py": {
+            "type": "file",
+            "size": 2186,
+            "extension": ".py"
+          },
+          "iposcoop_scraper.py": {
+            "type": "file",
+            "size": 1042,
+            "extension": ".py"
+          },
+          "sec": {
+            "type": "directory",
+            "children": {
+              "__init__.py": {
+                "type": "file",
+                "size": 0,
+                "extension": ".py"
+              },
+              "cik_resolver.py": {
+                "type": "file",
+                "size": 1456,
+                "extension": ".py"
+              },
+              "data": {
+                "type": "directory",
+                "children": {
+                  "sec_documents": {}
+                }
+              },
+              "enhanced_sec_scraper.py": {
+                "type": "file",
+                "size": 215,
+                "extension": ".py"
+              },
+              "enhanced_sec_scraper_v3.py": {
+                "type": "file",
+                "size": 9773,
+                "extension": ".py"
+              },
+              "fixed_sec_scraper.py": {
+                "type": "file",
+                "size": 7744,
+                "extension": ".py"
+              },
+              "iposcoop_scraper.py": {
+                "type": "file",
+                "size": 3215,
+                "extension": ".py"
+              },
+              "pipeline_manager.py": {
+                "type": "file",
+                "size": 8264,
+                "extension": ".py"
+              },
+              "sec_compliant_scraper.py": {
+                "type": "file",
+                "size": 13549,
+                "extension": ".py"
+              },
+              "sec_scraper.py": {
+                "type": "file",
+                "size": 197,
+                "extension": ".py"
+              },
+              "working_sec_scraper.py": {
+                "type": "file",
+                "size": 212,
+                "extension": ".py"
+              }
+            }
+          }
+        }
+      },
+      "services": {
+        "type": "directory",
+        "children": {
+          "__init__.py": {
+            "type": "file",
+            "size": 28,
+            "extension": ".py"
+          },
+          "ai_service.py": {
+            "type": "file",
+            "size": 5920,
+            "extension": ".py"
+          },
+          "chat_service.py": {
+            "type": "file",
+            "size": 3646,
+            "extension": ".py"
+          },
+          "document_service.py": {
+            "type": "file",
+            "size": 2594,
+            "extension": ".py"
+          },
+          "report_service.py": {
+            "type": "file",
+            "size": 5713,
+            "extension": ".py"
+          },
+          "sec_scraper.py": {
+            "type": "file",
+            "size": 793,
+            "extension": ".py"
+          },
+          "watchlist_service.py": {
+            "type": "file",
+            "size": 941,
+            "extension": ".py"
+          }
+        }
+      },
+      "static": {
+        "type": "directory",
+        "children": {
+          "__init__.py": {
+            "type": "file",
+            "size": 0,
+            "extension": ".py"
+          },
+          "css": {
+            "type": "directory",
+            "children": {
+              "apple_design.css": {
+                "type": "file",
+                "size": 5783,
+                "extension": ".css"
+              }
+            }
+          }
+        }
+      },
+      "storage": {
+        "type": "directory",
+        "children": {
+          "__init__.py": {
+            "type": "file",
+            "size": 42,
+            "extension": ".py"
+          }
+        }
+      },
+      "templates": {
+        "type": "directory",
+        "children": {}
+      },
+      "test_hedge_intelligence.py": {
+        "type": "file",
+        "size": 21273,
+        "extension": ".py"
+      },
+      "test_report_v3.json": {
+        "type": "file",
+        "size": 12728,
+        "extension": ".json"
+      },
+      "test_results.json": {
+        "type": "file",
+        "size": 300,
+        "extension": ".json"
+      },
+      "tools": {
+        "type": "directory",
+        "children": {
+          "__init__.py": {
+            "type": "file",
+            "size": 40,
+            "extension": ".py"
+          },
+          "calendar_tool.py": {
+            "type": "file",
+            "size": 1316,
+            "extension": ".py"
+          },
+          "document_tool.py": {
+            "type": "file",
+            "size": 1697,
+            "extension": ".py"
+          },
+          "lockup_tool.py": {
+            "type": "file",
+            "size": 1344,
+            "extension": ".py"
+          }
+        }
+      },
+      "ui": {
+        "type": "directory",
+        "children": {
+          "__init__.py": {
+            "type": "file",
+            "size": 0,
+            "extension": ".py"
+          },
+          "components": {
+            "type": "directory",
+            "children": {
+              "__init__.py": {
+                "type": "file",
+                "size": 0,
+                "extension": ".py"
+              },
+              "chat_interface.py": {
+                "type": "file",
+                "size": 3190,
+                "extension": ".py"
+              },
+              "context_panel.py": {
+                "type": "file",
+                "size": 3720,
+                "extension": ".py"
+              },
+              "data_cards.py": {
+                "type": "file",
+                "size": 6736,
+                "extension": ".py"
+              }
+            }
+          },
+          "styles.py": {
+            "type": "file",
+            "size": 1834,
+            "extension": ".py"
+          }
+        }
+      },
+      "utils": {
+        "type": "directory",
+        "children": {
+          "__init__.py": {
+            "type": "file",
+            "size": 28,
+            "extension": ".py"
+          },
+          "data_loader.py": {
+            "type": "file",
+            "size": 2675,
+            "extension": ".py"
+          },
+          "doc_processor.py": {
+            "type": "file",
+            "size": 1154,
+            "extension": ".py"
+          },
+          "helpers.py": {
+            "type": "file",
+            "size": 774,
+            "extension": ".py"
+          },
+          "ui_helpers.py": {
+            "type": "file",
+            "size": 6839,
+            "extension": ".py"
+          }
+        }
+      },
+      "venv": {
+        "type": "directory",
+        "children": {
+          "etc": {
+            "type": "directory",
+            "children": {
+              "jupyter": {
+                "type": "directory",
+                "children": {
+                  "nbconfig": {}
+                }
+              }
+            }
+          },
+          "Include": {
+            "type": "directory",
+            "children": {
+              "site": {
+                "type": "directory",
+                "children": {
+                  "python3.13": {}
+                }
+              }
+            }
+          },
+          "Lib": {
+            "type": "directory",
+            "children": {
+              "site-packages": {
+                "type": "directory",
+                "children": {
+                  "_cffi_backend.cp313-win_amd64.pyd": {},
+                  "_distutils_hack": {},
+                  "_plotly_utils": {},
+                  "_yaml": {},
+                  "aiofiles": {},
+                  "aiofiles-24.1.0.dist-info": {},
+                  "aiohappyeyeballs": {},
+                  "aiohappyeyeballs-2.6.1.dist-info": {},
+                  "aiohttp": {},
+                  "aiohttp-3.12.4.dist-info": {},
+                  "aiosignal": {},
+                  "aiosignal-1.3.2.dist-info": {},
+                  "altair": {},
+                  "altair-5.5.0.dist-info": {},
+                  "annotated_types": {},
+                  "annotated_types-0.7.0.dist-info": {},
+                  "anyio": {},
+                  "anyio-4.9.0.dist-info": {},
+                  "apiclient": {},
+                  "asgiref": {},
+                  "asgiref-3.8.1.dist-info": {},
+                  "attr": {},
+                  "attrs": {},
+                  "attrs-25.3.0.dist-info": {},
+                  "automat": {},
+                  "automat-25.4.16.dist-info": {},
+                  "backoff": {},
+                  "backoff-2.2.1.dist-info": {},
+                  "bcrypt": {},
+                  "bcrypt-4.3.0.dist-info": {},
+                  "beautifulsoup4-4.13.4.dist-info": {},
+                  "blinker": {},
+                  "blinker-1.9.0.dist-info": {},
+                  "bs4": {},
+                  "build": {},
+                  "build-1.2.2.post1.dist-info": {},
+                  "cachetools": {},
+                  "cachetools-5.5.2.dist-info": {},
+                  "certifi": {},
+                  "certifi-2025.4.26.dist-info": {},
+                  "cffi": {},
+                  "cffi-1.17.1.dist-info": {},
+                  "chardet": {},
+                  "chardet-5.2.0.dist-info": {},
+                  "charset_normalizer": {},
+                  "charset_normalizer-3.4.2.dist-info": {},
+                  "chromadb": {},
+                  "chromadb-1.0.12.dist-info": {},
+                  "chromadb_rust_bindings": {},
+                  "click": {},
+                  "click-8.2.1.dist-info": {},
+                  "colorama": {},
+                  "colorama-0.4.6.dist-info": {},
+                  "coloredlogs": {},
+                  "coloredlogs-15.0.1.dist-info": {},
+                  "coloredlogs.pth": {},
+                  "constantly": {},
+                  "constantly-23.10.4.dist-info": {},
+                  "cryptography": {},
+                  "cryptography-45.0.3.dist-info": {},
+                  "cssselect": {},
+                  "cssselect-1.3.0.dist-info": {},
+                  "curl_cffi": {},
+                  "curl_cffi-0.11.2.dist-info": {},
+                  "dataclasses_json": {},
+                  "dataclasses_json-0.6.7.dist-info": {},
+                  "dateutil": {},
+                  "defusedxml": {},
+                  "defusedxml-0.7.1.dist-info": {},
+                  "distro": {},
+                  "distro-1.9.0.dist-info": {},
+                  "distutils-precedence.pth": {},
+                  "docx": {},
+                  "dotenv": {},
+                  "durationpy": {},
+                  "durationpy-0.10.dist-info": {},
+                  "faiss": {},
+                  "faiss_cpu-1.11.0.dist-info": {},
+                  "faiss_cpu.libs": {},
+                  "fastapi": {},
+                  "fastapi-0.115.9.dist-info": {},
+                  "filelock": {},
+                  "filelock-3.18.0.dist-info": {},
+                  "flatbuffers": {},
+                  "flatbuffers-25.2.10.dist-info": {},
+                  "frozendict": {},
+                  "frozendict-2.4.6.dist-info": {},
+                  "frozenlist": {},
+                  "frozenlist-1.6.0.dist-info": {},
+                  "fsspec": {},
+                  "fsspec-2025.5.1.dist-info": {},
+                  "fuzzywuzzy": {},
+                  "fuzzywuzzy-0.18.0.dist-info": {},
+                  "git": {},
+                  "gitdb": {},
+                  "gitdb-4.0.12.dist-info": {},
+                  "GitPython-3.1.44.dist-info": {},
+                  "google": {},
+                  "google_ai_generativelanguage-0.6.15.dist-info": {},
+                  "google_api_core-2.25.0.dist-info": {},
+                  "google_api_python_client-2.171.0.dist-info": {},
+                  "google_auth-2.40.3.dist-info": {},
+                  "google_auth_httplib2-0.2.0.dist-info": {},
+                  "google_auth_httplib2.py": {},
+                  "google_generativeai-0.8.5-py3.13-nspkg.pth": {},
+                  "google_generativeai-0.8.5.dist-info": {},
+                  "googleapiclient": {},
+                  "googleapis_common_protos-1.70.0.dist-info": {},
+                  "greenlet": {},
+                  "greenlet-3.2.2.dist-info": {},
+                  "grpc": {},
+                  "grpc_status": {},
+                  "grpcio-1.72.1.dist-info": {},
+                  "grpcio_status-1.71.0.dist-info": {},
+                  "h11": {},
+                  "h11-0.16.0.dist-info": {},
+                  "httpcore": {},
+                  "httpcore-1.0.9.dist-info": {},
+                  "httplib2": {},
+                  "httplib2-0.22.0.dist-info": {},
+                  "httptools": {},
+                  "httptools-0.6.4.dist-info": {},
+                  "httpx": {},
+                  "httpx-0.28.1.dist-info": {},
+                  "httpx_sse": {},
+                  "httpx_sse-0.4.0.dist-info": {},
+                  "huggingface_hub": {},
+                  "huggingface_hub-0.32.4.dist-info": {},
+                  "humanfriendly": {},
+                  "humanfriendly-10.0.dist-info": {},
+                  "humanize": {},
+                  "humanize-4.12.3.dist-info": {},
+                  "hyperlink": {},
+                  "hyperlink-21.0.0.dist-info": {},
+                  "idna": {},
+                  "idna-3.10.dist-info": {},
+                  "importlib_metadata": {},
+                  "importlib_metadata-8.7.0.dist-info": {},
+                  "importlib_resources": {},
+                  "importlib_resources-6.5.2.dist-info": {},
+                  "incremental": {},
+                  "incremental-24.7.2.dist-info": {},
+                  "isympy.py": {},
+                  "itemadapter": {},
+                  "itemadapter-0.11.0.dist-info": {},
+                  "itemloaders": {},
+                  "itemloaders-1.3.2.dist-info": {},
+                  "jinja2": {},
+                  "jinja2-3.1.6.dist-info": {},
+                  "jiter": {},
+                  "jiter-0.10.0.dist-info": {},
+                  "jmespath": {},
+                  "jmespath-1.0.1.dist-info": {},
+                  "jsonpatch-1.33.dist-info": {},
+                  "jsonpatch.py": {},
+                  "jsonpointer-3.0.0.dist-info": {},
+                  "jsonpointer.py": {},
+                  "jsonschema": {},
+                  "jsonschema-4.24.0.dist-info": {},
+                  "jsonschema_specifications": {},
+                  "jsonschema_specifications-2025.4.1.dist-info": {},
+                  "jwt": {},
+                  "kubernetes": {},
+                  "kubernetes-32.0.1.dist-info": {},
+                  "langchain": {},
+                  "langchain-0.3.25.dist-info": {},
+                  "langchain_community": {},
+                  "langchain_community-0.3.24.dist-info": {},
+                  "langchain_core": {},
+                  "langchain_core-0.3.62.dist-info": {},
+                  "langchain_openai": {},
+                  "langchain_openai-0.3.18.dist-info": {},
+                  "langchain_text_splitters": {},
+                  "langchain_text_splitters-0.3.8.dist-info": {},
+                  "langsmith": {},
+                  "langsmith-0.3.43.dist-info": {},
+                  "Levenshtein": {},
+                  "levenshtein-0.27.1.dist-info": {},
+                  "lxml": {},
+                  "lxml-5.4.0.dist-info": {},
+                  "markdown_it": {},
+                  "markdown_it_py-3.0.0.dist-info": {},
+                  "markupsafe": {},
+                  "MarkupSafe-3.0.2.dist-info": {},
+                  "marshmallow": {},
+                  "marshmallow-3.26.1.dist-info": {},
+                  "mdurl": {},
+                  "mdurl-0.1.2.dist-info": {},
+                  "mmh3": {},
+                  "mmh3-5.1.0.dist-info": {},
+                  "mmh3.cp313-win_amd64.pyd": {},
+                  "mpmath": {},
+                  "mpmath-1.3.0.dist-info": {},
+                  "multidict": {},
+                  "multidict-6.4.4.dist-info": {},
+                  "multitasking": {},
+                  "multitasking-0.0.11.dist-info": {},
+                  "mypy_extensions-1.1.0.dist-info": {},
+                  "mypy_extensions.py": {},
+                  "narwhals": {},
+                  "narwhals-1.41.0.dist-info": {},
+                  "numpy": {},
+                  "numpy-2.2.6-cp313-cp313-win_amd64.whl": {},
+                  "numpy-2.2.6.dist-info": {},
+                  "numpy.libs": {},
+                  "oauthlib": {},
+                  "oauthlib-3.2.2.dist-info": {},
+                  "onnxruntime": {},
+                  "onnxruntime-1.22.0.dist-info": {},
+                  "openai": {},
+                  "openai-1.82.0.dist-info": {},
+                  "OpenSSL": {},
+                  "opentelemetry": {},
+                  "opentelemetry_api-1.34.0.dist-info": {},
+                  "opentelemetry_exporter_otlp_proto_common-1.34.0.dist-info": {},
+                  "opentelemetry_exporter_otlp_proto_grpc-1.34.0.dist-info": {},
+                  "opentelemetry_instrumentation-0.55b0.dist-info": {},
+                  "opentelemetry_instrumentation_asgi-0.55b0.dist-info": {},
+                  "opentelemetry_instrumentation_fastapi-0.55b0.dist-info": {},
+                  "opentelemetry_proto-1.34.0.dist-info": {},
+                  "opentelemetry_sdk-1.34.0.dist-info": {},
+                  "opentelemetry_semantic_conventions-0.55b0.dist-info": {},
+                  "opentelemetry_util_http-0.55b0.dist-info": {},
+                  "orjson": {},
+                  "orjson-3.10.18.dist-info": {},
+                  "overrides": {},
+                  "overrides-7.7.0.dist-info": {},
+                  "packaging": {},
+                  "packaging-24.2.dist-info": {},
+                  "pandas": {},
+                  "pandas-2.2.3.dist-info": {},
+                  "pandas.libs": {},
+                  "parsel": {},
+                  "parsel-1.10.0.dist-info": {},
+                  "pdfminer": {},
+                  "pdfminer_six-20250327.dist-info": {},
+                  "pdfplumber": {},
+                  "pdfplumber-0.11.6.dist-info": {},
+                  "peewee-3.18.1.dist-info": {},
+                  "peewee.py": {},
+                  "PIL": {},
+                  "pillow-11.2.1.dist-info": {},
+                  "pip": {},
+                  "pip-25.1.1.dist-info": {},
+                  "pkg_resources": {},
+                  "platformdirs": {},
+                  "platformdirs-4.3.8.dist-info": {},
+                  "playhouse": {},
+                  "playwright": {},
+                  "playwright-1.52.0.dist-info": {},
+                  "plotly": {},
+                  "plotly-6.1.2.dist-info": {},
+                  "posthog": {},
+                  "posthog-4.2.0.dist-info": {},
+                  "propcache": {},
+                  "propcache-0.3.1.dist-info": {},
+                  "Protego-0.4.0.dist-info": {},
+                  "protego.py": {},
+                  "proto": {},
+                  "proto_plus-1.26.1.dist-info": {},
+                  "protobuf-5.29.5.dist-info": {},
+                  "psutil": {},
+                  "psutil-7.0.0.dist-info": {},
+                  "psycopg2": {},
+                  "psycopg2_binary-2.9.10.dist-info": {},
+                  "psycopg2_binary.libs": {},
+                  "pwiz.py": {},
+                  "pyarrow": {},
+                  "pyarrow-20.0.0.dist-info": {},
+                  "pyarrow.libs": {},
+                  "pyasn1": {},
+                  "pyasn1-0.6.1.dist-info": {},
+                  "pyasn1_modules": {},
+                  "pyasn1_modules-0.4.2.dist-info": {},
+                  "pycparser": {},
+                  "pycparser-2.22.dist-info": {},
+                  "pydantic": {},
+                  "pydantic-2.11.5.dist-info": {},
+                  "pydantic_core": {},
+                  "pydantic_core-2.33.2.dist-info": {},
+                  "pydantic_settings": {},
+                  "pydantic_settings-2.9.1.dist-info": {},
+                  "pydeck": {},
+                  "pydeck-0.9.1.dist-info": {},
+                  "pydispatch": {},
+                  "PyDispatcher-2.0.7.dist-info": {},
+                  "pyee": {},
+                  "pyee-13.0.0.dist-info": {},
+                  "pygments": {},
+                  "pygments-2.19.1.dist-info": {},
+                  "PyJWT-2.10.1.dist-info": {},
+                  "pyopenssl-25.1.0.dist-info": {},
+                  "pyparsing": {},
+                  "pyparsing-3.2.3.dist-info": {},
+                  "pypdf": {},
+                  "pypdf-5.5.0.dist-info": {},
+                  "PyPDF2": {},
+                  "pypdf2-3.0.1.dist-info": {},
+                  "pypdfium2": {},
+                  "pypdfium2-4.30.1.dist-info": {},
+                  "pypdfium2_raw": {},
+                  "pypika": {},
+                  "pypika-0.48.9.dist-info": {},
+                  "pyproject_hooks": {},
+                  "pyproject_hooks-1.2.0.dist-info": {},
+                  "pyreadline3": {},
+                  "pyreadline3-3.5.4.dist-info": {},
+                  "python_dateutil-2.9.0.post0.dist-info": {},
+                  "python_docx-1.1.2.dist-info": {},
+                  "python_dotenv-1.1.0.dist-info": {},
+                  "python_levenshtein-0.27.1.dist-info": {},
+                  "pytz": {},
+                  "pytz-2025.2.dist-info": {},
+                  "PyYAML-6.0.2.dist-info": {},
+                  "queuelib": {},
+                  "queuelib-1.8.0.dist-info": {},
+                  "rapidfuzz": {},
+                  "rapidfuzz-3.13.0.dist-info": {},
+                  "readline.py": {},
+                  "redis": {},
+                  "redis-6.2.0.dist-info": {},
+                  "referencing": {},
+                  "referencing-0.36.2.dist-info": {},
+                  "regex": {},
+                  "regex-2024.11.6.dist-info": {},
+                  "reportlab": {},
+                  "reportlab-4.4.1.dist-info": {},
+                  "requests": {},
+                  "requests-2.32.3.dist-info": {},
+                  "requests_file-2.1.0.dist-info": {},
+                  "requests_file.py": {},
+                  "requests_oauthlib": {},
+                  "requests_oauthlib-2.0.0.dist-info": {},
+                  "requests_toolbelt": {},
+                  "requests_toolbelt-1.0.0.dist-info": {},
+                  "rich": {},
+                  "rich-14.0.0.dist-info": {},
+                  "rpds": {},
+                  "rpds_py-0.25.1.dist-info": {},
+                  "rsa": {},
+                  "rsa-4.9.1.dist-info": {},
+                  "schedule": {},
+                  "schedule-1.2.2.dist-info": {},
+                  "schemas": {},
+                  "scrapy": {},
+                  "scrapy-2.13.1.dist-info": {},
+                  "service_identity": {},
+                  "service_identity-24.2.0.dist-info": {},
+                  "setuptools": {},
+                  "setuptools-80.9.0.dist-info": {},
+                  "shellingham": {},
+                  "shellingham-1.5.4.dist-info": {},
+                  "six-1.17.0.dist-info": {},
+                  "six.py": {},
+                  "smmap": {},
+                  "smmap-5.0.2.dist-info": {},
+                  "sniffio": {},
+                  "sniffio-1.3.1.dist-info": {},
+                  "soupsieve": {},
+                  "soupsieve-2.7.dist-info": {},
+                  "sqlalchemy": {},
+                  "sqlalchemy-2.0.41.dist-info": {},
+                  "starlette": {},
+                  "starlette-0.45.3.dist-info": {},
+                  "streamlit": {},
+                  "streamlit-1.45.1.dist-info": {},
+                  "streamlit_pdf_viewer": {},
+                  "streamlit_pdf_viewer-0.0.23.dist-info": {},
+                  "sympy": {},
+                  "sympy-1.14.0.dist-info": {},
+                  "tenacity": {},
+                  "tenacity-9.1.2.dist-info": {},
+                  "tests": {},
+                  "tiktoken": {},
+                  "tiktoken-0.9.0.dist-info": {},
+                  "tiktoken_ext": {},
+                  "tldextract": {},
+                  "tldextract-5.3.0.dist-info": {},
+                  "tokenizers": {},
+                  "tokenizers-0.21.1.dist-info": {},
+                  "toml": {},
+                  "toml-0.10.2.dist-info": {},
+                  "tornado": {},
+                  "tornado-6.5.1.dist-info": {},
+                  "tqdm": {},
+                  "tqdm-4.67.1.dist-info": {},
+                  "twisted": {},
+                  "twisted-25.5.0.dist-info": {},
+                  "typer": {},
+                  "typer-0.16.0.dist-info": {},
+                  "typing_extensions-4.14.0.dist-info": {},
+                  "typing_extensions.py": {},
+                  "typing_inspect-0.9.0.dist-info": {},
+                  "typing_inspect.py": {},
+                  "typing_inspection": {},
+                  "typing_inspection-0.4.1.dist-info": {},
+                  "tzdata": {},
+                  "tzdata-2025.2.dist-info": {},
+                  "uritemplate": {},
+                  "uritemplate-4.2.0.dist-info": {},
+                  "urllib3": {},
+                  "urllib3-2.4.0.dist-info": {},
+                  "uvicorn": {},
+                  "uvicorn-0.34.3.dist-info": {},
+                  "w3lib": {},
+                  "w3lib-2.3.1.dist-info": {},
+                  "watchdog": {},
+                  "watchdog-6.0.0.dist-info": {},
+                  "watchfiles": {},
+                  "watchfiles-1.0.5.dist-info": {},
+                  "websocket": {},
+                  "websocket_client-1.8.0.dist-info": {},
+                  "websockets": {},
+                  "websockets-15.0.1.dist-info": {},
+                  "wheel": {},
+                  "wheel-0.45.1.dist-info": {},
+                  "wrapt": {},
+                  "wrapt-1.17.2.dist-info": {},
+                  "yaml": {},
+                  "yarl": {},
+                  "yarl-1.20.0.dist-info": {},
+                  "yfinance": {},
+                  "yfinance-0.2.62.dist-info": {},
+                  "zipp": {},
+                  "zipp-3.22.0.dist-info": {},
+                  "zope": {},
+                  "zope.interface-7.2-py3.13-nspkg.pth": {},
+                  "zope.interface-7.2.dist-info": {},
+                  "zstandard": {},
+                  "zstandard-0.23.0.dist-info": {}
+                }
+              }
+            }
+          },
+          "pyvenv.cfg": {
+            "type": "file",
+            "size": 324,
+            "extension": ".cfg"
+          },
+          "Scripts": {
+            "type": "directory",
+            "children": {
+              "activate": {
+                "type": "file",
+                "size": 2196,
+                "extension": ""
+              },
+              "activate.bat": {
+                "type": "file",
+                "size": 1015,
+                "extension": ".bat"
+              },
+              "activate.fish": {
+                "type": "file",
+                "size": 2274,
+                "extension": ".fish"
+              },
+              "Activate.ps1": {
+                "type": "file",
+                "size": 27969,
+                "extension": ".ps1"
+              },
+              "automat-visualize.exe": {
+                "type": "file",
+                "size": 108411,
+                "extension": ".exe"
+              },
+              "cftp.exe": {
+                "type": "file",
+                "size": 108417,
+                "extension": ".exe"
+              },
+              "chardetect.exe": {
+                "type": "file",
+                "size": 108415,
+                "extension": ".exe"
+              },
+              "chroma.exe": {
+                "type": "file",
+                "size": 108407,
+                "extension": ".exe"
+              },
+              "ckeygen.exe": {
+                "type": "file",
+                "size": 108420,
+                "extension": ".exe"
+              },
+              "coloredlogs.exe": {
+                "type": "file",
+                "size": 108408,
+                "extension": ".exe"
+              },
+              "conch.exe": {
+                "type": "file",
+                "size": 108418,
+                "extension": ".exe"
+              },
+              "deactivate.bat": {
+                "type": "file",
+                "size": 393,
+                "extension": ".bat"
+              },
+              "distro.exe": {
+                "type": "file",
+                "size": 108406,
+                "extension": ".exe"
+              },
+              "dotenv.exe": {
+                "type": "file",
+                "size": 108406,
+                "extension": ".exe"
+              },
+              "dumppdf.py": {
+                "type": "file",
+                "size": 14373,
+                "extension": ".py"
+              },
+              "f2py.exe": {
+                "type": "file",
+                "size": 108410,
+                "extension": ".exe"
+              },
+              "fastapi.exe": {
+                "type": "file",
+                "size": 108404,
+                "extension": ".exe"
+              },
+              "httpx.exe": {
+                "type": "file",
+                "size": 108398,
+                "extension": ".exe"
+              },
+              "huggingface-cli.exe": {
+                "type": "file",
+                "size": 108433,
+                "extension": ".exe"
+              },
+              "humanfriendly.exe": {
+                "type": "file",
+                "size": 108410,
+                "extension": ".exe"
+              },
+              "isympy.exe": {
+                "type": "file",
+                "size": 108399,
+                "extension": ".exe"
+              },
+              "jp.py": {
+                "type": "file",
+                "size": 1738,
+                "extension": ".py"
+              },
+              "jsondiff": {
+                "type": "file",
+                "size": 1240,
+                "extension": ""
+              },
+              "jsonpatch": {
+                "type": "file",
+                "size": 3901,
+                "extension": ""
+              },
+              "jsonpointer": {
+                "type": "file",
+                "size": 1826,
+                "extension": ""
+              },
+              "jsonschema.exe": {
+                "type": "file",
+                "size": 108407,
+                "extension": ".exe"
+              },
+              "mailmail.exe": {
+                "type": "file",
+                "size": 108420,
+                "extension": ".exe"
+              },
+              "markdown-it.exe": {
+                "type": "file",
+                "size": 108414,
+                "extension": ".exe"
+              },
+              "normalizer.exe": {
+                "type": "file",
+                "size": 108420,
+                "extension": ".exe"
+              },
+              "numpy-config.exe": {
+                "type": "file",
+                "size": 108410,
+                "extension": ".exe"
+              },
+              "onnxruntime_test.exe": {
+                "type": "file",
+                "size": 108427,
+                "extension": ".exe"
+              },
+              "openai.exe": {
+                "type": "file",
+                "size": 108403,
+                "extension": ".exe"
+              },
+              "opentelemetry-bootstrap.exe": {
+                "type": "file",
+                "size": 108430,
+                "extension": ".exe"
+              },
+              "opentelemetry-instrument.exe": {
+                "type": "file",
+                "size": 108441,
+                "extension": ".exe"
+              },
+              "pdf2txt.py": {
+                "type": "file",
+                "size": 9884,
+                "extension": ".py"
+              },
+              "pdfplumber.exe": {
+                "type": "file",
+                "size": 108407,
+                "extension": ".exe"
+              },
+              "pip.exe": {
+                "type": "file",
+                "size": 108415,
+                "extension": ".exe"
+              },
+              "pip3.13.exe": {
+                "type": "file",
+                "size": 108415,
+                "extension": ".exe"
+              },
+              "pip3.exe": {
+                "type": "file",
+                "size": 108415,
+                "extension": ".exe"
+              },
+              "playwright.exe": {
+                "type": "file",
+                "size": 108412,
+                "extension": ".exe"
+              },
+              "plotly_get_chrome.exe": {
+                "type": "file",
+                "size": 108423,
+                "extension": ".exe"
+              },
+              "pwiz.py": {
+                "type": "file",
+                "size": 8460,
+                "extension": ".py"
+              },
+              "pygmentize.exe": {
+                "type": "file",
+                "size": 108409,
+                "extension": ".exe"
+              },
+              "pyhtmlizer.exe": {
+                "type": "file",
+                "size": 108415,
+                "extension": ".exe"
+              },
+              "pypdfium2.exe": {
+                "type": "file",
+                "size": 108419,
+                "extension": ".exe"
+              },
+              "pyproject-build.exe": {
+                "type": "file",
+                "size": 108419,
+                "extension": ".exe"
+              },
+              "pyrsa-decrypt.exe": {
+                "type": "file",
+                "size": 108406,
+                "extension": ".exe"
+              },
+              "pyrsa-encrypt.exe": {
+                "type": "file",
+                "size": 108406,
+                "extension": ".exe"
+              },
+              "pyrsa-keygen.exe": {
+                "type": "file",
+                "size": 108404,
+                "extension": ".exe"
+              },
+              "pyrsa-priv2pub.exe": {
+                "type": "file",
+                "size": 108427,
+                "extension": ".exe"
+              },
+              "pyrsa-sign.exe": {
+                "type": "file",
+                "size": 108400,
+                "extension": ".exe"
+              },
+              "pyrsa-verify.exe": {
+                "type": "file",
+                "size": 108404,
+                "extension": ".exe"
+              },
+              "python.exe": {
+                "type": "file",
+                "size": 254832,
+                "extension": ".exe"
+              },
+              "pythonw.exe": {
+                "type": "file",
+                "size": 251248,
+                "extension": ".exe"
+              },
+              "sample.exe": {
+                "type": "file",
+                "size": 108399,
+                "extension": ".exe"
+              },
+              "scrapy.exe": {
+                "type": "file",
+                "size": 108413,
+                "extension": ".exe"
+              },
+              "streamlit.cmd": {
+                "type": "file",
+                "size": 676,
+                "extension": ".cmd"
+              },
+              "streamlit.exe": {
+                "type": "file",
+                "size": 108410,
+                "extension": ".exe"
+              },
+              "tiny-agents.exe": {
+                "type": "file",
+                "size": 108425,
+                "extension": ".exe"
+              },
+              "tkconch.exe": {
+                "type": "file",
+                "size": 108420,
+                "extension": ".exe"
+              },
+              "tldextract.exe": {
+                "type": "file",
+                "size": 108407,
+                "extension": ".exe"
+              },
+              "tqdm.exe": {
+                "type": "file",
+                "size": 108401,
+                "extension": ".exe"
+              },
+              "trial.exe": {
+                "type": "file",
+                "size": 108412,
+                "extension": ".exe"
+              },
+              "twist.exe": {
+                "type": "file",
+                "size": 108432,
+                "extension": ".exe"
+              },
+              "twistd.exe": {
+                "type": "file",
+                "size": 108413,
+                "extension": ".exe"
+              },
+              "typer.exe": {
+                "type": "file",
+                "size": 108402,
+                "extension": ".exe"
+              },
+              "uvicorn.exe": {
+                "type": "file",
+                "size": 108405,
+                "extension": ".exe"
+              },
+              "watchfiles.exe": {
+                "type": "file",
+                "size": 108405,
+                "extension": ".exe"
+              },
+              "watchmedo.exe": {
+                "type": "file",
+                "size": 108411,
+                "extension": ".exe"
+              },
+              "websockets.exe": {
+                "type": "file",
+                "size": 108407,
+                "extension": ".exe"
+              },
+              "wheel.exe": {
+                "type": "file",
+                "size": 108402,
+                "extension": ".exe"
+              },
+              "wsdump.exe": {
+                "type": "file",
+                "size": 108410,
+                "extension": ".exe"
+              }
+            }
+          },
+          "share": {
+            "type": "directory",
+            "children": {
+              "jupyter": {
+                "type": "directory",
+                "children": {
+                  "labextensions": {},
+                  "nbextensions": {}
+                }
+              },
+              "man": {
+                "type": "directory",
+                "children": {
+                  "man1": {}
+                }
+              }
+            }
+          }
+        }
+      },
+      "views": {
+        "type": "directory",
+        "children": {
+          "__init__.py": {
+            "type": "file",
+            "size": 40,
+            "extension": ".py"
+          },
+          "components.py": {
+            "type": "file",
+            "size": 12446,
+            "extension": ".py"
+          }
+        }
+      }
+    }
+  },
+  "code_analysis": {
+    "hedge_intelligence.py": {
+      "lines": 235,
+      "characters": 7439,
+      "functions": [
+        "apply_dark_theme",
+        "render_document_viewer",
+        "render_analyst_dashboard",
+        "display_chat_history",
+        "main"
+      ],
+      "classes": [],
+      "imports": [
+        "streamlit",
+        "pathlib",
+        "json",
+        "components.document_explorer",
+        "components.persistent_chat",
+        "components.ipo_tracker_enhanced",
+        "components.data_extractor",
+        "services.document_service",
+        "services.ai_service"
+      ]
+    },
+    "services/ai_service.py": {
+      "lines": 157,
+      "characters": 5763,
+      "functions": [
+        "__init__",
+        "search_documents",
+        "get_ai_response",
+        "_calculate_confidence"
+      ],
+      "classes": [
+        "AIService"
+      ],
+      "imports": [
+        "os",
+        "openai",
+        "google.generativeai",
+        "typing",
+        "chromadb",
+        "chromadb.utils",
+        "re"
+      ]
+    },
+    "services/document_service.py": {
+      "lines": 71,
+      "characters": 2523,
+      "functions": [
+        "__init__",
+        "get_companies",
+        "get_company_documents",
+        "get_document_content",
+        "search_documents"
+      ],
+      "classes": [
+        "DocumentService"
+      ],
+      "imports": [
+        "os",
+        "pathlib",
+        "typing"
+      ]
+    },
+    "components/document_explorer.py": {
+      "lines": 72,
+      "characters": 2755,
+      "functions": [
+        "__init__",
+        "render_sidebar",
+        "get_companies_with_counts",
+        "render_company_docs"
+      ],
+      "classes": [
+        "DocumentExplorer"
+      ],
+      "imports": [
+        "streamlit",
+        "pathlib",
+        "json"
+      ]
+    },
+    "components/persistent_chat.py": {
+      "lines": 93,
+      "characters": 3005,
+      "functions": [
+        "__init__",
+        "render_chat_bar",
+        "process_query"
+      ],
+      "classes": [
+        "PersistentChat"
+      ],
+      "imports": [
+        "streamlit",
+        "services.ai_service",
+        "services.document_service"
+      ]
+    },
+    "components/data_extractor.py": {
+      "lines": 67,
+      "characters": 2391,
+      "functions": [
+        "__init__",
+        "extract_with_citations",
+        "validate_and_format"
+      ],
+      "classes": [
+        "DataExtractor"
+      ],
+      "imports": [
+        "re",
+        "typing"
+      ]
+    },
+    "components/ipo_tracker_enhanced.py": {
+      "lines": 75,
+      "characters": 2418,
+      "functions": [
+        "__init__",
+        "render_ipo_dashboard",
+        "load_ipo_data"
+      ],
+      "classes": [
+        "IPOTrackerEnhanced"
+      ],
+      "imports": [
+        "streamlit",
+        "pandas",
+        "json",
+        "datetime",
+        "pathlib"
+      ]
+    }
+  },
+  "data_summary": {
+    "sec_documents": {
+      "total_companies": 8,
+      "total_files": 74,
+      "companies": {
+        "CRCL": {
+          "count": 10,
+          "types": {
+            "10-K": 0,
+            "10-Q": 0,
+            "8-K": 1,
+            "S-1": 1,
+            "Other": 8
+          }
+        },
+        "DLHZ": {
+          "count": 11,
+          "types": {
+            "10-K": 0,
+            "10-Q": 0,
+            "8-K": 0,
+            "S-1": 0,
+            "Other": 11
+          }
+        },
+        "FGO": {
+          "count": 15,
+          "types": {
+            "10-K": 0,
+            "10-Q": 0,
+            "8-K": 0,
+            "S-1": 0,
+            "Other": 15
+          }
+        },
+        "FMFC": {
+          "count": 12,
+          "types": {
+            "10-K": 0,
+            "10-Q": 0,
+            "8-K": 0,
+            "S-1": 0,
+            "Other": 12
+          }
+        },
+        "MSFT": {
+          "count": 0,
+          "types": {
+            "10-K": 0,
+            "10-Q": 0,
+            "8-K": 0,
+            "S-1": 0,
+            "Other": 0
+          }
+        },
+        "RDDT": {
+          "count": 0,
+          "types": {
+            "10-K": 0,
+            "10-Q": 0,
+            "8-K": 0,
+            "S-1": 0,
+            "Other": 0
+          }
+        },
+        "VNTG": {
+          "count": 13,
+          "types": {
+            "10-K": 0,
+            "10-Q": 0,
+            "8-K": 0,
+            "S-1": 0,
+            "Other": 13
+          }
+        },
+        "VOYG": {
+          "count": 13,
+          "types": {
+            "10-K": 0,
+            "10-Q": 0,
+            "8-K": 0,
+            "S-1": 3,
+            "Other": 10
+          }
+        }
+      }
+    },
+    "cache": {
+      "file_count": 9
+    },
+    "chat_history": {
+      "file_count": 0
+    },
+    "chroma_db": {
+      "file_count": 1
+    },
+    "company_requests": {
+      "file_count": 0
+    },
+    "documents": {
+      "file_count": 15
+    },
+    "ipo_pipeline": {
+      "file_count": 3
+    },
+    "logs": {
+      "file_count": 8
+    },
+    "processed": {
+      "file_count": 13
+    },
+    "test_downloads": {
+      "file_count": 1
+    },
+    "vectors": {
+      "file_count": 1
+    },
+    "vector_db": {
+      "file_count": 2
+    },
+    "watchlists": {
+      "file_count": 0
+    }
+  },
+  "dependencies": {
+    "requirements": [
+      "# Core Framework",
+      "streamlit==1.31.0",
+      "fastapi==0.109.0",
+      "uvicorn==0.27.0",
+      "",
+      "# AI/ML",
+      "openai==1.35.0",
+      "google-generativeai==0.3.2",
+      "chromadb==0.4.22",
+      "numpy==1.26.4",
+      "pandas==2.1.4",
+      "",
+      "# Document Processing",
+      "beautifulsoup4==4.12.3",
+      "lxml==5.1.0",
+      "python-multipart==0.0.6",
+      "",
+      "# PDF Generation",
+      "reportlab==4.0.4",
+      "",
+      "# Async Operations",
+      "aiohttp==3.9.3",
+      "aiofiles==23.2.1",
+      "",
+      "# Utilities",
+      "python-dotenv==1.0.0",
+      "requests==2.31.0",
+      "apscheduler==3.10.4",
+      "",
+      "# Development",
+      "watchdog==3.0.0"
+    ],
+    "installed": {
+      "gitpython": "3.1.44",
+      "markupsafe": "3.0.2",
+      "protego": "0.4.0",
+      "pydispatcher": "2.0.7",
+      "pyjwt": "2.10.1",
+      "pyyaml": "6.0.2",
+      "aiofiles": "24.1.0",
+      "aiohappyeyeballs": "2.6.1",
+      "aiohttp": "3.12.4",
+      "aiosignal": "1.3.2",
+      "altair": "5.5.0",
+      "annotated-types": "0.7.0",
+      "anyio": "4.9.0",
+      "asgiref": "3.8.1",
+      "attrs": "25.3.0",
+      "automat": "25.4.16",
+      "backoff": "2.2.1",
+      "bcrypt": "4.3.0",
+      "beautifulsoup4": "4.13.4",
+      "blinker": "1.9.0",
+      "build": "1.2.2.post1",
+      "cachetools": "5.5.2",
+      "certifi": "2025.4.26",
+      "cffi": "1.17.1",
+      "chardet": "5.2.0",
+      "charset-normalizer": "3.4.2",
+      "chromadb": "1.0.12",
+      "click": "8.2.1",
+      "colorama": "0.4.6",
+      "coloredlogs": "15.0.1",
+      "constantly": "23.10.4",
+      "cryptography": "45.0.3",
+      "cssselect": "1.3.0",
+      "curl-cffi": "0.11.2",
+      "dataclasses-json": "0.6.7",
+      "defusedxml": "0.7.1",
+      "distro": "1.9.0",
+      "durationpy": "0.10",
+      "faiss-cpu": "1.11.0",
+      "fastapi": "0.115.9",
+      "filelock": "3.18.0",
+      "flatbuffers": "25.2.10",
+      "frozendict": "2.4.6",
+      "frozenlist": "1.6.0",
+      "fsspec": "2025.5.1",
+      "fuzzywuzzy": "0.18.0",
+      "gitdb": "4.0.12",
+      "google-ai-generativelanguage": "0.6.15",
+      "google-api-core": "2.25.0",
+      "google-api-python-client": "2.171.0",
+      "google-auth": "2.40.3",
+      "google-auth-httplib2": "0.2.0",
+      "google-generativeai": "0.8.5",
+      "googleapis-common-protos": "1.70.0",
+      "greenlet": "3.2.2",
+      "grpcio": "1.72.1",
+      "grpcio-status": "1.71.0",
+      "h11": "0.16.0",
+      "httpcore": "1.0.9",
+      "httplib2": "0.22.0",
+      "httptools": "0.6.4",
+      "httpx": "0.28.1",
+      "httpx-sse": "0.4.0",
+      "huggingface-hub": "0.32.4",
+      "humanfriendly": "10.0",
+      "humanize": "4.12.3",
+      "hyperlink": "21.0.0",
+      "idna": "3.10",
+      "importlib-metadata": "8.7.0",
+      "importlib-resources": "6.5.2",
+      "incremental": "24.7.2",
+      "itemadapter": "0.11.0",
+      "itemloaders": "1.3.2",
+      "jinja2": "3.1.6",
+      "jiter": "0.10.0",
+      "jmespath": "1.0.1",
+      "jsonpatch": "1.33",
+      "jsonpointer": "3.0.0",
+      "jsonschema": "4.24.0",
+      "jsonschema-specifications": "2025.4.1",
+      "kubernetes": "32.0.1",
+      "langchain": "0.3.25",
+      "langchain-community": "0.3.24",
+      "langchain-core": "0.3.62",
+      "langchain-openai": "0.3.18",
+      "langchain-text-splitters": "0.3.8",
+      "langsmith": "0.3.43",
+      "levenshtein": "0.27.1",
+      "lxml": "5.4.0",
+      "markdown-it-py": "3.0.0",
+      "marshmallow": "3.26.1",
+      "mdurl": "0.1.2",
+      "mmh3": "5.1.0",
+      "mpmath": "1.3.0",
+      "multidict": "6.4.4",
+      "multitasking": "0.0.11",
+      "mypy-extensions": "1.1.0",
+      "narwhals": "1.41.0",
+      "numpy": "2.2.6",
+      "oauthlib": "3.2.2",
+      "onnxruntime": "1.22.0",
+      "openai": "1.82.0",
+      "opentelemetry-api": "1.34.0",
+      "opentelemetry-exporter-otlp-proto-common": "1.34.0",
+      "opentelemetry-exporter-otlp-proto-grpc": "1.34.0",
+      "opentelemetry-instrumentation": "0.55b0",
+      "opentelemetry-instrumentation-asgi": "0.55b0",
+      "opentelemetry-instrumentation-fastapi": "0.55b0",
+      "opentelemetry-proto": "1.34.0",
+      "opentelemetry-sdk": "1.34.0",
+      "opentelemetry-semantic-conventions": "0.55b0",
+      "opentelemetry-util-http": "0.55b0",
+      "orjson": "3.10.18",
+      "overrides": "7.7.0",
+      "packaging": "24.2",
+      "pandas": "2.2.3",
+      "parsel": "1.10.0",
+      "pdfminer-six": "20250327",
+      "pdfplumber": "0.11.6",
+      "peewee": "3.18.1",
+      "pillow": "11.2.1",
+      "pip": "25.1.1",
+      "platformdirs": "4.3.8",
+      "playwright": "1.52.0",
+      "plotly": "6.1.2",
+      "posthog": "4.2.0",
+      "propcache": "0.3.1",
+      "proto-plus": "1.26.1",
+      "protobuf": "5.29.5",
+      "psutil": "7.0.0",
+      "psycopg2-binary": "2.9.10",
+      "pyarrow": "20.0.0",
+      "pyasn1": "0.6.1",
+      "pyasn1-modules": "0.4.2",
+      "pycparser": "2.22",
+      "pydantic": "2.11.5",
+      "pydantic-core": "2.33.2",
+      "pydantic-settings": "2.9.1",
+      "pydeck": "0.9.1",
+      "pyee": "13.0.0",
+      "pygments": "2.19.1",
+      "pyopenssl": "25.1.0",
+      "pyparsing": "3.2.3",
+      "pypdf": "5.5.0",
+      "pypdf2": "3.0.1",
+      "pypdfium2": "4.30.1",
+      "pypika": "0.48.9",
+      "pyproject-hooks": "1.2.0",
+      "pyreadline3": "3.5.4",
+      "python-dateutil": "2.9.0.post0",
+      "python-docx": "1.1.2",
+      "python-dotenv": "1.1.0",
+      "python-levenshtein": "0.27.1",
+      "pytz": "2025.2",
+      "queuelib": "1.8.0",
+      "rapidfuzz": "3.13.0",
+      "redis": "6.2.0",
+      "referencing": "0.36.2",
+      "regex": "2024.11.6",
+      "reportlab": "4.4.1",
+      "requests": "2.32.3",
+      "requests-file": "2.1.0",
+      "requests-oauthlib": "2.0.0",
+      "requests-toolbelt": "1.0.0",
+      "rich": "14.0.0",
+      "rpds-py": "0.25.1",
+      "rsa": "4.9.1",
+      "schedule": "1.2.2",
+      "scrapy": "2.13.1",
+      "service-identity": "24.2.0",
+      "setuptools": "80.9.0",
+      "shellingham": "1.5.4",
+      "six": "1.17.0",
+      "smmap": "5.0.2",
+      "sniffio": "1.3.1",
+      "soupsieve": "2.7",
+      "sqlalchemy": "2.0.41",
+      "starlette": "0.45.3",
+      "streamlit": "1.45.1",
+      "streamlit-pdf-viewer": "0.0.23",
+      "sympy": "1.14.0",
+      "tenacity": "9.1.2",
+      "tiktoken": "0.9.0",
+      "tldextract": "5.3.0",
+      "tokenizers": "0.21.1",
+      "toml": "0.10.2",
+      "tornado": "6.5.1",
+      "tqdm": "4.67.1",
+      "twisted": "25.5.0",
+      "typer": "0.16.0",
+      "typing-extensions": "4.14.0",
+      "typing-inspect": "0.9.0",
+      "typing-inspection": "0.4.1",
+      "tzdata": "2025.2",
+      "uritemplate": "4.2.0",
+      "urllib3": "2.4.0",
+      "uvicorn": "0.34.3",
+      "w3lib": "2.3.1",
+      "watchdog": "6.0.0",
+      "watchfiles": "1.0.5",
+      "websocket-client": "1.8.0",
+      "websockets": "15.0.1",
+      "wheel": "0.45.1",
+      "wrapt": "1.17.2",
+      "yarl": "1.20.0",
+      "yfinance": "0.2.62",
+      "zipp": "3.22.0",
+      "zope.interface": "7.2",
+      "zstandard": "0.23.0",
+      "autocommand": "2.2.2",
+      "backports.tarfile": "1.2.0",
+      "inflect": "7.3.1",
+      "jaraco.collections": "5.1.0",
+      "jaraco.context": "5.3.0",
+      "jaraco.functools": "4.0.1",
+      "jaraco.text": "3.12.1",
+      "more-itertools": "10.3.0",
+      "tomli": "2.0.1",
+      "typeguard": "4.3.0"
+    }
+  },
+  "configuration": {
+    "env_keys": [
+      "OPENAI_API_KEY",
+      "GEMINI_API_KEY",
+      "APP_NAME",
+      "APP_VERSION",
+      "APP_ENV",
+      "DEFAULT_USER",
+      "USER_EMAIL",
+      "IPO_SCRAPE_INTERVAL",
+      "EDGAR_CHECK_INTERVAL",
+      "LOCKUP_CALC_INTERVAL",
+      "SEC_RATE_LIMIT",
+      "IPOSCOOP_RATE_LIMIT",
+      "DATA_RETENTION_DAYS",
+      "CACHE_EXPIRY_HOURS",
+      "DEBUG",
+      "LOG_LEVEL",
+      "ENABLE_EMAIL_NOTIFICATIONS",
+      "NOTIFICATION_EMAIL",
+      "DAILY_BRIEF_TIME",
+      "SCHEDULER_ENABLED",
+      "DEEP_REINDEX_TIME",
+      "ENABLE_DUAL_AI_VALIDATION",
+      "ENABLE_ADVANCED_ANALYTICS",
+      "ENABLE_REAL_TIME_ALERTS",
+      "GOOGLE_API_KEY"
+    ]
+  }
+}

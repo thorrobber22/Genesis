@@ -1,0 +1,1 @@
+"""Hedge Intelligence - core package"""

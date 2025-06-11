@@ -1,0 +1,289 @@
+{
+  "timestamp": "2025-06-07T18:06:28.772763",
+  "summary": {
+    "total": 46,
+    "passed": 40,
+    "failed": 0,
+    "warnings": 2,
+    "info": 4
+  },
+  "critical_failures": [],
+  "details": [
+    {
+      "test": "File: hedge_intelligence.py",
+      "status": "PASSED",
+      "details": "Main application",
+      "timestamp": "2025-06-07T18:06:24.721062"
+    },
+    {
+      "test": "File: components/document_explorer.py",
+      "status": "PASSED",
+      "details": "Document explorer",
+      "timestamp": "2025-06-07T18:06:24.722003"
+    },
+    {
+      "test": "File: components/persistent_chat.py",
+      "status": "PASSED",
+      "details": "Chat component",
+      "timestamp": "2025-06-07T18:06:24.722812"
+    },
+    {
+      "test": "File: components/data_extractor.py",
+      "status": "PASSED",
+      "details": "Data extraction",
+      "timestamp": "2025-06-07T18:06:24.724693"
+    },
+    {
+      "test": "File: components/ipo_tracker_enhanced.py",
+      "status": "PASSED",
+      "details": "IPO tracker",
+      "timestamp": "2025-06-07T18:06:24.732737"
+    },
+    {
+      "test": "File: services/ai_service.py",
+      "status": "PASSED",
+      "details": "AI service",
+      "timestamp": "2025-06-07T18:06:24.733290"
+    },
+    {
+      "test": "File: services/document_service.py",
+      "status": "PASSED",
+      "details": "Document service",
+      "timestamp": "2025-06-07T18:06:24.733763"
+    },
+    {
+      "test": "Import: DocumentExplorer",
+      "status": "PASSED",
+      "details": "from components.document_explorer",
+      "timestamp": "2025-06-07T18:06:25.310712"
+    },
+    {
+      "test": "Import: PersistentChat",
+      "status": "PASSED",
+      "details": "from components.persistent_chat",
+      "timestamp": "2025-06-07T18:06:27.749403"
+    },
+    {
+      "test": "Import: DataExtractor",
+      "status": "PASSED",
+      "details": "from components.data_extractor",
+      "timestamp": "2025-06-07T18:06:27.785919"
+    },
+    {
+      "test": "Import: IPOTrackerEnhanced",
+      "status": "PASSED",
+      "details": "from components.ipo_tracker_enhanced",
+      "timestamp": "2025-06-07T18:06:27.812454"
+    },
+    {
+      "test": "Import: AIService",
+      "status": "PASSED",
+      "details": "from services.ai_service",
+      "timestamp": "2025-06-07T18:06:27.812767"
+    },
+    {
+      "test": "Import: DocumentService",
+      "status": "PASSED",
+      "details": "from services.document_service",
+      "timestamp": "2025-06-07T18:06:27.813283"
+    },
+    {
+      "test": "Directory: data/sec_documents",
+      "status": "PASSED",
+      "details": "9 companies, 74 documents",
+      "timestamp": "2025-06-07T18:06:27.823179"
+    },
+    {
+      "test": "Directory: data/ipo_pipeline",
+      "status": "PASSED",
+      "details": "Exists",
+      "timestamp": "2025-06-07T18:06:27.823483"
+    },
+    {
+      "test": "Directory: components",
+      "status": "PASSED",
+      "details": "Exists",
+      "timestamp": "2025-06-07T18:06:27.823646"
+    },
+    {
+      "test": "Directory: services",
+      "status": "PASSED",
+      "details": "Exists",
+      "timestamp": "2025-06-07T18:06:27.823763"
+    },
+    {
+      "test": "Document Explorer Init",
+      "status": "PASSED",
+      "details": "Found 8 companies",
+      "timestamp": "2025-06-07T18:06:27.829552"
+    },
+    {
+      "test": "Company: CRCL",
+      "status": "INFO",
+      "details": "10 documents",
+      "timestamp": "2025-06-07T18:06:27.829730"
+    },
+    {
+      "test": "Company: DLHZ",
+      "status": "INFO",
+      "details": "11 documents",
+      "timestamp": "2025-06-07T18:06:27.829867"
+    },
+    {
+      "test": "Company: FGO",
+      "status": "INFO",
+      "details": "15 documents",
+      "timestamp": "2025-06-07T18:06:27.829936"
+    },
+    {
+      "test": "Test Document Selected",
+      "status": "PASSED",
+      "details": "3_2025-06-04_0.html",
+      "timestamp": "2025-06-07T18:06:27.831571"
+    },
+    {
+      "test": "Extract Revenue",
+      "status": "PASSED",
+      "details": "$2,836 None",
+      "timestamp": "2025-06-07T18:06:27.832329"
+    },
+    {
+      "test": "Extract Employees",
+      "status": "PASSED",
+      "details": "1,250 employees",
+      "timestamp": "2025-06-07T18:06:27.832729"
+    },
+    {
+      "test": "AI Service Init",
+      "status": "PASSED",
+      "details": "Service initialized",
+      "timestamp": "2025-06-07T18:06:28.361208"
+    },
+    {
+      "test": "AI Method: get_ai_response",
+      "status": "PASSED",
+      "details": "Method exists",
+      "timestamp": "2025-06-07T18:06:28.362070"
+    },
+    {
+      "test": "AI Response Test",
+      "status": "WARNING",
+      "details": "API not configured: string indices must be integers, not 'str'",
+      "timestamp": "2025-06-07T18:06:28.362255"
+    },
+    {
+      "test": "Persistent Chat Init",
+      "status": "PASSED",
+      "details": "Component initialized",
+      "timestamp": "2025-06-07T18:06:28.722418"
+    },
+    {
+      "test": "Chat Method: render_chat_bar",
+      "status": "PASSED",
+      "details": "Method exists",
+      "timestamp": "2025-06-07T18:06:28.722964"
+    },
+    {
+      "test": "Chat Method: process_query",
+      "status": "PASSED",
+      "details": "Method exists",
+      "timestamp": "2025-06-07T18:06:28.723044"
+    },
+    {
+      "test": "IPO Tracker Init",
+      "status": "PASSED",
+      "details": "Component initialized",
+      "timestamp": "2025-06-07T18:06:28.724065"
+    },
+    {
+      "test": "IPO Data Load",
+      "status": "PASSED",
+      "details": "2 IPOs found",
+      "timestamp": "2025-06-07T18:06:28.724261"
+    },
+    {
+      "test": "IPO Field: company",
+      "status": "PASSED",
+      "details": "Stripe",
+      "timestamp": "2025-06-07T18:06:28.724309"
+    },
+    {
+      "test": "IPO Field: sector",
+      "status": "PASSED",
+      "details": "Fintech",
+      "timestamp": "2025-06-07T18:06:28.724351"
+    },
+    {
+      "test": "IPO Field: expected_date",
+      "status": "PASSED",
+      "details": "June 12, 2025",
+      "timestamp": "2025-06-07T18:06:28.724388"
+    },
+    {
+      "test": "Dark Theme Function",
+      "status": "PASSED",
+      "details": "Found",
+      "timestamp": "2025-06-07T18:06:28.725624"
+    },
+    {
+      "test": "No Blue Buttons",
+      "status": "WARNING",
+      "details": "Blue color found",
+      "timestamp": "2025-06-07T18:06:28.725886"
+    },
+    {
+      "test": "Settings Removed",
+      "status": "PASSED",
+      "details": "No settings found",
+      "timestamp": "2025-06-07T18:06:28.725949"
+    },
+    {
+      "test": "Document Access",
+      "status": "PASSED",
+      "details": "CRCL/3_2025-06-04_0.html",
+      "timestamp": "2025-06-07T18:06:28.726379"
+    },
+    {
+      "test": "Document Read",
+      "status": "PASSED",
+      "details": "1000 chars loaded",
+      "timestamp": "2025-06-07T18:06:28.756161"
+    },
+    {
+      "test": "Real Document Extract",
+      "status": "INFO",
+      "details": "No revenue in sample",
+      "timestamp": "2025-06-07T18:06:28.756557"
+    },
+    {
+      "test": "Company Request",
+      "status": "PASSED",
+      "details": "Request saved",
+      "timestamp": "2025-06-07T18:06:28.758171"
+    },
+    {
+      "test": "Request Verification",
+      "status": "PASSED",
+      "details": "TSLA request found",
+      "timestamp": "2025-06-07T18:06:28.766738"
+    },
+    {
+      "test": "Session: selected_doc",
+      "status": "PASSED",
+      "details": "Used in app",
+      "timestamp": "2025-06-07T18:06:28.767554"
+    },
+    {
+      "test": "Session: chat_history",
+      "status": "PASSED",
+      "details": "Used in app",
+      "timestamp": "2025-06-07T18:06:28.767781"
+    },
+    {
+      "test": "Session: show_company_request",
+      "status": "PASSED",
+      "details": "Used in app",
+      "timestamp": "2025-06-07T18:06:28.767870"
+    }
+  ]
+}

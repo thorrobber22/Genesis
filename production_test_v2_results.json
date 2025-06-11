@@ -1,0 +1,133 @@
+{
+  "test_run": "2025-06-09T08:08:42.533375",
+  "user": "thorrobber22",
+  "environment": "production",
+  "api_status": "confirmed_working",
+  "tests": {
+    "navigation_system": {
+      "status": "PASS",
+      "details": {
+        "has_sidebar": true,
+        "has_navigation": true,
+        "has_routing": true,
+        "missing_pages": [],
+        "missing_functions": []
+      }
+    },
+    "document_explorer": {
+      "status": "PASS",
+      "details": {
+        "companies": [
+          "AAPL",
+          "CRCL",
+          "DLHZ",
+          "FGO",
+          "FMFC",
+          "MSFT",
+          "RDDT",
+          "VNTG",
+          "VOYG"
+        ],
+        "company_count": 9,
+        "service_ready": true,
+        "sample_company": "AAPL",
+        "sample_doc_count": 14
+      }
+    },
+    "ai_chat_system": {
+      "status": "PASS",
+      "details": {
+        "openai_status": "CONFIRMED_WORKING",
+        "gemini_status": "CONFIRMED_WORKING",
+        "dual_validation": true,
+        "ui_ready": true,
+        "history_support": true
+      }
+    },
+    "ipo_scraper_real": {
+      "status": "PARTIAL",
+      "details": {
+        "connection": "SUCCESS",
+        "ipos_found": 0,
+        "content_length": 36732,
+        "scraper_exists": false
+      }
+    },
+    "cik_lookup_real": {
+      "status": "PASS",
+      "details": {
+        "lookups": {
+          "Apple Inc": "API_ACCESSIBLE",
+          "Tesla Inc": "API_ACCESSIBLE",
+          "Circle Internet": "API_ACCESSIBLE"
+        },
+        "api_accessible": true
+      }
+    },
+    "sec_downloader_real": {
+      "status": "PASS",
+      "details": {
+        "edgar_access": "SUCCESS",
+        "company_name": "Tesla, Inc.",
+        "filing_count": 1001,
+        "downloader_exists": true
+      }
+    },
+    "admin_panel": {
+      "status": "PASS",
+      "details": {
+        "admin_exists": true,
+        "pending_requests": 3,
+        "total_requests": 3
+      }
+    },
+    "dashboard": {
+      "status": "PASS",
+      "details": {
+        "ipo_count": 0,
+        "fake_removed": 0,
+        "dashboard_exists": true
+      }
+    },
+    "watchlist": {
+      "status": "PASS",
+      "details": {
+        "component_exists": true,
+        "data_file_exists": true,
+        "integrated": true
+      }
+    },
+    "search": {
+      "status": "PASS",
+      "details": {
+        "search_page_exists": true,
+        "chromadb_exists": false,
+        "vector_search_ready": false
+      }
+    },
+    "company_management": {
+      "status": "PASS",
+      "details": {
+        "page_exists": true,
+        "request_system": true
+      }
+    },
+    "document_download": {
+      "status": "PARTIAL",
+      "details": {
+        "excel_support": false,
+        "download_code": true
+      }
+    },
+    "end_to_end_flow": {
+      "status": "PASS",
+      "details": {
+        "app_starts": true,
+        "navigation_works": true,
+        "documents_accessible": true,
+        "ai_chat_works": true,
+        "admin_functional": true
+      }
+    }
+  }
+}

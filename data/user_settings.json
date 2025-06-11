@@ -1,0 +1,16 @@
+{
+  "notifications_enabled": true,
+  "email_notifications": false,
+  "email_address": "",
+  "alert_types": [
+    "Lock-up expirations",
+    "New filings"
+  ],
+  "theme": "Light",
+  "date_format": "YYYY-MM-DD",
+  "timezone": "UTC",
+  "items_per_page": 20,
+  "auto_refresh": true,
+  "refresh_interval": 15,
+  "last_updated": "2025-06-07T15:09:37.561049"
+}

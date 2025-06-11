@@ -1,0 +1,32 @@
+"""IPO Tracker Component"""
+import streamlit as st
+import json
+from pathlib import Path
+import pandas as pd
+
+class IPOTracker:
+    def __init__(self):
+        self.ipo_data_path = Path("data/ipo_pipeline/ipo_calendar.json")
+        
+    def render_ipo_tracker(self):
+        """Render IPO tracker dashboard"""
+        st.subheader("IPO Pipeline Tracker")
+        
+        if self.ipo_data_path.exists():
+            with open(self.ipo_data_path, 'r') as f:
+                ipo_data = json.load(f)
+                
+            if ipo_data:
+                df = pd.DataFrame(ipo_data)
+                st.dataframe(df, use_container_width=True)
+            else:
+                st.info("No upcoming IPOs in pipeline")
+        else:
+            # Sample data
+            sample_ipos = [
+                {"company": "Example Corp", "date": "2025-06-15", "sector": "Tech"},
+                {"company": "Sample Inc", "date": "2025-06-20", "sector": "Healthcare"}
+            ]
+            df = pd.DataFrame(sample_ipos)
+            st.dataframe(df, use_container_width=True)
+            st.caption("Sample data - connect to IPO data source")

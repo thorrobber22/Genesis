@@ -1,0 +1,21 @@
+{
+  "thorrobber22": {
+    "current_session": [
+      {
+        "timestamp": "2025-06-08T20:56:00.070111",
+        "document": "CRCL/10-K-2024.html",
+        "query": "What is the revenue?",
+        "response": "The revenue was $2.8B [Page 67]",
+        "context": "CRCL 10-K"
+      },
+      {
+        "timestamp": "2025-06-08T20:56:00.070129",
+        "document": "CRCL/10-K-2024.html",
+        "query": "How does that compare to last year?",
+        "response": "Revenue grew 67% from $1.68B last year [Page 68]",
+        "context": "CRCL 10-K"
+      }
+    ],
+    "created": "2025-06-08T20:56:00.070321"
+  }
+}

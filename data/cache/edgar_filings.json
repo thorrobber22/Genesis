@@ -1,0 +1,187 @@
+{
+  "updated": "2025-06-04T18:06:10.965154",
+  "source": "sec_edgar_live",
+  "s1_filings": [
+    {
+      "company": "1MEF - Circle Internet Group, Inc.",
+      "form_type": "S-1",
+      "cik": "0001876042",
+      "filing_link": "https://www.sec.gov/Archives/edgar/data/1876042/000095010325007009/0000950103-25-007009-index.htm",
+      "filed_at": "2025-06-04T16:49:29-04:00",
+      "accession_number": "0000950103-25-007009",
+      "ticker": null
+    },
+    {
+      "company": "1 - Aqua Metals, Inc.",
+      "form_type": "S-1",
+      "cik": "0001621832",
+      "filing_link": "https://www.sec.gov/Archives/edgar/data/1621832/000143774925019422/0001437749-25-019422-index.htm",
+      "filed_at": "2025-06-04T16:37:42-04:00",
+      "accession_number": "0001437749-25-019422",
+      "ticker": null
+    },
+    {
+      "company": "1/A - Sandisk Corp",
+      "form_type": "S-1",
+      "cik": "0002023554",
+      "filing_link": "https://www.sec.gov/Archives/edgar/data/2023554/000119312525134938/0001193125-25-134938-index.htm",
+      "filed_at": "2025-06-04T16:29:47-04:00",
+      "accession_number": "0001193125-25-134938",
+      "ticker": null
+    },
+    {
+      "company": "1/A - Sandisk Corp",
+      "form_type": "S-1/A",
+      "cik": "0002023554",
+      "filing_link": "https://www.sec.gov/Archives/edgar/data/2023554/000119312525134938/0001193125-25-134938-index.htm",
+      "filed_at": "2025-06-04T16:29:47-04:00",
+      "accession_number": "0001193125-25-134938",
+      "ticker": null
+    },
+    {
+      "company": "1/A - Calor Del Sol Inc.",
+      "form_type": "S-1",
+      "cik": "0002008027",
+      "filing_link": "https://www.sec.gov/Archives/edgar/data/2008027/000147793225004409/0001477932-25-004409-index.htm",
+      "filed_at": "2025-06-04T16:25:26-04:00",
+      "accession_number": "0001477932-25-004409",
+      "ticker": null
+    },
+    {
+      "company": "1/A - Calor Del Sol Inc.",
+      "form_type": "S-1/A",
+      "cik": "0002008027",
+      "filing_link": "https://www.sec.gov/Archives/edgar/data/2008027/000147793225004409/0001477932-25-004409-index.htm",
+      "filed_at": "2025-06-04T16:25:26-04:00",
+      "accession_number": "0001477932-25-004409",
+      "ticker": null
+    },
+    {
+      "company": "1/A - La Rosa Holdings Corp.",
+      "form_type": "S-1",
+      "cik": "0001879403",
+      "filing_link": "https://www.sec.gov/Archives/edgar/data/1879403/000121390025050886/0001213900-25-050886-index.htm",
+      "filed_at": "2025-06-03T17:29:24-04:00",
+      "accession_number": "0001213900-25-050886",
+      "ticker": null
+    },
+    {
+      "company": "1/A - La Rosa Holdings Corp.",
+      "form_type": "S-1/A",
+      "cik": "0001879403",
+      "filing_link": "https://www.sec.gov/Archives/edgar/data/1879403/000121390025050886/0001213900-25-050886-index.htm",
+      "filed_at": "2025-06-03T17:29:24-04:00",
+      "accession_number": "0001213900-25-050886",
+      "ticker": null
+    },
+    {
+      "company": "1/A - Cosmos Health Inc.",
+      "form_type": "S-1",
+      "cik": "0001474167",
+      "filing_link": "https://www.sec.gov/Archives/edgar/data/1474167/000147793225004386/0001477932-25-004386-index.htm",
+      "filed_at": "2025-06-03T17:07:47-04:00",
+      "accession_number": "0001477932-25-004386",
+      "ticker": null
+    },
+    {
+      "company": "1/A - Cosmos Health Inc.",
+      "form_type": "S-1/A",
+      "cik": "0001474167",
+      "filing_link": "https://www.sec.gov/Archives/edgar/data/1474167/000147793225004386/0001477932-25-004386-index.htm",
+      "filed_at": "2025-06-03T17:07:47-04:00",
+      "accession_number": "0001477932-25-004386",
+      "ticker": null
+    },
+    {
+      "company": "1/A - TV Channels Network Inc.",
+      "form_type": "S-1",
+      "cik": "0001952670",
+      "filing_link": "https://www.sec.gov/Archives/edgar/data/1952670/000113902025000156/0001139020-25-000156-index.htm",
+      "filed_at": "2025-06-03T16:53:49-04:00",
+      "accession_number": "0001139020-25-000156",
+      "ticker": null
+    },
+    {
+      "company": "1/A - TV Channels Network Inc.",
+      "form_type": "S-1/A",
+      "cik": "0001952670",
+      "filing_link": "https://www.sec.gov/Archives/edgar/data/1952670/000113902025000156/0001139020-25-000156-index.htm",
+      "filed_at": "2025-06-03T16:53:49-04:00",
+      "accession_number": "0001139020-25-000156",
+      "ticker": null
+    },
+    {
+      "company": "1 - Capstone Holding Corp.",
+      "form_type": "S-1",
+      "cik": "0000887151",
+      "filing_link": "https://www.sec.gov/Archives/edgar/data/887151/000121390025050786/0001213900-25-050786-index.htm",
+      "filed_at": "2025-06-03T16:11:01-04:00",
+      "accession_number": "0001213900-25-050786",
+      "ticker": null
+    },
+    {
+      "company": "1/A - Ategrity Specialty Holdings LLC",
+      "form_type": "S-1",
+      "cik": "0002040491",
+      "filing_link": "https://www.sec.gov/Archives/edgar/data/2040491/000110465925055716/0001104659-25-055716-index.htm",
+      "filed_at": "2025-06-03T07:37:00-04:00",
+      "accession_number": "0001104659-25-055716",
+      "ticker": null
+    },
+    {
+      "company": "1/A - Ategrity Specialty Holdings LLC",
+      "form_type": "S-1/A",
+      "cik": "0002040491",
+      "filing_link": "https://www.sec.gov/Archives/edgar/data/2040491/000110465925055716/0001104659-25-055716-index.htm",
+      "filed_at": "2025-06-03T07:37:00-04:00",
+      "accession_number": "0001104659-25-055716",
+      "ticker": null
+    },
+    {
+      "company": "1/A - Nuwellis, Inc.",
+      "form_type": "S-1",
+      "cik": "0001506492",
+      "filing_link": "https://www.sec.gov/Archives/edgar/data/1506492/000114036125021187/0001140361-25-021187-index.htm",
+      "filed_at": "2025-06-02T20:42:28-04:00",
+      "accession_number": "0001140361-25-021187",
+      "ticker": null
+    },
+    {
+      "company": "1/A - Nuwellis, Inc.",
+      "form_type": "S-1/A",
+      "cik": "0001506492",
+      "filing_link": "https://www.sec.gov/Archives/edgar/data/1506492/000114036125021187/0001140361-25-021187-index.htm",
+      "filed_at": "2025-06-02T20:42:28-04:00",
+      "accession_number": "0001140361-25-021187",
+      "ticker": null
+    },
+    {
+      "company": "1/A - AMERICAN REBEL HOLDINGS INC",
+      "form_type": "S-1",
+      "cik": "0001648087",
+      "filing_link": "https://www.sec.gov/Archives/edgar/data/1648087/000164117225013300/0001641172-25-013300-index.htm",
+      "filed_at": "2025-06-02T18:22:04-04:00",
+      "accession_number": "0001641172-25-013300",
+      "ticker": null
+    },
+    {
+      "company": "1/A - AMERICAN REBEL HOLDINGS INC",
+      "form_type": "S-1/A",
+      "cik": "0001648087",
+      "filing_link": "https://www.sec.gov/Archives/edgar/data/1648087/000164117225013300/0001641172-25-013300-index.htm",
+      "filed_at": "2025-06-02T18:22:04-04:00",
+      "accession_number": "0001641172-25-013300",
+      "ticker": null
+    },
+    {
+      "company": "1/A - Blue Acquisition Corp/Cayman",
+      "form_type": "S-1",
+      "cik": "0002059654",
+      "filing_link": "https://www.sec.gov/Archives/edgar/data/2059654/000118518525000574/0001185185-25-000574-index.htm",
+      "filed_at": "2025-06-02T17:30:14-04:00",
+      "accession_number": "0001185185-25-000574",
+      "ticker": null
+    }
+  ],
+  "count": 20
+}

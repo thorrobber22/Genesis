@@ -1,0 +1,162 @@
+{
+  "scraped_at": "2025-06-09T23:25:54.014431",
+  "recently_priced": [],
+  "upcoming": [],
+  "filed": [
+    {
+      "scraped_at": "2025-06-09T23:25:54.912020",
+      "source": "IPOScoop",
+      "section": "ipo calendar",
+      "company_name": "Ategrity Specialty Holdings",
+      "ticker": null,
+      "exchange": "ASIC",
+      "shares": "J.P. Morgan/Barclays / Citigroup/ TD Securities/ Wells Fargo Securities",
+      "expected_date": "14.00",
+      "detail_url": "https://www.iposcoop.comhttps://www.iposcoop.com/ipo/ategrity/"
+    },
+    {
+      "scraped_at": "2025-06-09T23:25:54.912263",
+      "source": "IPOScoop",
+      "section": "ipo calendar",
+      "company_name": "Voyager Technologies, Inc.",
+      "ticker": null,
+      "exchange": "VOYG",
+      "shares": "Morgan Stanley/J.P. Morgan/Barclays/Jefferies/BofA Securities/KeyBanc Capital Markets/Wolfe Nomura Alliance",
+      "expected_date": "26.00",
+      "detail_url": "https://www.iposcoop.comhttps://www.iposcoop.com/ipo/voyager-technologies-inc/"
+    },
+    {
+      "scraped_at": "2025-06-09T23:25:54.912432",
+      "source": "IPOScoop",
+      "section": "ipo calendar",
+      "company_name": "Chime Financial, Inc.",
+      "ticker": null,
+      "exchange": "CHYM",
+      "shares": "Morgan Stanley/Goldman Sachs/J.P. Morgan/Barclays/Evercore ISI/UBS Investment Bank/Deutsche Bank Securities/Piper Sandler/Wolfe Nomura Alliance",
+      "expected_date": "24.00",
+      "detail_url": "https://www.iposcoop.comhttps://www.iposcoop.com/ipo/chime-financial/"
+    },
+    {
+      "scraped_at": "2025-06-09T23:25:54.912589",
+      "source": "IPOScoop",
+      "section": "ipo calendar",
+      "company_name": "Kandal M. Venture Ltd.",
+      "ticker": null,
+      "exchange": "FMFC",
+      "shares": "Dominari Securities/Revere Securities",
+      "expected_date": "4.00",
+      "detail_url": "https://www.iposcoop.comhttps://www.iposcoop.com/ipo/kandal-m-venture-ltd/"
+    },
+    {
+      "scraped_at": "2025-06-09T23:25:54.912736",
+      "source": "IPOScoop",
+      "section": "ipo calendar",
+      "company_name": "Vantage Corp. (Singapore)",
+      "ticker": null,
+      "exchange": "VNTG",
+      "shares": "Network 1 Financial Securities",
+      "expected_date": "4.00",
+      "detail_url": "https://www.iposcoop.comhttps://www.iposcoop.com/ipo/vantage-corp/"
+    },
+    {
+      "scraped_at": "2025-06-09T23:25:54.912882",
+      "source": "IPOScoop",
+      "section": "ipo calendar",
+      "company_name": "Caris Life Sciences, Inc.",
+      "ticker": null,
+      "exchange": "CAI",
+      "shares": "BofA Securities/J.P. Morgan/Goldman Sachs/Citigroup/TD Cowen/Evercore ISI/Guggenheim Securities",
+      "expected_date": "16.00",
+      "detail_url": "https://www.iposcoop.comhttps://www.iposcoop.com/ipo/caris-therapeutics/"
+    },
+    {
+      "scraped_at": "2025-06-09T23:25:54.913022",
+      "source": "IPOScoop",
+      "section": "ipo calendar",
+      "company_name": "Slide Insurance Holdings Inc.",
+      "ticker": null,
+      "exchange": "SLDE",
+      "shares": "Barclays/Morgan Stanley/Citizens Capital/Keefe, Bruyette & Woods (Stifel)/Piper Sandler",
+      "expected_date": "15.00",
+      "detail_url": "https://www.iposcoop.comhttps://www.iposcoop.com/ipo/slide-insurance/"
+    },
+    {
+      "scraped_at": "2025-06-09T23:25:54.913163",
+      "source": "IPOScoop",
+      "section": "ipo calendar",
+      "company_name": "ALE Group Holding  Limited",
+      "ticker": null,
+      "exchange": "ALEH",
+      "shares": "D. Boral Capital (ex-EF Hutton)",
+      "expected_date": "4.00",
+      "detail_url": "https://www.iposcoop.comhttps://www.iposcoop.com/ipo/ale-group-holding-limited/"
+    },
+    {
+      "scraped_at": "2025-06-09T23:25:54.913331",
+      "source": "IPOScoop",
+      "section": "ipo calendar",
+      "company_name": "Dalu International Group Ltd.",
+      "ticker": null,
+      "exchange": "DLHZ",
+      "shares": "Revere Securities",
+      "expected_date": "4.00",
+      "detail_url": "https://www.iposcoop.comhttps://www.iposcoop.com/ipo/dalu-international-group/"
+    },
+    {
+      "scraped_at": "2025-06-09T23:25:54.913510",
+      "source": "IPOScoop",
+      "section": "ipo calendar",
+      "company_name": "Delixy Holdings Ltd.",
+      "ticker": null,
+      "exchange": "DLXY",
+      "shares": "Bancroft Capital",
+      "expected_date": "4.00",
+      "detail_url": "https://www.iposcoop.comhttps://www.iposcoop.com/ipo/delixy-holdings-2/"
+    },
+    {
+      "scraped_at": "2025-06-09T23:25:54.913779",
+      "source": "IPOScoop",
+      "section": "ipo calendar",
+      "company_name": "FG Holdings",
+      "ticker": null,
+      "exchange": "FGO",
+      "shares": "American Trust Investment Services/Revere Securities",
+      "expected_date": "4.00",
+      "detail_url": "https://www.iposcoop.comhttps://www.iposcoop.com/ipo/fg-holdings/"
+    },
+    {
+      "scraped_at": "2025-06-09T23:25:54.913970",
+      "source": "IPOScoop",
+      "section": "ipo calendar",
+      "company_name": "Happy City Holdings Limited",
+      "ticker": null,
+      "exchange": "HCHL",
+      "shares": "Dominari Securities/Pacific Century Securities/Revere Securities",
+      "expected_date": "5.00",
+      "detail_url": "https://www.iposcoop.comhttps://www.iposcoop.com/ipo/34711/"
+    },
+    {
+      "scraped_at": "2025-06-09T23:25:54.914145",
+      "source": "IPOScoop",
+      "section": "ipo calendar",
+      "company_name": "HW Electro Co., Ltd. (NASDAQ-New Filing)",
+      "ticker": null,
+      "exchange": "HWEP",
+      "shares": "American Trust Investment Services/WestPark Capital",
+      "expected_date": "4.00",
+      "detail_url": "https://www.iposcoop.comhttps://www.iposcoop.com/ipo/hw-electro-co-ltd-new-filing/"
+    },
+    {
+      "scraped_at": "2025-06-09T23:25:54.914312",
+      "source": "IPOScoop",
+      "section": "ipo calendar",
+      "company_name": "Propanc Biopharma (NASDAQ  Uplisting)",
+      "ticker": null,
+      "exchange": "PPCB",
+      "shares": "D. Boral Capital (ex-EF Hutton)/Craft Capital",
+      "expected_date": "4.00",
+      "detail_url": "https://www.iposcoop.comhttps://www.iposcoop.com/ipo/propanc-biopharma/"
+    }
+  ],
+  "withdrawn": []
+}

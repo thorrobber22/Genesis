@@ -1,0 +1,166 @@
+{
+  "test_run": "2025-06-09T08:01:45.139620",
+  "user": "thorrobber22",
+  "type": "end_to_end",
+  "flows": {
+    "add_company": {
+      "status": "FAIL",
+      "steps": {
+        "user_request": {
+          "status": "PASS",
+          "details": {
+            "can_submit": true,
+            "test_ticker": "PLTR",
+            "request_structure": "valid"
+          }
+        },
+        "admin_view": {
+          "status": "FAIL",
+          "details": {
+            "error": "Admin panel not found"
+          }
+        },
+        "admin_process": {
+          "status": "PASS",
+          "details": {
+            "scraper_exists": true,
+            "cik_lookup": true,
+            "download_capability": true,
+            "progress_tracking": true
+          }
+        },
+        "sec_download": {
+          "status": "PASS",
+          "details": {
+            "sec_connection": "SUCCESS",
+            "test_company": "META",
+            "filings_found": false,
+            "filing_count_estimate": 0,
+            "can_parse": true
+          }
+        },
+        "user_browse": {
+          "status": "PASS",
+          "details": {
+            "document_service_exists": true,
+            "can_list_companies": true,
+            "can_list_documents": true,
+            "has_categorization": false
+          }
+        }
+      }
+    },
+    "user_analysis": {
+      "status": "PARTIAL",
+      "steps": {
+        "browse": {
+          "status": "PASS",
+          "details": {
+            "component_exists": true,
+            "shows_companies": true,
+            "expandable_ui": true,
+            "shows_count": true
+          }
+        },
+        "view": {
+          "status": "PASS",
+          "details": {
+            "viewer_exists": true,
+            "can_render_html": true,
+            "has_search": false
+          }
+        },
+        "chat": {
+          "status": "PASS",
+          "details": {
+            "chat_engine_exists": true,
+            "persistent_chat_exists": true,
+            "openai_configured": true,
+            "gemini_configured": true,
+            "dual_ai": true,
+            "citation_support": true
+          }
+        },
+        "extract": {
+          "status": "PASS",
+          "details": {
+            "extractor_exists": true,
+            "financial_patterns": true,
+            "patterns_found": [
+              "revenue",
+              "income"
+            ],
+            "has_validation": true,
+            "has_export": false
+          }
+        },
+        "download": {
+          "status": "PARTIAL",
+          "details": {
+            "download_ui": false,
+            "pdf_support": true,
+            "excel_support": false,
+            "openpyxl_installed": false
+          }
+        }
+      }
+    },
+    "ipo_tracking": {
+      "status": "PARTIAL",
+      "steps": {
+        "scrape": {
+          "status": "PASS",
+          "details": {
+            "iposcoop_reachable": true,
+            "status_code": 200,
+            "ipo_table_found": true,
+            "content_length": 36732
+          }
+        },
+        "display": {
+          "status": "PARTIAL",
+          "details": {
+            "tracker_exists": true,
+            "has_table_display": true,
+            "has_ipo_columns": false,
+            "has_refresh": false
+          }
+        },
+        "click": {
+          "status": "PASS",
+          "details": {
+            "click_to_filing": true,
+            "note": "IPO click to S-1 viewing"
+          }
+        }
+      }
+    },
+    "watchlist": {
+      "status": "PASS",
+      "steps": {
+        "add": {
+          "status": "PASS",
+          "details": {
+            "implementation": "watchlist.py",
+            "can_add": true,
+            "can_remove": true,
+            "has_persistence": true
+          }
+        },
+        "updates": {
+          "status": "PASS",
+          "details": {
+            "update_checking": true,
+            "note": "Auto-updates configured"
+          }
+        },
+        "navigate": {
+          "status": "PASS",
+          "details": {
+            "can_navigate_to_docs": true
+          }
+        }
+      }
+    }
+  }
+}

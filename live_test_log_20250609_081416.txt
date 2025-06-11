@@ -1,0 +1,100 @@
+[08:14:12] TEST: Testing Streamlit startup...
+[08:14:12] INFO: Starting streamlit run hedge_intelligence.py...
+[08:14:12] INFO: Checking for syntax errors...
+[08:14:12] PASS: No syntax errors found
+[08:14:12] INFO: Starting Streamlit app...
+[08:14:12] INFO: Run this command in a separate terminal:
+[08:14:12] ACTION: >>> streamlit run hedge_intelligence.py
+[08:14:14] TEST: 
+Testing navigation pages...
+[08:14:14] INFO: Pages to test:
+[08:14:14] INFO:   1. Dashboard
+[08:14:14] INFO:   2. Document Explorer
+[08:14:14] INFO:   3. IPO Tracker
+[08:14:14] INFO:   4. Search
+[08:14:14] INFO:   5. Watchlist
+[08:14:14] INFO:   6. Company Management
+[08:14:14] ACTION: 
+MANUAL TEST REQUIRED:
+[08:14:14] INFO: 1. Click each page in the sidebar
+[08:14:14] INFO: 2. Verify each page loads without error
+[08:14:14] INFO: 3. Note any errors or missing content
+[08:14:14] TEST: 
+Testing Document Explorer with REAL data...
+[08:14:14] INFO: Found 10 companies in sec_documents/
+[08:14:14] INFO:   - AAPL: 14 documents
+[08:14:14] INFO:   - CRCL: 10 documents
+[08:14:14] INFO:   - DLHZ: 11 documents
+[08:14:14] INFO:   - FGO: 15 documents
+[08:14:14] INFO:   - FMFC: 12 documents
+[08:14:14] INFO: 
+Testing CRCL documents:
+[08:14:14] INFO:   Total documents: 10
+[08:14:14] INFO:   Sample document: 3_2025-06-04_0.html
+[08:14:14] INFO:   Size: 25.1 KB
+[08:14:14] PASS:   ✅ Valid SEC document format
+[08:14:14] ACTION: 
+MANUAL TEST:
+[08:14:14] INFO: 1. Go to Document Explorer page
+[08:14:14] INFO: 2. Click on CRCL to expand
+[08:14:14] INFO: 3. Click on any document
+[08:14:14] INFO: 4. Verify document viewer opens
+[08:14:14] TEST: 
+Testing AI Chat with REAL interaction...
+[08:14:14] INFO: OpenAI API Key: SET
+[08:14:14] INFO: Gemini API Key: SET
+[08:14:14] INFO: Testing OpenAI API connection...
+[08:14:15] PASS: ✅ OpenAI API connection successful
+[08:14:15] ACTION: 
+MANUAL CHAT TEST:
+[08:14:15] INFO: 1. Open any document in Document Explorer
+[08:14:15] INFO: 2. In the chat bar at bottom, type: 'What is this document about?'
+[08:14:15] INFO: 3. Verify you get a response with citations
+[08:14:15] INFO: 4. Click on a citation to verify it jumps to the page
+[08:14:15] TEST: 
+Testing IPO Tracker with REAL data...
+[08:14:15] INFO: IPO calendar has 0 entries
+[08:14:15] PASS: ✅ No fake companies in IPO data
+[08:14:15] INFO: 
+Testing IPOScoop.com connection...
+[08:14:16] PASS: ✅ IPOScoop reachable - 36732 bytes
+[08:14:16] INFO: Found approximately 0 IPOs on IPOScoop
+[08:14:16] ACTION: 
+MANUAL TEST:
+[08:14:16] INFO: 1. Go to IPO Tracker page
+[08:14:16] INFO: 2. Check if IPOs are displayed
+[08:14:16] INFO: 3. Note if data looks real or fake
+[08:14:16] TEST: 
+Testing Admin Panel...
+[08:14:16] INFO: Found admin panel: admin\admin_panel.py
+[08:14:16] INFO: Company requests: 3 total
+[08:14:16] INFO: Pending requests: 3
+[08:14:16] INFO:   - SPACE (SpaceX)
+[08:14:16] INFO:   - TSLA (Unknown)
+[08:14:16] INFO:   - AAPL (Unknown)
+[08:14:16] INFO: 
+To access admin panel, run in new terminal:
+[08:14:16] ACTION: >>> streamlit run admin\admin_panel.py
+[08:14:16] INFO: Password: hedgeadmin2025
+[08:14:16] TEST: 
+Testing Search and Watchlist...
+[08:14:16] WARN: ⚠️ ChromaDB not initialized
+[08:14:16] INFO: Watchlist entries: 1
+[08:14:16] ACTION: 
+MANUAL TEST:
+[08:14:16] INFO: 1. Go to Search page
+[08:14:16] INFO: 2. Try searching for 'revenue' or 'risk'
+[08:14:16] INFO: 3. Go to Watchlist page
+[08:14:16] INFO: 4. Try adding a ticker (e.g., AAPL)
+[08:14:16] TEST: 
+Testing Document Download...
+[08:14:16] PASS: ✅ openpyxl is installed
+[08:14:16] ACTION: 
+MANUAL TEST:
+[08:14:16] INFO: 1. Open any document
+[08:14:16] INFO: 2. Look for download button
+[08:14:16] INFO: 3. Try downloading as Excel/PDF
+[08:14:16] INFO: 
+================================================================================
+[08:14:16] INFO: TEST SUMMARY
+[08:14:16] INFO: ================================================================================

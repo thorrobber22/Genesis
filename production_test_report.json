@@ -1,0 +1,201 @@
+{
+  "timestamp": "2025-06-08T20:43:21.509205",
+  "user": "thorrobber22",
+  "tests": [
+    {
+      "category": "Files",
+      "name": "hedge_intelligence.py",
+      "status": "PASS",
+      "details": "Main application",
+      "duration": 0.0001633167266845703
+    },
+    {
+      "category": "Files",
+      "name": "services/ai_service.py",
+      "status": "PASS",
+      "details": "AI integration",
+      "duration": 5.602836608886719e-05
+    },
+    {
+      "category": "Files",
+      "name": "services/document_service.py",
+      "status": "PASS",
+      "details": "Document handling",
+      "duration": 2.6941299438476562e-05
+    },
+    {
+      "category": "Files",
+      "name": "components/document_explorer.py",
+      "status": "PASS",
+      "details": "File explorer",
+      "duration": 2.5510787963867188e-05
+    },
+    {
+      "category": "Files",
+      "name": "components/persistent_chat.py",
+      "status": "PASS",
+      "details": "Chat interface",
+      "duration": 1.9788742065429688e-05
+    },
+    {
+      "category": "Files",
+      "name": "components/data_extractor.py",
+      "status": "PASS",
+      "details": "Data extraction",
+      "duration": 3.9577484130859375e-05
+    },
+    {
+      "category": "Files",
+      "name": "components/ipo_tracker_enhanced.py",
+      "status": "PASS",
+      "details": "IPO tracker",
+      "duration": 4.1484832763671875e-05
+    },
+    {
+      "category": "Files",
+      "name": "data/sec_documents",
+      "status": "PASS",
+      "details": "SEC documents directory",
+      "duration": 2.5272369384765625e-05
+    },
+    {
+      "category": "Dependencies",
+      "name": "streamlit",
+      "status": "PASS",
+      "details": "streamlit installed",
+      "duration": 0.6949832439422607
+    },
+    {
+      "category": "Dependencies",
+      "name": "pandas",
+      "status": "PASS",
+      "details": "pandas installed",
+      "duration": 0.5069663524627686
+    },
+    {
+      "category": "Dependencies",
+      "name": "openai",
+      "status": "PASS",
+      "details": "openai installed",
+      "duration": 0.6623873710632324
+    },
+    {
+      "category": "Dependencies",
+      "name": "google-generativeai",
+      "status": "PASS",
+      "details": "google-generativeai installed",
+      "duration": 1.1870603561401367
+    },
+    {
+      "category": "Dependencies",
+      "name": "beautifulsoup4",
+      "status": "PASS",
+      "details": "beautifulsoup4 installed",
+      "duration": 0.07317948341369629
+    },
+    {
+      "category": "Dependencies",
+      "name": "python-dotenv",
+      "status": "PASS",
+      "details": "python-dotenv installed",
+      "duration": 0.0044858455657958984
+    },
+    {
+      "category": "Dependencies",
+      "name": "requests",
+      "status": "PASS",
+      "details": "requests installed",
+      "duration": 1.3828277587890625e-05
+    },
+    {
+      "category": "Data",
+      "name": "SEC Documents",
+      "status": "PASS",
+      "details": "8 companies: CRCL(10), DLHZ(11), FGO(15)...",
+      "duration": 0.002804994583129883
+    },
+    {
+      "category": "Data",
+      "name": "Filing Types",
+      "status": "PASS",
+      "details": "Filing types: 8-K:1, S-1:4",
+      "duration": 0.004973649978637695
+    },
+    {
+      "category": "Config",
+      "name": "Environment File",
+      "status": "PASS",
+      "details": ".env file exists",
+      "duration": 5.793571472167969e-05
+    },
+    {
+      "category": "Config",
+      "name": "API Keys",
+      "status": "WARN",
+      "details": "OpenAI:\u2713, Google:\u2713",
+      "duration": 0.009607791900634766
+    },
+    {
+      "category": "App",
+      "name": "Streamlit Structure",
+      "status": "PASS",
+      "details": "All components present, grey theme",
+      "duration": 0.0001952648162841797
+    },
+    {
+      "category": "Services",
+      "name": "Document Service",
+      "status": "PASS",
+      "details": "Working correctly - 8 companies",
+      "duration": 0.00308990478515625
+    },
+    {
+      "category": "Services",
+      "name": "AI Service",
+      "status": "PASS",
+      "details": "Has get_ai_response method",
+      "duration": 0.909961462020874
+    },
+    {
+      "category": "Components",
+      "name": "Document Explorer",
+      "status": "PASS",
+      "details": "Document Explorer works",
+      "duration": 0.0026330947875976562
+    },
+    {
+      "category": "Components",
+      "name": "Persistent Chat",
+      "status": "PASS",
+      "details": "Persistent Chat works",
+      "duration": 0.3343179225921631
+    },
+    {
+      "category": "Components",
+      "name": "Data Extractor",
+      "status": "PASS",
+      "details": "Data Extractor works",
+      "duration": 0.0014367103576660156
+    },
+    {
+      "category": "Components",
+      "name": "IPO Tracker",
+      "status": "PASS",
+      "details": "IPO Tracker works",
+      "duration": 0.0011932849884033203
+    },
+    {
+      "category": "Performance",
+      "name": "Memory Usage",
+      "status": "PASS",
+      "details": "Memory usage: 216.4 MB - Good",
+      "duration": 0.0001499652862548828
+    }
+  ],
+  "summary": {
+    "total": 27,
+    "passed": 26,
+    "failed": 0,
+    "warnings": 1
+  }
+}

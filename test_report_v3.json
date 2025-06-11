@@ -1,0 +1,438 @@
+{
+  "timestamp": "2025-06-08T20:28:43.825044",
+  "user": "thorrobber22",
+  "duration": 3.3724148273468018,
+  "summary": {
+    "PASS": 46,
+    "FAIL": 3,
+    "WARN": 2,
+    "INFO": 1
+  },
+  "critical_errors": [
+    "Dependencies: google-generativeai",
+    "Dependencies: beautifulsoup4",
+    "Dependencies: python-dotenv"
+  ],
+  "warnings": [
+    "APIs: GOOGLE_API_KEY",
+    "Services: AI process_query"
+  ],
+  "detailed_results": [
+    {
+      "component": "Environment",
+      "test": "Python Version",
+      "status": "PASS",
+      "details": "Python 3.13.2",
+      "duration": 1.7881393432617188e-05,
+      "timestamp": "2025-06-08T20:28:40.453217"
+    },
+    {
+      "component": "Dependencies",
+      "test": "streamlit",
+      "status": "PASS",
+      "details": "v1.45.1 - UI Framework",
+      "duration": 0.7261514663696289,
+      "timestamp": "2025-06-08T20:28:41.179661"
+    },
+    {
+      "component": "Dependencies",
+      "test": "pandas",
+      "status": "PASS",
+      "details": "v2.2.3 - Data Analysis",
+      "duration": 6.4373016357421875e-06,
+      "timestamp": "2025-06-08T20:28:41.179873"
+    },
+    {
+      "component": "Dependencies",
+      "test": "openai",
+      "status": "PASS",
+      "details": "v1.82.0 - GPT API",
+      "duration": 0.6307957172393799,
+      "timestamp": "2025-06-08T20:28:41.810945"
+    },
+    {
+      "component": "Dependencies",
+      "test": "google-generativeai",
+      "status": "FAIL",
+      "details": "Not installed - Gemini API",
+      "duration": 0.0003771781921386719,
+      "timestamp": "2025-06-08T20:28:41.811797"
+    },
+    {
+      "component": "Dependencies",
+      "test": "beautifulsoup4",
+      "status": "FAIL",
+      "details": "Not installed - HTML Parsing",
+      "duration": 0.00048613548278808594,
+      "timestamp": "2025-06-08T20:28:41.812774"
+    },
+    {
+      "component": "Dependencies",
+      "test": "requests",
+      "status": "PASS",
+      "details": "v2.32.3 - HTTP Client",
+      "duration": 8.106231689453125e-06,
+      "timestamp": "2025-06-08T20:28:41.813087"
+    },
+    {
+      "component": "Dependencies",
+      "test": "python-dotenv",
+      "status": "FAIL",
+      "details": "Not installed - Environment",
+      "duration": 0.0003979206085205078,
+      "timestamp": "2025-06-08T20:28:41.813791"
+    },
+    {
+      "component": "Dependencies",
+      "test": "yfinance",
+      "status": "PASS",
+      "details": "v0.2.62 - Market Data",
+      "duration": 0.23573851585388184,
+      "timestamp": "2025-06-08T20:28:42.049902"
+    },
+    {
+      "component": "Files",
+      "test": "hedge_intelligence.py",
+      "status": "PASS",
+      "details": "7,674 bytes - Main application",
+      "duration": 0.000659942626953125,
+      "timestamp": "2025-06-08T20:28:42.051774"
+    },
+    {
+      "component": "Files",
+      "test": ".env",
+      "status": "PASS",
+      "details": "1,589 bytes - Environment variables",
+      "duration": 0.00012493133544921875,
+      "timestamp": "2025-06-08T20:28:42.052178"
+    },
+    {
+      "component": "Files",
+      "test": "requirements.txt",
+      "status": "PASS",
+      "details": "466 bytes - Dependencies",
+      "duration": 5.8650970458984375e-05,
+      "timestamp": "2025-06-08T20:28:42.052418"
+    },
+    {
+      "component": "Files",
+      "test": "services/ai_service.py",
+      "status": "PASS",
+      "details": "5,920 bytes - AI integration",
+      "duration": 3.743171691894531e-05,
+      "timestamp": "2025-06-08T20:28:42.052647"
+    },
+    {
+      "component": "Files",
+      "test": "services/document_service.py",
+      "status": "PASS",
+      "details": "2,594 bytes - Document handling",
+      "duration": 2.9325485229492188e-05,
+      "timestamp": "2025-06-08T20:28:42.052812"
+    },
+    {
+      "component": "Files",
+      "test": "services/watchlist_service.py",
+      "status": "PASS",
+      "details": "941 bytes - Watchlist management",
+      "duration": 7.414817810058594e-05,
+      "timestamp": "2025-06-08T20:28:42.053045"
+    },
+    {
+      "component": "Files",
+      "test": "services/sec_scraper.py",
+      "status": "PASS",
+      "details": "793 bytes - SEC data fetcher",
+      "duration": 3.266334533691406e-05,
+      "timestamp": "2025-06-08T20:28:42.053193"
+    },
+    {
+      "component": "Files",
+      "test": "components/chat.py",
+      "status": "PASS",
+      "details": "7,265 bytes - Chat interface",
+      "duration": 0.00012755393981933594,
+      "timestamp": "2025-06-08T20:28:42.053380"
+    },
+    {
+      "component": "Files",
+      "test": "components/dashboard.py",
+      "status": "PASS",
+      "details": "521 bytes - Main dashboard",
+      "duration": 7.653236389160156e-05,
+      "timestamp": "2025-06-08T20:28:42.053615"
+    },
+    {
+      "component": "Files",
+      "test": "components/document_viewer.py",
+      "status": "PASS",
+      "details": "1,229 bytes - Document display",
+      "duration": 5.841255187988281e-05,
+      "timestamp": "2025-06-08T20:28:42.053826"
+    },
+    {
+      "component": "Files",
+      "test": "components/ipo_tracker.py",
+      "status": "PASS",
+      "details": "1,168 bytes - IPO tracking",
+      "duration": 5.507469177246094e-05,
+      "timestamp": "2025-06-08T20:28:42.054025"
+    },
+    {
+      "component": "Files",
+      "test": "utils/doc_processor.py",
+      "status": "PASS",
+      "details": "1,154 bytes - Document processing",
+      "duration": 2.09808349609375e-05,
+      "timestamp": "2025-06-08T20:28:42.054279"
+    },
+    {
+      "component": "Files",
+      "test": "utils/helpers.py",
+      "status": "PASS",
+      "details": "774 bytes - Helper functions",
+      "duration": 5.316734313964844e-05,
+      "timestamp": "2025-06-08T20:28:42.054579"
+    },
+    {
+      "component": "Files",
+      "test": "scrapers/iposcoop_scraper.py",
+      "status": "PASS",
+      "details": "1,042 bytes - IPO data scraper",
+      "duration": 5.3882598876953125e-05,
+      "timestamp": "2025-06-08T20:28:42.054859"
+    },
+    {
+      "component": "Files",
+      "test": "scrapers/cik_resolver.py",
+      "status": "PASS",
+      "details": "732 bytes - Company CIK lookup",
+      "duration": 4.9114227294921875e-05,
+      "timestamp": "2025-06-08T20:28:42.055046"
+    },
+    {
+      "component": "Directories",
+      "test": "data",
+      "status": "PASS",
+      "details": "28 items - Root data directory",
+      "duration": 0.0005383491516113281,
+      "timestamp": "2025-06-08T20:28:42.056100"
+    },
+    {
+      "component": "Directories",
+      "test": "data/sec_documents",
+      "status": "PASS",
+      "details": "9 companies, 1266 files - SEC filings storage",
+      "duration": 0.007213592529296875,
+      "timestamp": "2025-06-08T20:28:42.063538"
+    },
+    {
+      "component": "Directories",
+      "test": "data/watchlists",
+      "status": "PASS",
+      "details": "0 items - User watchlists",
+      "duration": 0.0003523826599121094,
+      "timestamp": "2025-06-08T20:28:42.065101"
+    },
+    {
+      "component": "Directories",
+      "test": "data/chat_history",
+      "status": "PASS",
+      "details": "0 items - Chat conversations",
+      "duration": 0.00010848045349121094,
+      "timestamp": "2025-06-08T20:28:42.065416"
+    },
+    {
+      "component": "Directories",
+      "test": "data/ipo_pipeline",
+      "status": "PASS",
+      "details": "3 items - IPO tracking data",
+      "duration": 0.00011777877807617188,
+      "timestamp": "2025-06-08T20:28:42.065701"
+    },
+    {
+      "component": "Directories",
+      "test": "data/company_requests",
+      "status": "PASS",
+      "details": "0 items - Company addition requests",
+      "duration": 7.414817810058594e-05,
+      "timestamp": "2025-06-08T20:28:42.065934"
+    },
+    {
+      "component": "SEC Docs",
+      "test": "Companies Found",
+      "status": "PASS",
+      "details": "9 companies available",
+      "duration": 0,
+      "timestamp": "2025-06-08T20:28:42.066365"
+    },
+    {
+      "component": "SEC Docs",
+      "test": "8-K Forms",
+      "status": "PASS",
+      "details": "1 found",
+      "duration": 0,
+      "timestamp": "2025-06-08T20:28:42.069007"
+    },
+    {
+      "component": "SEC Docs",
+      "test": "S-1 Forms",
+      "status": "PASS",
+      "details": "1 found",
+      "duration": 0,
+      "timestamp": "2025-06-08T20:28:42.069213"
+    },
+    {
+      "component": "SEC Docs",
+      "test": "Other Forms",
+      "status": "PASS",
+      "details": "34 found",
+      "duration": 0,
+      "timestamp": "2025-06-08T20:28:42.069258"
+    },
+    {
+      "component": "APIs",
+      "test": "OPENAI_API_KEY",
+      "status": "PASS",
+      "details": "Configured - OpenAI GPT access",
+      "duration": 0,
+      "timestamp": "2025-06-08T20:28:42.069762"
+    },
+    {
+      "component": "APIs",
+      "test": "GOOGLE_API_KEY",
+      "status": "WARN",
+      "details": "Placeholder value - Google Gemini access",
+      "duration": 0,
+      "timestamp": "2025-06-08T20:28:42.070242"
+    },
+    {
+      "component": "APIs",
+      "test": "BING_API_KEY",
+      "status": "INFO",
+      "details": "Not configured - Bing search (optional)",
+      "duration": 0,
+      "timestamp": "2025-06-08T20:28:42.070297"
+    },
+    {
+      "component": "Streamlit",
+      "test": "Streamlit import",
+      "status": "PASS",
+      "details": "Found in main app",
+      "duration": 0,
+      "timestamp": "2025-06-08T20:28:42.070859"
+    },
+    {
+      "component": "Streamlit",
+      "test": "Page configuration",
+      "status": "PASS",
+      "details": "Found in main app",
+      "duration": 0,
+      "timestamp": "2025-06-08T20:28:42.070968"
+    },
+    {
+      "component": "Streamlit",
+      "test": "Main function",
+      "status": "PASS",
+      "details": "Found in main app",
+      "duration": 0,
+      "timestamp": "2025-06-08T20:28:42.071016"
+    },
+    {
+      "component": "Streamlit",
+      "test": "Entry point",
+      "status": "PASS",
+      "details": "Found in main app",
+      "duration": 0,
+      "timestamp": "2025-06-08T20:28:42.071057"
+    },
+    {
+      "component": "Streamlit",
+      "test": "Navigation",
+      "status": "PASS",
+      "details": "Navigation components found",
+      "duration": 0,
+      "timestamp": "2025-06-08T20:28:42.071103"
+    },
+    {
+      "component": "Streamlit",
+      "test": "App Structure",
+      "status": "PASS",
+      "details": "Analysis complete",
+      "duration": 0.0006337165832519531,
+      "timestamp": "2025-06-08T20:28:42.071141"
+    },
+    {
+      "component": "Services",
+      "test": "AI Service",
+      "status": "PASS",
+      "details": "Initialized successfully",
+      "duration": 0,
+      "timestamp": "2025-06-08T20:28:43.756319"
+    },
+    {
+      "component": "Services",
+      "test": "AI process_query",
+      "status": "WARN",
+      "details": "Method missing",
+      "duration": 0,
+      "timestamp": "2025-06-08T20:28:43.757089"
+    },
+    {
+      "component": "Services",
+      "test": "Document Service",
+      "status": "PASS",
+      "details": "Initialized successfully",
+      "duration": 0,
+      "timestamp": "2025-06-08T20:28:43.789187"
+    },
+    {
+      "component": "Services",
+      "test": "Document Access",
+      "status": "PASS",
+      "details": "8 companies accessible",
+      "duration": 0,
+      "timestamp": "2025-06-08T20:28:43.790652"
+    },
+    {
+      "component": "Workflow",
+      "test": "Load Companies",
+      "status": "PASS",
+      "details": "Found 8 companies",
+      "duration": 0,
+      "timestamp": "2025-06-08T20:28:43.802723"
+    },
+    {
+      "component": "Workflow",
+      "test": "Load Documents",
+      "status": "PASS",
+      "details": "Found 10 documents for CRCL",
+      "duration": 0,
+      "timestamp": "2025-06-08T20:28:43.805282"
+    },
+    {
+      "component": "Workflow",
+      "test": "Read Document",
+      "status": "PASS",
+      "details": "Loaded 25,750 characters",
+      "duration": 0,
+      "timestamp": "2025-06-08T20:28:43.822374"
+    },
+    {
+      "component": "Performance",
+      "test": "Company List Load",
+      "status": "PASS",
+      "details": "Loaded in 0.000s",
+      "duration": 0,
+      "timestamp": "2025-06-08T20:28:43.823138"
+    },
+    {
+      "component": "Performance",
+      "test": "Memory Usage",
+      "status": "PASS",
+      "details": "223.6 MB",
+      "duration": 0,
+      "timestamp": "2025-06-08T20:28:43.823527"
+    }
+  ]
+}

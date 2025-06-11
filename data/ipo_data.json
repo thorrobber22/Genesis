@@ -1,0 +1,44 @@
+{
+  "ipos": [
+    {
+      "company": "Circle Internet Corp.",
+      "ticker": "CRCL",
+      "price_range": "TBD",
+      "shares": "$ 600.0 mil",
+      "expected_date": "2025-06-05",
+      "week": "Week of 2025-06-05",
+      "lead_underwriter": "TBD",
+      "exchange": "NASDAQ",
+      "source": "IPOScoop",
+      "scraped_date": "2025-06-02 08:46:02",
+      "s1_url": null
+    },
+    {
+      "company": "Helio Corp. (NYSE-AmEx Uplisting \u2013 Unit Deal)",
+      "ticker": "HLEO",
+      "price_range": "TBD",
+      "shares": "$ 15.0 mil",
+      "expected_date": "2025-06-06",
+      "week": "Week of 2025-06-06",
+      "lead_underwriter": "TBD",
+      "exchange": "NASDAQ",
+      "source": "IPOScoop",
+      "scraped_date": "2025-06-02 08:46:02",
+      "s1_url": null
+    },
+    {
+      "company": "Omada Health",
+      "ticker": "OMDA",
+      "price_range": "TBD",
+      "shares": "$ 150.1 mil",
+      "expected_date": "2025-06-06",
+      "week": "Week of 2025-06-06",
+      "lead_underwriter": "TBD",
+      "exchange": "NASDAQ",
+      "source": "IPOScoop",
+      "scraped_date": "2025-06-02 08:46:02",
+      "s1_url": null
+    }
+  ],
+  "last_updated": "2025-06-02T08:46:02.877817"
+}

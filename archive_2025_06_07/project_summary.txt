@@ -1,0 +1,16 @@
+HEDGE INTELLIGENCE PROJECT STRUCTURE
+============================================================
+Generated: 2025-06-07 08:23:20.396730
+
+KEY PYTHON FILES:
+  [OK] admin_final_browser.py (20.2 KB)
+  [OK] hedge_intelligence_ui.py (8.3 KB)
+  [OK] scrapers/sec/sec_compliant_scraper.py (13.2 KB)
+  [OK] scrapers/sec/pipeline_manager.py (8.0 KB)
+  [OK] processors/document_processor.py (8.8 KB)
+
+DIRECTORIES:
+  [OK] scrapers/sec (92 files)
+  [OK] data/sec_documents (1267 files)
+  [OK] processors (2 files)
+  [OK] data (1325 files)

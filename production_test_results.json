@@ -1,0 +1,153 @@
+{
+  "test_run": "2025-06-09T07:56:52.025169",
+  "user": "thorrobber22",
+  "environment": "production",
+  "tests": {
+    "ipo_scraper": {
+      "status": "PASS",
+      "details": {
+        "connection": "SUCCESS",
+        "content_length": 36732,
+        "found_markers": [
+          "expected",
+          "priced"
+        ],
+        "scraper_exists": false,
+        "note": "Need to implement ipo_scraper.py"
+      }
+    },
+    "cik_lookup": {
+      "status": "PASS",
+      "details": {
+        "Tesla": "HTTP 403",
+        "Apple": "HTTP 403",
+        "Circle Internet Financial": "HTTP 403",
+        "existing_mappings": 19
+      }
+    },
+    "sec_document_downloader": {
+      "status": "FAIL",
+      "details": {
+        "error": "HTTP 403"
+      }
+    },
+    "app_startup": {
+      "status": "PASS",
+      "details": {
+        "main_app_exists": true,
+        "syntax_valid": true,
+        "missing_imports": []
+      }
+    },
+    "dashboard_ipos": {
+      "status": "PASS",
+      "details": {
+        "total_ipos": 0,
+        "fake_companies": 0,
+        "real_companies": 0,
+        "needs_cleanup": false
+      }
+    },
+    "watchlist": {
+      "status": "PASS",
+      "details": {
+        "watchlist_exists": true,
+        "entries": 1,
+        "service_exists": true
+      }
+    },
+    "document_explorer": {
+      "status": "PASS",
+      "details": {
+        "companies": [
+          "AAPL",
+          "CRCL",
+          "DLHZ",
+          "FGO",
+          "FMFC",
+          "MSFT",
+          "RDDT",
+          "VNTG",
+          "VOYG"
+        ],
+        "company_count": 9,
+        "crcl_doc_count": 10,
+        "crcl_expected": 584,
+        "crcl_complete": false,
+        "sample_doc_types": {
+          "10-K": 0,
+          "10-Q": 0,
+          "8-K": 1,
+          "S-1": 1
+        }
+      }
+    },
+    "document_viewer": {
+      "status": "FAIL",
+      "details": {
+        "error": "Test document not found"
+      }
+    },
+    "ai_chat_citations": {
+      "status": "PASS",
+      "details": {
+        "ai_service_exists": true,
+        "chat_engine_exists": true,
+        "openai_key_set": true,
+        "gemini_key_set": true,
+        "chromadb_exists": false,
+        "test_prompts": [
+          "What is Circle's primary business?",
+          "What are the main risk factors?",
+          "What was the revenue last quarter?"
+        ]
+      }
+    },
+    "document_download": {
+      "status": "PARTIAL",
+      "details": {
+        "download_code_found": false,
+        "excel_support": false,
+        "pdf_mentioned": true
+      }
+    },
+    "data_extraction": {
+      "status": "PASS",
+      "details": {
+        "extractor_exists": true,
+        "financial_patterns": [
+          "revenue",
+          "income"
+        ],
+        "citation_support": true
+      }
+    },
+    "company_request": {
+      "status": "PASS",
+      "details": {
+        "requests_file_exists": true,
+        "pending_requests": 3,
+        "valid_structure": true,
+        "pending_tickers": [
+          "SPACE",
+          "TSLA",
+          "AAPL"
+        ]
+      }
+    },
+    "admin_view_requests": {
+      "status": "PARTIAL",
+      "details": {
+        "admin_panel_exists": true,
+        "admin_simple_exists": false
+      }
+    },
+    "admin_process_request": {
+      "status": "FAIL",
+      "details": {
+        "scraping_service_exists": false,
+        "edgar_scraper_exists": false
+      }
+    }
+  }
+}

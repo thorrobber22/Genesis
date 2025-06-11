@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<notificationOfRemoval>
+
+    <schemaVersion>X0203</schemaVersion>
+
+    <exchange>
+        <cik>0001354457</cik>
+        <entityName>Nasdaq Stock Market LLC</entityName>
+    </exchange>
+
+    <issuer>
+        <cik>0000320193</cik>
+        <entityName>Apple Inc.</entityName>
+        <fileNumber>000-10030</fileNumber>
+        <address>
+            <street1>1 Apple Park Way</street1>
+            <street2></street2>
+            <city>Cupertino</city>
+            <stateOrCountryCode>CA</stateOrCountryCode>
+            <stateOrCountry>CALIFORNIA</stateOrCountry>
+            <zipCode>95014</zipCode>
+        </address>
+        <telephoneNumber>1 408 996-1010</telephoneNumber>
+    </issuer>
+
+    <descriptionClassSecurity>Senior Notes Due 2025</descriptionClassSecurity>
+
+    <ruleProvision>17 CFR 240.12d2-2(a)(2)</ruleProvision>
+
+    <signatureData>
+        <signatureName>Tara Petta</signatureName>
+        <signatureTitle>AVP</signatureTitle>
+        <signatureDate>2025-05-22</signatureDate>
+    </signatureData>
+</notificationOfRemoval>

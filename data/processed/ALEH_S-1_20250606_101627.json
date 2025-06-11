@@ -1,0 +1,55 @@
+{
+  "ticker": "ALEH",
+  "document_type": "S-1",
+  "filename": "ALEH_CRCL_S-1.pdf",
+  "processed_date": "2025-06-06T10:16:06.005582",
+  "sections": {
+    "prospectus_summary": "",
+    "risk_factors": "",
+    "use_of_proceeds": "",
+    "dividend_policy": "",
+    "dilution": "",
+    "capitalization": "",
+    "business": "",
+    "management": "",
+    "principal_stockholders": "",
+    "underwriting": "",
+    "shares_eligible": "",
+    "lock_up_agreements": ""
+  },
+  "metadata": {
+    "file_size": 125594495,
+    "file_hash": "712b501b55a9168a5ac883e10b2970bc",
+    "processing_version": "1.0"
+  },
+  "key_facts": {
+    "company_name": "",
+    "ticker": "",
+    "exchange": "",
+    "shares_offered": 0,
+    "price_range": {
+      "min": 0,
+      "max": 0
+    },
+    "underwriters": [],
+    "use_of_proceeds": "",
+    "lock_up_period": 180,
+    "risk_factors_count": 0,
+    "voting_structure": "",
+    "major_shareholders": [],
+    "float_calculation": {
+      "shares_offered": 0,
+      "total_outstanding_pre": 0,
+      "total_outstanding_post": 0,
+      "float_shares": 0,
+      "float_percentage": 0,
+      "locked_shares": 0,
+      "insider_ownership_pct": 0,
+      "calculation_steps": [],
+      "sources": []
+    }
+  },
+  "vector_chunks_count": 24036,
+  "validation_status": "ERROR",
+  "validation_notes": "Validation failed: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+}

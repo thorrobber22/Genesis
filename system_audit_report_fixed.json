@@ -1,0 +1,199 @@
+{
+  "timestamp": "2025-06-08T22:07:19.289907",
+  "user": "thorrobber22",
+  "findings": {
+    "documents": {
+      "CRCL": {
+        "total_files": 10,
+        "valid_files": 3,
+        "junk_files": 7,
+        "junk_percentage": "70%",
+        "samples": [
+          {
+            "file": "3_2025-06-04_0.html",
+            "size": 25750,
+            "has_sec_markers": true,
+            "is_search_page": false,
+            "preview": "<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\"> <html> <head> <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"> <title>SEC FORM..."
+          },
+          {
+            "file": "3_2025-06-04_companysearch.html",
+            "size": 90913,
+            "has_sec_markers": true,
+            "is_search_page": true,
+            "preview": "  <!DOCTYPE html> <html lang=\"en\" dir=\"ltr\" class=\"no-js\">   <head>     <meta charset=\"utf-8\" /> <meta name=\"MobileOptimized\" content=\"width\" /> <meta name=\"HandheldFriendly\" content=\"true\" /> <meta n..."
+          }
+        ]
+      },
+      "DLHZ": {
+        "total_files": 11,
+        "valid_files": 0,
+        "junk_files": 11,
+        "junk_percentage": "100%",
+        "samples": [
+          {
+            "file": "DRS_2022-11-21_companysearch.html",
+            "size": 90913,
+            "has_sec_markers": true,
+            "is_search_page": true,
+            "preview": "  <!DOCTYPE html> <html lang=\"en\" dir=\"ltr\" class=\"no-js\">   <head>     <meta charset=\"utf-8\" /> <meta name=\"MobileOptimized\" content=\"width\" /> <meta name=\"HandheldFriendly\" content=\"true\" /> <meta n..."
+          },
+          {
+            "file": "DRS_A_2023-06-30_companysearch.html",
+            "size": 90913,
+            "has_sec_markers": true,
+            "is_search_page": true,
+            "preview": "  <!DOCTYPE html> <html lang=\"en\" dir=\"ltr\" class=\"no-js\">   <head>     <meta charset=\"utf-8\" /> <meta name=\"MobileOptimized\" content=\"width\" /> <meta name=\"HandheldFriendly\" content=\"true\" /> <meta n..."
+          }
+        ]
+      },
+      "FGO": {
+        "total_files": 15,
+        "valid_files": 0,
+        "junk_files": 15,
+        "junk_percentage": "100%",
+        "samples": [
+          {
+            "file": "DRS_2023-12-28_companysearch.html",
+            "size": 90913,
+            "has_sec_markers": true,
+            "is_search_page": true,
+            "preview": "  <!DOCTYPE html> <html lang=\"en\" dir=\"ltr\" class=\"no-js\">   <head>     <meta charset=\"utf-8\" /> <meta name=\"MobileOptimized\" content=\"width\" /> <meta name=\"HandheldFriendly\" content=\"true\" /> <meta n..."
+          },
+          {
+            "file": "DRS_A_2024-02-15_companysearch.html",
+            "size": 90913,
+            "has_sec_markers": true,
+            "is_search_page": true,
+            "preview": "  <!DOCTYPE html> <html lang=\"en\" dir=\"ltr\" class=\"no-js\">   <head>     <meta charset=\"utf-8\" /> <meta name=\"MobileOptimized\" content=\"width\" /> <meta name=\"HandheldFriendly\" content=\"true\" /> <meta n..."
+          }
+        ]
+      },
+      "FMFC": {
+        "total_files": 12,
+        "valid_files": 0,
+        "junk_files": 12,
+        "junk_percentage": "100%",
+        "samples": [
+          {
+            "file": "DRS_2024-06-28_companysearch.html",
+            "size": 90913,
+            "has_sec_markers": true,
+            "is_search_page": true,
+            "preview": "  <!DOCTYPE html> <html lang=\"en\" dir=\"ltr\" class=\"no-js\">   <head>     <meta charset=\"utf-8\" /> <meta name=\"MobileOptimized\" content=\"width\" /> <meta name=\"HandheldFriendly\" content=\"true\" /> <meta n..."
+          },
+          {
+            "file": "DRS_A_2024-08-05_companysearch.html",
+            "size": 90913,
+            "has_sec_markers": true,
+            "is_search_page": true,
+            "preview": "  <!DOCTYPE html> <html lang=\"en\" dir=\"ltr\" class=\"no-js\">   <head>     <meta charset=\"utf-8\" /> <meta name=\"MobileOptimized\" content=\"width\" /> <meta name=\"HandheldFriendly\" content=\"true\" /> <meta n..."
+          }
+        ]
+      },
+      "MSFT": {
+        "total_files": 0,
+        "status": "EMPTY"
+      },
+      "RDDT": {
+        "total_files": 0,
+        "status": "EMPTY"
+      },
+      "VNTG": {
+        "total_files": 13,
+        "valid_files": 0,
+        "junk_files": 13,
+        "junk_percentage": "100%",
+        "samples": [
+          {
+            "file": "DRS_2024-06-25_companysearch.html",
+            "size": 90913,
+            "has_sec_markers": true,
+            "is_search_page": true,
+            "preview": "  <!DOCTYPE html> <html lang=\"en\" dir=\"ltr\" class=\"no-js\">   <head>     <meta charset=\"utf-8\" /> <meta name=\"MobileOptimized\" content=\"width\" /> <meta name=\"HandheldFriendly\" content=\"true\" /> <meta n..."
+          },
+          {
+            "file": "DRS_A_2024-08-29_companysearch.html",
+            "size": 90913,
+            "has_sec_markers": true,
+            "is_search_page": true,
+            "preview": "  <!DOCTYPE html> <html lang=\"en\" dir=\"ltr\" class=\"no-js\">   <head>     <meta charset=\"utf-8\" /> <meta name=\"MobileOptimized\" content=\"width\" /> <meta name=\"HandheldFriendly\" content=\"true\" /> <meta n..."
+          }
+        ]
+      },
+      "VOYG": {
+        "total_files": 13,
+        "valid_files": 0,
+        "junk_files": 13,
+        "junk_percentage": "100%",
+        "samples": [
+          {
+            "file": "DRS_2025-01-21_companysearch.html",
+            "size": 90913,
+            "has_sec_markers": true,
+            "is_search_page": true,
+            "preview": "  <!DOCTYPE html> <html lang=\"en\" dir=\"ltr\" class=\"no-js\">   <head>     <meta charset=\"utf-8\" /> <meta name=\"MobileOptimized\" content=\"width\" /> <meta name=\"HandheldFriendly\" content=\"true\" /> <meta n..."
+          },
+          {
+            "file": "DRS_A_2025-03-20_companysearch.html",
+            "size": 90913,
+            "has_sec_markers": true,
+            "is_search_page": true,
+            "preview": "  <!DOCTYPE html> <html lang=\"en\" dir=\"ltr\" class=\"no-js\">   <head>     <meta charset=\"utf-8\" /> <meta name=\"MobileOptimized\" content=\"width\" /> <meta name=\"HandheldFriendly\" content=\"true\" /> <meta n..."
+          }
+        ]
+      },
+      "summary": {
+        "total_files": 74,
+        "total_valid": 3,
+        "problem_companies": [
+          "CRCL",
+          "DLHZ",
+          "FGO",
+          "FMFC",
+          "VNTG",
+          "VOYG"
+        ]
+      }
+    },
+    "admin_panel": {
+      "main_browser": {
+        "exists": false,
+        "path": "admin\\admin_final_browser.py"
+      },
+      "main_panel": {
+        "exists": true,
+        "path": "admin\\admin_panel.py",
+        "size": 5976
+      },
+      "scraper_sec": {
+        "exists": true,
+        "path": "scrapers\\sec\\sec_compliant_scraper.py",
+        "size": 13549
+      },
+      "scraper_edgar": {
+        "exists": false,
+        "path": "admin\\edgar_scraper.py"
+      },
+      "requests": {
+        "exists": true,
+        "path": "data\\company_requests.json",
+        "size": 732
+      },
+      "ipo_cache": {
+        "exists": true,
+        "path": "data\\cache\\ipo_calendar.json",
+        "size": 3590
+      }
+    },
+    "scrapers": {
+      "found": [
+        "scrapers\\sec\\sec_compliant_scraper.py",
+        "scrapers\\iposcoop_scraper.py"
+      ]
+    },
+    "user_features": {},
+    "data_flow": {},
+    "sample_content": {}
+  }
+}

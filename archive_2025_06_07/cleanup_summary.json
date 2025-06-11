@@ -1,0 +1,30 @@
+{
+  "timestamp": "2025-06-07T09:26:58.520444",
+  "stats": {
+    "files_moved": 12,
+    "files_kept": 1603,
+    "size_freed": 627018,
+    "errors": []
+  },
+  "archive_location": "archive_2025_06_07",
+  "files_kept": [
+    "scrapers/sec/pipeline_manager.py",
+    ".gitignore",
+    "processors/document_processor.py",
+    "data/pipeline_data.json",
+    "admin_final_browser.py",
+    "scrapers/sec/iposcoop_scraper.py",
+    ".env",
+    "scrapers/sec/sec_compliant_scraper.py",
+    "admin_panel.py",
+    "requirements.txt",
+    "data/company_cik_map.json",
+    "utils/sec_utils.py"
+  ],
+  "protected_dirs": [
+    "utils",
+    "data/sec_documents",
+    "scrapers/sec",
+    "processors"
+  ]
+}

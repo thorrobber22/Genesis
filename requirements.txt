@@ -1,0 +1,31 @@
+# Core Framework
+streamlit==1.31.0
+fastapi==0.109.0
+uvicorn==0.27.0
+
+# AI/ML
+openai==1.35.0
+google-generativeai==0.3.2
+chromadb==0.4.22
+numpy==1.26.4
+pandas==2.1.4
+
+# Document Processing
+beautifulsoup4==4.12.3
+lxml==5.1.0
+python-multipart==0.0.6
+
+# PDF Generation
+reportlab==4.0.4
+
+# Async Operations
+aiohttp==3.9.3
+aiofiles==23.2.1
+
+# Utilities
+python-dotenv==1.0.0
+requests==2.31.0
+apscheduler==3.10.4
+
+# Development
+watchdog==3.0.0
