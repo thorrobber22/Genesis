@@ -1,0 +1,230 @@
+{
+  "download_date": "2025-06-11T17:50:10.234863",
+  "total_files": 32,
+  "downloads": [
+    {
+      "ticker": "AAPL",
+      "type": "10-K",
+      "date": "2024-11-01",
+      "file": "data\\sec_documents\\AAPL\\10-K_2024-11-01_aapl-20240928.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019324000123/aapl-20240928.htm"
+    },
+    {
+      "ticker": "AAPL",
+      "type": "10-K",
+      "date": "2023-11-03",
+      "file": "data\\sec_documents\\AAPL\\10-K_2023-11-03_aapl-20230930.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019323000106/aapl-20230930.htm"
+    },
+    {
+      "ticker": "AAPL",
+      "type": "10-K",
+      "date": "2022-10-28",
+      "file": "data\\sec_documents\\AAPL\\10-K_2022-10-28_aapl-20220924.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019322000108/aapl-20220924.htm"
+    },
+    {
+      "ticker": "AAPL",
+      "type": "10-Q",
+      "date": "2025-05-02",
+      "file": "data\\sec_documents\\AAPL\\10-Q_2025-05-02_aapl-20250329.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000057/aapl-20250329.htm"
+    },
+    {
+      "ticker": "AAPL",
+      "type": "10-Q",
+      "date": "2025-01-31",
+      "file": "data\\sec_documents\\AAPL\\10-Q_2025-01-31_aapl-20241228.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000008/aapl-20241228.htm"
+    },
+    {
+      "ticker": "AAPL",
+      "type": "10-Q",
+      "date": "2024-08-02",
+      "file": "data\\sec_documents\\AAPL\\10-Q_2024-08-02_aapl-20240629.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019324000081/aapl-20240629.htm"
+    },
+    {
+      "ticker": "AAPL",
+      "type": "8-K",
+      "date": "2025-05-12",
+      "file": "data\\sec_documents\\AAPL\\8-K_2025-05-12_ef20048691_8k.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036125018400/ef20048691_8k.htm"
+    },
+    {
+      "ticker": "AAPL",
+      "type": "8-K",
+      "date": "2025-05-01",
+      "file": "data\\sec_documents\\AAPL\\8-K_2025-05-01_aapl-20250501.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000055/aapl-20250501.htm"
+    },
+    {
+      "ticker": "AAPL",
+      "type": "8-K",
+      "date": "2025-02-25",
+      "file": "data\\sec_documents\\AAPL\\8-K_2025-02-25_ef20044022_8k.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036125005876/ef20044022_8k.htm"
+    },
+    {
+      "ticker": "NVDA",
+      "type": "10-K",
+      "date": "2025-02-26",
+      "file": "data\\sec_documents\\NVDA\\10-K_2025-02-26_nvda-20250126.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000023/nvda-20250126.htm"
+    },
+    {
+      "ticker": "NVDA",
+      "type": "10-K",
+      "date": "2024-02-21",
+      "file": "data\\sec_documents\\NVDA\\10-K_2024-02-21_nvda-20240128.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581024000029/nvda-20240128.htm"
+    },
+    {
+      "ticker": "NVDA",
+      "type": "10-K",
+      "date": "2023-02-24",
+      "file": "data\\sec_documents\\NVDA\\10-K_2023-02-24_nvda-20230129.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581023000017/nvda-20230129.htm"
+    },
+    {
+      "ticker": "NVDA",
+      "type": "10-Q",
+      "date": "2025-05-28",
+      "file": "data\\sec_documents\\NVDA\\10-Q_2025-05-28_nvda-20250427.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000116/nvda-20250427.htm"
+    },
+    {
+      "ticker": "NVDA",
+      "type": "10-Q",
+      "date": "2024-11-20",
+      "file": "data\\sec_documents\\NVDA\\10-Q_2024-11-20_nvda-20241027.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581024000316/nvda-20241027.htm"
+    },
+    {
+      "ticker": "NVDA",
+      "type": "10-Q",
+      "date": "2024-08-28",
+      "file": "data\\sec_documents\\NVDA\\10-Q_2024-08-28_nvda-20240728.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581024000264/nvda-20240728.htm"
+    },
+    {
+      "ticker": "NVDA",
+      "type": "8-K",
+      "date": "2025-05-28",
+      "file": "data\\sec_documents\\NVDA\\8-K_2025-05-28_nvda-20250528.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000115/nvda-20250528.htm"
+    },
+    {
+      "ticker": "NVDA",
+      "type": "8-K",
+      "date": "2025-04-15",
+      "file": "data\\sec_documents\\NVDA\\8-K_2025-04-15_nvda-20250409.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000082/nvda-20250409.htm"
+    },
+    {
+      "ticker": "NVDA",
+      "type": "8-K",
+      "date": "2025-03-07",
+      "file": "data\\sec_documents\\NVDA\\8-K_2025-03-07_nvda-20250303.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000039/nvda-20250303.htm"
+    },
+    {
+      "ticker": "CRCL",
+      "type": "S-1",
+      "date": "2025-04-01",
+      "file": "data\\sec_documents\\CRCL\\S-1_2025-04-01_d737521ds1.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/1876042/000119312525070481/d737521ds1.htm"
+    },
+    {
+      "ticker": "CRCL",
+      "type": "S-1/A",
+      "date": "2025-06-02",
+      "file": "data\\sec_documents\\CRCL\\S-1-A_2025-06-02_d737521ds1a.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/1876042/000119312525132755/d737521ds1a.htm"
+    },
+    {
+      "ticker": "CRCL",
+      "type": "S-1/A",
+      "date": "2025-05-27",
+      "file": "data\\sec_documents\\CRCL\\S-1-A_2025-05-27_d737521ds1a.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/1876042/000119312525126208/d737521ds1a.htm"
+    },
+    {
+      "ticker": "CRCL",
+      "type": "S-1/A",
+      "date": "2025-05-16",
+      "file": "data\\sec_documents\\CRCL\\S-1-A_2025-05-16_d737521ds1a.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/1876042/000119312525121234/d737521ds1a.htm"
+    },
+    {
+      "ticker": "CRCL",
+      "type": "424B4",
+      "date": "2025-06-05",
+      "file": "data\\sec_documents\\CRCL\\424B4_2025-06-05_d737521d424b4.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/1876042/000119312525135795/d737521d424b4.htm"
+    },
+    {
+      "ticker": "RDDT",
+      "type": "S-1",
+      "date": "2024-02-22",
+      "file": "data\\sec_documents\\RDDT\\S-1_2024-02-22_reddits-1q423.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/1713445/000162828024006294/reddits-1q423.htm"
+    },
+    {
+      "ticker": "RDDT",
+      "type": "S-1/A",
+      "date": "2024-03-19",
+      "file": "data\\sec_documents\\RDDT\\S-1-A_2024-03-19_reddit-sx1a3.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/1713445/000162828024011789/reddit-sx1a3.htm"
+    },
+    {
+      "ticker": "RDDT",
+      "type": "S-1/A",
+      "date": "2024-03-15",
+      "file": "data\\sec_documents\\RDDT\\S-1-A_2024-03-15_reddit-sx1a2.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/1713445/000162828024011448/reddit-sx1a2.htm"
+    },
+    {
+      "ticker": "RDDT",
+      "type": "S-1/A",
+      "date": "2024-03-11",
+      "file": "data\\sec_documents\\RDDT\\S-1-A_2024-03-11_reddit-sx1a1.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/1713445/000162828024010137/reddit-sx1a1.htm"
+    },
+    {
+      "ticker": "RDDT",
+      "type": "424B4",
+      "date": "2024-03-21",
+      "file": "data\\sec_documents\\RDDT\\424B4_2024-03-21_reddit-final424b4.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/1713445/000162828024012380/reddit-final424b4.htm"
+    },
+    {
+      "ticker": "RDDT",
+      "type": "10-Q",
+      "date": "2025-05-02",
+      "file": "data\\sec_documents\\RDDT\\10-Q_2025-05-02_rddt-20250331.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/1713445/000171344525000102/rddt-20250331.htm"
+    },
+    {
+      "ticker": "RDDT",
+      "type": "10-Q",
+      "date": "2024-10-30",
+      "file": "data\\sec_documents\\RDDT\\10-Q_2024-10-30_rddt-20240930.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/1713445/000171344524000102/rddt-20240930.htm"
+    },
+    {
+      "ticker": "RDDT",
+      "type": "10-Q",
+      "date": "2024-08-07",
+      "file": "data\\sec_documents\\RDDT\\10-Q_2024-08-07_rddt-20240630.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/1713445/000171344524000054/rddt-20240630.htm"
+    },
+    {
+      "ticker": "ARM",
+      "type": "424B4",
+      "date": "2023-09-14",
+      "file": "data\\sec_documents\\ARM\\424B4_2023-09-14_d550931d424b4.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/1973239/000119312523235320/d550931d424b4.htm"
+    }
+  ]
+}

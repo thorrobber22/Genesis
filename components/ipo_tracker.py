@@ -1,162 +1,117 @@
-#!/usr/bin/env python3
-"""IPO Tracker Component - Minimalist Design"""
+"""
+components/ipo_tracker.py - Professional IPO tracking interface
+NO EMOJIS. Clean tables. Bloomberg-style.
+"""
 
 import streamlit as st
+import pandas as pd
 import json
 from pathlib import Path
-import pandas as pd
-from datetime import datetime
+from datetime import datetime, timedelta
 
-class IPOTracker:
-    def __init__(self):
-        # Try multiple possible paths
-        self.ipo_paths = [
-            Path("data/ipo_data/ipo_calendar_latest.json"),
-            Path("data/ipo_pipeline/ipo_calendar.json"),
-            Path("data/ipo_data/ipo_calendar.json")
-        ]
-        self.ipo_data = self._load_ipo_data()
-        
-    def _load_ipo_data(self):
-        """Load IPO data from available sources"""
-        for path in self.ipo_paths:
-            if path.exists():
-                try:
-                    with open(path, 'r') as f:
-                        data = json.load(f)
-                    
-                    # Convert to simple format
-                    if 'recently_priced' in data or 'upcoming' in data or 'filed' in data:
-                        return self._convert_scraped_data(data)
-                    else:
-                        return data
-                except Exception as e:
-                    continue
-        
-        return None
-    
-    def _convert_scraped_data(self, scraped_data):
-        """Convert scraped data to simple format for display"""
-        simple_data = []
-        
-        # Add recently priced
-        for ipo in scraped_data.get('recently_priced', []):
-            simple_data.append({
-                'company': ipo.get('company_name', 'Unknown'),
-                'ticker': ipo.get('ticker', 'N/A'),
-                'date': ipo.get('expected_date', 'Recent'),
-                'exchange': ipo.get('exchange', 'N/A'),
-                'status': '🟢 Priced',
-                'price_range': ipo.get('price_range', 'N/A'),
-                'has_docs': '✅' if ipo.get('cik') else '❌'
-            })
-        
-        # Add upcoming
-        for ipo in scraped_data.get('upcoming', []):
-            simple_data.append({
-                'company': ipo.get('company_name', 'Unknown'),
-                'ticker': ipo.get('ticker', 'N/A'),
-                'date': ipo.get('expected_date', 'TBD'),
-                'exchange': ipo.get('exchange', 'N/A'),
-                'status': '🔵 Upcoming',
-                'price_range': ipo.get('price_range', 'TBD'),
-                'has_docs': '✅' if ipo.get('cik') else '❌'
-            })
-        
-        # Add filed (limit to recent ones)
-        for ipo in scraped_data.get('filed', [])[:15]:
-            simple_data.append({
-                'company': ipo.get('company_name', 'Unknown'),
-                'ticker': ipo.get('ticker', 'TBD'),
-                'date': 'Filed',
-                'exchange': ipo.get('exchange', 'N/A'),
-                'status': '🟡 Filed',
-                'price_range': ipo.get('price_range', 'TBD'),
-                'has_docs': '✅' if ipo.get('cik') else '❌'
-            })
-        
-        return simple_data
-        
-    def render_ipo_tracker(self):
-        """Render IPO tracker dashboard - minimalist style"""
-        st.subheader("📈 IPO Pipeline Tracker")
-        
-        if self.ipo_data:
-            # Convert to DataFrame
-            df = pd.DataFrame(self.ipo_data)
-            
-            # Simple metrics
-            col1, col2, col3, col4 = st.columns(4)
-            with col1:
-                priced = len([x for x in self.ipo_data if '🟢' in x.get('status', '')])
-                st.metric("Recently Priced", priced)
-            with col2:
-                upcoming = len([x for x in self.ipo_data if '🔵' in x.get('status', '')])
-                st.metric("Upcoming", upcoming)
-            with col3:
-                filed = len([x for x in self.ipo_data if '🟡' in x.get('status', '')])
-                st.metric("Filed S-1", filed)
-            with col4:
-                with_docs = len([x for x in self.ipo_data if x.get('has_docs') == '✅'])
-                st.metric("With Docs", with_docs)
-            
-            # Clean table display
-            display_df = df[['company', 'ticker', 'exchange', 'status', 'price_range', 'has_docs']]
-            
-            # Style the dataframe
-            st.dataframe(
-                display_df,
-                use_container_width=True,
-                hide_index=True,
-                column_config={
-                    "company": st.column_config.TextColumn("Company", width="large"),
-                    "ticker": st.column_config.TextColumn("Ticker", width="small"),
-                    "exchange": st.column_config.TextColumn("Exchange", width="small"),
-                    "status": st.column_config.TextColumn("Status", width="small"),
-                    "price_range": st.column_config.TextColumn("Price Range", width="medium"),
-                    "has_docs": st.column_config.TextColumn("Docs", width="small")
-                }
-            )
-            
-            # Last update from scraped data
-            if isinstance(self.ipo_data, list) and len(self.ipo_data) > 0:
-                # Try to get scraped_at from original data
-                for path in self.ipo_paths:
-                    if path.exists():
-                        try:
-                            with open(path, 'r') as f:
-                                raw_data = json.load(f)
-                                if 'scraped_at' in raw_data:
-                                    scraped_at = raw_data['scraped_at']
-                                    st.caption(f"Last updated: {scraped_at}")
-                                    break
-                        except:
-                            pass
-            
-        else:
-            st.info("No IPO data found in pipeline")
-            
-            # Show sample data
-            st.caption("Sample data:")
-            sample_ipos = [
-                {"company": "Example Corp", "ticker": "EXMP", "exchange": "NASDAQ", 
-                 "status": "🔵 Upcoming", "price_range": "$15-17", "has_docs": "✅"},
-                {"company": "Sample Inc", "ticker": "SMPL", "exchange": "NYSE", 
-                 "status": "🟡 Filed", "price_range": "TBD", "has_docs": "❌"}
-            ]
-            df = pd.DataFrame(sample_ipos)
-            st.dataframe(df, use_container_width=True, hide_index=True)
-
-# For backward compatibility
 def render_ipo_tracker():
-    """Render the IPO tracker"""
-    tracker = IPOTracker()
-    tracker.render_ipo_tracker()
-
-# Test standalone
-if __name__ == "__main__":
-    st.set_page_config(page_title="IPO Tracker Test", layout="wide")
-    st.title("🚀 IPO Tracker - Minimalist")
+    """Render IPO tracker with lockup monitoring"""
     
-    tracker = IPOTracker()
-    tracker.render_ipo_tracker()
+    st.markdown("## IPO Tracker", unsafe_allow_html=True)
+    
+    # Load IPO data
+    ipo_files = list(Path("data/ipo_data").glob("*.json")) if Path("data/ipo_data").exists() else []
+    
+    if not ipo_files:
+        st.info("No IPO data available. Run the IPO scraper to populate.")
+        return
+        
+    # Get latest file
+    latest_file = max(ipo_files, key=lambda x: x.stat().st_mtime)
+    
+    with open(latest_file, 'r') as f:
+        ipo_data = json.load(f)
+    
+    # Recent Filings Table
+    st.markdown("### Recent Filings")
+    
+    if 'filed' in ipo_data and ipo_data['filed']:
+        # Create DataFrame
+        filing_data = []
+        for idx, ipo in enumerate(ipo_data['filed']):
+            filing_data.append({
+                'Company': ipo.get('company', 'Unknown'),
+                'Ticker': ipo.get('ticker', 'N/A'),
+                'Exchange': ipo.get('exchange', 'N/A'),
+                'Filing Date': ipo.get('date', 'Unknown'),
+                'Lead Manager': ipo.get('lead_manager', 'N/A')
+            })
+        
+        df = pd.DataFrame(filing_data)
+        
+        # Display as clean table
+        st.dataframe(
+            df,
+            use_container_width=True,
+            hide_index=True,
+            column_config={
+                "Company": st.column_config.TextColumn("Company", width="medium"),
+                "Ticker": st.column_config.TextColumn("Ticker", width="small"),
+                "Exchange": st.column_config.TextColumn("Exchange", width="small"),
+                "Filing Date": st.column_config.TextColumn("Filing Date", width="small"),
+                "Lead Manager": st.column_config.TextColumn("Lead Manager", width="medium")
+            }
+        )
+        
+        # Selection interface
+        col1, col2 = st.columns([3, 1])
+        with col1:
+            selected_idx = st.selectbox(
+                "Select company to analyze:",
+                options=range(len(filing_data)),
+                format_func=lambda x: f"{filing_data[x]['Company']} ({filing_data[x]['Ticker']})"
+            )
+        with col2:
+            if st.button("Analyze", type="primary", use_container_width=True):
+                st.session_state.selected_company = filing_data[selected_idx]['Ticker']
+                st.session_state.current_view = 'companies'
+                st.rerun()
+    else:
+        st.info("No recent filings found")
+    
+    # Lockup Expirations Table
+    st.markdown("### Upcoming Lockup Expirations")
+    
+    lockup_data = []
+    if 'filed' in ipo_data:
+        for ipo in ipo_data['filed']:
+            if 'date' in ipo:
+                try:
+                    ipo_date = datetime.strptime(ipo['date'], '%Y-%m-%d')
+                    lockup_date = ipo_date + timedelta(days=180)
+                    days_until = (lockup_date - datetime.now()).days
+                    
+                    if days_until > 0:
+                        lockup_data.append({
+                            'Company': ipo.get('company', 'Unknown'),
+                            'Ticker': ipo.get('ticker', 'N/A'),
+                            'IPO Date': ipo['date'],
+                            'Lockup Expiry': lockup_date.strftime('%Y-%m-%d'),
+                            'Days Until': days_until
+                        })
+                except:
+                    pass
+    
+    if lockup_data:
+        lockup_df = pd.DataFrame(lockup_data).sort_values('Days Until')
+        
+        # Professional table styling
+        st.dataframe(
+            lockup_df,
+            use_container_width=True,
+            hide_index=True,
+            column_config={
+                "Company": st.column_config.TextColumn("Company", width="medium"),
+                "Ticker": st.column_config.TextColumn("Ticker", width="small"),
+                "IPO Date": st.column_config.TextColumn("IPO Date", width="small"),
+                "Lockup Expiry": st.column_config.TextColumn("Lockup Expiry", width="small"),
+                "Days Until": st.column_config.NumberColumn("Days Until", width="small")
+            }
+        )
+    else:
+        st.info("No upcoming lockup expirations")

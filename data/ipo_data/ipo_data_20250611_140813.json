@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-06-11 14:08:13",
+  "source": "test_data",
+  "filed": [
+    {
+      "company": "CAI International",
+      "ticker": "CAI",
+      "exchange": "NYSE",
+      "date": "2025-06-09",
+      "lead_manager": "Goldman Sachs"
+    },
+    {
+      "company": "Vertex Pharmaceuticals",
+      "ticker": "VRTX",
+      "exchange": "NASDAQ",
+      "date": "2025-06-06",
+      "lead_manager": "Morgan Stanley"
+    },
+    {
+      "company": "DataBricks Inc",
+      "ticker": "DBX",
+      "exchange": "NYSE",
+      "date": "2024-12-03",
+      "lead_manager": "JP Morgan"
+    },
+    {
+      "company": "Stripe Inc",
+      "ticker": "STRP",
+      "exchange": "NYSE",
+      "date": "2024-12-23",
+      "lead_manager": "Goldman Sachs"
+    }
+  ],
+  "priced": [],
+  "upcoming": []
+}

@@ -1,6 +1,62 @@
 [
   {
     "ticker": "AAPL",
+    "title": "New Filing: AAPL",
+    "message": "8-K_20250610_AAPL.html",
+    "type": "filing",
+    "timestamp": "2025-06-11T11:00:56.443588",
+    "read": true
+  },
+  {
+    "ticker": "AAPL",
+    "title": "New Filing: AAPL",
+    "message": "8-K_20250512_AAPL.html",
+    "type": "filing",
+    "timestamp": "2025-06-11T11:00:56.443246",
+    "read": false
+  },
+  {
+    "ticker": "AAPL",
+    "title": "New Filing: AAPL",
+    "message": "8-K_20250501_AAPL.html",
+    "type": "filing",
+    "timestamp": "2025-06-11T11:00:56.442860",
+    "read": false
+  },
+  {
+    "ticker": "AAPL",
+    "title": "New Filing: AAPL",
+    "message": "8-K_20250225_AAPL.html",
+    "type": "filing",
+    "timestamp": "2025-06-11T11:00:56.442411",
+    "read": false
+  },
+  {
+    "ticker": "AAPL",
+    "title": "New Filing: AAPL",
+    "message": "8-K_03612501_AAPL.html",
+    "type": "filing",
+    "timestamp": "2025-06-11T11:00:56.442016",
+    "read": false
+  },
+  {
+    "ticker": "AAPL",
+    "title": "New Filing: AAPL",
+    "message": "10-Q_20250502_AAPL.html",
+    "type": "filing",
+    "timestamp": "2025-06-11T11:00:56.441704",
+    "read": false
+  },
+  {
+    "ticker": "AAPL",
+    "title": "New Filing: AAPL",
+    "message": "10-Q_20250131_AAPL.html",
+    "type": "filing",
+    "timestamp": "2025-06-11T11:00:56.440946",
+    "read": false
+  },
+  {
+    "ticker": "AAPL",
     "title": "Added AAPL",
     "message": "Now tracking Apple Inc",
     "type": "added",

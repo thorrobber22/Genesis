@@ -1,0 +1,589 @@
+{
+  "timestamp": "2025-06-11T13:07:56.221263",
+  "total_files_analyzed": 31,
+  "components": {
+    "components\\ai_chat_dual.py": {
+      "imports": [
+        "streamlit",
+        "pathlib",
+        "json",
+        "datetime",
+        "typing",
+        "os",
+        "services.ai_service",
+        "services.gemini_service",
+        "services.document_indexer"
+      ],
+      "internal_deps": [
+        "services.document_indexer",
+        "services.gemini_service",
+        "services.ai_service"
+      ],
+      "external_deps": [
+        "streamlit",
+        "pathlib",
+        "json",
+        "datetime",
+        "typing",
+        "os"
+      ]
+    },
+    "components\\chat.py": {
+      "imports": [
+        "streamlit",
+        "datetime",
+        "services.ai_service",
+        "services.chat_service",
+        "services.document_service",
+        "services.report_service"
+      ],
+      "internal_deps": [
+        "services.report_service",
+        "services.chat_service",
+        "services.ai_service",
+        "services.document_service"
+      ],
+      "external_deps": [
+        "streamlit",
+        "datetime"
+      ]
+    },
+    "components\\dashboard.py": {
+      "imports": [
+        "streamlit",
+        "pathlib",
+        "datetime",
+        "services.document_indexer"
+      ],
+      "internal_deps": [
+        "services.document_indexer"
+      ],
+      "external_deps": [
+        "streamlit",
+        "pathlib",
+        "datetime"
+      ]
+    },
+    "components\\data_extractor.py": {
+      "imports": [
+        "re",
+        "typing"
+      ],
+      "internal_deps": [],
+      "external_deps": [
+        "re",
+        "typing"
+      ]
+    },
+    "components\\document_explorer.py": {
+      "imports": [
+        "streamlit",
+        "pathlib",
+        "json",
+        "datetime",
+        "components.document_viewer"
+      ],
+      "internal_deps": [
+        "components.document_viewer"
+      ],
+      "external_deps": [
+        "streamlit",
+        "pathlib",
+        "json",
+        "datetime"
+      ]
+    },
+    "components\\document_viewer.py": {
+      "imports": [
+        "streamlit",
+        "pathlib",
+        "json",
+        "datetime",
+        "bs4",
+        "re"
+      ],
+      "internal_deps": [],
+      "external_deps": [
+        "streamlit",
+        "pathlib",
+        "json",
+        "datetime",
+        "bs4",
+        "re"
+      ]
+    },
+    "components\\ipo_dashboard_widget.py": {
+      "imports": [
+        "streamlit",
+        "pathlib",
+        "json",
+        "datetime",
+        "pandas",
+        "typing",
+        "re"
+      ],
+      "internal_deps": [],
+      "external_deps": [
+        "streamlit",
+        "pathlib",
+        "json",
+        "datetime",
+        "pandas",
+        "typing",
+        "re"
+      ]
+    },
+    "components\\ipo_tracker.py": {
+      "imports": [
+        "streamlit",
+        "json",
+        "pathlib",
+        "pandas",
+        "datetime"
+      ],
+      "internal_deps": [],
+      "external_deps": [
+        "streamlit",
+        "json",
+        "pathlib",
+        "pandas",
+        "datetime"
+      ]
+    },
+    "components\\ipo_tracker_enhanced.py": {
+      "imports": [
+        "streamlit",
+        "pandas",
+        "json",
+        "datetime",
+        "pathlib"
+      ],
+      "internal_deps": [],
+      "external_deps": [
+        "streamlit",
+        "pandas",
+        "json",
+        "datetime",
+        "pathlib"
+      ]
+    },
+    "components\\persistent_chat_enhanced.py": {
+      "imports": [
+        "streamlit",
+        "pathlib",
+        "json",
+        "datetime",
+        "openai",
+        "typing",
+        "re",
+        "os",
+        "services.document_indexer",
+        "services.ai_service"
+      ],
+      "internal_deps": [
+        "services.document_indexer",
+        "services.ai_service"
+      ],
+      "external_deps": [
+        "streamlit",
+        "pathlib",
+        "json",
+        "datetime",
+        "openai",
+        "typing",
+        "re",
+        "os"
+      ]
+    },
+    "components\\smart_watchlist_minimal.py": {
+      "imports": [
+        "streamlit",
+        "json",
+        "pathlib",
+        "datetime",
+        "pandas",
+        "typing"
+      ],
+      "internal_deps": [],
+      "external_deps": [
+        "streamlit",
+        "json",
+        "pathlib",
+        "datetime",
+        "pandas",
+        "typing"
+      ]
+    },
+    "components\\tickers.py": {
+      "imports": [
+        "streamlit",
+        "pandas",
+        "pathlib",
+        "datetime",
+        "services.document_service",
+        "scrapers.sec.sec_compliant_scraper"
+      ],
+      "internal_deps": [
+        "services.document_service"
+      ],
+      "external_deps": [
+        "streamlit",
+        "pandas",
+        "pathlib",
+        "datetime",
+        "scrapers.sec.sec_compliant_scraper"
+      ]
+    },
+    "components\\watchlist.py": {
+      "imports": [
+        "streamlit",
+        "pandas",
+        "datetime",
+        "services.document_service",
+        "services.ai_service",
+        "json",
+        "pathlib"
+      ],
+      "internal_deps": [
+        "services.ai_service",
+        "services.document_service"
+      ],
+      "external_deps": [
+        "streamlit",
+        "pandas",
+        "datetime",
+        "json",
+        "pathlib"
+      ]
+    },
+    "components\\__init__.py": {
+      "imports": [],
+      "internal_deps": [],
+      "external_deps": []
+    },
+    "services\\ai_chat.py": {
+      "imports": [
+        "services.ai_service",
+        "services.gemini_service",
+        "services.document_indexer",
+        "os",
+        "typing",
+        "components.ai_dual_chat"
+      ],
+      "internal_deps": [
+        "services.document_indexer",
+        "services.gemini_service",
+        "services.ai_service",
+        "components.ai_dual_chat"
+      ],
+      "external_deps": [
+        "os",
+        "typing"
+      ]
+    },
+    "services\\ai_service.py": {
+      "imports": [
+        "os",
+        "typing",
+        "openai",
+        "datetime",
+        "json",
+        "pathlib",
+        "re"
+      ],
+      "internal_deps": [],
+      "external_deps": [
+        "os",
+        "typing",
+        "openai",
+        "datetime",
+        "json",
+        "pathlib",
+        "re"
+      ]
+    },
+    "services\\ai_service_wrapper.py": {
+      "imports": [
+        "services.ai_service"
+      ],
+      "internal_deps": [
+        "services.ai_service"
+      ],
+      "external_deps": []
+    },
+    "services\\auth_service.py": {
+      "imports": [],
+      "internal_deps": [],
+      "external_deps": []
+    },
+    "services\\chat_service.py": {
+      "imports": [
+        "datetime",
+        "typing",
+        "json",
+        "pathlib"
+      ],
+      "internal_deps": [],
+      "external_deps": [
+        "datetime",
+        "typing",
+        "json",
+        "pathlib"
+      ]
+    },
+    "services\\document_analyzer.py": {
+      "imports": [
+        "re",
+        "pathlib",
+        "json",
+        "typing"
+      ],
+      "internal_deps": [],
+      "external_deps": [
+        "re",
+        "pathlib",
+        "json",
+        "typing"
+      ]
+    },
+    "services\\document_indexer.py": {
+      "imports": [
+        "os",
+        "json",
+        "pathlib",
+        "typing",
+        "chromadb",
+        "chromadb.config",
+        "datetime",
+        "hashlib",
+        "bs4",
+        "re",
+        "logging",
+        "re"
+      ],
+      "internal_deps": [],
+      "external_deps": [
+        "os",
+        "json",
+        "pathlib",
+        "typing",
+        "chromadb",
+        "chromadb.config",
+        "datetime",
+        "hashlib",
+        "bs4",
+        "re",
+        "logging",
+        "re"
+      ]
+    },
+    "services\\document_service.py": {
+      "imports": [
+        "os",
+        "pathlib",
+        "typing"
+      ],
+      "internal_deps": [],
+      "external_deps": [
+        "os",
+        "pathlib",
+        "typing"
+      ]
+    },
+    "services\\gemini_service.py": {
+      "imports": [
+        "os",
+        "pathlib",
+        "typing",
+        "google.generativeai",
+        "datetime",
+        "json",
+        "re"
+      ],
+      "internal_deps": [],
+      "external_deps": [
+        "os",
+        "pathlib",
+        "typing",
+        "google.generativeai",
+        "datetime",
+        "json",
+        "re"
+      ]
+    },
+    "services\\ipo_scraper.py": {
+      "imports": [
+        "aiohttp",
+        "bs4",
+        "datetime",
+        "json",
+        "re",
+        "typing",
+        "logging"
+      ],
+      "internal_deps": [],
+      "external_deps": [
+        "aiohttp",
+        "bs4",
+        "datetime",
+        "json",
+        "re",
+        "typing",
+        "logging"
+      ]
+    },
+    "services\\pipeline_orchestrator.py": {
+      "imports": [
+        "asyncio",
+        "json",
+        "pathlib",
+        "datetime",
+        "logging",
+        "sys",
+        "scrapers.ipo_scraper_real",
+        "scrapers.sec.sec_compliant_scraper"
+      ],
+      "internal_deps": [],
+      "external_deps": [
+        "asyncio",
+        "json",
+        "pathlib",
+        "datetime",
+        "logging",
+        "sys",
+        "scrapers.ipo_scraper_real",
+        "scrapers.sec.sec_compliant_scraper"
+      ]
+    },
+    "services\\report_service.py": {
+      "imports": [
+        "datetime",
+        "typing",
+        "json",
+        "pathlib",
+        "reportlab.lib.pagesizes",
+        "reportlab.platypus",
+        "reportlab.lib.styles",
+        "reportlab.lib.units",
+        "io",
+        "csv",
+        "io"
+      ],
+      "internal_deps": [],
+      "external_deps": [
+        "datetime",
+        "typing",
+        "json",
+        "pathlib",
+        "reportlab.lib.pagesizes",
+        "reportlab.platypus",
+        "reportlab.lib.styles",
+        "reportlab.lib.units",
+        "io",
+        "csv",
+        "io"
+      ]
+    },
+    "services\\sec_scraper.py": {
+      "imports": [
+        "requests",
+        "bs4",
+        "pathlib",
+        "time",
+        "re",
+        "datetime",
+        "typing",
+        "logging"
+      ],
+      "internal_deps": [],
+      "external_deps": [
+        "requests",
+        "bs4",
+        "pathlib",
+        "time",
+        "re",
+        "datetime",
+        "typing",
+        "logging"
+      ]
+    },
+    "services\\watchlist_service.py": {
+      "imports": [
+        "json",
+        "pathlib"
+      ],
+      "internal_deps": [],
+      "external_deps": [
+        "json",
+        "pathlib"
+      ]
+    },
+    "services\\__init__.py": {
+      "imports": [],
+      "internal_deps": [],
+      "external_deps": []
+    },
+    "app.py": {
+      "imports": [
+        "flask",
+        "flask_cors",
+        "services.ai_chat",
+        "services.document_indexer",
+        "logging",
+        "datetime"
+      ],
+      "internal_deps": [
+        "services.document_indexer",
+        "services.ai_chat"
+      ],
+      "external_deps": [
+        "flask",
+        "flask_cors",
+        "logging",
+        "datetime"
+      ]
+    },
+    "user_app.py": {
+      "imports": [
+        "streamlit",
+        "pathlib",
+        "os",
+        "components.persistent_chat_enhanced",
+        "components.document_explorer",
+        "components.smart_watchlist_minimal",
+        "components.ipo_tracker",
+        "components.dashboard",
+        "components.tickers"
+      ],
+      "internal_deps": [
+        "components.persistent_chat_enhanced",
+        "components.dashboard",
+        "components.tickers",
+        "components.smart_watchlist_minimal",
+        "components.ipo_tracker",
+        "components.document_explorer"
+      ],
+      "external_deps": [
+        "streamlit",
+        "pathlib",
+        "os"
+      ]
+    }
+  },
+  "summary": {
+    "files_with_deps": 11,
+    "total_internal_deps": 27,
+    "most_dependent": {
+      "user_app.py": 6,
+      "components\\chat.py": 4,
+      "services\\ai_chat.py": 4,
+      "components\\ai_chat_dual.py": 3,
+      "components\\persistent_chat_enhanced.py": 2,
+      "components\\watchlist.py": 2,
+      "app.py": 2,
+      "components\\dashboard.py": 1,
+      "components\\document_explorer.py": 1,
+      "components\\tickers.py": 1
+    }
+  }
+}

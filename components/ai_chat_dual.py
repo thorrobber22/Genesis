@@ -128,7 +128,7 @@ class DualAIChat:
                     response = self._get_ai_response(prompt, use_validation)
                     
                     # Show primary response
-                    if response["model"]:
+                    if response and "model" in response and response["model"]:
                         st.caption(f"via {response['model']}")
                     
                     st.markdown(response["content"])

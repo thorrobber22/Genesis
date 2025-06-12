@@ -44,50 +44,90 @@ class DocumentIndexer:
             logger.info("Created new collection")
     
     def search(self, query: str, limit: int = 10) -> List[Dict]:
-        """Search for relevant document sections using ChromaDB"""
-        
-        if not self.collection:
-            print("No collection available")
-            return []
-        
+        """
+        Search for documents in the collection
+        First tries exact company match, then falls back to semantic search
+        """
         try:
-            # Perform similarity search using ChromaDB
-            results = self.collection.query(
-                query_texts=[query],
-                n_results=limit
-            )
+            # Check if query is a company ticker (all caps, 2-5 letters)
+            is_ticker = query.isupper() and query.isalpha() and 2 <= len(query) <= 5
+            
+            # First try exact company match if it looks like a ticker
+            if is_ticker:
+                logger.info(f"Searching for company ticker: {query}")
+                results = self.collection.get(
+                    where={"company": query},
+                    limit=limit,
+                    include=["metadatas", "documents"]
+                )
+                
+                if results['ids']:
+                    # Format results
+                    formatted_results = []
+                    for i in range(len(results['ids'])):
+                        formatted_results.append({
+                            'company': results['metadatas'][i].get('company', 'Unknown'),
+                            'document': results['metadatas'][i].get('file_path', 'Unknown'),
+                            'text': results['documents'][i][:500] if results['documents'][i] else '',
+                            'metadata': results['metadatas'][i],
+                            'score': 1.0  # Perfect match for exact company
+                        })
+                    logger.info(f"Found {len(formatted_results)} exact matches for company {query}")
+                    return formatted_results
+            
+            # If no exact match or not a ticker, use semantic search
+            logger.info(f"Performing semantic search for: {query}")
+            
+            # Split query to check for company + other terms (e.g., "TSLA revenue")
+            query_parts = query.split()
+            company_filter = None
+            
+            if len(query_parts) > 1:
+                # Check if first part is a ticker
+                potential_ticker = query_parts[0].upper()
+                if potential_ticker.isalpha() and 2 <= len(potential_ticker) <= 5:
+                    company_filter = potential_ticker
+                    # Remove company from query for semantic search
+                    semantic_query = " ".join(query_parts[1:])
+                else:
+                    semantic_query = query
+            else:
+                semantic_query = query
+            
+            # Perform semantic search
+            if company_filter:
+                # Search with company filter
+                results = self.collection.query(
+                    query_texts=[semantic_query],
+                    n_results=limit,
+                    where={"company": company_filter}
+                )
+            else:
+                # General semantic search
+                results = self.collection.query(
+                    query_texts=[query],
+                    n_results=limit
+                )
             
             # Format results
             formatted_results = []
             
-            if results and results['ids'] and len(results['ids'][0]) > 0:
+            if results['ids'] and results['ids'][0]:
                 for i in range(len(results['ids'][0])):
-                    metadata = results['metadatas'][0][i]
-                    
-                    result = {
-                        'id': results['ids'][0][i],
-                        'company': metadata.get('company', 'Unknown'),
-                        'ticker': metadata.get('ticker', metadata.get('company', 'Unknown')),
-                        'document': metadata.get('file_path', ''),
-                        'document_name': metadata.get('document_name', ''),
-                        'title': metadata.get('section_title', 'Untitled'),
-                        'section_type': metadata.get('form_type', 'Unknown'),
-                        'filing_date': metadata.get('filing_date', 'Unknown'),
-                        'text': results['documents'][0][i] if results['documents'] else '',
-                        'relevance': 1 - results['distances'][0][i] if results['distances'] else 0.5,
-                        'start_idx': 0,  # ChromaDB doesn't store these
-                        'end_idx': len(results['documents'][0][i]) if results['documents'] else 0
-                    }
-                    formatted_results.append(result)
+                    formatted_results.append({
+                        'company': results['metadatas'][0][i].get('company', 'Unknown'),
+                        'document': results['metadatas'][0][i].get('file_path', 'Unknown'),
+                        'text': results['documents'][0][i][:500] if results['documents'][0][i] else '',
+                        'metadata': results['metadatas'][0][i],
+                        'score': 1 - (results['distances'][0][i] / 2) if 'distances' in results else 0.5
+                    })
             
             return formatted_results
             
         except Exception as e:
-            print(f"Search error: {e}")
-            import traceback
-            traceback.print_exc()
+            logger.error(f"Error searching documents: {e}")
             return []
-    
+
     def index_document(self, file_path: Path, company: str, form_type: str = None, filing_date: str = None):
         """Index a single document"""
         try:

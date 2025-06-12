@@ -1,28 +1,17 @@
-# Hedge Intelligence - Production System
+# Hedge Intelligence - Full Codebase
 
-## Features
-- Real-time IPO calendar from IPOScoop
-- SEC EDGAR filing monitoring
-- Lock-up expiration tracking
-- AI-powered chat (GPT-4 + Gemini)
-- Advanced admin panel
+This is the complete codebase including all versions and archives for review.
 
-## Setup
-1. Install dependencies: `pip install -r requirements.txt`
-2. Configure `.env` with API keys
-3. Run main app: `python run.py`
-4. Run admin panel: `python run_admin.py`
+## Current Status
+- Date: 2025-06-12 00:31:56 UTC
+- User: thorrobber22
+- Purpose: Full code review and cleanup
 
-## Admin Panel
-Access at http://localhost:8502 for:
-- System readiness monitoring
-- Document processing pipeline
-- File system explorer
-- Processing logs
-- Prompt debugger
+## Next Steps
+1. Review all files and folders
+2. Identify core components
+3. Clean up duplicates
+4. Organize structure
 
-## Usage
-1. Wait 2-3 minutes for initial data load
-2. Check admin panel for system status
-3. Use chat for IPO analysis
-4. Browse calendar, filings, and lock-ups
+---
+Full project push for visibility and analysis.

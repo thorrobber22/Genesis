@@ -208,3 +208,33 @@ class IPOScraper:
         if year_match:
             return year_match.group(1)
         return "TBD"
+
+
+def scrape_all_ipo_data():
+    """Main entry point for IPO scraping"""
+    scraper = IPOScraper()
+    try:
+        # Try to call the main scraping method
+        if hasattr(scraper, 'scrape_iposcoop'):
+            return scraper.scrape_iposcoop()
+        elif hasattr(scraper, 'scrape'):
+            return scraper.scrape()
+        elif hasattr(scraper, 'run'):
+            return scraper.run()
+        else:
+            # Fallback - create minimal response
+            print("Warning: No standard scraping method found")
+            return {"ipos": [], "status": "error", "message": "No scraping method found"}
+    except Exception as e:
+        print(f"Error in scraping: {str(e)}")
+        return {"ipos": [], "status": "error", "message": str(e)}
+
+
+if __name__ == "__main__":
+    print("Running IPO scraper...")
+    data = scrape_all_ipo_data()
+    if isinstance(data, dict):
+        ipo_count = len(data.get('ipos', []))
+        print(f"Scraped {ipo_count} IPOs")
+    else:
+        print("Scraper returned:", type(data))
