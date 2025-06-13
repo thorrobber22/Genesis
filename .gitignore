@@ -1,31 +1,10 @@
-# Virtual Environment
 venv/
 env/
-
-# Python
 __pycache__/
-*.py[cod]
 *.pyc
-
-# Environment variables
 .env
-.env.local
-
-# IDE
 .vscode/
 .idea/
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Logs
 *.log
-
-# Temporary files
 temp_*
-*.tmp
-
-# Backups
-*_backup*
-*.bak
+*.db
