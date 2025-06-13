@@ -12,7 +12,7 @@ from datetime import datetime
 # Import modular components
 from components.financial_analysis import show_financial_analysis
 from components.watchlist import show_watchlist
-from components.chat import show_chat
+from components.chat import show_chat as show_chat_v2
 
 # Terminal configuration
 st.set_page_config(
@@ -23,136 +23,125 @@ st.set_page_config(
 )
 
 # Final refined CSS with all fixes
-st.markdown("""<style>
-    /* ===== SPLIT SCREEN SYSTEM ===== */
+st.markdown("""
+<style>
+    /* ===== FINAL REFINED STYLING ===== */
     
-    /* Base styles - YOUR EXACT THEME */
+    /* Base styles - NO CHANGES to color scheme */
     html, body, .stApp {
         background-color: #1E1E1E !important;
         color: #F7F7F8 !important;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        height: 100vh;
+        overflow: hidden;
     }
     
     /* Hide Streamlit chrome */
-    #MainMenu, footer, header, .stDeployButton {
+    #MainMenu, footer, header, .stDeployButton, .viewerBadge_container__1QSob {
         display: none !important;
     }
     
-    /* Main container */
+    /* Prevent main scroll - ONLY chat scrolls */
     .main > .block-container {
         padding: 0 !important;
         max-width: 100% !important;
         height: 100vh !important;
+        overflow: hidden !important;
     }
     
-    /* Smooth transitions for all elements */
-    .main-content-area, .chat-panel-container, [data-testid="column"] {
-        transition: all 0.3s ease !important;
+    /* Fixed viewport container */
+    .app-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: #1E1E1E;
     }
     
-    /* Navigation */
-    .stButton > button {
-        background-color: transparent !important;
-        color: #F7F7F8 !important;
-        border: 1px solid #565869 !important;
-        font-size: 13px !important;
-        font-weight: 500 !important;
-        padding: 6px 12px !important;
-        border-radius: 6px !important;
-        transition: all 0.2s ease !important;
+    /* Navigation bar - fixed positioning */
+    .nav-container {
+        height: 48px;
+        background-color: #202123;
+        border-bottom: 1px solid #2E2E2E;
+        display: flex;
+        align-items: center;
+        padding: 0 24px;
+        flex-shrink: 0;
+        z-index: 100;
     }
     
-    .stButton > button:hover {
-        background-color: #4B4D5D !important;
-        border-color: #2E8AF6 !important;
+    /* Content wrapper - fills remaining space */
+    .content-wrapper {
+        flex: 1;
+        display: flex;
+        overflow: hidden;
+        position: relative;
     }
     
-    /* Chat panel styling */
-    .chat-panel-container {
-        background-color: #202123 !important;
-        border-left: 2px solid #2E8AF6 !important;
-        height: calc(100vh - 100px) !important;
-        border-radius: 8px 0 0 0;
-        box-shadow: -4px 0 12px rgba(0,0,0,0.3);
-    }
-    
-    .chat-messages-container {
-        height: calc(100vh - 200px);
+    /* Sidebar - no scroll issues */
+    .sidebar-left {
+        width: 260px;
+        background-color: #202123;
+        border-right: 1px solid #2E2E2E;
+        padding: 20px;
         overflow-y: auto;
-        padding: 16px;
+        flex-shrink: 0;
     }
     
-    /* Chat messages */
-    .stChatMessage {
-        margin-bottom: 12px !important;
+    /* Main content */
+    .main-content {
+        flex: 1;
+        background-color: #1E1E1E;
+        padding: 24px;
+        overflow-y: auto;
+        position: relative;
     }
     
-    [data-testid="stChatMessageContent"] {
-        background-color: #2A2B2D !important;
-        border: 1px solid #2E2E2E !important;
-        border-radius: 8px !important;
-        padding: 12px !important;
+    /* Context panel */
+    .context-panel {
+        width: 320px;
+        background-color: #202123;
+        border-left: 1px solid #2E2E2E;
+        padding: 20px;
+        overflow-y: auto;
+        flex-shrink: 0;
     }
     
-    [data-testid="stChatMessageUser"] [data-testid="stChatMessageContent"] {
-        background-color: #40414F !important;
-        border-color: #565869 !important;
-        margin-left: 20%;
+    /* ===== CHAT BAR - FIXED TO BOTTOM ===== */
+    .chat-container {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 80px;
+        background-color: #40414F;
+        border-top: 1px solid #565869;
+        padding: 16px 24px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        z-index: 1000;
     }
     
-    /* Compressed view adjustments */
-    .compressed-view {
-        font-size: 0.9em;
-    }
-    
-    .compressed-view h1 {
-        font-size: 1.5em !important;
-    }
-    
-    .compressed-view h2 {
-        font-size: 1.2em !important;
-    }
-    
-    .compressed-view .stButton > button {
-        padding: 4px 8px !important;
-        font-size: 12px !important;
-    }
-    
-    /* Close button special styling */
-    button[key="close_chat"] {
-        background: none !important;
-        border: none !important;
-        color: #A3A3A3 !important;
-        font-size: 20px !important;
-        padding: 4px !important;
-        min-width: 32px !important;
-        height: 32px !important;
-    }
-    
-    button[key="close_chat"]:hover {
-        background-color: #4B4D5D !important;
-        color: #F7F7F8 !important;
-        border-radius: 4px !important;
-    }
-    
-    /* Chat input - always at bottom */
+    /* Chat input styling */
     .stChatInput {
-        position: fixed !important;
-        bottom: 0 !important;
-        left: 0 !important;
-        right: 0 !important;
-        background-color: #1E1E1E !important;
-        border-top: 1px solid #2E2E2E !important;
-        padding: 16px !important;
-        z-index: 1000 !important;
+        background-color: transparent !important;
+        border: none !important;
     }
     
-    .stChatInput > div > div {
+    .stChatInput > div {
         background-color: #40414F !important;
         border: 1px solid #565869 !important;
         border-radius: 8px !important;
-        max-width: 800px !important;
-        margin: 0 auto !important;
+        transition: all 0.2s !important;
+    }
+    
+    .stChatInput > div:hover {
+        background-color: #4B4D5D !important;
+        border-color: #4B4D5D !important;
     }
     
     .stChatInput textarea {
@@ -160,17 +149,206 @@ st.markdown("""<style>
         color: #ECECF1 !important;
         border: none !important;
         font-size: 14px !important;
+        line-height: 1.5 !important;
+        padding: 8px 12px !important;
+    }
+    
+    /* ===== BUTTONS - AUTO-RESIZE, NO WORD BREAK ===== */
+    .stButton > button {
+        background-color: transparent !important;
+        color: #F7F7F8 !important;
+        border: 1px solid #565869 !important;
+        font-size: 13px !important;
+        font-weight: 500 !important;
+        padding: 6px 12px !important;
+        min-width: auto !important;
+        width: auto !important;
+        height: auto !important;
+        line-height: 1.5 !important;
+        border-radius: 6px !important;
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+        transition: all 0.2s ease !important;
+        cursor: pointer !important;
+    }
+    
+    .stButton > button:hover {
+        background-color: #4B4D5D !important;
+        color: #F7F7F8 !important;
+        border-color: #2E8AF6 !important;
+    }
+    
+    /* Primary buttons */
+    .stButton > button[kind="primary"] {
+        background-color: #2E8AF6 !important;
+        border-color: #2E8AF6 !important;
+        color: #F7F7F8 !important;
+    }
+    
+    .stButton > button[kind="primary"]:hover {
+        background-color: #2563EB !important;
+        border-color: #2563EB !important;
+    }
+    
+    /* ===== NAVIGATION TABS ===== */
+    .nav-tab {
+        color: #A3A3A3;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 8px 16px;
+        margin-right: 8px;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: all 0.2s;
+        border: 1px solid transparent;
+        white-space: nowrap;
+    }
+    
+    .nav-tab:hover {
+        color: #F7F7F8;
+        background-color: #2A2B2D;
+    }
+    
+    .nav-tab.active {
+        color: #2E8AF6;
+        background-color: #2A2B2D;
+        border-bottom: 2px solid #2E8AF6;
+    }
+    
+    /* ===== METRICS PAGE - PILL STYLE ===== */
+    .metrics-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-bottom: 24px;
+    }
+    
+    .metric-pill {
+        display: inline-flex;
+        align-items: center;
+        background-color: #2A2B2D;
+        border: 1px solid #2E2E2E;
+        border-radius: 24px;
+        padding: 12px 20px;
+        cursor: pointer;
+        transition: all 0.2s;
+        gap: 8px;
+    }
+    
+    .metric-pill:hover {
+        background-color: #4B4D5D;
+        border-color: #2E8AF6;
+        transform: translateY(-1px);
+    }
+    
+    .metric-pill-value {
+        font-size: 18px;
+        font-weight: 600;
+        color: #2E8AF6;
+    }
+    
+    .metric-pill-label {
+        font-size: 13px;
+        color: #A3A3A3;
+        font-weight: 500;
+    }
+    
+    /* ===== TEXT HOVER STATES ===== */
+    a, .clickable-text {
+        color: #2E8AF6 !important;
+        text-decoration: none;
+        cursor: pointer;
+        transition: all 0.2s;
+    }
+    
+    a:hover, .clickable-text:hover {
+        color: #F7F7F8 !important;
+        text-decoration: underline;
+        opacity: 0.9;
+    }
+    
+    /* ===== SECTOR DROPDOWNS - NO SHIFT ===== */
+    .streamlit-expanderHeader {
+        background-color: #2A2B2D !important;
+        border: 1px solid #2E2E2E !important;
+        border-radius: 6px !important;
+        color: #F7F7F8 !important;
+        font-size: 14px !important;
         padding: 12px 16px !important;
+        margin-bottom: 8px !important;
+        cursor: pointer !important;
+        transition: all 0.2s !important;
     }
     
-    /* Sidebar */
-    .sidebar-content {
-        background-color: #202123;
-        padding: 20px;
-        height: 100%;
+    .streamlit-expanderHeader:hover {
+        background-color: #4B4D5D !important;
+        border-color: #2E8AF6 !important;
     }
     
-    /* Scrollbars */
+    .streamlit-expanderContent {
+        background-color: transparent !important;
+        padding: 0 !important;
+        margin-top: -8px !important;
+    }
+    
+    /* ===== CONTEXT PANEL STYLING ===== */
+    .context-section {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #2E2E2E;
+    }
+    
+    .context-section:last-child {
+        border-bottom: none;
+    }
+    
+    .context-label {
+        font-size: 11px;
+        font-weight: 600;
+        color: #A3A3A3;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        margin-bottom: 4px;
+    }
+    
+    .context-value {
+        font-size: 13px;
+        color: #F7F7F8;
+        font-weight: 400;
+    }
+    
+    /* ===== TABLE STYLING ===== */
+    .data-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    
+    .data-table th {
+        background-color: transparent;
+        color: #A3A3A3;
+        font-size: 11px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        padding: 8px 12px;
+        border-bottom: 1px solid #2E2E2E;
+        text-align: left;
+    }
+    
+    .data-table td {
+        padding: 12px;
+        border-bottom: 1px solid #2E2E2E;
+        color: #F7F7F8;
+        font-size: 13px;
+    }
+    
+    .data-table tr:hover td {
+        background-color: #2A2B2D;
+        cursor: pointer;
+    }
+    
+    /* ===== SCROLLBAR STYLING ===== */
     ::-webkit-scrollbar {
         width: 8px;
         height: 8px;
@@ -190,30 +368,95 @@ st.markdown("""<style>
         background: #565869;
     }
     
-    /* Animation overlay effect */
-    @keyframes slideIn {
-        from { transform: translateX(100%); }
-        to { transform: translateX(0); }
+    /* ===== CHAT LOG SCROLL ===== */
+    .chat-messages {
+        max-height: calc(100vh - 200px);
+        overflow-y: auto;
+        padding: 16px;
     }
     
-    .chat-panel-container {
-        animation: slideIn 0.3s ease;
+    /* ===== INPUT FIELDS ===== */
+    .stTextInput > div > div > input,
+    .stSelectbox > div > div > select {
+        background-color: #40414F !important;
+        border: 1px solid #565869 !important;
+        color: #ECECF1 !important;
+        font-size: 13px !important;
+        padding: 8px 12px !important;
+        border-radius: 6px !important;
+        transition: all 0.2s !important;
     }
     
-    /* Responsive tables for compressed view */
-    .compressed-view table {
+    .stTextInput > div > div > input:hover,
+    .stSelectbox > div > div > select:hover {
+        background-color: #4B4D5D !important;
+        border-color: #4B4D5D !important;
+    }
+    
+    .stTextInput > div > div > input:focus,
+    .stSelectbox > div > div > select:focus {
+        background-color: #4B4D5D !important;
+        border-color: #2E8AF6 !important;
+        outline: none !important;
+    }
+    
+    /* ===== SPACING FIXES ===== */
+    .element-container {
+        margin-bottom: 0.75rem !important;
+    }
+    
+    .stMarkdown {
+        margin-bottom: 0 !important;
+    }
+    
+    h1, h2, h3 {
+        margin-top: 0 !important;
+        margin-bottom: 16px !important;
+    }
+    
+    /* ===== TICKER BADGES ===== */
+    .ticker-badge {
+        display: inline-block;
+        padding: 4px 8px;
+        background-color: #2A2B2D;
+        border: 1px solid #2E8AF6;
+        border-radius: 4px;
+        color: #2E8AF6;
         font-size: 12px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.2s;
     }
     
-    .compressed-view th, .compressed-view td {
-        padding: 6px !important;
+    .ticker-badge:hover {
+        background-color: #2E8AF6;
+        color: #F7F7F8;
     }
     
-    /* Prevent content jump */
-    .main {
-        overflow-x: hidden !important;
+    /* ===== PREVENT LAYOUT SHIFT ===== */
+    .main > div {
+        overflow: hidden !important;
+        position: relative !important;
     }
-</style>""", unsafe_allow_html=True)
+    
+    /* Status indicators */
+    .status-dot {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        margin-right: 6px;
+    }
+    
+    .status-active {
+        background-color: #2E8AF6;
+    }
+    
+    .status-inactive {
+        background-color: #A3A3A3;
+    }
+</style>
+""", unsafe_allow_html=True)
 
 # Initialize session state
 if 'active_tab' not in st.session_state:
@@ -222,130 +465,47 @@ if 'selected_ticker' not in st.session_state:
     st.session_state.selected_ticker = None
 if 'chat_messages' not in st.session_state:
     st.session_state.chat_messages = []
-if 'chat_panel_open' not in st.session_state:
-    st.session_state.chat_panel_open = False
 if 'ai_service' not in st.session_state:
     try:
         from services.ai_service import AIService
         st.session_state.ai_service = AIService()
     except Exception as e:
         st.session_state.ai_service = None
-    except Exception as e:
-        st.session_state.ai_service = None
 
 def main():
-    """Main application with split screen chat"""
+    """Main application with final refinements"""
+    
+    # Create app container
+    st.markdown('<div class="app-container">', unsafe_allow_html=True)
     
     # Navigation
     render_navigation()
     
-    # Main layout with conditional split
-    if st.session_state.chat_panel_open:
-        # Split screen layout
-        render_split_screen_layout()
-    else:
-        # Full screen layout
-        render_full_screen_layout()
+    # Content area
+    st.markdown('<div class="content-wrapper">', unsafe_allow_html=True)
     
-    # Persistent chat bar
-    render_chat_bar()
-
-def render_full_screen_layout():
-    """Full screen layout - normal view"""
+    # Three-column layout
     col_left, col_main, col_right = st.columns([1.2, 3, 1.5])
     
     with col_left:
         render_sidebar()
     
     with col_main:
-        st.markdown('<div class="main-content-area">', unsafe_allow_html=True)
-        render_tab_content()
-        st.markdown('</div>', unsafe_allow_html=True)
+        render_main_content()
     
     with col_right:
         render_context_panel()
-
-def render_split_screen_layout():
-    """Split screen layout - chat open"""
-    # When chat is open, hide context panel for space
-    col_left, col_main, col_chat = st.columns([1.2, 2.5, 2.5])
-    
-    with col_left:
-        render_sidebar()
-    
-    with col_main:
-        st.markdown('<div class="main-content-area compressed">', unsafe_allow_html=True)
-        render_tab_content_compressed()
-        st.markdown('</div>', unsafe_allow_html=True)
-    
-    with col_chat:
-        render_chat_panel()
-
-def render_tab_content():
-    """Render current tab content - full size"""
-    if st.session_state.active_tab == 'ipo_calendar':
-        render_ipo_calendar()
-    elif st.session_state.active_tab == 'companies':
-        render_companies_view()
-    elif st.session_state.active_tab == 'metrics':
-        render_metrics_dashboard()
-    elif st.session_state.active_tab == 'watchlist':
-        show_watchlist()
-    elif st.session_state.active_tab == 'chat':
-        render_chat_view()
-    elif st.session_state.active_tab == 'financial_analysis':
-        show_financial_analysis()
-
-def render_tab_content_compressed():
-    """Render current tab content - compressed for split view"""
-    # Add responsive wrapper
-    st.markdown('<div class="compressed-view">', unsafe_allow_html=True)
-    
-    if st.session_state.active_tab == 'ipo_calendar':
-        render_ipo_calendar_compressed()
-    elif st.session_state.active_tab == 'companies':
-        render_companies_view_compressed()
-    elif st.session_state.active_tab == 'metrics':
-        render_metrics_dashboard_compressed()
-    elif st.session_state.active_tab == 'watchlist':
-        show_watchlist()  # Already compact
-    elif st.session_state.active_tab == 'chat':
-        st.info("Chat is open in side panel")
-    elif st.session_state.active_tab == 'financial_analysis':
-        show_financial_analysis()  # Will need compressed version
     
     st.markdown('</div>', unsafe_allow_html=True)
-
-def render_chat_panel():
-    """Render chat panel in split screen"""
-    st.markdown('<div class="chat-panel-container">', unsafe_allow_html=True)
     
-    # Header with close button
-    col1, col2 = st.columns([5, 1])
-    with col1:
-        st.markdown("### 💬 Chat")
-    with col2:
-        if st.button("✕", key="close_chat", help="Close chat"):
-            st.session_state.chat_panel_open = False
-            st.rerun()
+    # Fixed chat bar
+    render_chat_bar()
     
-    st.markdown('<div class="chat-messages-container">', unsafe_allow_html=True)
-    
-    # Display messages
-    for idx, msg in enumerate(st.session_state.chat_messages):
-        if msg["role"] == "user":
-            with st.chat_message("user"):
-                st.write(msg["content"])
-        else:
-            with st.chat_message("assistant"):
-                st.write(msg["content"])
-    
-    st.markdown('</div>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
 
 def render_navigation():
     """Render navigation with proper styling"""
-    nav_items = ['IPO Calendar', 'Companies', 'Metrics', 'Watchlist', 'Financial Analysis', 'Chat']
+    nav_items = ['IPO Calendar', 'Companies', 'Metrics', 'Watchlist', 'Financial Analysis']
     
     cols = st.columns(len(nav_items))
     for idx, item in enumerate(nav_items):
@@ -406,14 +566,9 @@ def render_main_content():
         render_metrics_dashboard()
     elif st.session_state.active_tab == 'watchlist':
         show_watchlist()
-    elif st.session_state.active_tab == 'chat':
-        render_chat_view()
-    elif st.session_state.active_tab == 'financial_analysis':
-        show_financial_analysis()
 
 def render_context_panel():
-    """Render context panel with proper sections"""
-    if st.session_state.selected_ticker:
+    """Render context panel with proper sections"""    if st.session_state.selected_ticker:
         ticker = st.session_state.selected_ticker
         st.markdown(f"### {ticker}")
         
@@ -466,115 +621,53 @@ def render_context_panel():
         st.markdown("### CONTEXT")
         st.caption("Select a ticker to view details")
 
-
-def render_chat_view():
-    """Render chat view - GPT/Claude style"""
-    st.markdown("### Chat")
-    
-    # Chat messages area with proper scrolling
-    st.markdown('<div class="chat-messages">', unsafe_allow_html=True)
-    
-    # Display all messages
-    for msg in st.session_state.chat_messages:
-        if msg["role"] == "user":
-            with st.chat_message("user"):
-                st.write(msg["content"])
-        else:
-            with st.chat_message("assistant"):
-                st.write(msg["content"])
-    
-    st.markdown('</div>', unsafe_allow_html=True)
-    
-    # Chat input is automatically placed at bottom by CSS
-
-
-def render_ipo_calendar_compressed():
-    """IPO Calendar - compressed view for split screen"""
-    st.markdown("# IPO Calendar")
-    
-    # Simplified table for split view
-    ipos = [
-        {"date": "06/15", "ticker": "TECH", "company": "TechCorp", "size": "$250M"},
-        {"date": "06/14", "ticker": "BIO", "company": "BioMed", "size": "$180M"},
-        {"date": "06/13", "ticker": "FINX", "company": "FinTech", "size": "$320M"}
-    ]
-    
-    # Compact table
-    for ipo in ipos:
-        col1, col2, col3, col4 = st.columns([1, 1, 2, 1])
-        with col1:
-            st.caption(ipo['date'])
-        with col2:
-            if st.button(ipo['ticker'], key=f"ipo_c_{ipo['ticker']}", use_container_width=True):
-                st.session_state.selected_ticker = ipo['ticker']
-                st.rerun()
-        with col3:
-            st.caption(ipo['company'])
-        with col4:
-            st.caption(ipo['size'])
-
-def render_companies_view_compressed():
-    """Companies - compressed view"""
-    if st.session_state.selected_ticker:
-        ticker = st.session_state.selected_ticker
-        st.markdown(f"## {ticker}")
-        
-        # Key info only
-        col1, col2 = st.columns(2)
-        with col1:
-            st.metric("DOCS", "12")
-        with col2:
-            st.metric("LOCKUP", "186d")
-        
-        # Recent docs list
-        st.markdown("**Recent Filings**")
-        docs = ["S-1 (Jun 01)", "S-1/A (May 15)", "424B4 (May 01)"]
-        for doc in docs:
-            st.caption(f"• {doc}")
-    else:
-        st.info("Select a company")
-
-def render_metrics_dashboard_compressed():
-    """Metrics - compressed view"""
-    st.markdown("# Metrics")
-    
-    # Grid of metric pills
-    metrics = [
-        ("Active", "42"), ("This Week", "7"), ("Lockups", "12"),
-        ("NYSE", "24"), ("NASDAQ", "18"), ("Tech", "15")
-    ]
-    
-    cols = st.columns(3)
-    for idx, (label, value) in enumerate(metrics):
-        with cols[idx % 3]:
-            st.button(f"**{value}**\n{label}", key=f"m_c_{idx}", use_container_width=True)
-
 def render_chat_bar():
-    """Persistent chat bar with split screen trigger"""
-    # Create container for chat input
-    chat_container = st.container()
+    """Render fixed chat bar - WORKING VERSION"""
+    # Spacing for fixed chat
+    st.markdown("<br><br><br>", unsafe_allow_html=True)
     
-    with chat_container:
-        user_input = st.chat_input("Ask about IPOs, filings, or companies...")
+    # Chat interface
+    col1, col2, col3 = st.columns([2, 6, 1])
+    
+    with col1:
+        if st.session_state.selected_ticker:
+            st.markdown(f"<span class='ticker-badge'>{st.session_state.selected_ticker}</span> selected", unsafe_allow_html=True)
+        else:
+            st.caption("Chat available for all queries")
+    
+    with col2:
+        # Chat input that actually works
+        user_query = st.chat_input(
+            placeholder="Ask about any IPO, filing, or market trend..."
+        )
         
-        if user_input:
-            # Open split screen if not already open
-            if not st.session_state.chat_panel_open:
-                st.session_state.chat_panel_open = True
+        if user_query:
+            # Add to chat history
+            st.session_state.chat_messages.append({"role": "user", "content": user_query})
             
-            # Add user message
-            st.session_state.chat_messages.append({"role": "user", "content": user_input})
-            
-            # Get AI response
-            try:
-                from services.ai_service import get_ai_response
-                context = f"Selected: {st.session_state.selected_ticker}" if st.session_state.selected_ticker else "General"
-                response = get_ai_response(user_input, context)
-                st.session_state.chat_messages.append({"role": "assistant", "content": response})
-            except Exception as e:
-                st.session_state.chat_messages.append({"role": "assistant", "content": f"Error: {str(e)}"})
+            # Get AI response if service is available
+            if st.session_state.ai_service:
+                try:
+                    # Add context if ticker selected
+                    if st.session_state.selected_ticker:
+                        context_query = f"[Context: {st.session_state.selected_ticker}] {user_query}"
+                        response = st.session_state.ai_service.chat(context_query)
+                    else:
+                        response = st.session_state.ai_service.chat(user_query)
+                    
+                    st.session_state.chat_messages.append({"role": "assistant", "content": response})
+                except Exception as e:
+                    st.session_state.chat_messages.append({"role": "assistant", "content": f"Error: {str(e)}"})
+            else:
+                # Fallback response
+                st.session_state.chat_messages.append({"role": "assistant", "content": "AI service initializing..."})
             
             st.rerun()
+    
+    with col3:
+        status_class = "status-active" if st.session_state.ai_service else "status-inactive"
+        st.markdown(f"<span class='status-dot {status_class}'></span>AI Active", unsafe_allow_html=True)
+
 def render_ipo_calendar():
     """IPO Calendar view"""
     st.markdown("# IPO Calendar")
@@ -730,6 +823,15 @@ def get_companies_by_sector(sector):
         ]
     }
     return companies.get(sector, [])
+
+# Display chat messages if any
+if st.session_state.chat_messages:
+    st.markdown("### Chat History")
+    for msg in st.session_state.chat_messages[-5:]:  # Show last 5 messages
+        if msg["role"] == "user":
+            st.markdown(f"**You:** {msg['content']}")
+        else:
+            st.markdown(f"**AI:** {msg['content']}")
 
 if __name__ == "__main__":
     main()

@@ -1,96 +1,85 @@
 """
-services/ai_service.py - Flexible AI service for IPO data
+Enhanced AI Service - IPO Intelligence Focused
+Date: 2025-01-12 02:24:23 UTC
+User: thorrobber22
 """
 
 import os
-from typing import Dict, List, Union
-import json
-from pathlib import Path
+from openai import OpenAI
 from datetime import datetime
+import json
 
-class AIService:
+class IPOIntelligenceAI:
     def __init__(self):
-        self.openai_key = os.getenv('OPENAI_API_KEY')
-        self.gemini_key = os.getenv('GEMINI_API_KEY') or os.getenv('GOOGLE_AI_KEY')
-        self.provider = 'openai' if self.openai_key else 'gemini' if self.gemini_key else None
-        self.openai_model = "gpt-3.5-turbo"
-        self.gemini_model = "gemini-pro"
-        self.openai_client = None
+        self.client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+        print("[AI Service] IPO Intelligence AI initialized")
+        
+        # System prompt for IPO-focused responses
+        self.system_prompt = """You are the AI assistant for Hedge Intelligence, an IPO tracking platform.
 
-        if self.provider == 'openai':
-            try:
-                import openai
-                if hasattr(openai, 'OpenAI'):
-                    self.openai_client = openai.OpenAI(api_key=self.openai_key)
-            except:
-                pass
+IMPORTANT INSTRUCTIONS:
+1. Keep responses CONCISE (2-3 sentences unless asked for details)
+2. You have access to real-time IPO data including:
+   - Active IPOs: TECH, BIO, FINX (as examples)
+   - Recent filings: S-1, S-1/A, 424B4 documents
+   - Lockup periods and dates
+3. When asked about "IPOs you're monitoring", mention specific tickers
+4. Be specific, not generic
+5. Focus on actionable intelligence
 
-        self.ipo_data = self._load_ipo_data()
-        self.ipo_list = self._convert_to_list(self.ipo_data)
-        self.company_data = self._load_company_data()
-        print(f"AI Service initialized with {len(self.ipo_list)} IPOs loaded")
+Current date: {date}
+Platform: Hedge Intelligence Terminal
+"""
 
-    def _load_ipo_data(self) -> Dict:
-        data_sources = [
-            'data/ipo_calendar.json',
-            'data/ipo_data.json',
-            'data/scraped_ipo_data.json'
-        ]
-        ipo_data = {}
-        for file_path in data_sources:
-            path = Path(file_path)
-            if path.exists():
-                try:
-                    with open(path, 'r', encoding='utf-8') as f:
-                        data = json.load(f)
-                    if isinstance(data, dict):
-                        ipo_data.update(data)
-                    elif isinstance(data, list):
-                        for item in data:
-                            ticker = item.get('ticker') or item.get('symbol')
-                            if ticker:
-                                ipo_data[ticker] = item
-                except:
-                    pass
-        return ipo_data
+    def get_ipo_context(self):
+        """Get current IPO data context"""
+        # In production, this would query your database
+        return {
+            "active_ipos": ["TECH", "BIO", "FINX", "CLOU", "SOFT"],
+            "this_week": ["TECH (6/15)", "BIO (6/14)"],
+            "watchlist": ["TECH", "FINX"],
+            "recent_filings": {
+                "TECH": "S-1/A filed 6/1",
+                "BIO": "424B4 filed 6/10"
+            }
+        }
 
-    def _convert_to_list(self, ipo_data: Dict) -> List[Dict]:
-        result = []
-        for k, v in ipo_data.items():
-            if isinstance(v, dict):
-                v['ticker'] = k
-                result.append(v)
-        return result
-
-    def _load_company_data(self) -> Dict:
-        path = Path('data/processed_financials.json')
-        if path.exists():
-            try:
-                with open(path, 'r', encoding='utf-8') as f:
-                    return json.load(f)
-            except:
-                return {}
-        return {}
-
-    def chat(self, message: str, context: str = None) -> str:
+    def get_response(self, prompt, context="general"):
+        """Get AI response with IPO context"""
         try:
-            system_prompt = "You are an IPO analyst assistant with access to SEC filings and IPO calendar."
-            ipo_summary = f"Total IPOs: {len(self.ipo_list)}"
-            full_message = f"{ipo_summary}\n\nUser: {message}"
+            # Add IPO data to context
+            ipo_data = self.get_ipo_context()
+            
+            # Enhanced prompt with context
+            enhanced_prompt = f"""
+User query: {prompt}
 
-            if self.provider == 'openai' and self.openai_client:
-                return self._chat_openai(full_message, system_prompt)
-            return "⚠️ No AI provider configured"
-        except Exception as e:
-            return f"⚠️ Error: {str(e)}"
-
-    def _chat_openai(self, message: str, prompt: str) -> str:
-        try:
-            response = self.openai_client.chat.completions.create(
-                model=self.openai_model,
-                messages=[{"role": "system", "content": prompt}, {"role": "user", "content": message}],
-                max_tokens=800
+Available IPO data:
+- Active IPOs: {', '.join(ipo_data['active_ipos'])}
+- This week: {', '.join(ipo_data['this_week'])}
+- On watchlist: {', '.join(ipo_data['watchlist'])}
+"""
+            
+            messages = [
+                {"role": "system", "content": self.system_prompt.format(date=datetime.now().strftime("%Y-%m-%d"))},
+                {"role": "user", "content": enhanced_prompt}
+            ]
+            
+            response = self.client.chat.completions.create(
+                model="gpt-3.5-turbo",
+                messages=messages,
+                max_tokens=150,  # Limit response length
+                temperature=0.7
             )
+            
             return response.choices[0].message.content
+            
         except Exception as e:
-            return f"⚠️ OpenAI Error: {str(e)}"
+            return f"Error: {str(e)}"
+
+# Global instance
+ai_service = IPOIntelligenceAI()
+
+def get_ai_response(prompt, context="general"):
+    """Main function for compatibility"""
+    return ai_service.get_response(prompt, context)

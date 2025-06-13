@@ -1,0 +1,9 @@
+{
+  "TEST": {
+    "name": "Test Company Inc.",
+    "ticker": "TEST",
+    "cik": "0001234567",
+    "sector": "Technology",
+    "description": "A test company for development"
+  }
+}

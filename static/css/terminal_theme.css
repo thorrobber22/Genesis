@@ -1,0 +1,20 @@
+/* Terminal Theme for Hedge Intelligence */
+/* Generated: 2025-06-12 00:58:16 UTC */
+
+.stApp {
+    background-color: #212121;
+    color: #F7F7F8;
+}
+
+.stButton > button {
+    background-color: #10A37F;
+    color: #212121;
+    border: none;
+    font-weight: bold;
+}
+
+.stTextInput > div > div > input {
+    background-color: #40414F;
+    color: #ECECF1;
+    border: 1px solid #565869;
+}

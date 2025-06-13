@@ -1,0 +1,67 @@
+{
+  "timestamp": "2025-06-12T00:58:16",
+  "user": "thorrobber22",
+  "archived_files": [
+    {
+      "original": "cleanup_genesis_final_fixed.py",
+      "archived": "archive_20250612_005816/cleanup_genesis_final_fixed.py"
+    },
+    {
+      "original": "cleanup_genesis_working.py",
+      "archived": "archive_20250612_005816/cleanup_genesis_working.py"
+    },
+    {
+      "original": "fix_cleanup_script.py",
+      "archived": "archive_20250612_005816/fix_cleanup_script.py"
+    },
+    {
+      "original": "archive_20250612_005217/analyze_genesis_fixed.py",
+      "archived": "archive_20250612_005816/archive_20250612_005217/analyze_genesis_fixed.py"
+    },
+    {
+      "original": "services/ai_service_backup.py",
+      "archived": "archive_20250612_005816/services/ai_service_backup.py"
+    },
+    {
+      "original": "services/backups/ai_service_backup.py",
+      "archived": "archive_20250612_005816/services/backups/ai_service_backup.py"
+    },
+    {
+      "original": "services/backups/ai_service_before_chat_engine.py",
+      "archived": "archive_20250612_005816/services/backups/ai_service_before_chat_engine.py"
+    },
+    {
+      "original": "services/backups/ai_service_broken.py",
+      "archived": "archive_20250612_005816/services/backups/ai_service_broken.py"
+    },
+    {
+      "original": "services/backups/ai_service_minimal.py",
+      "archived": "archive_20250612_005816/services/backups/ai_service_minimal.py"
+    },
+    {
+      "original": "services/backups/ai_service_pre_openai_fix.py",
+      "archived": "archive_20250612_005816/services/backups/ai_service_pre_openai_fix.py"
+    },
+    {
+      "original": "data/ipo_data/ipo_calendar_latest.json",
+      "archived": "archive_20250612_005816/data/ipo_data/ipo_calendar_latest.json"
+    }
+  ],
+  "kept_files": [
+    ".env",
+    "app.py",
+    "README.md",
+    "requirements.txt",
+    "components/chat.py",
+    "components/companies.py",
+    "components/financial_analysis.py",
+    "components/ipo_calendar.py",
+    "components/metrics.py",
+    "services/ai_service.py"
+  ],
+  "created_files": [
+    "config/ui_theme.json",
+    "config/app_config.json",
+    "static/css/terminal_theme.css"
+  ]
+}

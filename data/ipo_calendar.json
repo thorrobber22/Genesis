@@ -1,0 +1,24 @@
+{
+  "last_updated": "2025-06-11T21:21:05.622029",
+  "source": "test_data",
+  "ipos": [
+    {
+      "ticker": "TEST",
+      "company": "Test Company Inc.",
+      "date": "2025-06-16",
+      "price_range": "$15-$17",
+      "shares": "10M",
+      "exchange": "NASDAQ",
+      "status": "upcoming"
+    },
+    {
+      "ticker": "DEMO",
+      "company": "Demo Corp",
+      "date": "2025-06-11",
+      "price_range": "$20-$22",
+      "shares": "8M",
+      "exchange": "NYSE",
+      "status": "priced"
+    }
+  ]
+}

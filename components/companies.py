@@ -306,3 +306,34 @@ def calculate_lockup_date(ipo_date_str):
             return "Expired"
     except:
         return "N/A"
+
+
+# Add this function to companies.py
+
+def display_filing_with_sec_link(filing):
+    """Display filing with direct SEC.gov link"""
+    col1, col2, col3 = st.columns([3, 2, 1])
+    
+    with col1:
+        st.write(f"**{filing.get('form', 'N/A')}**")
+    
+    with col2:
+        st.write(filing.get('filing_date', 'N/A'))
+    
+    with col3:
+        if 'url' in filing:
+            # Create direct SEC link
+            sec_url = filing['url']
+            if not sec_url.startswith('http'):
+                # Build full SEC URL
+                cik = filing.get('cik', '')
+                accession = filing.get('accession', '')
+                sec_url = f"https://www.sec.gov/Archives/edgar/data/{cik}/{accession}/{accession}.txt"
+            
+            st.markdown(
+                f'<a href="{sec_url}" target="_blank" style="'
+                f'background-color: #10A37F; color: #212121; '
+                f'padding: 4px 12px; text-decoration: none; '
+                f'border-radius: 4px; font-weight: bold;">VIEW</a>',
+                unsafe_allow_html=True
+            )

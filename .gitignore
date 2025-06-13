@@ -1,31 +1,31 @@
-# Virtual Environment (too large)
+# Virtual Environment
 venv/
 env/
-.venv/
 
-# Python cache (regenerated)
+# Python
 __pycache__/
+*.py[cod]
 *.pyc
-.pytest_cache/
 
-# Environment secrets
+# Environment variables
 .env
-.streamlit/secrets.toml
-
-# OS files
-.DS_Store
-Thumbs.db
-desktop.ini
+.env.local
 
 # IDE
-.vscode/settings.json
+.vscode/
 .idea/
 
-# Large data files (if any)
-*.db
-*.sqlite
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
 *.log
 
-# But INCLUDE everything else for visibility
-# !data/*.json
-# !archive_*/
+# Temporary files
+temp_*
+*.tmp
+
+# Backups
+*_backup*
+*.bak
