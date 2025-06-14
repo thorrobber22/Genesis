@@ -1,0 +1,110 @@
+{
+  "version": 1,
+  "components": {
+    "ipo_calendar": {
+      "expected_results": [
+        "Shows IPO table with DATE, TICKER, COMPANY columns",
+        "Ticker buttons are clickable",
+        "Filters work (Period, Status, Exchange)",
+        "Context panel updates on ticker click",
+        "Shows document count per company"
+      ],
+      "test_actions": [
+        "Click 'TECH' ticker button",
+        "Change Period filter to 'Next Week'",
+        "Check if context panel shows TECH details"
+      ]
+    },
+    "companies": {
+      "expected_results": [
+        "Sector tabs visible (Technology, Healthcare, Financial, etc.)",
+        "Company cards show name, docs, last filing",
+        "Click company shows document list",
+        "S-1 and amendment links work",
+        "Context panel shows filing details"
+      ],
+      "test_actions": [
+        "Click 'Technology' sector tab",
+        "Click on 'TechCorp International' card",
+        "Verify S-1 document link appears"
+      ]
+    },
+    "metrics": {
+      "expected_results": [
+        "Shows 4 metric cards at top",
+        "Active IPOs count > 0",
+        "IPO Pipeline chart renders",
+        "Document distribution pie chart shows",
+        "System health indicators all green"
+      ],
+      "test_actions": [
+        "Verify all numbers are populated",
+        "Check if charts are interactive",
+        "Confirm update timestamp shows"
+      ]
+    },
+    "watchlist": {
+      "expected_results": [
+        "Shows current watchlist items",
+        "Add ticker button works",
+        "Remove button (X) works",
+        "Alerts show for watched tickers",
+        "Persists after page refresh"
+      ],
+      "test_actions": [
+        "Add 'TECH' to watchlist",
+        "Add 'BIO' to watchlist",
+        "Remove one ticker",
+        "Refresh page and verify persistence"
+      ]
+    },
+    "financial_analysis": {
+      "expected_results": [
+        "Company dropdown populated",
+        "Analyze button triggers analysis",
+        "Shows Revenue, Risks, Market sections",
+        "AI insights generated",
+        "Export button available"
+      ],
+      "test_actions": [
+        "Select 'TECH' from dropdown",
+        "Click 'Analyze' button",
+        "Wait for AI analysis to complete",
+        "Verify all sections populated"
+      ]
+    },
+    "ai_chat": {
+      "expected_results": [
+        "Chat input visible at bottom",
+        "Typing opens chat panel from right",
+        "Messages show user/assistant styling",
+        "Context aware of current ticker/view",
+        "Close button (X) hides panel"
+      ],
+      "test_actions": [
+        "Type 'What is TECH's revenue?'",
+        "Verify chat panel slides in",
+        "Check response mentions TECH",
+        "Click X to close panel"
+      ]
+    }
+  },
+  "integration_tests": {
+    "full_flow": {
+      "steps": [
+        "1. Start at IPO Calendar",
+        "2. Click TECH ticker",
+        "3. Navigate to Companies",
+        "4. Find TECH in Technology sector",
+        "5. Click to view documents",
+        "6. Go to Financial Analysis",
+        "7. Analyze TECH",
+        "8. Ask AI chat about TECH revenue",
+        "9. Add TECH to watchlist",
+        "10. Verify in Watchlist view"
+      ],
+      "expected_time": "< 2 minutes",
+      "data_consistency": "TECH data should be consistent across all views"
+    }
+  }
+}

@@ -1,17 +1,51 @@
-# Hedge Intelligence - Full Codebase
+# Hedge Intelligence - IPO Intelligence Platform
 
-This is the complete codebase including all versions and archives for review.
+Professional IPO tracking and analysis platform with AI-powered insights.
 
-## Current Status
-- Date: 2025-06-12 00:31:56 UTC
-- User: thorrobber22
-- Purpose: Full code review and cleanup
+## Features
 
-## Next Steps
-1. Review all files and folders
-2. Identify core components
-3. Clean up duplicates
-4. Organize structure
+### Phase 1 - Core IPO Intelligence [COMPLETE]
+- [x] UI Framework - Terminal-style interface
+- [x] IPO Data Pipeline - Real-time SEC scraping
+- [x] SEC Integration - Direct EDGAR API
+- [x] Basic Chat - AI analysis
+- [x] IPO Calendar - Track filings
+- [x] Companies View - Detailed info
+- [x] Metrics Dashboard - Market stats
 
----
-Full project push for visibility and analysis.
+### Phase 2 - Enhanced Analytics [IN PROGRESS]
+- [ ] Financial Analysis
+- [ ] Lockup Tracker
+- [x] Watchlist
+- [ ] Company Deep Dive
+
+### Phase 3 - AI Intelligence [PLANNED]
+- [ ] Smart Summaries
+- [ ] Trend Detection
+- [ ] Anomaly Alerts
+- [ ] Report Generation
+
+## Tech Stack
+- **Frontend**: Streamlit
+- **Backend**: Python 3.11+
+- **AI**: OpenAI GPT-4
+- **Data**: SEC EDGAR API
+- **Styling**: Custom CSS (Terminal theme)
+
+## Setup
+
+1. Clone repository
+```bash
+git clone https://github.com/thorrobber22/hedge-intelligence.git
+cd hedge-intelligence
+```
+
+2. Install dependencies
+```bash
+pip install -r requirements.txt
+```
+
+3. Run the app
+```bash
+streamlit run app.py
+```

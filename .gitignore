@@ -1,31 +1,75 @@
-# Virtual Environment (too large)
-venv/
-env/
-.venv/
-
-# Python cache (regenerated)
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+*.egg-info/
 .pytest_cache/
 
-# Environment secrets
-.env
+# Streamlit
 .streamlit/secrets.toml
-
-# OS files
-.DS_Store
-Thumbs.db
-desktop.ini
-
-# IDE
-.vscode/settings.json
-.idea/
-
-# Large data files (if any)
-*.db
-*.sqlite
 *.log
 
-# But INCLUDE everything else for visibility
-# !data/*.json
-# !archive_*/
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific
+backups/
+backup*/
+test/
+test_*.py
+*_test.py
+*.bak
+*.backup
+*.tmp
+temp/
+tmp/
+temp_*
+
+# Archives
+archive_*/
+
+# App backups
+app_backup_*.py
+
+# Data (be careful with sensitive data)
+data/credentials/
+data/secrets/
+*.key
+*.pem
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs/
+*.log
+
+# Cache
+.cache/
+cache/
+*.cache
+
+# Development
+scratch/
+sandbox/
+experiments/
+
+# Upload scripts
+upload*.py
+upload*.sh
