@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hedge Intelligence - Sarah's Experience</title>
+    <style>
+        /* EXACT COLORS FROM YOUR MOCKUP */
+        :root {
+            --bg-primary: #1E1E1E;
+            --bg-secondary: #202123;
+            --bg-tertiary: #2A2B2D;
+            --border: #2E2E2E;
+            --text-primary: #F7F7F8;
+            --text-secondary: #A3A3A3;
+            --accent-blue: #2E8AF6;
+            --accent-green: #10A37F;
+            --input-bg: #40414F;
+            --input-border: #565869;
+            --input-text: #ECECF1;
+            --input-hover: #4B4D5D;
+            --warning: #F59E0B;
+            --highlight: rgba(255, 217, 61, 0.3);
+        }
+
+        /* EXACT RESET FROM YOUR FILE */
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            overflow: hidden;
+        }
+        
+        /* EXACT LAYOUT CONTAINERS */
+        .app-container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        
+        /* EXACT NAV BAR */
+        .nav-bar {
+            height: 48px;
+            background-color: var(--bg-secondary);
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            padding: 0 24px;
+            justify-content: space-between;
+            transition: opacity 0.3s ease;
+        }
+
+        .nav-bar.document-mode {
+            opacity: 0.3;
+        }
+
+        .nav-title {
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 16px;
+        }
+        
+        .nav-item {
+            padding: 8px 16px;
+            border-radius: 6px;
+            color: var(--text-secondary);
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
+            border: none;
+            background: none;
+        }
+        
+        .nav-item.active {
+            color: var(--accent-blue);
+            background-color: var(--bg-tertiary);
+        }
+
+        .nav-item:hover {
+            color: var(--text-primary);
+        }
+        
+        /* EXACT CONTENT AREA */
+        .content-area {
+            flex: 1;
+            display: flex;
+            overflow: hidden;
+        }
+        
+        /* EXACT SIDEBAR */
+        .sidebar {
+            width: 260px;
+            background-color: var(--bg-secondary);
+            border-right: 1px solid var(--border);
+            padding: 20px;
+            overflow-y: auto;
+            transition: all 0.4s ease;
+        }
+
+        .sidebar.compressed {
+            width: 60px;
+            padding: 10px;
+        }
+
+        .sidebar.compressed .folder-name,
+        .sidebar.compressed .doc-count,
+        .sidebar.compressed .search-box,
+        .sidebar.compressed h3 {
+            display: none;
+        }
+        
+        /* EXACT MAIN AREA */
+        .main-area {
+            flex: 1;
+            display: flex;
+            position: relative;
+        }
+        
+        .main-content {
+            flex: 1;
+            padding: 24px;
+            overflow-y: auto;
+            transition: all 0.3s ease;
+        }
+        
+        /* EXACT CHAT PANEL */
+        .chat-panel {
+            width: 0;
+            background-color: var(--bg-secondary);
+            border-left: 2px solid var(--accent-blue);
+            overflow: hidden;
+            transition: width 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .chat-panel.open {
+            width: 50%;
+        }
+        
+        .chat-header {
+            padding: 20px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .chat-info {
+            padding: 16px 20px;
+            background-color: var(--bg-tertiary);
+            border-bottom: 1px solid var(--border);
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+
+        .quick-actions {
+            padding: 16px 20px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .quick-action {
+            display: block;
+            width: 100%;
+            text-align: left;
+            background: none;
+            border: 1px solid var(--input-border);
+            color: var(--text-secondary);
+            padding: 10px 16px;
+            margin-bottom: 8px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 13px;
+            transition: all 0.2s;
+        }
+
+        .quick-action:hover {
+            background-color: var(--input-hover);
+            color: var(--text-primary);
+            border-color: var(--accent-blue);
+        }
+        
+        .chat-messages {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+        }
+        
+        .message {
+            margin-bottom: 16px;
+            padding: 12px 16px;
+            border-radius: 8px;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+        
+        .message.user {
+            background-color: var(--input-bg);
+            border: 1px solid var(--input-border);
+            margin-left: 20%;
+        }
+        
+        .message.assistant {
+            background-color: var(--bg-tertiary);
+            border: 1px solid var(--border);
+            margin-right: 20%;
+        }
+
+        .citation {
+            color: var(--accent-blue);
+            text-decoration: none;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        .citation:hover {
+            text-decoration: underline;
+        }
+
+        .add-to-report {
+            display: inline-block;
+            background-color: var(--accent-green);
+            color: white;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 12px;
+            margin-top: 12px;
+            cursor: pointer;
+            opacity: 0;
+            transition: all 0.2s;
+        }
+
+        .message:hover .add-to-report {
+            opacity: 1;
+        }
+        
+        /* EXACT CONTEXT PANEL */
+        .context-panel {
+            width: 320px;
+            background-color: var(--bg-secondary);
+            border-left: 1px solid var(--border);
+            padding: 20px;
+            overflow-y: auto;
+            transition: width 0.3s ease;
+        }
+        
+        .context-panel.compressed {
+            width: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        
+        /* EXACT CHAT INPUT */
+        .chat-input-container {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: var(--bg-primary);
+            border-top: 1px solid var(--border);
+            padding: 16px;
+        }
+        
+        .chat-input {
+            background-color: var(--input-bg);
+            border: 1px solid var(--input-border);
+            border-radius: 8px;
+            padding: 12px 16px;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            display: block;
+            color: var(--input-text);
+            font-size: 14px;
+        }
+
+        .chat-input:hover {
+            background-color: var(--input-hover);
+        }
+
+        .chat-input:focus {
+            outline: none;
+            border-color: var(--accent-blue);
+        }
+        
+        /* IPO CALENDAR TABLE */
+        .ipo-table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: var(--bg-tertiary);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .ipo-table th {
+            text-align: left;
+            padding: 8px 12px;
+            border-bottom: 1px solid var(--border);
+            color: var(--text-secondary);
+            font-size: 11px;
+            text-transform: uppercase;
+            font-weight: 500;
+            background-color: var(--bg-secondary);
+        }
+        
+        .ipo-table td {
+            padding: 12px;
+            border-bottom: 1px solid var(--border);
+            font-size: 13px;
+        }
+
+        .ipo-table tr:hover {
+            background-color: rgba(46, 138, 246, 0.05);
+        }
+        
+        .ticker-button {
+            background-color: transparent;
+            border: 1px solid var(--input-border);
+            color: var(--text-primary);
+            padding: 4px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 13px;
+            transition: all 0.2s;
+        }
+        
+        .ticker-button:hover {
+            background-color: var(--input-hover);
+            border-color: var(--accent-blue);
+        }
+
+        /* DOCUMENT VIEWER */
+        .doc-viewer {
+            background-color: var(--bg-tertiary);
+            border-radius: 8px;
+            overflow: hidden;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .doc-header {
+            background-color: var(--bg-secondary);
+            padding: 16px 20px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .doc-controls {
+            display: flex;
+            gap: 8px;
+        }
+
+        .doc-btn {
+            background: none;
+            border: 1px solid var(--input-border);
+            color: var(--text-secondary);
+            padding: 6px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 12px;
+            transition: all 0.2s;
+        }
+
+        .doc-btn:hover {
+            background-color: var(--input-hover);
+            color: var(--text-primary);
+        }
+
+        .doc-content {
+            flex: 1;
+            padding: 32px;
+            background-color: white;
+            color: black;
+            font-family: 'Times New Roman', serif;
+            line-height: 1.6;
+            overflow-y: auto;
+        }
+
+        /* FILE EXPLORER */
+        .folder {
+            margin-bottom: 4px;
+        }
+
+        .folder-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 12px;
+            cursor: pointer;
+            border-radius: 6px;
+            transition: background-color 0.2s;
+            font-size: 13px;
+        }
+
+        .folder-header:hover {
+            background-color: var(--bg-tertiary);
+        }
+
+        .folder-content {
+            margin-left: 20px;
+        }
+
+        .file-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 12px;
+            cursor: pointer;
+            border-radius: 6px;
+            transition: all 0.2s;
+            font-size: 13px;
+        }
+
+        .file-item:hover {
+            background-color: var(--bg-tertiary);
+            transform: translateX(4px);
+        }
+
+        .file-item.active {
+            background-color: var(--bg-tertiary);
+            border-left: 3px solid var(--accent-blue);
+        }
+        
+        .close-button {
+            background: none;
+            border: none;
+            color: var(--text-secondary);
+            font-size: 20px;
+            cursor: pointer;
+            padding: 4px 8px;
+            border-radius: 4px;
+        }
+        
+        .close-button:hover {
+            background-color: var(--input-hover);
+            color: var(--text-primary);
+        }
+        
+        /* TRANSITION OVERLAY */
+        .transition-overlay {
+            position: fixed;
+            top: 48px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(30, 30, 30, 0.5);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+        }
+        
+        .transition-overlay.active {
+            opacity: 1;
+        }
+
+        /* FILTERS */
+        .filter-section {
+            margin-bottom: 20px;
+        }
+
+        .filter-label {
+            font-size: 11px;
+            text-transform: uppercase;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .filter-select {
+            width: 100%;
+            padding: 8px;
+            background: var(--input-bg);
+            border: 1px solid var(--input-border);
+            color: var(--input-text);
+            border-radius: 6px;
+            font-size: 13px;
+        }
+
+        /* SEARCH BOX */
+        .search-box {
+            width: 100%;
+            padding: 8px 12px;
+            background: var(--input-bg);
+            border: 1px solid var(--input-border);
+            color: var(--input-text);
+            border-radius: 6px;
+            font-size: 13px;
+            margin-bottom: 16px;
+        }
+
+        /* TYPOGRAPHY */
+        h1 { 
+            margin: 0 0 8px 0;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        
+        h3 { 
+            margin: 0 0 16px 0;
+            color: var(--text-primary);
+            font-size: 16px;
+            font-weight: 500;
+        }
+        
+        p { 
+            margin: 0 0 4px 0;
+            color: var(--text-secondary);
+            font-size: 13px;
+        }
+
+        /* STATUS INDICATORS */
+        .status-filed {
+            color: var(--accent-blue);
+        }
+
+        .status-priced {
+            color: var(--accent-green);
+        }
+
+        .status-trading {
+            color: var(--text-primary);
+        }
+
+        .lockup-warning {
+            color: var(--warning);
+        }
+
+        /* HIGHLIGHT ANIMATION */
+        @keyframes highlightFade {
+            from { background-color: var(--highlight); }
+            to { background-color: transparent; }
+        }
+
+        .highlight {
+            animation: highlightFade 2s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Navigation -->
+        <div class="nav-bar" id="navBar">
+            <div class="nav-title">HEDGE INTELLIGENCE</div>
+            <div class="nav-links">
+                <button class="nav-item" onclick="showView('calendar')">IPO Calendar</button>
+                <button class="nav-item active" onclick="showView('companies')">Companies</button>
+                <button class="nav-item" onclick="showView('watchlist')">Watchlist</button>
+                <button class="nav-item" onclick="showView('reports')">My Reports</button>
+            </div>
+        </div>
+        
+        <!-- IPO Calendar View -->
+        <div class="content-area" id="calendarView" style="display: none;">
+            <div class="sidebar">
+                <h3>FILTERS</h3>
+                <div class="filter-section">
+                    <div class="filter-label">Period</div>
+                    <select class="filter-select">
+                        <option>This Week</option>
+                        <option>Next Week</option>
+                        <option>This Month</option>
+                    </select>
+                </div>
+                <div class="filter-section">
+                    <div class="filter-label">Status</div>
+                    <select class="filter-select">
+                        <option>All</option>
+                        <option>Filed</option>
+                        <option>Priced</option>
+                        <option>Trading</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="main-area">
+                <div class="main-content">
+                    <h1>IPO Calendar</h1>
+                    <p>Real-time filings and market activity</p>
+                    
+                    <table class="ipo-table" style="margin-top: 20px;">
+                        <thead>
+                            <tr>
+                                <th>DATE</th>
+                                <th>TICKER</th>
+                                <th>COMPANY</th>
+                                <th>STATUS</th>
+                                <th>DOCS</th>
+                                <th>LOCKUP</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Today</td>
+                                <td><button class="ticker-button" onclick="openContextPanel('TECH')">TECH</button></td>
+                                <td>TechCorp International</td>
+                                <td class="status-filed">Filed</td>
+                                <td>8</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>Yesterday</td>
+                                <td><button class="ticker-button" onclick="openContextPanel('BIO')">BIO</button></td>
+                                <td>BioMed Solutions</td>
+                                <td class="status-priced">Priced</td>
+                                <td>6</td>
+                                <td>180d</td>
+                            </tr>
+                            <tr>
+                                <td>06/10</td>
+                                <td><button class="ticker-button" onclick="openContextPanel('FINX')">FINX</button></td>
+                                <td>FinTech Innovations</td>
+                                <td class="status-trading">Trading</td>
+                                <td>10</td>
+                                <td class="lockup-warning">15d ⚠️</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="chat-panel" id="chatPanel">
+                    <div class="chat-header">
+                        <h3>Chat</h3>
+                        <button class="close-button" onclick="toggleChat()">✕</button>
+                    </div>
+                    <div class="chat-messages">
+                        <div class="message user">
+                            What IPOs are coming up this week?
+                        </div>
+                        <div class="message assistant">
+                            There are 3 IPOs this week: TECH (filed today), BIO (priced yesterday), and FINX (currently trading with lockup expiring in 15 days).
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="context-panel" id="contextPanel">
+                <h3 id="contextTitle">TECH</h3>
+                <div style="margin-bottom: 20px;">
+                    <p style="font-weight: 600; margin-bottom: 8px;">OVERVIEW</p>
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
+                        <span style="color: var(--text-secondary); font-size: 11px;">Exchange</span>
+                        <span style="font-size: 13px;">NYSE</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
+                        <span style="color: var(--text-secondary); font-size: 11px;">Sector</span>
+                        <span style="font-size: 13px;">Technology</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <span style="color: var(--text-secondary); font-size: 11px;">Status</span>
+                        <span style="font-size: 13px;">S-1 Filed</span>
+                    </div>
+                </div>
+                
+                <div>
+                    <p style="font-weight: 600; margin-bottom: 8px;">RECENT ACTIVITY</p>
+                    <div style="font-size: 13px; line-height: 1.6;">
+                        • S-1/A Amendment filed<br>
+                        • 67% revenue growth disclosed<br>
+                        • Goldman Sachs lead underwriter
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Companies View (Document Intelligence) -->
+        <div class="content-area" id="companiesView">
+            <div class="sidebar" id="fileExplorer">
+                <h3>FILE EXPLORER</h3>
+                <input type="text" class="search-box" placeholder="Search companies...">
+                
+                <div class="folder">
+                    <div class="folder-header" onclick="toggleFolder(this)">
+                        <span>[F]</span>
+                        <span class="folder-name">Technology</span>
+                        <span class="doc-count">(14)</span>
+                    </div>
+                    <div class="folder-content">
+                        <div class="file-item active" onclick="selectCompany(this, 'TECH')">
+                            <span>[D] TechCorp International (TECH)</span>
+                            <span class="doc-count">8 docs</span>
+                        </div>
+                        <div class="file-item" onclick="selectCompany(this, 'CLOUD')">
+                            <span>[D] CloudBase Systems (CLOUD)</span>
+                            <span class="doc-count">6 docs</span>
+                        </div>
+                        <div class="file-item" onclick="selectCompany(this, 'AIRO')">
+                            <span>[D] AIRO Group Holdings (AIRO)</span>
+                            <span class="doc-count">20 docs</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="folder">
+                    <div class="folder-header">
+                        <span>[F]</span>
+                        <span class="folder-name">Healthcare</span>
+                        <span class="doc-count">(8)</span>
+                    </div>
+                </div>
+                
+                <div class="folder">
+                    <div class="folder-header">
+                        <span>[F]</span>
+                        <span class="folder-name">Financial</span>
+                        <span class="doc-count">(6)</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="main-area">
+                <div class="main-content" id="mainContent">
+                    <div class="doc-viewer">
+                        <div class="doc-header">
+                            <div>S-1/A Amendment 1 - TECH</div>
+                            <div class="doc-controls">
+                                <button class="doc-btn">Page 1 of 456</button>
+                                <button class="doc-btn" onclick="prevPage()">←</button>
+                                <button class="doc-btn" onclick="nextPage()">→</button>
+                                <button class="doc-btn">⊞</button>
+                                <button class="doc-btn">⊟</button>
+                                <button class="doc-btn">SEC ↗</button>
+                            </div>
+                        </div>
+                        <div class="doc-content" id="docContent">
+                            <h1 style="text-align: center;">PRELIMINARY PROSPECTUS</h1>
+                            <p style="text-align: center; font-size: 20px; margin: 20px 0;">
+                                TechCorp International<br>
+                                $250,000,000<br>
+                                Common Stock
+                            </p>
+                            <p style="margin-top: 40px;">
+                                This is our initial public offering. We are selling shares of our common stock.
+                                Prior to this offering, there has been no public market for our common stock.
+                                The initial public offering price is expected to be between $18.00 and $20.00 per share.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="chat-panel open" id="docChatPanel">
+                    <div class="chat-header">
+                        <h3>Document Assistant</h3>
+                        <button class="close-button" onclick="toggleDocChat()">✕</button>
+                    </div>
+                    <div class="chat-info">
+                        TECH S-1/A Amendment 1 • 456 pages • Filed Jun 12
+                    </div>
+                    <div class="quick-actions">
+                        <button class="quick-action" onclick="askQuestion('lockup')">• What are the lockup terms?</button>
+                        <button class="quick-action" onclick="askQuestion('risks')">• Show me risk factors</button>
+                        <button class="quick-action" onclick="askQuestion('financials')">• Summarize financials</button>
+                    </div>
+                    <div class="chat-messages" id="docChatMessages">
+                        <div class="message user">
+                            What are the lockup terms?
+                        </div>
+                        <div class="message assistant">
+                            The lockup period is <strong>180 days</strong> from IPO <a href="#" class="citation" onclick="jumpToPage(147)">[Page 147]</a>. Key terms:
+                            <br><br>
+                            • Coverage: <strong>85%</strong> of outstanding shares<br>
+                            • Executive extension: <strong>+90 days</strong> (270 total)<br>
+                            • Early release: If stock >40% above IPO for 10 days
+                            <div class="add-to-report">+ Add to Report</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Chat Input -->
+        <div class="chat-input-container">
+            <input type="text" class="chat-input" id="chatInput" placeholder="Ask about IPOs, companies, or filings..." onclick="openChat()">
+        </div>
+        
+        <!-- Transition Overlay -->
+        <div class="transition-overlay" id="transitionOverlay"></div>
+    </div>
+    
+    <script>
+        let chatOpen = false;
+        let currentView = 'companies';
+        let currentPage = 1;
+        
+        function toggleChat() {
+            chatOpen = !chatOpen;
+            const chatPanel = document.getElementById('chatPanel');
+            const contextPanel = document.getElementById('contextPanel');
+            const overlay = document.getElementById('transitionOverlay');
+            
+            if (chatOpen) {
+                chatPanel.classList.add('open');
+                contextPanel.classList.add('compressed');
+                overlay.classList.add('active');
+                setTimeout(() => overlay.classList.remove('active'), 300);
+            } else {
+                chatPanel.classList.remove('open');
+                contextPanel.classList.remove('compressed');
+            }
+        }
+        
+        function openChat() {
+            if (!chatOpen && currentView === 'calendar') {
+                toggleChat();
+            }
+        }
+
+        function showView(view) {
+            currentView = view;
+            document.getElementById('calendarView').style.display = view === 'calendar' ? 'flex' : 'none';
+            document.getElementById('companiesView').style.display = view === 'companies' ? 'flex' : 'none';
+            
+            // Update nav
+            document.querySelectorAll('.nav-item').forEach(item => {
+                item.classList.remove('active');
+            });
+            event.target.classList.add('active');
+            
+            // Document mode
+            if (view === 'companies') {
+                document.getElementById('navBar').classList.add('document-mode');
+                setTimeout(() => {
+                    document.getElementById('fileExplorer').classList.add('compressed');
+                }, 300);
+            } else {
+                document.getElementById('navBar').classList.remove('document-mode');
+                document.getElementById('fileExplorer').classList.remove('compressed');
+            }
+        }
+
+        function toggleFolder(header) {
+            const content = header.nextElementSibling;
+            content.style.display = content.style.display === 'none' ? 'block' : 'none';
+        }
+
+        function selectCompany(elem, ticker) {
+            document.querySelectorAll('.file-item').forEach(item => {
+                item.classList.remove('active');
+            });
+            elem.classList.add('active');
+        }
+
+        function openContextPanel(ticker) {
+            document.getElementById('contextTitle').textContent = ticker;
+            // Update context panel content based on ticker
+        }
+
+        function jumpToPage(page) {
+            currentPage = page;
+            const docContent = document.getElementById('docContent');
+            
+            // Simulate page jump
+            if (page === 147) {
+                docContent.innerHTML = `
+                    <h2>SECTION 7.12 - LOCK-UP AGREEMENTS</h2>
+                    <p class="highlight" style="padding: 20px;">
+                        In connection with this offering, we and each of our directors and executive officers,
+                        and the holders of substantially all of our outstanding shares of capital stock have
+                        agreed with the underwriters, subject to certain exceptions, not to offer, sell or
+                        transfer any shares of common stock or securities convertible into or exchangeable
+                        or exercisable for shares of common stock, for <strong>180 days</strong> after the
+                        date of this prospectus without first obtaining the written consent of Goldman Sachs
+                        & Co. LLC and Morgan Stanley & Co. LLC.
+                    </p>
+                    <p>
+                        The lock-up agreements apply to <strong>85%</strong> of our outstanding shares...
+                    </p>
+                `;
+            }
+            
+            // Update page indicator
+            document.querySelector('.doc-btn').textContent = `Page ${page} of 456`;
+        }
+
+        function askQuestion(type) {
+            const messages = document.getElementById('docChatMessages');
+            
+            let question = '';
+            let answer = '';
+            
+            switch(type) {
+                case 'lockup':
+                    question = 'What are the lockup terms?';
+                    answer = 'Already shown above.';
+                    break;
+                case 'risks':
+                    question = 'Show me risk factors';
+                    answer = `Key risk factors <a href="#" class="citation" onclick="jumpToPage(52)">[Pages 52-67]</a>:
+                        <br><br>
+                        1. <strong>Market Competition</strong> - Intense competition from established players<br>
+                        2. <strong>Regulatory Changes</strong> - Evolving regulations in our industry<br>
+                        3. <strong>Key Personnel</strong> - Dependency on founders and key executives<br>
+                        4. <strong>Technology Risks</strong> - Platform scalability concerns<br>
+                        5. <strong>Customer Concentration</strong> - Top 10 customers = 45% of revenue
+                        <div class="add-to-report">+ Add to Report</div>`;
+                    break;
+                case 'financials':
+                    question = 'Summarize financials';
+                    answer = `Financial Highlights <a href="#" class="citation" onclick="jumpToPage(201)">[Page 201]</a>:
+                        <br><br>
+                        • Revenue: <strong>$450M</strong> (+67% YoY)<br>
+                        • Gross Margin: <strong>72%</strong> (up from 68%)<br>
+                        • Operating Loss: <strong>($45M)</strong><br>
+                        • Cash: <strong>$125M</strong> (18 months runway)<br>
+                        • ARR: <strong>$520M</strong> (+75%)
+                        <div class="add-to-report">+ Add to Report</div>`;
+                    break;
+            }
+            
+            // Add messages
+            messages.innerHTML += `
+                <div class="message user">${question}</div>
+                <div class="message assistant">${answer}</div>
+            `;
+            
+            // Scroll to bottom
+            messages.scrollTop = messages.scrollHeight;
+        }
+
+        function toggleDocChat() {
+            const panel = document.getElementById('docChatPanel');
+            if (panel.classList.contains('open')) {
+                panel.classList.remove('open');
+            } else {
+                panel.classList.add('open');
+            }
+        }
+
+        // Initialize
+        showView('companies');
+    </script>
+</body>
+</html>

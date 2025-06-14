@@ -155,6 +155,243 @@ def show_company_documents(ticker: str):
                 st.session_state.current_ticker = ticker
                 st.rerun()
             
+<<<<<<< HEAD
             # SEC link
             sec_url = data_service.get_sec_url(ticker, doc['type'])
             st.markdown(f"[SEC ↗]({sec_url})")
+=======
+            with cols[0]:
+                st.text(doc['type'])
+            
+            with cols[1]:
+                st.text(doc['date'])
+            
+            with cols[2]:
+                st.text(doc['size'])
+            
+            with cols[3]:
+                if st.button("OPEN", key=f"open_{doc['name']}"):
+                    st.info("Document viewer in Phase 3")
+    else:
+        st.info("No documents found for this company")
+
+def render_company_context():
+    """Render company context panel"""
+    ticker = st.session_state.selected_ticker
+    
+    st.markdown(f"## {ticker} CONTEXT")
+    
+    # Get company details
+    details = get_company_full_details(ticker)
+    
+    # Context items
+    context_items = [
+        ("LEAD UNDERWRITER", details.get('lead_underwriter', 'Goldman Sachs')),
+        ("LOCKUP END DATE", calculate_lockup_date(details.get('ipo_date'))),
+        ("SECTOR / INDUSTRY", details.get('sector', 'Technology')),
+        ("EXCHANGE", details.get('exchange', 'NYSE')),
+        ("IPO DATE", details.get('ipo_date', 'N/A'))
+    ]
+    
+    for label, value in context_items:
+        st.markdown(f"**{label}**")
+        st.text(value)
+        st.markdown("")
+    
+    # Quick docs
+    st.markdown("**QUICK DOCS (TOP 3)**")
+    docs = get_company_documents(ticker)
+    
+    for doc in docs[:3]:
+        if st.button(f"→ {doc['type']}", key=f"ctx_doc_{doc['name']}"):
+            st.info("Document viewer in Phase 3")
+
+def get_companies_by_sector():
+    """Get companies organized by sector"""
+    sectors = {
+        'Technology': [],
+        'Healthcare': [],
+        'Financial': [],
+        'Energy': [],
+        'Consumer': [],
+        'Industrial': []
+    }
+    
+    # From SEC documents
+    if Path('data/sec_documents').exists():
+        for company_dir in Path('data/sec_documents').iterdir():
+            if company_dir.is_dir():
+                ticker = company_dir.name
+                # Default to Technology (would come from real data)
+                sectors['Technology'].append({
+                    'ticker': ticker,
+                    'name': f"{ticker} Inc."  # Would come from real data
+                })
+    
+    # From IPO data
+    if Path('data/ipo_data').exists():
+        files = list(Path('data/ipo_data').glob('*.json'))
+        if files:
+            try:
+                with open(max(files, key=lambda x: x.stat().st_mtime), 'r') as f:
+                    data = json.load(f)
+                    
+                    for ipo in data.get('filed', []):
+                        ticker = ipo.get('ticker')
+                        if ticker:
+                            # Check if not already added
+                            already_added = any(
+                                ticker == company['ticker'] 
+                                for companies in sectors.values() 
+                                for company in companies
+                            )
+                            
+                            if not already_added:
+                                # Default to Technology
+                                sectors['Technology'].append({
+                                    'ticker': ticker,
+                                    'name': ipo.get('company', f"{ticker} Inc.")
+                                })
+            except:
+                pass
+    
+    # Remove empty sectors
+    return {k: v for k, v in sectors.items() if v}
+
+def count_company_docs(ticker):
+    """Count documents for company"""
+    doc_path = Path(f'data/sec_documents/{ticker}')
+    if doc_path.exists():
+        return len(list(doc_path.glob('*.html')))
+    return 0
+
+def get_last_filing(ticker):
+    """Get last filing date"""
+    doc_path = Path(f'data/sec_documents/{ticker}')
+    if doc_path.exists():
+        files = list(doc_path.glob('*.html'))
+        if files:
+            latest = max(files, key=lambda x: x.stat().st_mtime)
+            # Extract date from filename
+            parts = latest.stem.split('_')
+            if len(parts) > 1:
+                return parts[-1]
+    return "N/A"
+
+def get_lockup_days(ticker):
+    """Get days until lockup expiry"""
+    # Check IPO data for this ticker
+    if Path('data/ipo_data').exists():
+        files = list(Path('data/ipo_data').glob('*.json'))
+        if files:
+            try:
+                with open(max(files, key=lambda x: x.stat().st_mtime), 'r') as f:
+                    data = json.load(f)
+                    
+                    for ipo in data.get('filed', []):
+                        if ipo.get('ticker') == ticker and 'date' in ipo:
+                            try:
+                                ipo_date = datetime.strptime(ipo['date'], '%Y-%m-%d')
+                                lockup_date = ipo_date + timedelta(days=180)
+                                days_until = (lockup_date - datetime.now()).days
+                                return days_until if days_until > 0 else 0
+                            except:
+                                pass
+            except:
+                pass
+    return None
+
+def get_company_documents(ticker):
+    """Get all documents for company"""
+    docs = []
+    
+    doc_path = Path(f'data/sec_documents/{ticker}')
+    if doc_path.exists():
+        for doc_file in sorted(doc_path.glob('*.html'), key=lambda x: x.stat().st_mtime, reverse=True):
+            parts = doc_file.stem.split('_')
+            docs.append({
+                'name': doc_file.stem,
+                'type': parts[0] if parts else 'Unknown',
+                'date': parts[-1] if len(parts) > 1 else 'Unknown',
+                'size': f"{doc_file.stat().st_size // 1024}KB"
+            })
+    
+    return docs
+
+def get_company_full_details(ticker):
+    """Get full company details"""
+    details = {
+        'ticker': ticker,
+        'sector': 'Technology',
+        'exchange': 'NYSE'
+    }
+    
+    # Try to get from IPO data
+    if Path('data/ipo_data').exists():
+        files = list(Path('data/ipo_data').glob('*.json'))
+        if files:
+            try:
+                with open(max(files, key=lambda x: x.stat().st_mtime), 'r') as f:
+                    data = json.load(f)
+                    
+                    for ipo in data.get('filed', []):
+                        if ipo.get('ticker') == ticker:
+                            details.update({
+                                'ipo_date': ipo.get('date', 'N/A'),
+                                'lead_underwriter': ipo.get('lead_manager', 'Goldman Sachs'),
+                                'exchange': ipo.get('exchange', 'NYSE')
+                            })
+                            break
+            except:
+                pass
+    
+    return details
+
+def calculate_lockup_date(ipo_date_str):
+    """Calculate lockup expiration date"""
+    if not ipo_date_str or ipo_date_str == 'N/A':
+        return "N/A"
+    
+    try:
+        ipo_date = datetime.strptime(ipo_date_str, '%Y-%m-%d')
+        lockup_date = ipo_date + timedelta(days=180)
+        days_until = (lockup_date - datetime.now()).days
+        
+        if days_until > 0:
+            return f"{lockup_date.strftime('%m/%d/%Y')} ({days_until}d)"
+        else:
+            return "Expired"
+    except:
+        return "N/A"
+
+
+# Add this function to companies.py
+
+def display_filing_with_sec_link(filing):
+    """Display filing with direct SEC.gov link"""
+    col1, col2, col3 = st.columns([3, 2, 1])
+    
+    with col1:
+        st.write(f"**{filing.get('form', 'N/A')}**")
+    
+    with col2:
+        st.write(filing.get('filing_date', 'N/A'))
+    
+    with col3:
+        if 'url' in filing:
+            # Create direct SEC link
+            sec_url = filing['url']
+            if not sec_url.startswith('http'):
+                # Build full SEC URL
+                cik = filing.get('cik', '')
+                accession = filing.get('accession', '')
+                sec_url = f"https://www.sec.gov/Archives/edgar/data/{cik}/{accession}/{accession}.txt"
+            
+            st.markdown(
+                f'<a href="{sec_url}" target="_blank" style="'
+                f'background-color: #10A37F; color: #212121; '
+                f'padding: 4px 12px; text-decoration: none; '
+                f'border-radius: 4px; font-weight: bold;">VIEW</a>',
+                unsafe_allow_html=True
+            )
+>>>>>>> 7bda5bb3f199dc2d74016e366f0a956b33545e5c

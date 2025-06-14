@@ -1,0 +1,23 @@
+{
+  "scan_time": "2025-06-13T17:57:37.931269",
+  "total_files": 81,
+  "file_categories": {
+    "core_files": 30,
+    "backup_files": 10,
+    "archive_files": 20,
+    "component_variants": 12,
+    "service_variants": 0,
+    "temp_scripts": 9
+  },
+  "chat_analysis": {
+    "issues_found": [],
+    "likely_cause": "Configuration issue"
+  },
+  "recommendations": [
+    "Delete 10 backup files after verifying main app works",
+    "Remove 20 archive files - they're now in GitHub history",
+    "Consolidate component variants - keep only the latest working versions",
+    "Create .env file with OPENAI_API_KEY",
+    "Test chat functionality with: python -m streamlit run app.py"
+  ]
+}

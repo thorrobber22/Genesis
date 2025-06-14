@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Python
 __pycache__/
 *.py[cod]
@@ -73,3 +74,20 @@ experiments/
 # Upload scripts
 upload*.py
 upload*.sh
+=======
+venv/
+env/
+__pycache__/
+*.pyc
+.env
+.vscode/
+.idea/
+*.log
+temp_*
+*.db
+>>>>>>> 7bda5bb3f199dc2d74016e366f0a956b33545e5c
+
+# Scripts
+sync_and_push.py
+simple_push.py
+resolve_conflicts.py
