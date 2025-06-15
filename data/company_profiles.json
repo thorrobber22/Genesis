@@ -1,225 +1,54 @@
-{
-<<<<<<< HEAD
-  "AIRO Group Holdings": {
-    "name": "AIRO",
-    "official_name": "Kairous Acquisition Corp. Ltd",
-    "cik": "0001865468",
-    "documents": 20,
-    "total_filings": 20,
-    "latest_filing": "2025-06-12",
-    "downloaded_filings": [
-      {
-        "path": "data\\ipo_filings\\AIRO Group Holdings\\8-K_2025-06-12_1.html",
-        "form_type": "8-K",
-        "filing_date": "2025-06-12",
-        "url": "https://www.sec.gov/Archives/edgar/data/1865468/000164117225014809/form8-k.htm"
-      },
-      {
-        "path": "data\\ipo_filings\\AIRO Group Holdings\\NT 10-Q_2025-05-14_2.html",
-        "form_type": "NT 10-Q",
-        "filing_date": "2025-05-14",
-        "url": "https://www.sec.gov/Archives/edgar/data/1865468/000164117225010120/formnt10-q.htm"
-      },
-      {
-        "path": "data\\ipo_filings\\AIRO Group Holdings\\PRE 14A_2025-05-14_3.html",
-        "form_type": "PRE 14A",
-        "filing_date": "2025-05-14",
-        "url": "https://www.sec.gov/Archives/edgar/data/1865468/000164117225010050/formpre14a.htm"
-      },
-      {
-        "path": "data\\ipo_filings\\AIRO Group Holdings\\25-NSE_2025-05-12_4.html",
-        "form_type": "25-NSE",
-        "filing_date": "2025-05-12",
-        "url": "https://www.sec.gov/Archives/edgar/data/1865468/000135445725000401/xslF25X02/primary_doc.xml"
-      },
-      {
-        "path": "data\\ipo_filings\\AIRO Group Holdings\\8-K_2025-04-17_5.html",
-        "form_type": "8-K",
-        "filing_date": "2025-04-17",
-        "url": "https://www.sec.gov/Archives/edgar/data/1865468/000164117225005159/form8-k.htm"
-      },
-      {
-        "path": "data\\ipo_filings\\AIRO Group Holdings\\8-K_2025-03-18_6.html",
-        "form_type": "8-K",
-        "filing_date": "2025-03-18",
-        "url": "https://www.sec.gov/Archives/edgar/data/1865468/000149315225010811/form8-k.htm"
-      },
-      {
-        "path": "data\\ipo_filings\\AIRO Group Holdings\\10-Q_2025-02-19_7.html",
-        "form_type": "10-Q",
-        "filing_date": "2025-02-19",
-        "url": "https://www.sec.gov/Archives/edgar/data/1865468/000149315225007559/form10-q.htm"
-      },
-      {
-        "path": "data\\ipo_filings\\AIRO Group Holdings\\8-K_2025-02-18_8.html",
-        "form_type": "8-K",
-        "filing_date": "2025-02-18",
-        "url": "https://www.sec.gov/Archives/edgar/data/1865468/000149315225007207/form8-k.htm"
-      },
-      {
-        "path": "data\\ipo_filings\\AIRO Group Holdings\\NT 10-Q_2025-02-14_9.html",
-        "form_type": "NT 10-Q",
-        "filing_date": "2025-02-14",
-        "url": "https://www.sec.gov/Archives/edgar/data/1865468/000149315225006825/formnt10-q.htm"
-      },
-      {
-        "path": "data\\ipo_filings\\AIRO Group Holdings\\8-K_2025-01-21_10.html",
-        "form_type": "8-K",
-        "filing_date": "2025-01-21",
-        "url": "https://www.sec.gov/Archives/edgar/data/1865468/000149315225003094/form8-k.htm"
-      },
-      {
-        "path": "data\\ipo_filings\\AIRO Group Holdings\\8-K_2024-12-18_11.html",
-        "form_type": "8-K",
-        "filing_date": "2024-12-18",
-        "url": "https://www.sec.gov/Archives/edgar/data/1865468/000149315224050542/form8-k.htm"
-      },
-      {
-        "path": "data\\ipo_filings\\AIRO Group Holdings\\8-K_2024-12-18_12.html",
-        "form_type": "8-K",
-        "filing_date": "2024-12-18",
-        "url": "https://www.sec.gov/Archives/edgar/data/1865468/000149315224050541/form8-k.htm"
-      },
-      {
-        "path": "data\\ipo_filings\\AIRO Group Holdings\\DEFR14A_2024-11-21_13.html",
-        "form_type": "DEFR14A",
-        "filing_date": "2024-11-21",
-        "url": "https://www.sec.gov/Archives/edgar/data/1865468/000149315224047061/formdefr14a.htm"
-      },
-      {
-        "path": "data\\ipo_filings\\AIRO Group Holdings\\DEF 14A_2024-11-18_14.html",
-        "form_type": "DEF 14A",
-        "filing_date": "2024-11-18",
-        "url": "https://www.sec.gov/Archives/edgar/data/1865468/000149315224046556/formdef14a.htm"
-      },
-      {
-        "path": "data\\ipo_filings\\AIRO Group Holdings\\10-Q_2024-11-18_15.html",
-        "form_type": "10-Q",
-        "filing_date": "2024-11-18",
-        "url": "https://www.sec.gov/Archives/edgar/data/1865468/000149315224046374/form10-q.htm"
-      },
-      {
-        "path": "data\\ipo_filings\\AIRO Group Holdings\\8-K_2024-11-15_16.html",
-        "form_type": "8-K",
-        "filing_date": "2024-11-15",
-        "url": "https://www.sec.gov/Archives/edgar/data/1865468/000149315224046272/form8-k.htm"
-      },
-      {
-        "path": "data\\ipo_filings\\AIRO Group Holdings\\NT 10-Q_2024-11-15_17.html",
-        "form_type": "NT 10-Q",
-        "filing_date": "2024-11-15",
-        "url": "https://www.sec.gov/Archives/edgar/data/1865468/000149315224046191/formnt10-q.htm"
-      },
-      {
-        "path": "data\\ipo_filings\\AIRO Group Holdings\\SC 13G-A_2024-11-14_18.html",
-        "form_type": "SC 13G/A",
-        "filing_date": "2024-11-14",
-        "url": "https://www.sec.gov/Archives/edgar/data/1865468/000132638924000164/Kairous.txt"
-      },
-      {
-        "path": "data\\ipo_filings\\AIRO Group Holdings\\PRE 14A_2024-11-05_19.html",
-        "form_type": "PRE 14A",
-        "filing_date": "2024-11-05",
-        "url": "https://www.sec.gov/Archives/edgar/data/1865468/000149315224043656/formpre14a.htm"
-      },
-      {
-        "path": "data\\ipo_filings\\AIRO Group Holdings\\8-K_2024-10-17_20.html",
-        "form_type": "8-K",
-        "filing_date": "2024-10-17",
-        "url": "https://www.sec.gov/Archives/edgar/data/1865468/000149315224041409/form8-k.htm"
-      }
-    ],
-    "last_update": "2025-06-13T20:42:07.623538"
-  },
-  "Caris Life Sciences, Inc.": {
-    "name": "CAI",
-    "official_name": "CaixaBank/ADR",
-    "cik": "0001535628",
-    "documents": 12,
-    "total_filings": 12,
-    "latest_filing": "2024-06-06",
-    "downloaded_filings": [
-      {
-        "path": "data\\ipo_filings\\Caris Life Sciences, Inc.\\F-6EF_2024-06-06_1.html",
-        "form_type": "F-6EF",
-        "filing_date": "2024-06-06",
-        "url": "https://www.sec.gov/Archives/edgar/data/1535628/000119380524000762/e663694_f6ef-caixabank.htm"
-      },
-      {
-        "path": "data\\ipo_filings\\Caris Life Sciences, Inc.\\F-6EF_2020-12-03_2.html",
-        "form_type": "F-6EF",
-        "filing_date": "2020-12-03",
-        "url": "https://www.sec.gov/Archives/edgar/data/1535628/000110465920131917/tm2037542d2_f6ef.htm"
-      },
-      {
-        "path": "data\\ipo_filings\\Caris Life Sciences, Inc.\\F-6EF_2019-11-22_3.html",
-        "form_type": "F-6EF",
-        "filing_date": "2019-11-22",
-        "url": "https://www.sec.gov/Archives/edgar/data/1535628/000119380519001486/e618707_f6ef-cb.htm"
-      },
-      {
-        "path": "data\\ipo_filings\\Caris Life Sciences, Inc.\\F-6EF_2019-08-05_4.html",
-        "form_type": "F-6EF",
-        "filing_date": "2019-08-05",
-        "url": "https://www.sec.gov/Archives/edgar/data/1535628/000119380519000704/e618585_f6ef-caixabank.htm"
-      },
-      {
-        "path": "data\\ipo_filings\\Caris Life Sciences, Inc.\\F-6EF_2018-10-02_5.html",
-        "form_type": "F-6EF",
-        "filing_date": "2018-10-02",
-        "url": "https://www.sec.gov/Archives/edgar/data/1535628/000119380518001196/e617973_f6ef-caixabank.htm"
-      },
-      {
-        "path": "data\\ipo_filings\\Caris Life Sciences, Inc.\\F-6 POS_2017-09-29_6.html",
-        "form_type": "F-6 POS",
-        "filing_date": "2017-09-29",
-        "url": "https://www.sec.gov/Archives/edgar/data/1535628/000119380517003053/e617253_f6pos-caixabank.htm"
-      },
-      {
-        "path": "data\\ipo_filings\\Caris Life Sciences, Inc.\\F-6EF_2016-03-30_7.html",
-        "form_type": "F-6EF",
-        "filing_date": "2016-03-30",
-        "url": "https://www.sec.gov/Archives/edgar/data/1535628/000119380516002947/e614856_f6ef-caixabank.htm"
-      },
-      {
-        "path": "data\\ipo_filings\\Caris Life Sciences, Inc.\\F-6EF_2015-09-10_8.html",
-        "form_type": "F-6EF",
-        "filing_date": "2015-09-10",
-        "url": "https://www.sec.gov/Archives/edgar/data/1535628/000119380515001519/e614083_f6ef-caixabank.htm"
-      },
-      {
-        "path": "data\\ipo_filings\\Caris Life Sciences, Inc.\\F-6EF_2015-06-02_9.html",
-        "form_type": "F-6EF",
-        "filing_date": "2015-06-02",
-        "url": "https://www.sec.gov/Archives/edgar/data/1535628/000119380515000848/e613729_f6ef-caixabank.htm"
-      },
-      {
-        "path": "data\\ipo_filings\\Caris Life Sciences, Inc.\\F-6EF_2014-10-17_10.html",
-        "form_type": "F-6EF",
-        "filing_date": "2014-10-17",
-        "url": "https://www.sec.gov/Archives/edgar/data/1535628/000157104914005212/t1401958x76_f-6ef.htm"
-      },
-      {
-        "path": "data\\ipo_filings\\Caris Life Sciences, Inc.\\F-6EF_2014-09-26_11.html",
-        "form_type": "F-6EF",
-        "filing_date": "2014-09-26",
-        "url": "https://www.sec.gov/Archives/edgar/data/1535628/000119380514001893/e612731_f6ef-caixabank.htm"
-      },
-      {
-        "path": "data\\ipo_filings\\Caris Life Sciences, Inc.\\F-6EF_2011-11-28_12.html",
-        "form_type": "F-6EF",
-        "filing_date": "2011-11-28",
-        "url": "https://www.sec.gov/Archives/edgar/data/1535628/000101915511000610/caixaf6.htm"
-      }
-    ],
-    "last_update": "2025-06-13T20:42:07.623663"
-=======
-  "TEST": {
-    "name": "Test Company Inc.",
-    "ticker": "TEST",
-    "cik": "0001234567",
+[
+  {
+    "ticker": "RDDT",
+    "name": "Reddit Inc.",
     "sector": "Technology",
-    "description": "A test company for development"
->>>>>>> 7bda5bb3f199dc2d74016e366f0a956b33545e5c
+    "industry": "Social Media",
+    "documents": [
+      "S-1",
+      "S-1/A",
+      "424B4"
+    ],
+    "description": "Social news aggregation and discussion platform"
+  },
+  {
+    "ticker": "STRP",
+    "name": "Stripe Inc.",
+    "sector": "Fintech",
+    "industry": "Payment Processing",
+    "documents": [],
+    "description": "Online payment processing for internet businesses"
+  },
+  {
+    "ticker": "DTBK",
+    "name": "Databricks Inc.",
+    "sector": "Technology",
+    "industry": "Data Analytics",
+    "documents": [
+      "S-1"
+    ],
+    "description": "Unified analytics platform for big data and AI"
+  },
+  {
+    "ticker": "CNVA",
+    "name": "Canva Pty Ltd.",
+    "sector": "Technology",
+    "industry": "Design Software",
+    "documents": [],
+    "description": "Graphic design platform"
+  },
+  {
+    "ticker": "INST",
+    "name": "Instacart",
+    "sector": "Technology",
+    "industry": "E-commerce",
+    "documents": [
+      "S-1",
+      "S-1/A",
+      "424B4",
+      "8-K",
+      "10-Q"
+    ],
+    "description": "Grocery delivery platform"
   }
-}
+]

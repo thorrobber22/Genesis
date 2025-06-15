@@ -1,9 +1,19 @@
-streamlit==1.28.0
-pandas==2.0.3
-PyMuPDF==1.23.8
-python-docx==0.8.11
-reportlab==4.0.4
-beautifulsoup4==4.12.2
-requests==2.31.0
+# Create a new minimal requirements file
+cat > requirements_minimal.txt << 'EOF'
+# Minimal requirements for Hedge Intelligence
+# Works on ARM64 Windows
+
+# Core FastAPI
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+python-multipart==0.0.6
+
+# Essential utilities
 python-dotenv==1.0.0
-openai==0.28.0
+pydantic==2.9.2  # Latest version with pre-built wheels
+httpx==0.25.2
+beautifulsoup4==4.12.2
+
+# Basic file handling
+aiofiles==23.2.1
+EOF

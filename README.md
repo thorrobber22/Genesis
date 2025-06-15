@@ -1,83 +1,116 @@
-<<<<<<< HEAD
-# Hedge Intelligence - IPO Intelligence Platform
+# Hedge Intelligence - Genesis
 
-Professional IPO tracking and analysis platform with AI-powered insights.
+Professional IPO tracking and analysis platform with Bloomberg-style interface.
 
-## Features
-
-### Phase 1 - Core IPO Intelligence [COMPLETE]
-- [x] UI Framework - Terminal-style interface
-- [x] IPO Data Pipeline - Real-time SEC scraping
-- [x] SEC Integration - Direct EDGAR API
-- [x] Basic Chat - AI analysis
-- [x] IPO Calendar - Track filings
-- [x] Companies View - Detailed info
-- [x] Metrics Dashboard - Market stats
-
-### Phase 2 - Enhanced Analytics [IN PROGRESS]
-- [ ] Financial Analysis
-- [ ] Lockup Tracker
-- [x] Watchlist
-- [ ] Company Deep Dive
-
-### Phase 3 - AI Intelligence [PLANNED]
-- [ ] Smart Summaries
-- [ ] Trend Detection
-- [ ] Anomaly Alerts
-- [ ] Report Generation
-
-## Tech Stack
-- **Frontend**: Streamlit
-- **Backend**: Python 3.11+
-- **AI**: OpenAI GPT-4
-- **Data**: SEC EDGAR API
-- **Styling**: Custom CSS (Terminal theme)
-
-## Setup
-
-1. Clone repository
-```bash
-git clone https://github.com/thorrobber22/hedge-intelligence.git
-cd hedge-intelligence
+## 🏗️ Project Structure
+```
+hedge_intel/
+├── frontend/
+│   ├── index.html              # Main UI (from DESIGN.html)
+│   ├── static/
+│   │   ├── css/
+│   │   │   └── styles.css      # Dark theme styling
+│   │   └── js/
+│   │       └── app.js          # Frontend logic
+│   └── templates/
+│       └── split_screen_mockup.html  # Original design reference
+│
+├── backend/
+│   ├── main.py                 # FastAPI application
+│   ├── api/
+│   │   ├── calendar.py         # IPO calendar endpoints
+│   │   ├── companies.py        # Company tree view
+│   │   └── watchlist.py        # Watchlist management
+│   ├── services/
+│   │   ├── data_service.py     # Data management
+│   │   ├── ai_service_enhanced.py  # AI analysis (OpenAI + Gemini)
+│   │   └── scraping_manager.py # Playwright scraper manager
+│   └── scrapers/
+│       ├── iposcoop_scraper.py # IPOScoop.com scraper
+│       └── stockanalysis_scraper.py  # Alternative source
+│
+├── scripts/
+│   ├── scrape_ipo_calendar.py  # Run IPO scraping
+│   ├── quick_fixes.py          # Quick fixes applied
+│   └── emergency_fix.py        # Emergency patches
+│
+├── data/
+│   ├── ipo_calendar.json       # 17 scraped IPOs
+│   ├── ipo_filings/           # SEC documents
+│   │   ├── AIRO/              # AIRO S-1 documents
+│   │   ├── CLRS/              # CLRS documents
+│   │   └── .../               # Other companies
+│   └── enriched/              # (To be created)
+│
+├── mock_designs/
+│   └── split_screen_mockup.html  # Original mockup
+│
+├── requirements.txt            # Python dependencies
+├── .env.example               # Environment variables template
+└── README.md                  # This file
 ```
 
-2. Install dependencies
-```bash
-pip install -r requirements.txt
-```
-
-3. Run the app
-```bash
-streamlit run app.py
-```
-=======
-# Hedge Intelligence - IPO Intelligence Terminal
-
-## 🚀 Current Status
-- **Version**: 1.1 (Full Upload)
-- **Files**: All 80 Python files + complete structure
-- **Date**: 2025-06-13
-
-## 📁 Quick Start
+## 🚀 Quick Start
 
 ```bash
+# Clone the repo
 git clone https://github.com/thorrobber22/Genesis.git
 cd Genesis
-python -m venv venv
-venv\Scripts\activate  # Windows
+
+# Install dependencies
 pip install -r requirements.txt
-echo "OPENAI_API_KEY=your_key_here" > .env
-streamlit run app.py
+
+# Set up environment variables
+cp .env.example .env
+# Edit .env with your API keys
+
+# Run the server
+python -m uvicorn backend.main:app --reload
+
+# Open in browser
+# http://localhost:8000
 ```
 
-## 🔍 Diagnostic Report
-See DIAGNOSTIC_REPORT.json for chat functionality analysis
+## 🔧 Current Status
 
-## 📊 File Count
-- Total Python files: 81
-- Core files: 30
-- Backup files: 10
+### ✅ Completed
+- UI design (Bloomberg terminal aesthetic)
+- FastAPI backend structure
+- IPO scraping from IPOScoop
+- Basic API endpoints
+- AI service setup
+
+### 🔄 In Progress
+- Connecting calendar route
+- Document viewer implementation
+- Real-time WebSocket chat
+
+### 📅 Upcoming
+- SEC document fetching for all 17 companies
+- Citation extraction and jumping
+- Report generation
+- Daily automation
+
+## 🐛 Known Issues
+- `/api/calendar` route not registered (easy fix)
+- Document count shows 0 (needs data enrichment)
+- Mock data still in HTML (needs removal)
+
+## 📊 Data Sources
+- **IPOScoop.com**: Market data, pricing, dates
+- **SEC EDGAR**: Official S-1 filings
+- **Manual Entry**: Watchlist and reports
+
+## 🤖 AI Features
+- Document Q&A with GPT-4
+- Citation extraction
+- Financial analysis
+- Risk assessment
+
+## 📈 Performance
+- Page load: <100ms
+- API response: <200ms
+- WebSocket latency: <50ms
 
 ---
-*Uploaded by thorrobber22*
->>>>>>> 7bda5bb3f199dc2d74016e366f0a956b33545e5c
+Built with ❤️ for hedge fund professionals

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Python
 __pycache__/
 *.py[cod]
@@ -7,87 +6,39 @@ __pycache__/
 .Python
 env/
 venv/
-ENV/
-.venv
-*.egg-info/
-.pytest_cache/
+.env
+.env.local
 
-# Streamlit
-.streamlit/secrets.toml
-*.log
+# Virtual Environment
+venv/
+ENV/
+env/
 
 # IDE
 .vscode/
 .idea/
 *.swp
 *.swo
-*~
+.vs/
 
 # OS
 .DS_Store
 Thumbs.db
-
-# Project specific
-backups/
-backup*/
-test/
-test_*.py
-*_test.py
-*.bak
-*.backup
-*.tmp
-temp/
-tmp/
-temp_*
-
-# Archives
-archive_*/
-
-# App backups
-app_backup_*.py
-
-# Data (be careful with sensitive data)
-data/credentials/
-data/secrets/
-*.key
-*.pem
-
-# Environment
-.env
-.env.local
-.env.*.local
+desktop.ini
 
 # Logs
+*.log
 logs/
-*.log
 
-# Cache
-.cache/
-cache/
-*.cache
+# Large data files (optional - remove if you want to upload these)
+# data/ipo_filings/*.html
+# data/ipo_filings/*/*.html
 
-# Development
-scratch/
-sandbox/
-experiments/
+# Temporary files
+*.tmp
+*.temp
+*.bak
 
-# Upload scripts
-upload*.py
-upload*.sh
-=======
-venv/
-env/
-__pycache__/
-*.pyc
-.env
-.vscode/
-.idea/
-*.log
-temp_*
-*.db
->>>>>>> 7bda5bb3f199dc2d74016e366f0a956b33545e5c
-
-# Scripts
-sync_and_push.py
-simple_push.py
-resolve_conflicts.py
+# API Keys (if any)
+config/secrets.json
+secrets.py

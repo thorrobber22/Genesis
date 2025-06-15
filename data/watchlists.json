@@ -1,4 +1,20 @@
 {
-  "watchlist": [],
-  "last_updated": "2025-06-11T22:15:01.055902"
+  "name": "My IPO Watchlist",
+  "tickers": [
+    "RDDT",
+    "STRP",
+    "DTBK"
+  ],
+  "alerts": [
+    {
+      "ticker": "RDDT",
+      "type": "filing",
+      "enabled": true
+    },
+    {
+      "ticker": "STRP",
+      "type": "pricing",
+      "enabled": true
+    }
+  ]
 }

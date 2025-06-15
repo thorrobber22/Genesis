@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hedge Intelligence - Complete System</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Navigation -->
+        <div class="nav-bar">
+            <div class="nav-item active" onclick="showView('calendar')">IPO CALENDAR</div>
+            <div class="nav-item" onclick="showView('companies')">COMPANIES</div>
+            <div class="nav-item" onclick="showView('watchlist')">WATCHLIST</div>
+            <div class="nav-item" onclick="showView('reports')">MY REPORTS</div>
+        </div>
+        
+        <!-- IPO Calendar View -->
+        <div class="content-area view active" id="calendar-view" class="active">
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <h3>FILTERS</h3>
+                <div style="margin-bottom: 16px;">
+                    <p>Period</p>
+                    <select id="period-filter">
+                        <option value="this-week">This Week</option>
+                        <option value="next-week">Next Week</option>
+                        <option value="this-month">This Month</option>
+                    </select>
+                </div>
+                <div style="margin-bottom: 16px;">
+                    <p>Status</p>
+                    <select id="status-filter">
+                        <option value="all">All</option>
+                        <option value="filed">Filed</option>
+                        <option value="priced">Priced</option>
+                        <option value="trading">Trading</option>
+                    </select>
+                </div>
+            </div>
+            
+            <!-- Main Area -->
+            <div class="main-area">
+                <!-- Main Content -->
+                <div class="main-content" id="mainContent">
+                    <h1>IPO Calendar</h1>
+                    <p>Real-time tracking of IPO filings and market activity</p>
+                    
+                    <table id="ipo-calendar" class="ipo-table" style="margin-top: 20px;">
+                        
+                <thead>
+                    <tr>
+                        <th>DATE</th>
+                        <th>TICKER</th>
+                        <th>COMPANY</th>
+                        <th>PRICE</th>
+                        <th>SHARES</th>
+                        <th>VOLUME</th>
+                        <th>STATUS</th>
+                        <th>DOCS</th>
+                        <th>LOCKUP</th>
+                        <th>LEAD MANAGERS</th>
+                        <th>RATING</th>
+                    </tr>
+                </thead>
+                        <tbody>
+                            <!-- Real data will be loaded here by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+                
+                <!-- Chat Panel -->
+                <div class="chat-panel" id="chatPanel">
+                    <div class="chat-header">
+                        <h3>Chat</h3>
+                        <button class="close-button" onclick="toggleChat()">✕</button>
+                    </div>
+                    <div class="chat-messages">
+                        <div class="message user">
+                            What IPOs are coming up this week?
+                        </div>
+                        <div class="message assistant">
+                            There are 3 IPOs this week:
+                            • AIRO filed today with 20 documents
+                            • BIO priced yesterday, trading starts tomorrow
+                            • FINX currently trading, lockup expires in 15 days ⚠️
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Context Panel -->
+            <div class="context-panel" id="contextPanel">
+                <h3 id="contextTicker">AIRO</h3>
+                <div style="margin-bottom: 20px;">
+                    <p style="font-weight: 600; margin-bottom: 8px;">OVERVIEW</p>
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
+                        <span style="color: #A3A3A3; font-size: 11px;">Exchange</span>
+                        <span style="font-size: 13px;">NYSE</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
+                        <span style="color: #A3A3A3; font-size: 11px;">Sector</span>
+                        <span style="font-size: 13px;">Technology</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <span style="color: #A3A3A3; font-size: 11px;">Status</span>
+                        <span style="font-size: 13px;">S-1 Filed</span>
+                    </div>
+                </div>
+                <div>
+                    <p style="font-weight: 600; margin-bottom: 8px;">RECENT ACTIVITY</p>
+                    <div style="font-size: 13px; line-height: 1.6;">
+                        • S-1/A Amendment filed<br>
+                        • 67% revenue growth disclosed<br>
+                        • Goldman Sachs lead underwriter
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Companies View (Document Mode) -->
+        <div class="content-area view" id="companies-view">
+            <!-- File Explorer -->
+            <div class="sidebar file-explorer" id="fileExplorer">
+                <h3>FILE EXPLORER</h3>
+                <input type="text" class="search-box" placeholder="Search companies...">
+                
+                <div class="folder">
+                    <div class="folder-header" onclick="toggleFolder(this)">
+                        <span>[F]</span>
+                        <span class="folder-name">Technology</span>
+                        <span class="doc-count">(14)</span>
+                    </div>
+                    <div class="folder-content" style="display: block;">
+                        <div class="file-item active" onclick="selectCompany('AIRO')">
+                            <span>[D] <span class="file-name">AIRO Group Holdings (AIRO)</span></span>
+                            <span class="doc-count">20 docs</span>
+                        </div>
+                        <div class="file-item" onclick="selectCompany('TECH')">
+                            <span>[D] <span class="file-name">TechCorp International (TECH)</span></span>
+                            <span class="doc-count">8 docs</span>
+                        </div>
+                        <div class="file-item" onclick="selectCompany('CLOUD')">
+                            <span>[D] <span class="file-name">CloudBase Systems (CLOUD)</span></span>
+                            <span class="doc-count">6 docs</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="folder">
+                    <div class="folder-header">
+                        <span>[F]</span>
+                        <span class="folder-name">Healthcare</span>
+                        <span class="doc-count">(8)</span>
+                    </div>
+                </div>
+                
+                <div class="folder">
+                    <div class="folder-header">
+                        <span>[F]</span>
+                        <span class="folder-name">Financial</span>
+                        <span class="doc-count">(6)</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Document Viewer -->
+            <div class="document-viewer">
+                <div class="doc-header">
+                    <div>S-1/A Amendment 1 - AIRO</div>
+                    <div class="doc-controls">
+                        <button class="doc-btn">Page 1 of 456</button>
+                        <button class="doc-btn">←</button>
+                        <button class="doc-btn">→</button>
+                        <button class="doc-btn">⊞</button>
+                        <button class="doc-btn">⊟</button>
+                        <button class="doc-btn">SEC ↗</button>
+                    </div>
+                </div>
+                <div class="doc-content" id="docContent">
+                    <h1 style="text-align: center;">PRELIMINARY PROSPECTUS</h1>
+                    <p style="text-align: center; font-size: 20px; margin: 20px 0;">
+                        AIRO Group Holdings Inc.<br>
+                        $125,000,000<br>
+                        Common Stock
+                    </p>
+                    <p style="margin-top: 40px;">
+                        This is our initial public offering. We are selling shares of our common stock.
+                        Prior to this offering, there has been no public market for our common stock.
+                        The initial public offering price is expected to be between $10.00 and $12.00 per share.
+                    </p>
+                    <p id="lockup-section" style="margin-top: 200px; padding: 20px; background: #f5f5f5;">
+                        <strong>SECTION 7.12 - LOCK-UP AGREEMENTS</strong><br><br>
+                        In connection with this offering, we and each of our directors and executive officers,
+                        and the holders of substantially all of our outstanding shares have agreed with the
+                        underwriters not to offer, sell or transfer any shares for <strong>180 days</strong>
+                        after the date of this prospectus without first obtaining written consent.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Chat Panel (Document Mode) -->
+            <div class="chat-panel document-mode open">
+                <div class="chat-header">
+                    <h3>Document Assistant</h3>
+                    <button class="close-button" onclick="toggleDocChat()">✕</button>
+                </div>
+                <div class="chat-info">
+                    AIRO S-1/A Amendment 1 • 456 pages • Filed Jun 13, 2025
+                </div>
+                <div class="quick-actions">
+                    <button class="quick-action" onclick="askQuestion('lockup')">• What are the lockup terms?</button>
+                    <button class="quick-action" onclick="askQuestion('risks')">• Show me risk factors</button>
+                    <button class="quick-action" onclick="askQuestion('financials')">• Summarize financials</button>
+                </div>
+                <div class="chat-messages" id="docChatMessages">
+                    <div class="message user">
+                        What are the lockup terms?
+                    </div>
+                    <div class="message assistant">
+                        The lockup period is <strong>180 days</strong> from IPO <a href="#lockup-section" class="citation" onclick="jumpToCitation('lockup-section')">[Page 147]</a>. Key terms:
+                        <br><br>
+                        • Coverage: <strong>85%</strong> of outstanding shares<br>
+                        • Executive extension: <strong>+90 days</strong> (270 total)<br>
+                        • Early release: If stock >40% above IPO for 10 days
+                        <div class="add-to-report">+ Add to Report</div>
+                    </div>
+                </div>
+                <div class="chat-input-area">
+                    <textarea class="chat-input-box" placeholder="Ask about this document..." rows="2"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <!-- Watchlist View -->
+        <div class="content-area view" id="watchlist-view">
+            <div class="sidebar">
+                <h3>MY WATCHLIST</h3>
+                <button style="width: 100%; padding: 8px; background: #2E8AF6; border: none; color: white; border-radius: 6px; cursor: pointer; margin-bottom: 20px;">
+                    + Add Company
+                </button>
+                
+                <div class="watchlist-item">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <strong>AIRO</strong>
+                        <span style="color: #A3A3A3; cursor: pointer;">×</span>
+                    </div>
+                    <p>Filed S-1/A today</p>
+                    <span class="status-badge status-filed">2 new docs</span>
+                </div>
+                
+                <div class="watchlist-item">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <strong>TECH</strong>
+                        <span style="color: #A3A3A3; cursor: pointer;">×</span>
+                    </div>
+                    <p>Pricing tomorrow</p>
+                    <span class="status-badge status-warning">Action needed</span>
+                </div>
+                
+                <div class="watchlist-item">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <strong>FINX</strong>
+                        <span style="color: #A3A3A3; cursor: pointer;">×</span>
+                    </div>
+                    <p>Trading - Day 165</p>
+                    <span class="status-badge status-warning">Lockup in 15d</span>
+                </div>
+            </div>
+            
+            <div class="main-area">
+                <div class="main-content">
+                    <h1>Alert Timeline</h1>
+                    <p>Recent activity and upcoming events</p>
+                    
+                    <div style="margin-top: 30px;">
+                        <div style="padding: 20px; border-left: 3px solid #F59E0B; margin-bottom: 20px;">
+                            <p style="font-size: 12px; color: #A3A3A3;">Today 3:42 PM</p>
+                            <h3 style="margin: 8px 0;">AIRO filed S-1/A Amendment</h3>
+                            <p>Pricing range updated to $10-12</p>
+                            <button class="doc-btn" style="margin-top: 12px;">View Changes</button>
+                        </div>
+                        
+                        <div style="padding: 20px; border-left: 3px solid #2E8AF6; margin-bottom: 20px;">
+                            <p style="font-size: 12px; color: #A3A3A3;">Tomorrow 4:00 PM</p>
+                            <h3 style="margin: 8px 0;">TECH pricing expected</h3>
+                            <p>$18-20 per share indicated</p>
+                            <button class="doc-btn" style="margin-top: 12px;">Set Reminder</button>
+                        </div>
+                        
+                        <div style="padding: 20px; border-left: 3px solid #F59E0B;">
+                            <p style="font-size: 12px; color: #A3A3A3;">In 15 days</p>
+                            <h3 style="margin: 8px 0;">FINX lockup expiration</h3>
+                            <p>85% of shares become tradeable</p>
+                            <button class="doc-btn" style="margin-top: 12px;">Analyze Impact</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- My Reports View -->
+        <div class="content-area view" id="reports-view">
+            <div class="sidebar">
+                <h3>REPORT SECTIONS</h3>
+                <button style="width: 100%; padding: 8px; background: #2E8AF6; border: none; color: white; border-radius: 6px; cursor: pointer; margin-bottom: 20px;">
+                    + Add Section
+                </button>
+                
+                <div class="report-section">
+                    <div class="section-header">
+                        <span class="section-title">📋 Executive Summary</span>
+                        <span class="section-status">✓</span>
+                    </div>
+                </div>
+                
+                <div class="report-section">
+                    <div class="section-header">
+                        <span class="section-title">🏢 AIRO Analysis</span>
+                        <span class="section-status">3 items</span>
+                    </div>
+                </div>
+                
+                <div class="report-section">
+                    <div class="section-header">
+                        <span class="section-title">📊 Market Comparison</span>
+                        <span style="color: #A3A3A3; font-size: 12px;">Empty</span>
+                    </div>
+                </div>
+                
+                <div class="report-section">
+                    <div class="section-header">
+                        <span class="section-title">⚠️ Risk Assessment</span>
+                        <span style="color: #A3A3A3; font-size: 12px;">Empty</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="main-area">
+                <div class="main-content">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;">
+                        <h1>Tech IPO Analysis - June 2025</h1>
+                        <div>
+                            <button class="doc-btn" style="margin-right: 8px;">Preview</button>
+                            <button class="doc-btn" style="background: #2E8AF6; color: white; border-color: #2E8AF6;">Export</button>
+                        </div>
+                    </div>
+                    
+                    <div style="background: white; color: black; padding: 40px; border-radius: 8px; font-family: 'Times New Roman', serif;">
+                        <h2 style="margin-bottom: 1rem;">Executive Summary</h2>
+                        <p style="line-height: 1.6; margin-bottom: 1.5rem;">
+                            This report analyzes three technology IPOs filed in June 2025, focusing on their 
+                            market positioning, financial metrics, and risk factors. Key findings include...
+                        </p>
+                        
+                        <h2 style="margin-bottom: 1rem;">AIRO Group Holdings Analysis</h2>
+                        <div style="background: #f5f5f5; padding: 1rem; border-left: 3px solid #2E8AF6; margin-bottom: 1rem;">
+                            <p style="font-size: 12px; color: #666; margin-bottom: 8px;">From Document Assistant:</p>
+                            <p style="line-height: 1.6;">
+                                The lockup period is <strong>180 days</strong> from IPO [Page 147]. Coverage includes 
+                                <strong>85%</strong> of outstanding shares with an executive extension of <strong>+90 days</strong> 
+                                (270 total). Early release provision applies if stock trades >40% above IPO price for 10 consecutive days.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Chat Input -->
+        <div class="chat-input-container">
+            <input type="text" class="chat-input" placeholder="Ask about IPOs, filings, or companies..." onclick="openChat()">
+        </div>
+        
+        <!-- Transition Overlay -->
+        <div class="transition-overlay" id="transitionOverlay"></div>
+    </div>
+    
+    <script src="/static/js/app.js"></script>
+</body>
+</html>

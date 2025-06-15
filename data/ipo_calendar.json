@@ -1,341 +1,325 @@
-<<<<<<< HEAD
-[
-  {
-    "ticker": "AIRO Group Holdings",
-    "company": "AIRO",
-    "date": "2025-06-13",
-    "status": "Filed",
-    "exchange": "NYSE",
-    "documents": 20,
-    "lockup": null,
-    "shares": "6.0",
-    "cik": "0001865468",
-    "official_name": "Kairous Acquisition Corp. Ltd",
-    "total_filings": 20,
-    "downloaded_filings": [
-      {
-        "path": "data\\ipo_filings\\AIRO Group Holdings\\8-K_2025-06-12_1.html",
-        "form_type": "8-K",
-        "filing_date": "2025-06-12",
-        "url": "https://www.sec.gov/Archives/edgar/data/1865468/000164117225014809/form8-k.htm"
-      },
-      {
-        "path": "data\\ipo_filings\\AIRO Group Holdings\\NT 10-Q_2025-05-14_2.html",
-        "form_type": "NT 10-Q",
-        "filing_date": "2025-05-14",
-        "url": "https://www.sec.gov/Archives/edgar/data/1865468/000164117225010120/formnt10-q.htm"
-      },
-      {
-        "path": "data\\ipo_filings\\AIRO Group Holdings\\PRE 14A_2025-05-14_3.html",
-        "form_type": "PRE 14A",
-        "filing_date": "2025-05-14",
-        "url": "https://www.sec.gov/Archives/edgar/data/1865468/000164117225010050/formpre14a.htm"
-      },
-      {
-        "path": "data\\ipo_filings\\AIRO Group Holdings\\25-NSE_2025-05-12_4.html",
-        "form_type": "25-NSE",
-        "filing_date": "2025-05-12",
-        "url": "https://www.sec.gov/Archives/edgar/data/1865468/000135445725000401/xslF25X02/primary_doc.xml"
-      },
-      {
-        "path": "data\\ipo_filings\\AIRO Group Holdings\\8-K_2025-04-17_5.html",
-        "form_type": "8-K",
-        "filing_date": "2025-04-17",
-        "url": "https://www.sec.gov/Archives/edgar/data/1865468/000164117225005159/form8-k.htm"
-      },
-      {
-        "path": "data\\ipo_filings\\AIRO Group Holdings\\8-K_2025-03-18_6.html",
-        "form_type": "8-K",
-        "filing_date": "2025-03-18",
-        "url": "https://www.sec.gov/Archives/edgar/data/1865468/000149315225010811/form8-k.htm"
-      },
-      {
-        "path": "data\\ipo_filings\\AIRO Group Holdings\\10-Q_2025-02-19_7.html",
-        "form_type": "10-Q",
-        "filing_date": "2025-02-19",
-        "url": "https://www.sec.gov/Archives/edgar/data/1865468/000149315225007559/form10-q.htm"
-      },
-      {
-        "path": "data\\ipo_filings\\AIRO Group Holdings\\8-K_2025-02-18_8.html",
-        "form_type": "8-K",
-        "filing_date": "2025-02-18",
-        "url": "https://www.sec.gov/Archives/edgar/data/1865468/000149315225007207/form8-k.htm"
-      },
-      {
-        "path": "data\\ipo_filings\\AIRO Group Holdings\\NT 10-Q_2025-02-14_9.html",
-        "form_type": "NT 10-Q",
-        "filing_date": "2025-02-14",
-        "url": "https://www.sec.gov/Archives/edgar/data/1865468/000149315225006825/formnt10-q.htm"
-      },
-      {
-        "path": "data\\ipo_filings\\AIRO Group Holdings\\8-K_2025-01-21_10.html",
-        "form_type": "8-K",
-        "filing_date": "2025-01-21",
-        "url": "https://www.sec.gov/Archives/edgar/data/1865468/000149315225003094/form8-k.htm"
-      },
-      {
-        "path": "data\\ipo_filings\\AIRO Group Holdings\\8-K_2024-12-18_11.html",
-        "form_type": "8-K",
-        "filing_date": "2024-12-18",
-        "url": "https://www.sec.gov/Archives/edgar/data/1865468/000149315224050542/form8-k.htm"
-      },
-      {
-        "path": "data\\ipo_filings\\AIRO Group Holdings\\8-K_2024-12-18_12.html",
-        "form_type": "8-K",
-        "filing_date": "2024-12-18",
-        "url": "https://www.sec.gov/Archives/edgar/data/1865468/000149315224050541/form8-k.htm"
-      },
-      {
-        "path": "data\\ipo_filings\\AIRO Group Holdings\\DEFR14A_2024-11-21_13.html",
-        "form_type": "DEFR14A",
-        "filing_date": "2024-11-21",
-        "url": "https://www.sec.gov/Archives/edgar/data/1865468/000149315224047061/formdefr14a.htm"
-      },
-      {
-        "path": "data\\ipo_filings\\AIRO Group Holdings\\DEF 14A_2024-11-18_14.html",
-        "form_type": "DEF 14A",
-        "filing_date": "2024-11-18",
-        "url": "https://www.sec.gov/Archives/edgar/data/1865468/000149315224046556/formdef14a.htm"
-      },
-      {
-        "path": "data\\ipo_filings\\AIRO Group Holdings\\10-Q_2024-11-18_15.html",
-        "form_type": "10-Q",
-        "filing_date": "2024-11-18",
-        "url": "https://www.sec.gov/Archives/edgar/data/1865468/000149315224046374/form10-q.htm"
-      },
-      {
-        "path": "data\\ipo_filings\\AIRO Group Holdings\\8-K_2024-11-15_16.html",
-        "form_type": "8-K",
-        "filing_date": "2024-11-15",
-        "url": "https://www.sec.gov/Archives/edgar/data/1865468/000149315224046272/form8-k.htm"
-      },
-      {
-        "path": "data\\ipo_filings\\AIRO Group Holdings\\NT 10-Q_2024-11-15_17.html",
-        "form_type": "NT 10-Q",
-        "filing_date": "2024-11-15",
-        "url": "https://www.sec.gov/Archives/edgar/data/1865468/000149315224046191/formnt10-q.htm"
-      },
-      {
-        "path": "data\\ipo_filings\\AIRO Group Holdings\\SC 13G-A_2024-11-14_18.html",
-        "form_type": "SC 13G/A",
-        "filing_date": "2024-11-14",
-        "url": "https://www.sec.gov/Archives/edgar/data/1865468/000132638924000164/Kairous.txt"
-      },
-      {
-        "path": "data\\ipo_filings\\AIRO Group Holdings\\PRE 14A_2024-11-05_19.html",
-        "form_type": "PRE 14A",
-        "filing_date": "2024-11-05",
-        "url": "https://www.sec.gov/Archives/edgar/data/1865468/000149315224043656/formpre14a.htm"
-      },
-      {
-        "path": "data\\ipo_filings\\AIRO Group Holdings\\8-K_2024-10-17_20.html",
-        "form_type": "8-K",
-        "filing_date": "2024-10-17",
-        "url": "https://www.sec.gov/Archives/edgar/data/1865468/000149315224041409/form8-k.htm"
-      }
-    ],
-    "latest_filing": "2025-06-12"
-  },
-  {
-    "ticker": "BEST SPAC I Acquisition Corp.",
-    "company": "BSAAU",
-    "date": "2025-06-13",
-    "status": "Filed",
-    "exchange": "NYSE",
-    "documents": 0,
-    "lockup": null,
-    "shares": "5.5",
-    "cik": null
-  },
-  {
-    "ticker": "Blue Acquisition Corp./Cayman",
-    "company": "BACCU",
-    "date": "2025-06-13",
-    "status": "Filed",
-    "exchange": "NYSE",
-    "documents": 0,
-    "lockup": null,
-    "shares": "17.5",
-    "cik": null
-  },
-  {
-    "ticker": "Happy City Holdings Limited",
-    "company": "HCHL",
-    "date": "2025-06-13",
-    "status": "Filed",
-    "exchange": "NYSE",
-    "documents": 0,
-    "lockup": null,
-    "shares": "1.0",
-    "cik": null
-  },
-  {
-    "ticker": "Julong Holding Corp.",
-    "company": "JLHL",
-    "date": "2025-06-13",
-    "status": "Filed",
-    "exchange": "NYSE",
-    "documents": 0,
-    "lockup": null,
-    "shares": "1.3",
-    "cik": null
-  },
-  {
-    "ticker": "Kandal M. Venture Ltd.",
-    "company": "FMFC",
-    "date": "2025-06-13",
-    "status": "Filed",
-    "exchange": "NYSE",
-    "documents": 0,
-    "lockup": null,
-    "shares": "2.0",
-    "cik": null
-  },
-  {
-    "ticker": "Caris Life Sciences, Inc.",
-    "company": "CAI",
-    "date": "2025-06-13",
-    "status": "Filed",
-    "exchange": "NYSE",
-    "documents": 12,
-    "lockup": null,
-    "shares": "23.5",
-    "cik": "0001535628",
-    "official_name": "CaixaBank/ADR",
-    "total_filings": 12,
-    "downloaded_filings": [
-      {
-        "path": "data\\ipo_filings\\Caris Life Sciences, Inc.\\F-6EF_2024-06-06_1.html",
-        "form_type": "F-6EF",
-        "filing_date": "2024-06-06",
-        "url": "https://www.sec.gov/Archives/edgar/data/1535628/000119380524000762/e663694_f6ef-caixabank.htm"
-      },
-      {
-        "path": "data\\ipo_filings\\Caris Life Sciences, Inc.\\F-6EF_2020-12-03_2.html",
-        "form_type": "F-6EF",
-        "filing_date": "2020-12-03",
-        "url": "https://www.sec.gov/Archives/edgar/data/1535628/000110465920131917/tm2037542d2_f6ef.htm"
-      },
-      {
-        "path": "data\\ipo_filings\\Caris Life Sciences, Inc.\\F-6EF_2019-11-22_3.html",
-        "form_type": "F-6EF",
-        "filing_date": "2019-11-22",
-        "url": "https://www.sec.gov/Archives/edgar/data/1535628/000119380519001486/e618707_f6ef-cb.htm"
-      },
-      {
-        "path": "data\\ipo_filings\\Caris Life Sciences, Inc.\\F-6EF_2019-08-05_4.html",
-        "form_type": "F-6EF",
-        "filing_date": "2019-08-05",
-        "url": "https://www.sec.gov/Archives/edgar/data/1535628/000119380519000704/e618585_f6ef-caixabank.htm"
-      },
-      {
-        "path": "data\\ipo_filings\\Caris Life Sciences, Inc.\\F-6EF_2018-10-02_5.html",
-        "form_type": "F-6EF",
-        "filing_date": "2018-10-02",
-        "url": "https://www.sec.gov/Archives/edgar/data/1535628/000119380518001196/e617973_f6ef-caixabank.htm"
-      },
-      {
-        "path": "data\\ipo_filings\\Caris Life Sciences, Inc.\\F-6 POS_2017-09-29_6.html",
-        "form_type": "F-6 POS",
-        "filing_date": "2017-09-29",
-        "url": "https://www.sec.gov/Archives/edgar/data/1535628/000119380517003053/e617253_f6pos-caixabank.htm"
-      },
-      {
-        "path": "data\\ipo_filings\\Caris Life Sciences, Inc.\\F-6EF_2016-03-30_7.html",
-        "form_type": "F-6EF",
-        "filing_date": "2016-03-30",
-        "url": "https://www.sec.gov/Archives/edgar/data/1535628/000119380516002947/e614856_f6ef-caixabank.htm"
-      },
-      {
-        "path": "data\\ipo_filings\\Caris Life Sciences, Inc.\\F-6EF_2015-09-10_8.html",
-        "form_type": "F-6EF",
-        "filing_date": "2015-09-10",
-        "url": "https://www.sec.gov/Archives/edgar/data/1535628/000119380515001519/e614083_f6ef-caixabank.htm"
-      },
-      {
-        "path": "data\\ipo_filings\\Caris Life Sciences, Inc.\\F-6EF_2015-06-02_9.html",
-        "form_type": "F-6EF",
-        "filing_date": "2015-06-02",
-        "url": "https://www.sec.gov/Archives/edgar/data/1535628/000119380515000848/e613729_f6ef-caixabank.htm"
-      },
-      {
-        "path": "data\\ipo_filings\\Caris Life Sciences, Inc.\\F-6EF_2014-10-17_10.html",
-        "form_type": "F-6EF",
-        "filing_date": "2014-10-17",
-        "url": "https://www.sec.gov/Archives/edgar/data/1535628/000157104914005212/t1401958x76_f-6ef.htm"
-      },
-      {
-        "path": "data\\ipo_filings\\Caris Life Sciences, Inc.\\F-6EF_2014-09-26_11.html",
-        "form_type": "F-6EF",
-        "filing_date": "2014-09-26",
-        "url": "https://www.sec.gov/Archives/edgar/data/1535628/000119380514001893/e612731_f6ef-caixabank.htm"
-      },
-      {
-        "path": "data\\ipo_filings\\Caris Life Sciences, Inc.\\F-6EF_2011-11-28_12.html",
-        "form_type": "F-6EF",
-        "filing_date": "2011-11-28",
-        "url": "https://www.sec.gov/Archives/edgar/data/1535628/000101915511000610/caixaf6.htm"
-      }
-    ],
-    "latest_filing": "2024-06-06"
-  },
-  {
-    "ticker": "Slide Insurance Holdings Inc.",
-    "company": "SLDE",
-    "date": "2025-06-13",
-    "status": "Filed",
-    "exchange": "NYSE",
-    "documents": 0,
-    "lockup": null,
-    "shares": "20.0",
-    "cik": null
-  },
-  {
-    "ticker": "ALE Group Holding  Limited",
-    "company": "ALEH",
-    "date": "2025-06-13",
-    "status": "Filed",
-    "exchange": "NYSE",
-    "documents": 0,
-    "lockup": null,
-    "shares": "1.5",
-    "cik": null
-  },
-  {
-    "ticker": "Dalu International Group Ltd.",
-    "company": "DLHZ",
-    "date": "2025-06-13",
-    "status": "Filed",
-    "exchange": "NYSE",
-    "documents": 0,
-    "lockup": null,
-    "shares": "1.5",
-    "cik": null
-  }
-]
-=======
 {
-  "last_updated": "2025-06-11T21:21:05.622029",
-  "source": "test_data",
-  "ipos": [
+  "listings": [
     {
-      "ticker": "TEST",
-      "company": "Test Company Inc.",
-      "date": "2025-06-16",
-      "price_range": "$15-$17",
-      "shares": "10M",
+      "company": "AIRO Group Holdings",
+      "ticker": "AIRO",
+      "lead_managers": "Cantor/BTIG/Mizuho/Bancroft Capital",
+      "shares_millions": 6.0,
+      "price_low": 10.0,
+      "price_high": 10.0,
+      "volume": "$ 60.0 mil",
+      "expected_date": "Priced",
+      "scoop_rating": "S/O",
+      "status": "Priced",
       "exchange": "NASDAQ",
-      "status": "upcoming"
+      "lockup": "180 days",
+      "documents": 0,
+      "filing_count": 0,
+      "last_updated": "2025-06-14T18:09:55.111041+00:00",
+      "price_range": "$10.0"
     },
     {
-      "ticker": "DEMO",
-      "company": "Demo Corp",
-      "date": "2025-06-11",
-      "price_range": "$20-$22",
-      "shares": "8M",
+      "company": "BEST SPAC I Acquisition Corp.",
+      "ticker": "BSAAU",
+      "lead_managers": "Maxim Group",
+      "shares_millions": 5.5,
+      "price_low": 10.0,
+      "price_high": 10.0,
+      "volume": "$ 55.0 mil",
+      "expected_date": "Priced",
+      "scoop_rating": "S/O",
+      "status": "Priced",
       "exchange": "NYSE",
-      "status": "priced"
+      "lockup": "180 days",
+      "documents": 0,
+      "filing_count": 0,
+      "last_updated": "2025-06-14T18:09:55.111140+00:00",
+      "price_range": "$10.0"
+    },
+    {
+      "company": "Blue Acquisition Corp./Cayman",
+      "ticker": "BACCU",
+      "lead_managers": "BTIG, LLC",
+      "shares_millions": 17.5,
+      "price_low": 10.0,
+      "price_high": 10.0,
+      "volume": "$ 175.0 mil",
+      "expected_date": "Priced",
+      "scoop_rating": "S/O",
+      "status": "Priced",
+      "exchange": "NYSE",
+      "lockup": "180 days",
+      "documents": 0,
+      "filing_count": 0,
+      "last_updated": "2025-06-14T18:09:55.111181+00:00",
+      "price_range": "$10.0"
+    },
+    {
+      "company": "Happy City Holdings Limited",
+      "ticker": "HCHL",
+      "lead_managers": "Dominari Securities/Pacific Century Securities/Revere Securities",
+      "shares_millions": 1.0,
+      "price_low": 5.0,
+      "price_high": 7.0,
+      "volume": "$ 6.0 mil",
+      "expected_date": "6/16/2025 Week of",
+      "scoop_rating": "S/O",
+      "status": "Expected",
+      "exchange": "NASDAQ",
+      "lockup": "180 days",
+      "documents": 0,
+      "filing_count": 0,
+      "last_updated": "2025-06-14T18:09:55.111214+00:00",
+      "price_range": "$5.0-$7.0"
+    },
+    {
+      "company": "Julong Holding Corp.",
+      "ticker": "JLHL",
+      "lead_managers": "US Tiger Securities",
+      "shares_millions": 1.3,
+      "price_low": 4.0,
+      "price_high": 6.0,
+      "volume": "$ 6.0 mil",
+      "expected_date": "6/16/2025 Week of",
+      "scoop_rating": "S/O",
+      "status": "Expected",
+      "exchange": "NASDAQ",
+      "lockup": "180 days",
+      "documents": 0,
+      "filing_count": 0,
+      "last_updated": "2025-06-14T18:09:55.111246+00:00",
+      "price_range": "$4.0-$6.0"
+    },
+    {
+      "company": "Kandal M. Venture Ltd.",
+      "ticker": "FMFC",
+      "lead_managers": "Dominari Securities/Revere Securities",
+      "shares_millions": 2.0,
+      "price_low": 4.0,
+      "price_high": 5.0,
+      "volume": "$ 9.0 mil",
+      "expected_date": "6/16/2025 Week of",
+      "scoop_rating": "S/O",
+      "status": "Expected",
+      "exchange": "NASDAQ",
+      "lockup": "180 days",
+      "documents": 0,
+      "filing_count": 0,
+      "last_updated": "2025-06-14T18:09:55.111275+00:00",
+      "price_range": "$4.0-$5.0"
+    },
+    {
+      "company": "Caris Life Sciences, Inc.",
+      "ticker": "CAI",
+      "lead_managers": "BofA Securities/J.P. Morgan/Goldman Sachs/Citigroup/TD Cowen/Evercore ISI/Guggenheim Securities",
+      "shares_millions": 23.5,
+      "price_low": 16.0,
+      "price_high": 18.0,
+      "volume": "$ 400.0 mil",
+      "expected_date": "6/18/2025 Wednesday",
+      "scoop_rating": "S/O",
+      "status": "Expected",
+      "exchange": "NASDAQ",
+      "lockup": "180 days",
+      "documents": 0,
+      "filing_count": 0,
+      "last_updated": "2025-06-14T18:09:55.111303+00:00",
+      "price_range": "$16.0-$18.0"
+    },
+    {
+      "company": "Slide Insurance Holdings Inc.",
+      "ticker": "SLDE",
+      "lead_managers": "Barclays/Morgan Stanley/Citizens Capital/Keefe, Bruyette & Woods (Stifel)/Piper Sandler",
+      "shares_millions": 20.0,
+      "price_low": 15.0,
+      "price_high": 17.0,
+      "volume": "$ 320.0 mil",
+      "expected_date": "6/18/2025 Wednesday",
+      "scoop_rating": "S/O",
+      "status": "Expected",
+      "exchange": "NASDAQ",
+      "lockup": "180 days",
+      "documents": 0,
+      "filing_count": 0,
+      "last_updated": "2025-06-14T18:09:55.111332+00:00",
+      "price_range": "$15.0-$17.0"
+    },
+    {
+      "company": "ALE Group Holding  Limited",
+      "ticker": "ALEH",
+      "lead_managers": "D. Boral Capital (ex-EF Hutton)",
+      "shares_millions": 1.5,
+      "price_low": 4.0,
+      "price_high": 6.0,
+      "volume": "$ 7.5 mil",
+      "expected_date": "6/23/2025 Week of",
+      "scoop_rating": "S/O",
+      "status": "Expected",
+      "exchange": "NASDAQ",
+      "lockup": "180 days",
+      "documents": 0,
+      "filing_count": 0,
+      "last_updated": "2025-06-14T18:09:55.111359+00:00",
+      "price_range": "$4.0-$6.0"
+    },
+    {
+      "company": "Dalu International Group Ltd.",
+      "ticker": "DLHZ",
+      "lead_managers": "Revere Securities",
+      "shares_millions": 1.5,
+      "price_low": 4.0,
+      "price_high": 6.0,
+      "volume": "$ 7.5 mil",
+      "expected_date": "6/23/2025 Week of",
+      "scoop_rating": "S/O",
+      "status": "Expected",
+      "exchange": "NASDAQ",
+      "lockup": "180 days",
+      "documents": 0,
+      "filing_count": 0,
+      "last_updated": "2025-06-14T18:09:55.111385+00:00",
+      "price_range": "$4.0-$6.0"
+    },
+    {
+      "company": "FG Holdings",
+      "ticker": "FGO",
+      "lead_managers": "American Trust Investment Services/Revere Securities",
+      "shares_millions": 2.0,
+      "price_low": 4.0,
+      "price_high": 5.0,
+      "volume": "$ 9.0 mil",
+      "expected_date": "6/23/2025 Week of",
+      "scoop_rating": "S/O",
+      "status": "Expected",
+      "exchange": "NASDAQ",
+      "lockup": "180 days",
+      "documents": 0,
+      "filing_count": 0,
+      "last_updated": "2025-06-14T18:09:55.111410+00:00",
+      "price_range": "$4.0-$5.0"
+    },
+    {
+      "company": "HW Electro Co., Ltd. (NASDAQ-New Filing)",
+      "ticker": "HWEP",
+      "lead_managers": "American Trust Investment Services/WestPark Capital",
+      "shares_millions": 4.2,
+      "price_low": 4.0,
+      "price_high": 4.0,
+      "volume": "$ 16.6 mil",
+      "expected_date": "6/23/2025 Week of",
+      "scoop_rating": "S/O",
+      "status": "Expected",
+      "exchange": "NASDAQ",
+      "lockup": "180 days",
+      "documents": 0,
+      "filing_count": 0,
+      "last_updated": "2025-06-14T18:09:55.111435+00:00",
+      "price_range": "$4.0"
+    },
+    {
+      "company": "NUSATRIP Inc.",
+      "ticker": "NUTR",
+      "lead_managers": "Cathay Securities",
+      "shares_millions": 3.8,
+      "price_low": 4.0,
+      "price_high": 5.0,
+      "volume": "$ 16.9 mil",
+      "expected_date": "6/23/2025 Week of",
+      "scoop_rating": "S/O",
+      "status": "Expected",
+      "exchange": "NASDAQ",
+      "lockup": "180 days",
+      "documents": 0,
+      "filing_count": 0,
+      "last_updated": "2025-06-14T18:09:55.111460+00:00",
+      "price_range": "$4.0-$5.0"
+    },
+    {
+      "company": "Propanc Biopharma (NASDAQ  Uplisting)",
+      "ticker": "PPCB",
+      "lead_managers": "D. Boral Capital (ex-EF Hutton)/Craft Capital",
+      "shares_millions": 1.0,
+      "price_low": 4.0,
+      "price_high": 6.0,
+      "volume": "$ 5.0 mil",
+      "expected_date": "6/23/2025 Week of",
+      "scoop_rating": "S/O",
+      "status": "Expected",
+      "exchange": "NASDAQ",
+      "lockup": "180 days",
+      "documents": 0,
+      "filing_count": 0,
+      "last_updated": "2025-06-14T18:09:55.111484+00:00",
+      "price_range": "$4.0-$6.0"
+    },
+    {
+      "company": "Jefferson Capital",
+      "ticker": "JCAP",
+      "lead_managers": "Jefferies/Keefe, Bruyette & Woods/Citizens JMP/Raymond James/Truist Securities/Capital One Securities/DNB Markets/Regions Securities/Synovus Securities",
+      "shares_millions": 10.0,
+      "price_low": 15.0,
+      "price_high": 17.0,
+      "volume": "$ 160.0 mil",
+      "expected_date": "6/26/2025 Thursday",
+      "scoop_rating": "S/O",
+      "status": "Expected",
+      "exchange": "NASDAQ",
+      "lockup": "180 days",
+      "documents": 0,
+      "filing_count": 0,
+      "last_updated": "2025-06-14T18:09:55.111508+00:00",
+      "price_range": "$15.0-$17.0"
+    },
+    {
+      "company": "Delixy Holdings Ltd.",
+      "ticker": "DLXY",
+      "lead_managers": "Bancroft Capital",
+      "shares_millions": 2.0,
+      "price_low": 4.0,
+      "price_high": 5.0,
+      "volume": "$ 9.0 mil",
+      "expected_date": "6/30/2025 Week of",
+      "scoop_rating": "S/O",
+      "status": "Expected",
+      "exchange": "NASDAQ",
+      "lockup": "180 days",
+      "documents": 0,
+      "filing_count": 0,
+      "last_updated": "2025-06-14T18:09:55.111532+00:00",
+      "price_range": "$4.0-$5.0"
+    },
+    {
+      "company": "CapsoVision, Inc.",
+      "ticker": "CV",
+      "lead_managers": "The Benchmark Company/Roth Capital Partners",
+      "shares_millions": 5.3,
+      "price_low": 5.0,
+      "price_high": 5.5,
+      "volume": "$ 27.6 mil",
+      "expected_date": "7/1/2025 Tuesday",
+      "scoop_rating": "S/O",
+      "status": "Expected",
+      "exchange": "NASDAQ",
+      "lockup": "180 days",
+      "documents": 0,
+      "filing_count": 0,
+      "last_updated": "2025-06-14T18:09:55.111557+00:00",
+      "price_range": "$5.0-$5.5"
     }
+  ],
+  "total": 17,
+  "source": "iposcoop.com",
+  "updated": "2025-06-14T18:09:55.111887+00:00",
+  "fields": [
+    "company",
+    "ticker",
+    "lead_managers",
+    "shares_millions",
+    "price_range",
+    "volume",
+    "expected_date",
+    "scoop_rating",
+    "status",
+    "exchange"
   ]
 }
->>>>>>> 7bda5bb3f199dc2d74016e366f0a956b33545e5c
